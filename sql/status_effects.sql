@@ -464,7 +464,7 @@ INSERT INTO `status_effects` VALUES (434,'transcendency',256,0,0,0,0,0,0,0,0);
 INSERT INTO `status_effects` VALUES (435,'restraint',5243168,0,0,0,0,0,0,0,0);
 INSERT INTO `status_effects` VALUES (436,'perfect_counter',4194336,0,0,0,0,0,0,0,0);
 INSERT INTO `status_effects` VALUES (437,'mana_wall',41,0,0,0,0,0,0,0,0);
-INSERT INTO `status_effects` VALUES (438,'divine_emblem',4194336,0,0,0,0,0,0,0,0);
+INSERT INTO `status_effects` VALUES (438,'divine_emblem',41,0,0,0,0,0,0,0,0);
 INSERT INTO `status_effects` VALUES (439,'nether_void',4194336,0,0,0,0,0,0,0,0);
 INSERT INTO `status_effects` VALUES (440,'sengikori',4194336,0,0,0,0,0,0,0,0);
 INSERT INTO `status_effects` VALUES (441,'futae',4194336,0,0,0,0,0,0,0,0);
