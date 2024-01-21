@@ -28,7 +28,7 @@ xi.job_utils.black_mage.useCascade = function(player, target, ability)
 end
 
 xi.job_utils.black_mage.useElementalSeal = function(player, target, ability)
-    player:addStatusEffect(xi.effect.ELEMENTAL_SEAL, 1, 0, 60)
+    player:addStatusEffect(xi.effect.ELEMENTAL_SEAL, 1, 0, 3600)
 end
 
 xi.job_utils.black_mage.useEnmityDouse = function(player, target, ability)
