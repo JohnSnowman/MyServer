@@ -34,11 +34,11 @@ end
 xi.job_utils.warrior.useAggressor = function(player, target, ability)
     local merits = player:getMerit(xi.merit.AGGRESSIVE_AIM)
 
-    player:addStatusEffect(xi.effect.AGGRESSOR, merits, 0, 180 + player:getMod(xi.mod.AGGRESSOR_DURATION))
+    player:addStatusEffect(xi.effect.AGGRESSOR, merits, 0, 3600 + player:getMod(xi.mod.AGGRESSOR_DURATION))
 end
 
 xi.job_utils.warrior.useBerserk = function(player, target, ability)
-    player:addStatusEffect(xi.effect.BERSERK, 25 + player:getMod(xi.mod.BERSERK_POTENCY), 0, 180 + player:getMod(xi.mod.BERSERK_DURATION))
+    player:addStatusEffect(xi.effect.BERSERK, 25 + player:getMod(xi.mod.BERSERK_POTENCY), 0, 3600 + player:getMod(xi.mod.BERSERK_DURATION))
 end
 
 xi.job_utils.warrior.useBloodRage = function(player, target, ability)
@@ -59,7 +59,7 @@ xi.job_utils.warrior.useBrazenRush = function(player, target, ability)
 end
 
 xi.job_utils.warrior.useDefender = function(player, target, ability)
-    player:addStatusEffect(xi.effect.DEFENDER, 1, 0, 180 + player:getMod(xi.mod.DEFENDER_DURATION))
+    player:addStatusEffect(xi.effect.DEFENDER, 1, 0, 3600 + player:getMod(xi.mod.DEFENDER_DURATION))
 end
 
 xi.job_utils.warrior.useMightyStrikes = function(player, target, ability)
@@ -86,7 +86,7 @@ xi.job_utils.warrior.useWarcry = function(player, target, ability)
     local merit    = player:getMerit(xi.merit.SAVAGERY)
     local warLevel = utils.getActiveJobLevel(player, xi.job.WAR)
     local power    = (math.floor((warLevel / 4) + 4.75) / 256) * 100
-    local duration = 30
+    local duration = 90
 
     duration = duration + player:getMod(xi.mod.WARCRY_DURATION)
 
