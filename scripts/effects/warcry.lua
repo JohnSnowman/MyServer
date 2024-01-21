@@ -13,6 +13,7 @@ effectObject.onEffectGain = function(target, effect)
 
     target:addMod(xi.mod.ATTP, effect:getPower())
     target:addMod(xi.mod.RATTP, effect:getPower())
+    target:addMod(xi.mod.HASTE_ABILITY, 1500)
     target:addMod(xi.mod.TP_BONUS, effect:getSubPower())
 
     -- Job Point Bonus
@@ -29,6 +30,7 @@ effectObject.onEffectLose = function(target, effect)
 
     target:delMod(xi.mod.ATTP, effect:getPower())
     target:delMod(xi.mod.RATTP, effect:getPower())
+    target:delMod(xi.mod.HASTE_ABILITY, 1500)
     target:delMod(xi.mod.TP_BONUS, effect:getSubPower())
 
     -- Job Point Bonus
