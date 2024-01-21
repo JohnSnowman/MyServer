@@ -269,7 +269,7 @@ xi.job_utils.thief.useHide = function(player, target, ability)
 
     duration = duration * (1 + player:getMod(xi.mod.HIDE_DURATION) / 100)
 
-    player:addStatusEffect(xi.effect.HIDE, 1, 0, math.floor(duration * xi.settings.main.SNEAK_INVIS_DURATION_MULTIPLIER))
+    player:addStatusEffect(xi.effect.HIDE, 1, 0, math.floor(duration * xi.settings.main._INVIS_DURATION_MULTIPLIER))
 end
 
 xi.job_utils.thief.useLarceny = function(player, target, ability, action)
@@ -384,7 +384,7 @@ xi.job_utils.thief.usePerfectDodge = function(player, target, ability)
 end
 
 xi.job_utils.thief.useSneakAttack = function(player, target, ability)
-    player:addStatusEffect(xi.effect.SNEAK_ATTACK, 1, 0, 60)
+    player:addStatusEffect(xi.effect.SNEAK_ATTACK, 1, 0, 3600)
 end
 
 xi.job_utils.thief.useSteal = function(player, target, ability, action)
