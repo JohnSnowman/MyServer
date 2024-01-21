@@ -52,7 +52,7 @@ xi.job_utils.red_mage.useConvert = function(player, target, ability)
 end
 
 xi.job_utils.red_mage.useSaboteur = function(player, target, ability)
-    player:addStatusEffect(xi.effect.SABOTEUR, 1, 0, 60)
+    player:addStatusEffect(xi.effect.SABOTEUR, 1, 0, 3600)
 end
 
 xi.job_utils.red_mage.useSpontaneity = function(player, target, ability)
