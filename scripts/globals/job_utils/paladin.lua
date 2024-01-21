@@ -85,7 +85,7 @@ xi.job_utils.paladin.useDivineEmblem = function(player, target, ability)
     -- Divine Magic bonus damage handled in globals/magic.lua
     local power = 50 + player:getMod(xi.mod.ENHANCES_DIVINE_EMBLEM) -- 50% increase to enmity
 
-    player:addStatusEffect(xi.effect.DIVINE_EMBLEM, power, 0, 60)
+    player:addStatusEffect(xi.effect.DIVINE_EMBLEM, power, 0, 3600)
 end
 
 xi.job_utils.paladin.useFealty = function(player, target, ability)
@@ -138,18 +138,18 @@ xi.job_utils.paladin.useInvincible = function(player, target, ability)
 end
 
 xi.job_utils.paladin.useMajesty = function(player, target, ability)
-    player:addStatusEffect(xi.effect.MAJESTY, 25, 0, 180)
+    player:addStatusEffect(xi.effect.MAJESTY, 25, 0, 3600)
 end
 
 xi.job_utils.paladin.usePalisade = function(player, target, ability)
     local jpValue = player:getJobPointLevel(xi.jp.PALISADE_EFFECT)
     local power   = 30 + jpValue
 
-    player:addStatusEffect(xi.effect.PALISADE, power, 0, 60)
+    player:addStatusEffect(xi.effect.PALISADE, power, 0, 3600)
 end
 
 xi.job_utils.paladin.useRampart = function(player, target, ability)
-    local duration = 30 + player:getMod(xi.mod.RAMPART_DURATION)
+    local duration = 60 + player:getMod(xi.mod.RAMPART_DURATION)
 
     target:addStatusEffect(xi.effect.RAMPART, 2500, 0, duration)
 end
