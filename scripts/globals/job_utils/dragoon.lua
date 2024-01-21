@@ -874,9 +874,9 @@ xi.job_utils.dragoon.addWyvernExp = function(player, exp)
 
             player:addMod(xi.mod.ATT, wyvernAttributeIncreaseEffectJP * numLevelUps)
             player:addMod(xi.mod.DEF, wyvernAttributeIncreaseEffectJP * numLevelUps)
-            player:addMod(xi.mod.ATTP, 4 * numLevelUps)
-            player:addMod(xi.mod.DEFP, 4 * numLevelUps)
-            player:addMod(xi.mod.HASTE_ABILITY, 200 * numLevelUps)
+            player:addMod(xi.mod.ATTP, 6 * numLevelUps)
+            player:addMod(xi.mod.DEFP, 6 * numLevelUps)
+            player:addMod(xi.mod.HASTE_ABILITY, 300 * numLevelUps)
             player:addMod(xi.mod.DOUBLE_ATTACK, wyvernBonusDA * numLevelUps)
             player:addMod(xi.mod.ALL_WSDMG_ALL_HITS, 2 * numLevelUps)
         end
