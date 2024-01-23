@@ -96,8 +96,8 @@ std::unordered_map<uint16, std::vector<uint16>>     g_PMobSkillLists; // List of
 namespace battleutils
 {
 
-    const float worldAngleMinDistance = 0.5f;
-    const uint8 worldAngleMaxDeviance = 4;
+    const float worldAngleMinDistance = 0.2f;
+    const uint8 worldAngleMaxDeviance = 8;
 
     void LoadSkillTable()
     {
