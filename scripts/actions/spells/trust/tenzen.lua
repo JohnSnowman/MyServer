@@ -43,6 +43,7 @@ spellObject.onMobSpawn = function(mob)
 	local tabonus		= trustLevel / 10
 	local sbbonus		= trustLevel * 0.4
 	local sbiibonus		= trustLevel * 0.4
+	local magichaste	= trustLevel * 10-- 33 x 75 = 2475 = 24.75% gearhaste
 	local gearhaste		= trustLevel * 10-- 33 x 75 = 2475 = 24.75% gearhaste
 	local abilhaste		= trustLevel * 10-- 33 x 75 = 2475 = 24.75% abilityhaste
 	
@@ -59,7 +60,7 @@ spellObject.onMobSpawn = function(mob)
 	mob:addMod(xi.mod.SUBTLE_BLOW_II, sbiibonus)
 	mob:addMod(xi.mod.ENMITY, -30)
 --	mob:addMod(xi.mod.REGAIN, 75)
-    mob:addMod(xi.mod.HASTE_MAGIC, 1000) -- 1000 = 10% Haste (Magic)
+    mob:addMod(xi.mod.HASTE_MAGIC, magichaste) -- 1000 = 10% Haste (Magic)
     mob:addMod(xi.mod.HASTE_GEAR, gearhaste) -- 1000 = 10% Haste (gear)
     mob:addMod(xi.mod.HASTE_ABILITY, abilhaste) -- 1000 = 10% Haste (ability)
     
