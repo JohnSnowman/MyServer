@@ -52,8 +52,9 @@ spellObject.onMobSpawn = function(mob)
 	local phystakenii	= trustLevel * 15-- 40 time 75 = 3000 = 30%			Damage - 10000 base, 375 = 3.75%	
 	local magtakenii	= trustLevel * 15-- 40 time 75 = 3000 = 30%			Damage - 10000 base, 375 = 3.75%
 	local absdmgmp		= trustLevel / 7
-	local gearhaste		= trustLevel * 16-- 33 x 75 = 2475 = 24.75% gearhaste
-	local abilhaste		= trustLevel * 16-- 33 x 75 = 2475 = 24.75% abilityhaste
+	local magichaste	= trustLevel * 10-- 33 x 75 = 2475 = 24.75% gearhaste
+	local gearhaste		= trustLevel * 7-- 33 x 75 = 2475 = 24.75% gearhaste
+	local abilhaste		= trustLevel * 7-- 33 x 75 = 2475 = 24.75% abilityhaste
 	
 	mob:addMod(xi.mod.CURE_POTENCY, potencyi)
 	mob:addMod(xi.mod.CURE2MP_PERCENT, curetoomp)
@@ -73,7 +74,7 @@ spellObject.onMobSpawn = function(mob)
 	
 	mob:addMod(xi.mod.ENMITY, 150)
 	mob:addMod(xi.mod.ENMITY_LOSS_REDUCTION, 50)
-    mob:addMod(xi.mod.HASTE_MAGIC, 1000) -- 1000 = 10% Haste (Magic)
+    mob:addMod(xi.mod.HASTE_MAGIC, magichaste) -- 1000 = 10% Haste (Magic)
     mob:addMod(xi.mod.HASTE_GEAR, gearhaste) -- 1000 = 10% Haste (gear)
     mob:addMod(xi.mod.HASTE_ABILITY, abilhaste) -- 1000 = 10% Haste (ability)
 end
