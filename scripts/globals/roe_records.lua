@@ -6456,7 +6456,8 @@ xi.roe.records =
         trigger = xi.roeTrigger.ACHIEVE_LEVEL,
         reqs = { jobLvl = { xi.job.THF, 30 } },
         flags = set { 'retro' },
-        reward = { sparks = 100, xp = 500, item = { { xi.item.DAGGER_ENCHIRIDION, 12 } } },
+        -- reward = { sparks = 100, xp = 500, item = { { xi.item.DAGGER_ENCHIRIDION, 12 } } },
+        reward = { sparks = 100, xp = 500, keyItem = xi.ki.RHAPSODY_IN_CRIMSON },
     },
 
     [1221] =
