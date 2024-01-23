@@ -121,7 +121,7 @@ INSERT INTO `status_effects` VALUES (83,'agi_boost',41,0,139,0,0,0,3,0,0);
 INSERT INTO `status_effects` VALUES (84,'int_boost',41,0,140,0,0,0,2,0,0);
 INSERT INTO `status_effects` VALUES (85,'mnd_boost',41,0,141,0,0,0,6,0,0);
 INSERT INTO `status_effects` VALUES (86,'chr_boost',41,0,142,0,0,0,7,0,0);
-INSERT INTO `status_effects` VALUES (87,'trick_attack',4194340,0,0,0,0,0,0,0,0);
+INSERT INTO `status_effects` VALUES (87,'trick_attack',41,0,0,0,0,0,0,0,0);
 INSERT INTO `status_effects` VALUES (88,'max_hp_boost',41,0,144,0,0,0,7,0,0);
 INSERT INTO `status_effects` VALUES (89,'max_mp_boost',41,0,145,0,0,0,8,0,0);
 INSERT INTO `status_effects` VALUES (90,'accuracy_boost',41,0,146,0,0,0,5,0,0);
