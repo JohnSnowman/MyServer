@@ -39,12 +39,12 @@ spellObject.onMobSpawn = function(mob)
 	local defbonus		= trustLevel
 	local mdefbonus		= trustLevel / 10
 	local mevabonus		= trustLevel
-	local dabonus		= trustLevel / 2
-	local tabonus		= trustLevel / 8
+	local dabonus		= trustLevel / 3
+	local tabonus		= trustLevel / 10
 	local sbbonus		= trustLevel * 0.4
 	local sbiibonus		= trustLevel * 0.4
-	local gearhaste		= trustLevel * 20-- 33 x 75 = 2475 = 24.75% gearhaste
-	local abilhaste		= trustLevel * 20-- 33 x 75 = 2475 = 24.75% abilityhaste
+	local gearhaste		= trustLevel * 10-- 33 x 75 = 2475 = 24.75% gearhaste
+	local abilhaste		= trustLevel * 10-- 33 x 75 = 2475 = 24.75% abilityhaste
 	
 	mob:addMod(xi.mod.STR, strbonus)
 	mob:addMod(xi.mod.DEX, dexbonus)
