@@ -35,6 +35,9 @@ spellObject.onMobSpawn = function(mob)
     mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 50,
                         ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.CURE)
 
+    mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.MAJESTY,
+                        ai.r.JA, ai.s.SPECIFIC, xi.ja.MAJESTY)
+
     
 	local trustLevel	= mob:getMainLvl()
 	local potencyi		= trustLevel / 4
