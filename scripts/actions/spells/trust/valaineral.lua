@@ -23,7 +23,7 @@ spellObject.onMobSpawn = function(mob)
     ]]
     xi.trust.message(mob, xi.trust.messageOffset.SPAWN)
 
-    mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_HAS_TOP_ENMITY, 0,
+    mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, 0,
                         ai.r.JA, ai.s.SPECIFIC, xi.ja.PROVOKE)
 
     mob:addSimpleGambit(ai.t.TARGET, ai.c.NOT_STATUS, xi.effect.FLASH,
@@ -34,6 +34,48 @@ spellObject.onMobSpawn = function(mob)
 
     mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 50,
                         ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.CURE)
+
+    
+	local trustLevel	= mob:getMainLvl()
+	local potencyi		= trustLevel / 4
+	local curetoomp		= trustLevel / 15
+	local enhdur		= trustLevel * 4
+	local castingspeed	= trustLevel / 2
+	local refreshmp		= trustLevel / 20
+	local mndbonus		= trustLevel
+	local vitbonus		= trustLevel
+	local accbonus		= trustLevel
+	local defbonus		= trustLevel * 2
+	local mdefbonus		= trustLevel / 6
+	local mevabonus		= trustLevel * 2
+	local dmgtakenbon	= trustLevel * 30-- 70 time 75 = 5250 = 52.5%		Damage - 10000 base, 375 = 3.75%        119 time 30 = 3570 = 35.7%
+	local phystakenii	= trustLevel * 15-- 40 time 75 = 3000 = 30%			Damage - 10000 base, 375 = 3.75%	
+	local magtakenii	= trustLevel * 15-- 40 time 75 = 3000 = 30%			Damage - 10000 base, 375 = 3.75%
+	local absdmgmp		= trustLevel / 7
+	local gearhaste		= trustLevel * 16-- 33 x 75 = 2475 = 24.75% gearhaste
+	local abilhaste		= trustLevel * 16-- 33 x 75 = 2475 = 24.75% abilityhaste
+	
+	mob:addMod(xi.mod.CURE_POTENCY, potencyi)
+	mob:addMod(xi.mod.CURE2MP_PERCENT, curetoomp)
+	mob:addMod(xi.mod.ENH_MAGIC_DURATION, enhdur)
+	mob:addMod(xi.mod.FASTCAST, castingspeed)
+	mob:addMod(xi.mod.REFRESH, refreshmp)
+	mob:addMod(xi.mod.MND, mndbonus)
+	mob:addMod(xi.mod.VIT, vitbonus)
+	mob:addMod(xi.mod.ACC, accbonus)
+	mob:addMod(xi.mod.DEF, defbonus)
+    mob:addMod(xi.mod.MDEF, mdefbonus)
+    mob:addMod(xi.mod.MEVA, mevabonus)
+    mob:addMod(xi.mod.DMG, -dmgtakenbon)
+    mob:addMod(xi.mod.DMGPHYS_II, -phystakenii)
+    mob:addMod(xi.mod.DMGMAGIC_II, -magtakenii)
+    mob:addMod(xi.mod.ABSORB_DMG_TO_MP, absdmgmp)
+	
+	mob:addMod(xi.mod.ENMITY, 150)
+	mob:addMod(xi.mod.ENMITY_LOSS_REDUCTION, 50)
+    mob:addMod(xi.mod.HASTE_MAGIC, 1000) -- 1000 = 10% Haste (Magic)
+    mob:addMod(xi.mod.HASTE_GEAR, gearhaste) -- 1000 = 10% Haste (gear)
+    mob:addMod(xi.mod.HASTE_ABILITY, abilhaste) -- 1000 = 10% Haste (ability)
 end
 
 spellObject.onMobDespawn = function(mob)
