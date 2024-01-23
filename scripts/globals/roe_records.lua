@@ -786,7 +786,7 @@ xi.roe.records =
     [664] =
     { -- SAM Artifact Quest III
         trigger = xi.roeTrigger.COMPLETE_QUEST,
-        reqs = { questComplete = { xi.quest.log_id.OUTLANDS, xi.quest.id.outlands.A_THIEF_IN_NORG } },
+        reqs = { questComplete = { xi.quest.log_id.OUTLANDS, xi.quest.id.outlands.A__IN_NORG } },
         flags = set { 'retro' },
         reward = { sparks = 100, xp = 300 },
     },
@@ -6456,8 +6456,7 @@ xi.roe.records =
         trigger = xi.roeTrigger.ACHIEVE_LEVEL,
         reqs = { jobLvl = { xi.job.THF, 30 } },
         flags = set { 'retro' },
-        -- reward = { sparks = 100, xp = 500, item = { { xi.item.DAGGER_ENCHIRIDION, 12 } } },
-        reward = { sparks = 100, xp = 500, keyItem = xi.ki.RHAPSODY_IN_CRIMSON },
+        reward = { sparks = 100, xp = 500, item = { { xi.item.DAGGER_ENCHIRIDION, 12 } } },
     },
 
     [1221] =
