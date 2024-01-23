@@ -549,6 +549,14 @@ xi.shop =
 
         [curio.keys] =
         {
+            xi.ki.RHAPSODY_IN_CRIMSON,    100000,      xi.ki.RHAPSODY_IN_WHITE,  -- +1 Trust
+            xi.ki.RHAPSODY_IN_FUCHSIA,    100000,      xi.ki.RHAPSODY_IN_CRIMSON,  -- +1 Trust
+            -- xi.ki.RHAPSODY_IN_UMBER,    100000,      xi.ki.RHAPSODY_IN_WHITE,
+            -- xi.ki.RHAPSODY_IN_AZURE,    100000,      xi.ki.RHAPSODY_IN_UMBER,
+            -- xi.ki.RHAPSODY_IN_CRIMSON,    100000,      xi.ki.RHAPSODY_IN_AZURE,  -- +1 Trust
+            -- xi.ki.RHAPSODY_IN_EMERALD,    100000,      xi.ki.RHAPSODY_IN_CRIMSON,
+            -- xi.ki.RHAPSODY_IN_MAUVE,    100000,      xi.ki.RHAPSODY_IN_EMERALD,
+            -- xi.ki.RHAPSODY_IN_FUCHSIA,    100000,      xi.ki.RHAPSODY_IN_MAUVE,  -- +1 Trust
             1024,    2500,      xi.ki.RHAPSODY_IN_WHITE,   -- Ghelsba Chest Key
             1025,    2500,      xi.ki.RHAPSODY_IN_WHITE,   -- Palborough Chest Key
             1026,    2500,      xi.ki.RHAPSODY_IN_WHITE,   -- Giddeus Chest Key
