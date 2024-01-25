@@ -97,7 +97,7 @@ namespace battleutils
 {
 
     const float worldAngleMinDistance = 0.2f;
-    const uint8 worldAngleMaxDeviance = 10;
+    const uint8 worldAngleMaxDeviance = 12;
 
     void LoadSkillTable()
     {
