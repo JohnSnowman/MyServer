@@ -41,7 +41,6 @@ spellObject.onMobSpawn = function(mob)
 	local songcasttime	= trustLevel / 3
 	local maccbonus		= trustLevel * 2
 	
-	mob:addMod(xi.mod.MAXIMUM_SONGS_BONUS, 2)
 	mob:addMod(xi.mod.ALL_SONGS_EFFECT, songeffbon)
 	mob:addMod(xi.mod.SONG_DURATION_BONUS, songdurbon)
 	mob:addMod(xi.mod.SONG_SPELLCASTING_TIME, songcasttime)--- is reduction even if not stated , should not be negitive   Confirmation?  mods/sql/item_latents.sql   Minstrel's Ring
