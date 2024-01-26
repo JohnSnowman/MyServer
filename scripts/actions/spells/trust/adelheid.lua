@@ -41,18 +41,23 @@ spellObject.onMobSpawn = function(mob)
     mob:addSimpleGambit(ai.t.TARGET, ai.c.MB_AVAILABLE, 0, ai.r.MA, ai.s.MB_ELEMENT, xi.magic.spellFamily.NONE)
 
     -- TODO: Add Magic Burst Logic to Gambits to MB with Helix corresponding to SC
-    mob:addSimpleGambit(ai.t.TARGET, ai.c.NOT_SC_AVAILABLE, 0, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.NONE, 25)
+    mob:addSimpleGambit(ai.t.TARGET, ai.c.NOT_SC_AVAILABLE, 0, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.NONE, 20)
 
+    
+    local trustLevel	= mob:getMainLvl()
+	local mabbonus      = trustLevel / 4
+	local maccbonus     = trustLevel
+	local spellDamage	= trustLevel * math.floor((trustLevel + 1) / 12)
+	local castingspeed	= trustLevel / 3
+	local intbonus		= trustLevel / 2
+	
+	mob:addMod(xi.mod.MATT, mabbonus)
+	mob:addMod(xi.mod.MACC, maccbonus)
+	mob:addMod(xi.mod.MAGIC_DAMAGE, spellDamage)
+	mob:addMod(xi.mod.FASTCAST, castingspeed)
+	mob:addMod(xi.mod.INT, intbonus)
 
-    local trustLevel  = mob:getMainLvl()
-    local power       = trustLevel / 5
-    local spellDamage = trustLevel * math.floor((trustLevel + 1) / 15)
-
-    mob:addMod(xi.mod.MATT, power)
-    mob:addMod(xi.mod.MACC, power)
-
-    mob:addMod(xi.mod.MAGIC_DAMAGE, spellDamage)
-
+    
     mob:addListener('WEAPONSKILL_USE', 'ADELHEID_WEAPONSKILL_USE', function(mobArg, target, wsid, tp, action)
         if wsid == 3469 then -- Twirling Dervish
         -- You may want to cover your ears!
