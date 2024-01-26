@@ -33,6 +33,18 @@ spellObject.onMobSpawn = function(mob)
 
     mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.CURE)
 
+    local trustLevel	= mob:getMainLvl()
+	local songeffbon	= trustLevel / 12
+	local songdurbon	= trustLevel * 4
+	local songcasttime	= trustLevel / 3
+	local maccbonus		= trustLevel * 2
+	
+	mob:addMod(xi.mod.MAXIMUM_SONGS_BONUS, 2)
+	mob:addMod(xi.mod.ALL_SONGS_EFFECT, songeffbon)
+	mob:addMod(xi.mod.SONG_DURATION_BONUS, songdurbon)
+	mob:addMod(xi.mod.SONG_SPELLCASTING_TIME, songcasttime)--- is reduction even if not stated , should not be negitive   Confirmation?  mods/sql/item_latents.sql   Minstrel's Ring
+    mob:addMod(xi.mod.MACC, maccbonus)
+
     -- Try and ranged attack every 60s
     mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, 0, ai.r.RATTACK, 0, 0, 60)
 
