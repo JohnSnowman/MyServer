@@ -26,8 +26,20 @@ spellObject.onMobSpawn = function(mob)
     -- https://forum.square-enix.com/ffxi/threads/49425-Dec-10-2015-%28JST%29-Version-Update?p=567979&viewfull=1#post567979
     -- Per the December 10, 2015 update:
     -- "The "Enhanced Magic Accuracy" attribute has been added."
-    local power = mob:getMainLvl() / 5
-    mob:addMod(xi.mod.MACC, power)
+
+	local trustLevel	= mob:getMainLvl()
+	local rollbonus		= trustLevel / 12
+	local rolldur		= trustLevel * 3
+	local agibonus		= trustLevel
+	local maccbonus		= trustLevel
+	local raccbonus		= trustLevel * 2
+	
+	mob:addMod(xi.mod.PHANTOM_ROLL, rollbonus)
+	mob:addMod(xi.mod.PHANTOM_DURATION, rolldur)
+	mob:addMod(xi.mod.ROLL_RANGE, 10)
+	mob:addMod(xi.mod.AGI, agibonus)
+    mob:addMod(xi.mod.MACC, maccbonus)
+	mob:addMod(xi.mod.RACC, raccbonus)
 end
 
 spellObject.onMobDespawn = function(mob)
