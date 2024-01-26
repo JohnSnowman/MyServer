@@ -254,7 +254,8 @@ void CTrustController::DoRoamTick(time_point tick)
 
     for (auto* POtherTrust : PMaster->PTrusts)
     {
-        if (POtherTrust != POwner && distance(POtherTrust->loc.p, POwner->loc.p) < 1.0f && !POwner->PAI->PathFind->IsFollowingPath())
+        // if (POtherTrust != POwner && distance(POtherTrust->loc.p, POwner->loc.p) < 1.0f && !POwner->PAI->PathFind->IsFollowingPath())
+        if (POtherTrust != POwner && distance(POtherTrust->loc.p, POwner->loc.p) < 0.2f && !POwner->PAI->PathFind->IsFollowingPath())
         {
             auto diff_angle = worldAngle(POwner->loc.p, POtherTrust->loc.p) + 64;
             auto amount     = (currentPartyPos % 2) ? 1.0f : -1.0f;
