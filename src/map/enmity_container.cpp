@@ -138,7 +138,7 @@ float CEnmityContainer::CalculateEnmityBonus(CBattleEntity* PEntity)
         }
     }
 
-    float bonus = (100.f + std::clamp(enmityBonus, -50, 100)) / 100.f;
+    float bonus = (100.f + std::clamp(enmityBonus, -75, 400)) / 100.f;
 
     return bonus;
 }
@@ -270,8 +270,8 @@ void CEnmityContainer::UpdateEnmityFromCure(CBattleEntity* PEntity, uint8 level,
     {
         CureAmount = (CureAmount < 1 ? 1 : CureAmount);
 
-        CE = (int32)(40.f / battleutils::GetEnmityModCure(level) * CureAmount * bonus * tranquilHeartReduction);
-        VE = (int32)(240.f / battleutils::GetEnmityModCure(level) * CureAmount * bonus * tranquilHeartReduction);
+        CE = (int32)(20.f / battleutils::GetEnmityModCure(level) * CureAmount * bonus * tranquilHeartReduction);
+        VE = (int32)(120.f / battleutils::GetEnmityModCure(level) * CureAmount * bonus * tranquilHeartReduction);
     }
 
     auto enmity_obj = m_EnmityList.find(PEntity->id);
@@ -382,8 +382,8 @@ void CEnmityContainer::UpdateEnmityFromDamage(CBattleEntity* PEntity, int32 Dama
     Damage          = (Damage < 1 ? 1 : Damage);
     int16 damageMod = battleutils::GetEnmityModDamage(m_EnmityHolder->GetMLevel());
 
-    int32 CE = (int32)(80.f / damageMod * Damage);
-    int32 VE = (int32)(240.f / damageMod * Damage);
+    int32 CE = (int32)(40.f / damageMod * Damage);
+    int32 VE = (int32)(120.f / damageMod * Damage);
 
     UpdateEnmity(PEntity, CE, VE);
 
