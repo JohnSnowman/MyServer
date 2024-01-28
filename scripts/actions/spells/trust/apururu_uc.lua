@@ -32,6 +32,8 @@ spellObject.onMobSpawn = function(mob)
     -- TODO: Setup conditional behaviors for Devotion, Martyr
 
     mob:addSimpleGambit(ai.t.SELF, ai.c.MPP_LT, 25, ai.r.JA, ai.s.SPECIFIC, xi.ja.CONVERT)
+    
+	mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.AFFLATUS_SOLACE, ai.r.JA, ai.s.SPECIFIC, xi.ja.AFFLATUS_SOLACE)
 
     mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 25, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.CURE)
 
@@ -58,8 +60,33 @@ spellObject.onMobSpawn = function(mob)
 
     mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.STONESKIN, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.STONESKIN)
 
-    -- BGwiki states 75/tick regain.  Only used for Nott WS.
-    mob:addMod(xi.mod.REGAIN, 75)
+    local trustLevel	= mob:getMainLvl()
+	local potencyi		= trustLevel / 3
+	local potencyii		= trustLevel / 5
+	local curetoomp		= trustLevel / 15
+	local affsol		= trustLevel / 3
+	local enhdur		= trustLevel * 3
+	local castingspeed	= trustLevel / 3
+	local refreshmp		= trustLevel / 15
+	local mndbonus		= trustLevel
+	local mdefbonus		= trustLevel / 9
+	local mevabonus		= trustLevel * 4
+	local dmgtakenbon	= trustLevel * 15-- 35 time 75 = 2625 = 26.245%		Damage - 10000 base, 375 = 3.75%
+	
+	mob:addMod(xi.mod.CURE_POTENCY, potencyi)
+	mob:addMod(xi.mod.CURE_POTENCY_II, potencyii)
+	mob:addMod(xi.mod.CURE2MP_PERCENT, curetoomp)
+	mob:addMod(xi.mod.AFFLATUS_SOLACE, affsol)
+	mob:addMod(xi.mod.ENH_MAGIC_DURATION, enhdur)
+	mob:addMod(xi.mod.FASTCAST, castingspeed)
+	mob:addMod(xi.mod.REFRESH, refreshmp)
+	mob:addMod(xi.mod.MND, mndbonus)
+    mob:addMod(xi.mod.MDEF, mdefbonus)
+    mob:addMod(xi.mod.MEVA, mevabonus)
+    mob:addMod(xi.mod.DMG, -dmgtakenbon)
+    mob:addMod(xi.mod.SLEEP_MEVA, 50)
+    mob:addMod(xi.mod.SILENCE_MEVA, 50)
+	mob:addMod(xi.mod.ENMITY, -50)
 
     mob:setAutoAttackEnabled(false)
 
