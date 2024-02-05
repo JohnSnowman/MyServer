@@ -17,7 +17,7 @@ spellObject.onMobSpawn = function(mob)
     mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.CORSAIRS_ROLL, ai.r.JA, ai.s.SPECIFIC, xi.ja.CORSAIRS_ROLL)
     mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.CHAOS_ROLL, ai.r.JA, ai.s.SPECIFIC, xi.ja.CHAOS_ROLL)
 
-    mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, 0, ai.r.RATTACK, 0, 0, 10)
+    mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, 0, ai.r.RATTACK, 0, 0, 7)
 
     -- Notable: Uses a balance of melee and ranged attacks.
     -- TODO: Observe his WS behaviour on retail
@@ -36,10 +36,13 @@ spellObject.onMobSpawn = function(mob)
 	
 	mob:addMod(xi.mod.PHANTOM_ROLL, rollbonus)
 	mob:addMod(xi.mod.PHANTOM_DURATION, rolldur)
-	mob:addMod(xi.mod.ROLL_RANGE, 10)
+	mob:addMod(xi.mod.ROLL_RANGE, 15)
 	mob:addMod(xi.mod.AGI, agibonus)
     mob:addMod(xi.mod.MACC, maccbonus)
 	mob:addMod(xi.mod.RACC, raccbonus)
+
+    mob:setMobMod(xi.mobMod.TRUST_DISTANCE, 7)
+    
 end
 
 spellObject.onMobDespawn = function(mob)
