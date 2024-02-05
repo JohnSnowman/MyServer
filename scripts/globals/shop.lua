@@ -545,6 +545,10 @@ xi.shop =
             5988,     500,      xi.ki.RHAPSODY_IN_WHITE,   -- Instant Protect
             5989,     500,      xi.ki.RHAPSODY_IN_WHITE,   -- Instant Shell
             5990,     500,      xi.ki.RHAPSODY_IN_UMBER,   -- Instant Stoneskin
+            27556,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Echad ring
+            15543,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Rajas Ring
+            15545,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Tamas Ring
+            15544,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Sattva Rubg
         },
 
         [curio.keys] =
