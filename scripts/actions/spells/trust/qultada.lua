@@ -17,9 +17,9 @@ spellObject.onMobSpawn = function(mob)
     mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.CORSAIRS_ROLL, ai.r.JA, ai.s.SPECIFIC, xi.ja.CORSAIRS_ROLL)
     mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.CHAOS_ROLL, ai.r.JA, ai.s.SPECIFIC, xi.ja.CHAOS_ROLL)
 
-    -- mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.VELOCITY_SHOT, ai.r.JA, ai.s.SPECIFIC, xi.ja.VELOCITY_SHOT)
+    mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.VELOCITY_SHOT, ai.r.JA, ai.s.SPECIFIC, xi.ja.VELOCITY_SHOT)
 
-    mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, 0, ai.r.RATTACK, 0, 0, 5)
+    mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, 0, ai.r.RATTACK, 0, 0, 7)
 
     -- Notable: Uses a balance of melee and ranged attacks.
     -- TODO: Observe his WS behaviour on retail
@@ -36,9 +36,9 @@ spellObject.onMobSpawn = function(mob)
 	local maccbonus		= trustLevel
 	local rattbonus		= trustLevel * 2
 	local raccbonus		= trustLevel * 2
-	local stpbonus		= trustLevel * 3
-	local sbbonus		= trustLevel * 0.4
-	local sbiibonus		= trustLevel * 0.4
+	local stpbonus		= trustLevel
+	local sbbonus		= trustLevel * 0.3
+	local sbiibonus		= trustLevel * 0.3
 	
 	mob:addMod(xi.mod.PHANTOM_ROLL, rollbonus)
 	mob:addMod(xi.mod.PHANTOM_DURATION, rolldur)
