@@ -32,6 +32,7 @@ spellObject.onMobSpawn = function(mob)
 	local rolldur		= trustLevel * 3
 	local agibonus		= trustLevel
 	local maccbonus		= trustLevel
+	local rattbonus		= trustLevel * 2
 	local raccbonus		= trustLevel * 2
 	
 	mob:addMod(xi.mod.PHANTOM_ROLL, rollbonus)
@@ -39,6 +40,7 @@ spellObject.onMobSpawn = function(mob)
 	mob:addMod(xi.mod.ROLL_RANGE, 15)
 	mob:addMod(xi.mod.AGI, agibonus)
     mob:addMod(xi.mod.MACC, maccbonus)
+	mob:addMod(xi.mod.RATT, rattbonus)
 	mob:addMod(xi.mod.RACC, raccbonus)
 
     mob:setMobMod(xi.mobMod.TRUST_DISTANCE, 7)
