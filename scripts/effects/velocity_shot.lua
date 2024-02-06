@@ -7,10 +7,10 @@ effectObject.onEffectGain = function(target, effect)
     local jpValue = target:getJobPointLevel(xi.jp.VELOCITY_SHOT_EFFECT)
 
     target:addMod(xi.mod.RATT, jpValue * 2)
-    target:addMod(xi.mod.ATTP, -15)
+    target:addMod(xi.mod.ATTP, -25)
     target:addMod(xi.mod.HASTE_ABILITY, -1500)
-    target:addMod(xi.mod.RATTP, 15)
-    target:addMod(xi.mod.RANGED_DELAYP, -10)
+    target:addMod(xi.mod.RATTP, 25)
+    target:addMod(xi.mod.RANGED_DELAYP, -25)
 end
 
 effectObject.onEffectTick = function(target, effect)
@@ -20,10 +20,10 @@ effectObject.onEffectLose = function(target, effect)
     local jpValue = target:getJobPointLevel(xi.jp.VELOCITY_SHOT_EFFECT)
 
     target:delMod(xi.mod.RATT, jpValue * 2)
-    target:delMod(xi.mod.ATTP, -15)
+    target:delMod(xi.mod.ATTP, -25)
     target:delMod(xi.mod.HASTE_ABILITY, -1500)
-    target:delMod(xi.mod.RATTP, 15)
-    target:delMod(xi.mod.RANGED_DELAYP, -10)
+    target:delMod(xi.mod.RATTP, 25)
+    target:delMod(xi.mod.RANGED_DELAYP, -25)
 end
 
 return effectObject
