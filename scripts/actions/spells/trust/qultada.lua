@@ -19,7 +19,7 @@ spellObject.onMobSpawn = function(mob)
 
     -- mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.VELOCITY_SHOT, ai.r.JA, ai.s.SPECIFIC, xi.ja.VELOCITY_SHOT)
 
-    mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, 0, ai.r.RATTACK, 0, 0, 7)
+    mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, 0, ai.r.RATTACK, 0, 0, 5)
 
     -- Notable: Uses a balance of melee and ranged attacks.
     -- TODO: Observe his WS behaviour on retail
@@ -36,6 +36,9 @@ spellObject.onMobSpawn = function(mob)
 	local maccbonus		= trustLevel
 	local rattbonus		= trustLevel * 2
 	local raccbonus		= trustLevel * 2
+	local stpbonus		= trustLevel * 3
+	local sbbonus		= trustLevel * 0.4
+	local sbiibonus		= trustLevel * 0.4
 	
 	mob:addMod(xi.mod.PHANTOM_ROLL, rollbonus)
 	mob:addMod(xi.mod.PHANTOM_DURATION, rolldur)
@@ -44,6 +47,9 @@ spellObject.onMobSpawn = function(mob)
     mob:addMod(xi.mod.MACC, maccbonus)
 	mob:addMod(xi.mod.RATT, rattbonus)
 	mob:addMod(xi.mod.RACC, raccbonus)
+	mob:addMod(xi.mod.STORETP, stpbonus)
+	mob:addMod(xi.mod.SUBTLE_BLOW, sbbonus)
+	mob:addMod(xi.mod.SUBTLE_BLOW_II, sbiibonus)
 
     mob:setMobMod(xi.mobMod.TRUST_DISTANCE, 7)
     
