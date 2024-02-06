@@ -41,13 +41,13 @@ spellObject.onMobSpawn = function(mob)
     mob:addSimpleGambit(ai.t.TARGET, ai.c.MB_AVAILABLE, 0, ai.r.MA, ai.s.MB_ELEMENT, xi.magic.spellFamily.NONE)
 
     -- TODO: Add Magic Burst Logic to Gambits to MB with Helix corresponding to SC
-    mob:addSimpleGambit(ai.t.TARGET, ai.c.NOT_SC_AVAILABLE, 0, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.NONE, 20)
+    mob:addSimpleGambit(ai.t.TARGET, ai.c.NOT_SC_AVAILABLE, 0, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.NONE, 12)
 
     
     local trustLevel	= mob:getMainLvl()
-	local mabbonus      = trustLevel / 4
+	local mabbonus      = trustLevel / 3
 	local maccbonus     = trustLevel
-	local spellDamage	= trustLevel * math.floor((trustLevel + 1) / 12)
+	local spellDamage	= trustLevel * math.floor((trustLevel + 1) / 9)
 	local castingspeed	= trustLevel / 3
 	local intbonus		= trustLevel / 2
 	
