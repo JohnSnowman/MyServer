@@ -21,11 +21,11 @@ spellObject.onMobSpawn = function(mob)
         [xi.magic.spell.IROHA] = xi.trust.messageOffset.TEAMWORK_1,
     })
 
-    mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.HASSO,
-        ai.r.JA, ai.s.SPECIFIC, xi.ja.HASSO)
+    mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.HASSO, ai.r.JA, ai.s.SPECIFIC, xi.ja.HASSO)
+    
+    mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.BERSERK, ai.r.JA, ai.s.SPECIFIC, xi.ja.BERSERK)
 
-    mob:addSimpleGambit(ai.t.SELF, ai.c.HAS_TOP_ENMITY, 0,
-        ai.r.JA, ai.s.SPECIFIC, xi.ja.THIRD_EYE)
+    mob:addSimpleGambit(ai.t.SELF, ai.c.HAS_TOP_ENMITY, 0, ai.r.JA, ai.s.SPECIFIC, xi.ja.THIRD_EYE)
 
     mob:setTrustTPSkillSettings(ai.tp.CLOSER_UNTIL_TP, ai.s.HIGHEST, 1500)
 
@@ -41,6 +41,7 @@ spellObject.onMobSpawn = function(mob)
 	local mevabonus		= trustLevel
 	local dabonus		= trustLevel / 3
 	local tabonus		= trustLevel / 10
+	local stpbonus		= trustLevel / 2
 	local sbbonus		= trustLevel * 0.4
 	local sbiibonus		= trustLevel * 0.4
 	local magichaste	= trustLevel * 10-- 33 x 75 = 2475 = 24.75% gearhaste
@@ -56,6 +57,7 @@ spellObject.onMobSpawn = function(mob)
     mob:addMod(xi.mod.MEVA, mevabonus)
 	mob:addMod(xi.mod.DOUBLE_ATTACK, dabonus)
 	mob:addMod(xi.mod.TRIPLE_ATTACK, tabonus)
+	mob:addMod(xi.mod.STORETP, stpbonus)
 	mob:addMod(xi.mod.SUBTLE_BLOW, sbbonus)
 	mob:addMod(xi.mod.SUBTLE_BLOW_II, sbiibonus)
 	mob:addMod(xi.mod.ENMITY, -30)
