@@ -54,16 +54,16 @@ spellObject.onMobSpawn = function(mob)
     -- mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.BALLAD, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.MAGES_BALLAD)
     --[[
     if mlvl > 75 then
-        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.HIGHEST, xi.magic.spell.CURE_IV)
+        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURE_IV)
     elseif mlvl < 75 and mlvl > 27 then
-        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.HIGHEST, xi.magic.spell.CURE_III)
+        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURE_III)
     elseif mlvl < 28 and mlvl > 15 then
-        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.HIGHEST, xi.magic.spell.CURE_II)
+        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURE_II)
     elseif mlvl < 16 then
-        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.HIGHEST, xi.magic.spell.CURE)
+        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURE)
     end
     ]]--
-    mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.SPECIFIC, xi.magic.spellFamily.CURE)
+    mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.CURE)
 
     local trustLevel	= mob:getMainLvl()
 	local songeffbon	= trustLevel / 12
