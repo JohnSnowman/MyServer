@@ -40,6 +40,7 @@ spellObject.onMobSpawn = function(mob)
     mob:addSimpleGambit(ai.t.PARTY, ai.c.STATUS, xi.effect.SLEEP_I, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURAGA)
     mob:addSimpleGambit(ai.t.PARTY, ai.c.STATUS, xi.effect.SLEEP_II, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURAGA)
     
+    local mlvl = mob:getMainLvl()
     if mlvl > 90 then
         mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 76, ai.r.MA, ai.s.HIGHEST, xi.magic.spell.CURE_IV)
     elseif mlvl < 91 and mlvl > 30 then
