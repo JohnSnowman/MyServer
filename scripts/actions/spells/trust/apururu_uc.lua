@@ -42,13 +42,13 @@ spellObject.onMobSpawn = function(mob)
     
     local mlvl = mob:getMainLvl()
     if mlvl > 90 then
-        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 76, ai.r.MA, ai.s.HIGHEST, xi.magic.spell.CURE_IV)
+        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 76, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURE_IV)
     elseif mlvl < 91 and mlvl > 30 then
-        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 76, ai.r.MA, ai.s.HIGHEST, xi.magic.spell.CURE_III)
+        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 76, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURE_III)
     elseif mlvl < 31 and mlvl > 17 then
-        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 76, ai.r.MA, ai.s.HIGHEST, xi.magic.spell.CURE_II)
+        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 76, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURE_II)
     elseif mlvl < 18 then
-        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 76, ai.r.MA, ai.s.HIGHEST, xi.magic.spell.CURE)
+        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 76, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURE)
     end
     --  mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.CURE)
 
