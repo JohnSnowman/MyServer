@@ -13,7 +13,7 @@ end
 
 abilityObject.onUseAbility = function(player, target, ability)
     local amount   = 12
-    local duration = 15 + player:getMod(xi.mod.MEDITATE_DURATION)
+    local duration = 45 + player:getMod(xi.mod.MEDITATE_DURATION)
 
     if player:getMainJob() == xi.job.SAM then
         amount = 20 + target:getJobPointLevel(xi.jp.MEDITATE_EFFECT) * 5
