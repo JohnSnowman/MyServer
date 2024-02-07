@@ -19,6 +19,8 @@ end
 spellObject.onMobSpawn = function(mob)
     xi.trust.message(mob, xi.trust.messageOffset.SPAWN)
 
+    mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 35, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.CURE)
+
     mob:addSimpleGambit(ai.t.PARTY, ai.c.STATUS, xi.effect.SLEEP_I, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURAGA)
     mob:addSimpleGambit(ai.t.PARTY, ai.c.STATUS, xi.effect.SLEEP_II, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURAGA)
 
@@ -36,10 +38,32 @@ spellObject.onMobSpawn = function(mob)
     mob:addSimpleGambit(ai.t.TARGET, ai.c.NOT_STATUS, xi.effect.ELEGY, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.ELEGY)
 
     -- TODO: BRD trusts need better logic and major overhaul, for now they compliment each other
-    mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.MARCH, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.MARCH)
-    mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.BALLAD, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.MAGES_BALLAD)
-
-    mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.CURE)
+    local mlvl = mob:getMainLvl()
+    if mlvl > 28 then
+        mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.MARCH, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.MARCH)
+        mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.BALLAD, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.MAGES_BALLAD)
+    elseif mlvl < 29 and mlvl > 24 then
+        mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.MINUET, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.VALOR_MINUET)
+        mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.BALLAD, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.MAGES_BALLAD)
+    else
+        mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.MADRIGAL, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.MADRIGAL)
+        mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.MINUET, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.VALOR_MINUET)
+    end
+    
+    -- mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.MARCH, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.MARCH)
+    -- mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.BALLAD, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.MAGES_BALLAD)
+    --[[
+    if mlvl > 75 then
+        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.HIGHEST, xi.magic.spell.CURE_IV)
+    elseif mlvl < 75 and mlvl > 27 then
+        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.HIGHEST, xi.magic.spell.CURE_III)
+    elseif mlvl < 28 and mlvl > 15 then
+        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.HIGHEST, xi.magic.spell.CURE_II)
+    elseif mlvl < 16 then
+        mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.HIGHEST, xi.magic.spell.CURE)
+    end
+    ]]--
+    mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.SPECIFIC, xi.magic.spellFamily.CURE)
 
     local trustLevel	= mob:getMainLvl()
 	local songeffbon	= trustLevel / 12
