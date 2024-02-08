@@ -52,7 +52,7 @@ local corsairRollMods =
 
 -- Check for xi.mod.PHANTOM_ROLL Value and apply non-stack logic.
 local function phantombuffMultiple(caster)
-    local phantomValue = caster:getMod(xi.mod.PHANTOM_ROLL)
+    --[[local phantomValue = caster:getMod(xi.mod.PHANTOM_ROLL)
     local phantomBuffMultiplier = 0
 
     if phantomValue == 3 then
@@ -70,6 +70,10 @@ local function phantombuffMultiple(caster)
     then
         phantomBuffMultiplier = 7
     end
+    ]]--
+    
+    --local phantomValue = caster:getMod(xi.mod.PHANTOM_ROLL)
+    local phantomBuffMultiplier = caster:getMod(xi.mod.PHANTOM_ROLL)
 
     return phantomBuffMultiplier
 end
