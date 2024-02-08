@@ -30,7 +30,7 @@ spellObject.onMobSpawn = function(mob)
     -- "The "Enhanced Magic Accuracy" attribute has been added."
 
 	local trustLevel	= mob:getMainLvl()
-	local rollbonus		= trustLevel / 12
+	local rollbonus		= trustLevel
 	local rolldur		= trustLevel * 3
 	local agibonus		= trustLevel
 	local maccbonus		= trustLevel
