@@ -13058,7 +13058,8 @@ bool CLuaBaseEntity::addBardSong(CLuaBaseEntity* PEntity, uint16 effectID, uint1
             maxSongs = 1;
         }
     }
-
+    
+        CCharEntity* PCaster = static_cast<CCharEntity*>(PEntity->m_PBaseEntity);
         maxSongs += PCaster->getMod(Mod::MAXIMUM_SONGS_BONUS);
 
     return static_cast<CBattleEntity*>(m_PBaseEntity)->StatusEffectContainer->ApplyBardEffect(PEffect, maxSongs);
