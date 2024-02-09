@@ -16,6 +16,20 @@ spellObject.onMobSpawn = function(mob)
 
     mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.CORSAIRS_ROLL, ai.r.JA, ai.s.SPECIFIC, xi.ja.CORSAIRS_ROLL)
     mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.CHAOS_ROLL, ai.r.JA, ai.s.SPECIFIC, xi.ja.CHAOS_ROLL)
+    
+    local mlvl = mob:getMainLvl()
+    if mlvl > 48 then
+    mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.CORSAIRS_ROLL, ai.r.JA, ai.s.SPECIFIC, xi.ja.CORSAIRS_ROLL)
+    mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.FIGHTERS_ROLL, ai.r.JA, ai.s.SPECIFIC, xi.ja.FIGHTERS_ROLL)
+    mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.SAMURAI_ROLL, ai.r.JA, ai.s.SPECIFIC, xi.ja.SAMURAI_ROLL)
+    elseif mlvl < 49 and mlvl > 36 then
+    mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.CORSAIRS_ROLL, ai.r.JA, ai.s.SPECIFIC, xi.ja.CORSAIRS_ROLL)
+    mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.CHAOS_ROLL, ai.r.JA, ai.s.SPECIFIC, xi.ja.CHAOS_ROLL)
+    mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.SAMURAI_ROLL, ai.r.JA, ai.s.SPECIFIC, xi.ja.SAMURAI_ROLL)
+    elseif mlvl < 37 then
+    mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.CORSAIRS_ROLL, ai.r.JA, ai.s.SPECIFIC, xi.ja.CORSAIRS_ROLL)
+    mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.CHAOS_ROLL, ai.r.JA, ai.s.SPECIFIC, xi.ja.CHAOS_ROLL)
+    end
 
     mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.VELOCITY_SHOT, ai.r.JA, ai.s.SPECIFIC, xi.ja.VELOCITY_SHOT)
 
