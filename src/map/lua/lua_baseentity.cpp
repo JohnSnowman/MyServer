@@ -12945,7 +12945,7 @@ bool CLuaBaseEntity::addCorsairRoll(uint8 casterJob, uint8 bustDuration, uint16 
                                                (arg8 != sol::lua_nil) ? arg8.as<uint16>() : 0  // Tier or 0
     );
 
-    uint8 maxRolls = 2;
+    uint8 maxRolls = 3;
 
     if (casterJob != JOB_COR)
     {
@@ -13057,9 +13057,9 @@ bool CLuaBaseEntity::addBardSong(CLuaBaseEntity* PEntity, uint16 effectID, uint1
         {
             maxSongs = 1;
         }
+    }
 
         maxSongs += PCaster->getMod(Mod::MAXIMUM_SONGS_BONUS);
-    }
 
     return static_cast<CBattleEntity*>(m_PBaseEntity)->StatusEffectContainer->ApplyBardEffect(PEffect, maxSongs);
 }
