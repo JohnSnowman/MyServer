@@ -263,8 +263,8 @@ void CEnmityContainer::UpdateEnmityFromCure(CBattleEntity* PEntity, uint8 level,
 
     if (isCureV)
     {
-        CE = (int32)(300.f * bonus * tranquilHeartReduction);
-        VE = (int32)(600.f * bonus * tranquilHeartReduction);
+        CE = (int32)(200.f * bonus * tranquilHeartReduction);
+        VE = (int32)(400.f * bonus * tranquilHeartReduction);
     }
     else
     {
@@ -382,8 +382,8 @@ void CEnmityContainer::UpdateEnmityFromDamage(CBattleEntity* PEntity, int32 Dama
     Damage          = (Damage < 1 ? 1 : Damage);
     int16 damageMod = battleutils::GetEnmityModDamage(m_EnmityHolder->GetMLevel());
 
-        int32 CE = (int32)(60.f / damageMod * Damage);
-		int32 VE = (int32)(180.f / damageMod * Damage);
+        int32 CE = (int32)(30.f / damageMod * Damage);
+		int32 VE = (int32)(90.f / damageMod * Damage);
 
     UpdateEnmity(PEntity, CE, VE);
 
