@@ -269,17 +269,9 @@ void CEnmityContainer::UpdateEnmityFromCure(CBattleEntity* PEntity, uint8 level,
     else
     {
         CureAmount = (CureAmount < 1 ? 1 : CureAmount);
-		
-		if (PChar->GetMJob() == JOB_PLD || PChar->GetMJob() == JOB_RUN)
-		{
-        CE = (int32)(120.f / battleutils::GetEnmityModCure(level) * CureAmount * bonus);
-        VE = (int32)(720.f / battleutils::GetEnmityModCure(level) * CureAmount * bonus);
-		}
-		else
-		{
+        
         CE = (int32)(15.f / battleutils::GetEnmityModCure(level) * CureAmount * bonus * tranquilHeartReduction);
         VE = (int32)(90.f / battleutils::GetEnmityModCure(level) * CureAmount * bonus * tranquilHeartReduction);
-		}
     }
 
     auto enmity_obj = m_EnmityList.find(PEntity->id);
@@ -390,16 +382,8 @@ void CEnmityContainer::UpdateEnmityFromDamage(CBattleEntity* PEntity, int32 Dama
     Damage          = (Damage < 1 ? 1 : Damage);
     int16 damageMod = battleutils::GetEnmityModDamage(m_EnmityHolder->GetMLevel());
 
-		if (PChar->GetMJob() == JOB_PLD || PChar->GetMJob() == JOB_RUN)
-		{
-        int32 CE = (int32)(320.f / damageMod * Damage);
-		int32 VE = (int32)(960.f / damageMod * Damage);
-		}
-		else
-		{
         int32 CE = (int32)(60.f / damageMod * Damage);
 		int32 VE = (int32)(180.f / damageMod * Damage);
-		}
 
     UpdateEnmity(PEntity, CE, VE);
 
