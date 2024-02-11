@@ -65,7 +65,7 @@ spellObject.onMobSpawn = function(mob)
 	mob:addMod(xi.mod.SUBTLE_BLOW, sbbonus)
 	mob:addMod(xi.mod.SUBTLE_BLOW_II, sbiibonus)
 
-    mob:setMobMod(xi.mobMod.TRUST_DISTANCE, 7)
+    mob:setMobMod(xi.mobMod.TRUST_DISTANCE, 6)
     
 end
 
