@@ -69,7 +69,7 @@ spellObject.onMobSpawn = function(mob)
     mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.CURE)
 
     local trustLevel	= mob:getMainLvl()
-	local songeffbon	= trustLevel / 12
+	local songeffbon	= trustLevel / 10
 	local songdurbon	= trustLevel * 4
 	local songcasttime	= trustLevel / 3
 	local maccbonus		= trustLevel * 2
@@ -85,7 +85,8 @@ spellObject.onMobSpawn = function(mob)
 
     mob:setAutoAttackEnabled(false)
 
-    mob:setMobMod(xi.mobMod.TRUST_DISTANCE, xi.trust.movementType.MID_RANGE)
+    --  mob:setMobMod(xi.mobMod.TRUST_DISTANCE, xi.trust.movementType.MID_RANGE)
+    mob:setMobMod(xi.mobMod.TRUST_DISTANCE, 5)
 end
 
 spellObject.onMobDespawn = function(mob)
