@@ -56,7 +56,7 @@ spellObject.onMobSpawn = function(mob)
 	
 	mob:addMod(xi.mod.PHANTOM_ROLL, rollbonus)
 	mob:addMod(xi.mod.PHANTOM_DURATION, rolldur)
-	mob:addMod(xi.mod.ROLL_RANGE, 15)
+	mob:addMod(xi.mod.ROLL_RANGE, 8)
 	mob:addMod(xi.mod.AGI, agibonus)
     mob:addMod(xi.mod.MACC, maccbonus)
 	mob:addMod(xi.mod.RATT, rattbonus)
