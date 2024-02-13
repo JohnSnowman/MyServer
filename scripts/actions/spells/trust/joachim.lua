@@ -80,7 +80,7 @@ spellObject.onMobSpawn = function(mob)
 	mob:addMod(xi.mod.SONG_DURATION_BONUS, songdurbon)
 	mob:addMod(xi.mod.SONG_SPELLCASTING_TIME, songcasttime)--- is reduction even if not stated , should not be negitive   Confirmation?  mods/sql/item_latents.sql   Minstrel's Ring
     mob:addMod(xi.mod.MACC, maccbonus)
-	mob:addMod(xi.mod.FASTCAST, 80)
+	mob:addMod(xi.mod.FASTCAST, castingspeed)
 
     -- Try and ranged attack every 60s
     mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, 0, ai.r.RATTACK, 0, 0, 60)
