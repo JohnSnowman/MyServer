@@ -6443,8 +6443,9 @@ namespace battleutils
             {
                 cast = (uint32)(cast * 1.5f);
             }
+            int16 fastCast = std::clamp<int16>(PEntity->getMod(Mod::FASTCAST), -100, 80);
             uint16 songcasting = PEntity->getMod(Mod::SONG_SPELLCASTING_TIME);
-            cast               = (uint32)(cast * (1.0f - ((songcasting > 50 ? 50 : songcasting) / 100.0f)));
+            cast               = (uint32)(cast * (1.0f - (((songcasting + fastCast) > 80 ? 80 : songcasting) / 100.0f)));
         }
         else if (PSpell->getSpellGroup() == SPELLGROUP_NINJUTSU)
         {
@@ -6455,7 +6456,7 @@ namespace battleutils
             }
         }
 
-        int16 fastCast = std::clamp<int16>(PEntity->getMod(Mod::FASTCAST), -100, 50);
+        int16 fastCast = std::clamp<int16>(PEntity->getMod(Mod::FASTCAST), -100, 80);
         if (PSpell->getSkillType() == SKILLTYPE::SKILL_ELEMENTAL_MAGIC) // Elemental Celerity reductions
         {
             fastCast += PEntity->getMod(Mod::ELEMENTAL_CELERITY);
