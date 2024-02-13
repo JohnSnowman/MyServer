@@ -73,12 +73,14 @@ spellObject.onMobSpawn = function(mob)
 	local songdurbon	= trustLevel * 4
 	local songcasttime	= trustLevel / 3
 	local maccbonus		= trustLevel * 2
+	local castingspeed	= trustLevel / 4
 
     mob:addMod(xi.mod.MAXIMUM_SONGS_BONUS, 2)
 	mob:addMod(xi.mod.ALL_SONGS_EFFECT, songeffbon)
 	mob:addMod(xi.mod.SONG_DURATION_BONUS, songdurbon)
 	mob:addMod(xi.mod.SONG_SPELLCASTING_TIME, songcasttime)--- is reduction even if not stated , should not be negitive   Confirmation?  mods/sql/item_latents.sql   Minstrel's Ring
     mob:addMod(xi.mod.MACC, maccbonus)
+	mob:addMod(xi.mod.FASTCAST, 80)
 
     -- Try and ranged attack every 60s
     mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, 0, ai.r.RATTACK, 0, 0, 60)
