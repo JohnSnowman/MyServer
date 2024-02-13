@@ -1556,7 +1556,7 @@ namespace battleutils
         int eva = PDefender->EVA();
         hitrate = hitrate + (acc - eva) / 2 + (PAttacker->GetMLevel() - PDefender->GetMLevel()) * 2;
 
-        uint8 finalhitrate = std::clamp(hitrate, 20, 95);
+        uint8 finalhitrate = std::clamp(hitrate, 20, 100);
         return finalhitrate;
     }
 
@@ -2672,7 +2672,7 @@ namespace battleutils
             // Grasshopper Broth / Noisy Grasshopper Broth / Mole Broth / Lively Mole Broth / Blood Broth / Clear Blood Broth / Antica Broth / Fragrant Antica
             // Broth
 
-            int32 maxHitRate  = 99;
+            int32 maxHitRate  = 100;
             auto* targ_weapon = PAttacker ? dynamic_cast<CItemWeapon*>(PAttacker->m_Weapons[SLOT_MAIN]) : nullptr;
 
             // As far as I can tell kick attacks fall under Hand-to-Hand so ignoring them and letting them go to 99
@@ -2681,7 +2681,7 @@ namespace battleutils
 
             if (isOffhand || isTwoHanded)
             {
-                maxHitRate = 95;
+                maxHitRate = 99;
             }
 
             hitrate = std::clamp(hitrate, 20, maxHitRate);
