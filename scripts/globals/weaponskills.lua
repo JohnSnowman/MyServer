@@ -161,7 +161,7 @@ local function accVariesWithTP(baseHitRate, acc, tp, a1, a2, a3)
     local accLost      = acc - acc * xi.weaponskills.fTP(tp, a1, a2, a3)
     local finalHitRate = baseHitRate - accLost / 200
 
-    finalHitRate = utils.clamp(finalHitRate, 0.2, 0.95)
+    finalHitRate = utils.clamp(finalHitRate, 0.2, 1)
 
     return finalHitRate
 end
@@ -318,8 +318,8 @@ local function getRangedHitRate(attacker, target, capHitRate, bonus)
 
     -- Applying hitrate caps
     if capHitRate then -- this isn't capped for when acc varies with tp, as more penalties are due
-        if hitrate > 0.95 then
-            hitrate = 0.95
+        if hitrate > 1 then
+            hitrate = 1
         end
     end
 
@@ -472,7 +472,7 @@ xi.weaponskills.calculateRawWSDmg = function(attacker, target, wsID, tp, action,
         calcParams.hitRate = accVariesWithTP(calcParams.hitRate, calcParams.accStat, tp, wsParams.acc100, wsParams.acc200, wsParams.acc300)
     else
         -- clamp hitRate now if accuracy doesn't vary with TP
-        calcParams.hitRate = utils.clamp(calcParams.hitRate, 0.2, 0.95)
+        calcParams.hitRate = utils.clamp(calcParams.hitRate, 0.2, 1)
     end
 
     -- Calculate alpha, WSC, and our modifiers for our base per-hit damage
@@ -1149,8 +1149,8 @@ xi.weaponskills.getHitRate = function(attacker, target, capHitRate, bonus)
 
     -- Applying hitrate caps
     if capHitRate then -- this isn't capped for when acc varies with tp, as more penalties are due
-        if hitrate > 0.95 then
-            hitrate = 0.95
+        if hitrate > 1 then
+            hitrate = 1
         end
     end
 
