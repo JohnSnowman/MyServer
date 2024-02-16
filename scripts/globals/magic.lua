@@ -1107,7 +1107,7 @@ function calculateDuration(duration, magicSkill, spellGroup, caster, target, use
         if
             useComposure and
             caster:hasStatusEffect(xi.effect.COMPOSURE) and
-            caster:getID() == target:getID()
+            -- caster:getID() == target:getID()
         then
             duration = duration * 3
         end
