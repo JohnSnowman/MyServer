@@ -416,7 +416,7 @@ xi.spells.enhancing.calculateEnhancingDuration = function(caster, target, spell,
     if
         useComposure and
         caster:hasStatusEffect(xi.effect.COMPOSURE) and
-        caster:getID() == target:getID()
+        -- caster:getID() == target:getID()
     then
         duration = duration * 3
     end
