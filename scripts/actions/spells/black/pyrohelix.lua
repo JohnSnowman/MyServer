@@ -24,7 +24,10 @@ spellObject.onSpellCast = function(caster, target, spell)
 
     -- calculate raw damage
     local dmg = calculateMagicDamage(caster, target, spell, params)
-    dmg = dmg + caster:getMod(xi.mod.HELIX_EFFECT)
+    local HELIXEFFECT = caster:getMod(xi.mod.HELIX_EFFECT)
+    local baseSpellDamageBonus = caster:getMod(xi.mod.MAGIC_DAMAGE)
+    dmg = dmg + baseSpellDamageBonus + HELIXEFFECT
+    
     -- get resist multiplier (1x if no resist)
     local resist = applyResistance(caster, target, spell, params)
     -- get the resisted damage.
