@@ -22,9 +22,24 @@ spellObject.onSpellCast = function(caster, target, spell)
     params.diff = caster:getStat(xi.mod.INT)-target:getStat(xi.mod.INT)
     params.bonus = merit * 3
 
+
+
+    
+    -- Bonus to spell base damage from gear.
+    baseSpellDamageBonus = baseSpellDamageBonus + caster:getMod(xi.mod.MAGIC_DAMAGE)
+
+    -----------------------------------
+    -- STEP 4: Spell Damage
+    -----------------------------------
+    spellDamage = baseSpellDamage + baseSpellDamageBonus + statDiffBonus
+
+    
     -- calculate raw damage
     local dmg = calculateMagicDamage(caster, target, spell, params)
-    dmg = dmg + caster:getMod(xi.mod.HELIX_EFFECT)
+    local HELIXEFFECT = caster:getMod(xi.mod.HELIX_EFFECT)
+    local baseSpellDamageBonus = caster:getMod(xi.mod.MAGIC_DAMAGE)
+    dmg = dmg + baseSpellDamageBonus + HELIXEFFECT
+    
     -- get resist multiplier (1x if no resist)
     local resist = applyResistance(caster, target, spell, params)
     -- get the resisted damage
