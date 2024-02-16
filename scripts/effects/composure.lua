@@ -9,6 +9,9 @@ effectObject.onEffectGain = function(target, effect)
     local jpValue = target:getJobPointLevel(xi.jp.COMPOSURE_EFFECT)
 
     target:addMod(xi.mod.ACC, 15 + jpValue)
+    target:addMod(xi.mod.MAGIC_DAMAGE , 150)
+    target:addMod(xi.mod.MATT, 30)
+    target:addMod(xi.mod.MACC, 50)
 end
 
 effectObject.onEffectTick = function(target, effect)
@@ -18,6 +21,9 @@ effectObject.onEffectLose = function(target, effect)
     local jpValue = target:getJobPointLevel(xi.jp.COMPOSURE_EFFECT)
 
     target:delMod(xi.mod.ACC, 15 + jpValue)
+    target:delMod(xi.mod.MAGIC_DAMAGE , 150)
+    target:delMod(xi.mod.MATT, 30)
+    target:delMod(xi.mod.MACC, 50)
 end
 
 return effectObject
