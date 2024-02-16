@@ -22,17 +22,6 @@ spellObject.onSpellCast = function(caster, target, spell)
     params.diff = caster:getStat(xi.mod.INT)-target:getStat(xi.mod.INT)
     params.bonus = merit * 3
 
-
-
-    
-    -- Bonus to spell base damage from gear.
-    baseSpellDamageBonus = baseSpellDamageBonus + caster:getMod(xi.mod.MAGIC_DAMAGE)
-
-    -----------------------------------
-    -- STEP 4: Spell Damage
-    -----------------------------------
-    spellDamage = baseSpellDamage + baseSpellDamageBonus + statDiffBonus
-
     
     -- calculate raw damage
     local dmg = calculateMagicDamage(caster, target, spell, params)
