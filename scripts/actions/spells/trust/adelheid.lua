@@ -47,7 +47,7 @@ spellObject.onMobSpawn = function(mob)
     local trustLevel	= mob:getMainLvl()
 	local mabbonus      = trustLevel / 3
 	local maccbonus     = trustLevel
-	local spellDamage	= trustLevel * math.floor((trustLevel + 1) / 9)
+	local spellDamage	= trustLevel * math.floor((trustLevel + 1) / 6)
 	local castingspeed	= trustLevel / 3
 	local intbonus		= trustLevel / 2
 	
