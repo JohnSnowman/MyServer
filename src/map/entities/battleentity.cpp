@@ -350,7 +350,7 @@ int16 CBattleEntity::GetWeaponDelay(bool tp)
 
 float CBattleEntity::GetMeleeRange() const
 {
-    return m_ModelRadius + 3.0f;
+    return m_ModelRadius + 4.5f;
 }
 
 int16 CBattleEntity::GetRangedWeaponDelay(bool tp)
