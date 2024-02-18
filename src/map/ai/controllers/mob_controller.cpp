@@ -708,7 +708,7 @@ void CMobController::Move()
                     if (!PMob->PAI->PathFind->IsFollowingPath())
                     {
                         // out of melee range, try to path towards
-                        if (currentDistance > (offsetMod == 0 ? PMob->GetMeleeRange() : closeDistance))
+                        if (currentDistance > (offsetMod == 0 ? PMob->GetMeleeRange() - 2 : closeDistance))
                         {
                             // try to find path towards target
                             PMob->PAI->PathFind->PathInRange(PTarget->loc.p, closeDistance, PATHFLAG_WALLHACK | PATHFLAG_RUN);
