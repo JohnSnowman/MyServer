@@ -362,7 +362,7 @@ local function getSingleHitDamage(attacker, target, dmg, wsParams, calcParams)
             if calcParams.hybridHit then
                 -- Calculate magical bonuses and reductions
                 local magicdmg = addBonusesAbility(attacker, wsParams.ele, target, finaldmg, wsParams)
-                local baseMagicDamageBonus = caster:getMod(xi.mod.MAGIC_DAMAGE)
+                local baseMagicDamageBonus = attacker:getMod(xi.mod.MAGIC_DAMAGE)
                 
                 magicdmg = magicdmg + baseMagicDamageBonus
                 magicdmg = magicdmg * applyResistanceAbility(attacker, target, wsParams.ele, wsParams.skill, calcParams.bonusAcc)
@@ -914,7 +914,7 @@ xi.weaponskills.doMagicWeaponskill = function(attacker, target, wsID, wsParams, 
 
     local fint = utils.clamp(8 + attacker:getStat(xi.mod.INT) - target:getStat(xi.mod.INT), -32, 32)
     local dmg  = 0
-    local baseMagicDamageBonus = caster:getMod(xi.mod.MAGIC_DAMAGE)
+    local baseMagicDamageBonus = attacker:getMod(xi.mod.MAGIC_DAMAGE)
 
     -- Magic-based WSes never miss, so we don't need to worry about calculating a miss, only if a shadow absorbed it.
     if not shadowAbsorb(target) then
