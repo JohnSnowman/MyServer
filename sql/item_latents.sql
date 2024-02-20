@@ -1210,34 +1210,140 @@ INSERT INTO `item_latents` VALUES (15532,369,-3,56,2);   -- Has a hidden effect 
 INSERT INTO `item_latents` VALUES (15532,370,1,56,2);    -- Latent Effect is triggered when the player's weapon is drawn and has more than 2 MP.
 
 -- Rajas Ring
-INSERT INTO `item_latents` VALUES (15543,8,1,51,45);     -- INT+1 above level 45
-INSERT INTO `item_latents` VALUES (15543,8,1,51,60);     -- INT+1 above level 60
-INSERT INTO `item_latents` VALUES (15543,8,1,51,75);     -- INT+1 above level 75
-INSERT INTO `item_latents` VALUES (15543,9,1,51,45);     -- MND+1 above level 45
-INSERT INTO `item_latents` VALUES (15543,9,1,51,60);     -- MND+1 above level 60
-INSERT INTO `item_latents` VALUES (15543,9,1,51,75);     -- MND+1 above level 75
-
--- Tamas Ring
-INSERT INTO `item_latents` VALUES (15544,2,5,51,45);     -- MP+5 above level 45
-INSERT INTO `item_latents` VALUES (15544,2,5,51,60);     -- MP+5 above level 60
-INSERT INTO `item_latents` VALUES (15544,2,5,51,75);     -- MP+5 above level 75
-INSERT INTO `item_latents` VALUES (15544,10,1,51,45);    -- INT+1 above level 45
-INSERT INTO `item_latents` VALUES (15544,10,1,51,60);    -- INT+1 above level 60
-INSERT INTO `item_latents` VALUES (15544,10,1,51,75);    -- INT+1 above level 75
-INSERT INTO `item_latents` VALUES (15544,11,1,51,45);    -- MND+1 above level 45
-INSERT INTO `item_latents` VALUES (15544,11,1,51,60);    -- MND+1 above level 60
-INSERT INTO `item_latents` VALUES (15544,11,1,51,75);    -- MND+1 above level 75
+-- INSERT INTO `item_latents` VALUES (15543,8,1,51,45);     -- INT+1 above level 45
+-- INSERT INTO `item_latents` VALUES (15543,8,1,51,60);     -- INT+1 above level 60
+-- INSERT INTO `item_latents` VALUES (15543,8,1,51,75);     -- INT+1 above level 75
+-- INSERT INTO `item_latents` VALUES (15543,9,1,51,45);     -- MND+1 above level 45
+-- INSERT INTO `item_latents` VALUES (15543,9,1,51,60);     -- MND+1 above level 60
+-- INSERT INTO `item_latents` VALUES (15543,9,1,51,75);     -- MND+1 above level 75
+INSERT INTO `item_latents` VALUES (15543,8,10,51,50);     -- STR+10 above level 50
+INSERT INTO `item_latents` VALUES (15543,8,10,51,60);     -- STR+10 above level 60
+INSERT INTO `item_latents` VALUES (15543,8,10,51,70);     -- STR+10 above level 70
+INSERT INTO `item_latents` VALUES (15543,8,20,51,80);     -- STR+20 above level 80
+INSERT INTO `item_latents` VALUES (15543,8,20,51,90);     -- STR+20 above level 90
+INSERT INTO `item_latents` VALUES (15543,8,20,51,98);     -- STR+20 above level 98
+INSERT INTO `item_latents` VALUES (15543,9,10,51,50);     -- DEX+10 above level 50
+INSERT INTO `item_latents` VALUES (15543,9,10,51,60);     -- DEX+10 above level 60
+INSERT INTO `item_latents` VALUES (15543,9,10,51,70);     -- DEX+10 above level 70
+INSERT INTO `item_latents` VALUES (15543,9,20,51,80);     -- DEX+20 above level 80
+INSERT INTO `item_latents` VALUES (15543,9,20,51,90);     -- DEX+20 above level 90
+INSERT INTO `item_latents` VALUES (15543,9,20,51,98);     -- DEX+20 above level 98
+INSERT INTO `item_latents` VALUES (15543,11,10,51,30);     -- AGI+10 above level 30
+INSERT INTO `item_latents` VALUES (15543,11,10,51,50);     -- AGI+10 above level 50
+INSERT INTO `item_latents` VALUES (15543,11,10,51,60);     -- AGI+10 above level 60
+INSERT INTO `item_latents` VALUES (15543,11,10,51,70);     -- AGI+10 above level 70
+INSERT INTO `item_latents` VALUES (15543,11,20,51,80);     -- AGI+20 above level 80
+INSERT INTO `item_latents` VALUES (15543,11,20,51,90);     -- AGI+20 above level 90
+INSERT INTO `item_latents` VALUES (15543,11,20,51,98);     -- AGI+20 above level 98
+INSERT INTO `item_latents` VALUES (15543,73,20,51,50);     -- STP+20 above level 50
+INSERT INTO `item_latents` VALUES (15543,73,20,51,60);     -- STP+20 above level 60
+INSERT INTO `item_latents` VALUES (15543,73,20,51,70);     -- STP+20 above level 70
+INSERT INTO `item_latents` VALUES (15543,73,20,51,80);     -- STP+20 above level 80
+INSERT INTO `item_latents` VALUES (15543,73,20,51,90);     -- STP+20 above level 90
+INSERT INTO `item_latents` VALUES (15543,73,20,51,98);     -- STP+20 above level 98
+INSERT INTO `item_latents` VALUES (15543,289,10,51,50);     -- SBT+10 above level 50
+INSERT INTO `item_latents` VALUES (15543,289,10,51,70);     -- SBT+10 above level 70
+INSERT INTO `item_latents` VALUES (15543,289,10,51,90);     -- SBT+10 above level 90
+INSERT INTO `item_latents` VALUES (15543,973,10,51,40);     -- SBT2+10 above level 40
+INSERT INTO `item_latents` VALUES (15543,973,10,51,60);     -- SBT2+10 above level 60
+INSERT INTO `item_latents` VALUES (15543,973,10,51,75);     -- SBT2+10 above level 75
 
 -- Sattva Ring
-INSERT INTO `item_latents` VALUES (15545,5,5,51,45);     -- MP+5 above level 45
-INSERT INTO `item_latents` VALUES (15545,5,5,51,60);     -- MP+5 above level 60
-INSERT INTO `item_latents` VALUES (15545,5,5,51,75);     -- MP+5 above level 75
-INSERT INTO `item_latents` VALUES (15545,12,1,51,45);    -- INT+1 above level 45
-INSERT INTO `item_latents` VALUES (15545,12,1,51,60);    -- INT+1 above level 60
-INSERT INTO `item_latents` VALUES (15545,12,1,51,75);    -- INT+1 above level 75
-INSERT INTO `item_latents` VALUES (15545,13,1,51,45);    -- MND+1 above level 45
-INSERT INTO `item_latents` VALUES (15545,13,1,51,60);    -- MND+1 above level 60
-INSERT INTO `item_latents` VALUES (15545,13,1,51,75);    -- MND+1 above level 75
+INSERT INTO `item_latents` VALUES (15544,10,10,51,50);     -- VIT+10 above level 50
+INSERT INTO `item_latents` VALUES (15544,10,10,51,60);     -- VIT+10 above level 60
+INSERT INTO `item_latents` VALUES (15544,10,10,51,70);     -- VIT+10 above level 70
+INSERT INTO `item_latents` VALUES (15544,10,20,51,80);     -- VIT+20 above level 80
+INSERT INTO `item_latents` VALUES (15544,10,20,51,90);     -- VIT+20 above level 90
+INSERT INTO `item_latents` VALUES (15544,10,20,51,98);     -- VIT+20 above level 98
+INSERT INTO `item_latents` VALUES (15544,11,10,51,30);     -- AGI+10 above level 30
+INSERT INTO `item_latents` VALUES (15544,11,10,51,50);     -- AGI+10 above level 50
+INSERT INTO `item_latents` VALUES (15544,11,10,51,60);     -- AGI+10 above level 60
+INSERT INTO `item_latents` VALUES (15544,11,10,51,70);     -- AGI+10 above level 70
+INSERT INTO `item_latents` VALUES (15544,11,20,51,80);     -- AGI+20 above level 80
+INSERT INTO `item_latents` VALUES (15544,11,20,51,90);     -- AGI+20 above level 90
+INSERT INTO `item_latents` VALUES (15544,11,20,51,98);     -- AGI+20 above level 98
+INSERT INTO `item_latents` VALUES (15544,13,10,51,50);     -- MND+10 above level 50
+INSERT INTO `item_latents` VALUES (15544,13,10,51,60);     -- MND+10 above level 60
+INSERT INTO `item_latents` VALUES (15544,13,10,51,70);     -- MND+10 above level 70
+INSERT INTO `item_latents` VALUES (15544,13,20,51,80);     -- MND+20 above level 80
+INSERT INTO `item_latents` VALUES (15544,13,20,51,90);     -- MND+20 above level 90
+INSERT INTO `item_latents` VALUES (15544,13,20,51,98);     -- MND+20 above level 98
+INSERT INTO `item_latents` VALUES (15544,27,25,51,50);     -- Enmity+25 above level 50
+INSERT INTO `item_latents` VALUES (15544,27,25,51,70);     -- Enmity+25 above level 70
+INSERT INTO `item_latents` VALUES (15544,27,50,51,90);     -- Enmity+50 above level 90
+INSERT INTO `item_latents` VALUES (15544,27,100,51,98);    -- Enmity+100 above level 98
+INSERT INTO `item_latents` VALUES (15544,29,10,51,50);     -- MDEF+10 above level 50
+INSERT INTO `item_latents` VALUES (15544,29,10,51,70);     -- MDEF+10 above level 70
+INSERT INTO `item_latents` VALUES (15544,29,20,51,90);     -- MDEF+10 above level 90
+INSERT INTO `item_latents` VALUES (15544,29,20,51,98);     -- MDEF+20 above level 98
+INSERT INTO `item_latents` VALUES (15544,31,25,51,50);     -- MEVA+25 above level 50
+INSERT INTO `item_latents` VALUES (15544,31,25,51,70);     -- MEVA+25 above level 70
+INSERT INTO `item_latents` VALUES (15544,31,50,51,90);     -- MEVA+50 above level 90
+INSERT INTO `item_latents` VALUES (15544,31,100,51,98);    -- MEVA+100 above level 98
+INSERT INTO `item_latents` VALUES (15544,63,20,51,50);     -- DEFP+20 above level 50
+INSERT INTO `item_latents` VALUES (15544,63,20,51,70);     -- DEFP+20 above level 70
+INSERT INTO `item_latents` VALUES (15544,63,30,51,90);     -- DEFP+30 above level 90
+INSERT INTO `item_latents` VALUES (15544,63,40,51,98);     -- DEFP+40 above level 98
+INSERT INTO `item_latents` VALUES (15544,160,-2000,51,40);  -- DMG-20% above level 40
+INSERT INTO `item_latents` VALUES (15544,160,-2000,51,60);  -- DMG-20% above level 60
+INSERT INTO `item_latents` VALUES (15544,190,-1000,51,80);  -- PDT2+10 above level 80
+INSERT INTO `item_latents` VALUES (15544,190,-500,51,90);   -- PDT2+5 above level 90
+INSERT INTO `item_latents` VALUES (15544,190,-500,51,98);   -- PDT2+5 above level 98
+INSERT INTO `item_latents` VALUES (15544,831,-1000,51,80);  -- MDT2+10 above level 80
+INSERT INTO `item_latents` VALUES (15544,831,-500,51,90);   -- MDT2+5 above level 90
+INSERT INTO `item_latents` VALUES (15544,831,-500,51,98);   -- MDT2+5 above level 98
+
+-- Tamas Ring
+--INSERT INTO `item_latents` VALUES (15545,5,5,51,45);     -- MP+5 above level 45
+--INSERT INTO `item_latents` VALUES (15545,5,5,51,60);     -- MP+5 above level 60
+--INSERT INTO `item_latents` VALUES (15545,5,5,51,75);     -- MP+5 above level 75
+--INSERT INTO `item_latents` VALUES (15545,12,1,51,45);    -- INT+1 above level 45
+--INSERT INTO `item_latents` VALUES (15545,12,1,51,60);    -- INT+1 above level 60
+--INSERT INTO `item_latents` VALUES (15545,12,1,51,75);    -- INT+1 above level 75
+--INSERT INTO `item_latents` VALUES (15545,13,1,51,45);    -- MND+1 above level 45
+--INSERT INTO `item_latents` VALUES (15545,13,1,51,60);    -- MND+1 above level 60
+--INSERT INTO `item_latents` VALUES (15545,13,1,51,75);    -- MND+1 above level 75
+INSERT INTO `item_latents` VALUES (15545,12,10,51,50);     -- INT+10 above level 50
+INSERT INTO `item_latents` VALUES (15545,12,10,51,60);     -- INT+10 above level 60
+INSERT INTO `item_latents` VALUES (15545,12,10,51,70);     -- INT+10 above level 70
+INSERT INTO `item_latents` VALUES (15545,12,20,51,80);     -- INT+20 above level 80
+INSERT INTO `item_latents` VALUES (15545,12,20,51,90);     -- INT+20 above level 90
+INSERT INTO `item_latents` VALUES (15545,12,20,51,98);     -- INT+20 above level 98
+INSERT INTO `item_latents` VALUES (15545,13,10,51,50);     -- MND+10 above level 50
+INSERT INTO `item_latents` VALUES (15545,13,10,51,60);     -- MND+10 above level 60
+INSERT INTO `item_latents` VALUES (15545,13,10,51,70);     -- MND+10 above level 70
+INSERT INTO `item_latents` VALUES (15545,13,20,51,80);     -- MND+20 above level 80
+INSERT INTO `item_latents` VALUES (15545,13,20,51,90);     -- MND+20 above level 90
+INSERT INTO `item_latents` VALUES (15545,13,20,51,98);     -- MND+20 above level 98
+INSERT INTO `item_latents` VALUES (15545,14,20,51,50);     -- CHR+20 above level 50
+INSERT INTO `item_latents` VALUES (15545,14,10,51,60);     -- CHR+10 above level 60
+INSERT INTO `item_latents` VALUES (15545,14,10,51,70);     -- CHR+10 above level 70
+INSERT INTO `item_latents` VALUES (15545,14,20,51,80);     -- CHR+20 above level 80
+INSERT INTO `item_latents` VALUES (15545,14,20,51,90);     -- CHR+20 above level 90
+INSERT INTO `item_latents` VALUES (15545,14,20,51,98);     -- CHR+20 above level 98
+INSERT INTO `item_latents` VALUES (15545,290,10,51,40);     -- ENF_MAG_POTENCY+10 above level 40
+INSERT INTO `item_latents` VALUES (15545,290,10,51,50);     -- ENF_MAG_POTENCY+10 above level 50
+INSERT INTO `item_latents` VALUES (15545,290,10,51,60);     -- ENF_MAG_POTENCY+10 above level 60
+INSERT INTO `item_latents` VALUES (15545,290,10,51,70);     -- ENF_MAG_POTENCY+10 above level 70
+INSERT INTO `item_latents` VALUES (15545,290,10,51,80);     -- ENF_MAG_POTENCY+10 above level 80
+INSERT INTO `item_latents` VALUES (15545,290,10,51,90);     -- ENF_MAG_POTENCY+10 above level 90
+INSERT INTO `item_latents` VALUES (15545,290,25,51,98);     -- ENF_MAG_POTENCY+25 above level 98
+INSERT INTO `item_latents` VALUES (15545,369,5,51,50);     -- REFRESH: 5 above level 50
+INSERT INTO `item_latents` VALUES (15545,369,5,51,70);     -- REFRESH: 5 above level 70
+INSERT INTO `item_latents` VALUES (15545,369,5,51,90);     -- REFRESH: 5 above level 90
+INSERT INTO `item_latents` VALUES (15545,369,5,51,98);     -- REFRESH: 5 above level 98
+INSERT INTO `item_latents` VALUES (15545,407,1,51,50);     -- UFASTCAST : 1 above level 50
+INSERT INTO `item_latents` VALUES (15545,407,1,51,70);     -- UFASTCAST : 1 above level 70
+INSERT INTO `item_latents` VALUES (15545,407,1,51,80);     -- UFASTCAST : 1 above level 80
+INSERT INTO `item_latents` VALUES (15545,407,1,51,90);     -- UFASTCAST : 1 above level 90
+INSERT INTO `item_latents` VALUES (15545,407,1,51,98);     -- UFASTCAST : 1 above level 98
+INSERT INTO `item_latents` VALUES (15545,890,100,51,40);     -- ENH_MAGIC_DURATION+100 above level 40
+INSERT INTO `item_latents` VALUES (15545,890,100,51,50);     -- ENH_MAGIC_DURATION+100 above level 50
+INSERT INTO `item_latents` VALUES (15545,890,100,51,60);     -- ENH_MAGIC_DURATION+100 above level 60
+INSERT INTO `item_latents` VALUES (15545,890,100,51,70);     -- ENH_MAGIC_DURATION+100 above level 70
+INSERT INTO `item_latents` VALUES (15545,890,100,51,80);     -- ENH_MAGIC_DURATION+100 above level 80
+INSERT INTO `item_latents` VALUES (15545,890,100,51,90);     -- ENH_MAGIC_DURATION+100 above level 90
+INSERT INTO `item_latents` VALUES (15545,890,250,51,98);     -- ENH_MAGIC_DURATION+250 above level 98
 
 -- Diabolos's Ring
 INSERT INTO `item_latents` VALUES (15557,6,-15,32,0);    -- -15% MP on Darksday
@@ -1281,19 +1387,79 @@ INSERT INTO `item_latents` VALUES (15790,1,50,38,10);     -- HP+50
 INSERT INTO `item_latents` VALUES (15790,5,20,38,10);     -- MP+20
 
 -- Balrahn's Ring
-INSERT INTO `item_latents` VALUES (15807,12,4,58,0);     -- INT +4
-INSERT INTO `item_latents` VALUES (15807,13,4,58,0);     -- MND +4
-INSERT INTO `item_latents` VALUES (15807,14,4,58,0);     -- CHR +4
-INSERT INTO `item_latents` VALUES (15807,369,1,58,0);    -- Refresh +1
+--INSERT INTO `item_latents` VALUES (15807,12,4,58,0);     -- INT +4
+--INSERT INTO `item_latents` VALUES (15807,13,4,58,0);     -- MND +4
+--INSERT INTO `item_latents` VALUES (15807,14,4,58,0);     -- CHR +4
+--INSERT INTO `item_latents` VALUES (15807,369,1,58,0);    -- Refresh +1
+INSERT INTO `item_latents` VALUES (15807,28,10,51,50);  	-- MAB+10 above level 50
+INSERT INTO `item_latents` VALUES (15807,28,10,51,70);  	-- MAB+10 above level 70
+INSERT INTO `item_latents` VALUES (15807,28,10,51,80);  	-- MAB+10 above level 80
+INSERT INTO `item_latents` VALUES (15807,28,10,51,90);  	-- MAB+10 above level 90
+INSERT INTO `item_latents` VALUES (15807,28,50,51,98);  	-- MAB+50 above level 98
+INSERT INTO `item_latents` VALUES (15807,30,10,51,50);  	-- MACC+10 above level 50
+INSERT INTO `item_latents` VALUES (15807,30,10,51,70);  	-- MACC+10 above level 70
+INSERT INTO `item_latents` VALUES (15807,30,10,51,80);  	-- MACC+10 above level 80
+INSERT INTO `item_latents` VALUES (15807,30,10,51,90);  	-- MACC+10 above level 90
+INSERT INTO `item_latents` VALUES (15807,30,50,51,98);  	-- MACC+50 above level 98
+INSERT INTO `item_latents` VALUES (15807,311,131,51,50);  	-- Mdmg+131 above level 50
+INSERT INTO `item_latents` VALUES (15807,311,151,51,70);  	-- Mdmg+151 above level 70
+INSERT INTO `item_latents` VALUES (15807,311,171,51,80);  	-- Mdmg+171 above level 80
+INSERT INTO `item_latents` VALUES (15807,311,191,51,90);  	-- Mdmg+191 above level 90
+INSERT INTO `item_latents` VALUES (15807,311,418,51,98);  	-- Mdmg+418 above level 98
+INSERT INTO `item_latents` VALUES (15807,315,50,51,50);  	-- ENH_DRAIN_ASPIR: 50% above level 50
+INSERT INTO `item_latents` VALUES (15807,315,50,51,70);  	-- ENH_DRAIN_ASPIR: 50% above level 70
+INSERT INTO `item_latents` VALUES (15807,315,50,51,90);  	-- ENH_DRAIN_ASPIR: 50% above level 90
+INSERT INTO `item_latents` VALUES (15807,315,200,51,98);  	-- ENH_DRAIN_ASPIR: 200% above level 98
 
 -- Ulthalam's Ring
-INSERT INTO `item_latents` VALUES (15808,8,4,58,0);      -- STR +4
-INSERT INTO `item_latents` VALUES (15808,9,4,58,0);      -- DEX +4
-INSERT INTO `item_latents` VALUES (15808,370,1,58,0);    -- regen +1
+-- INSERT INTO `item_latents` VALUES (15808,8,4,58,0);      -- STR +4
+-- INSERT INTO `item_latents` VALUES (15808,9,4,58,0);      -- DEX +4
+-- INSERT INTO `item_latents` VALUES (15808,370,1,58,0);    -- regen +1
+INSERT INTO `item_latents` VALUES (15808,23,15,51,50);     -- ATT+15 above level 50
+INSERT INTO `item_latents` VALUES (15808,23,15,51,70);     -- ATT+15 above level 70
+INSERT INTO `item_latents` VALUES (15808,23,15,51,80);     -- ATT+15 above level 80
+INSERT INTO `item_latents` VALUES (15808,23,15,51,90);     -- ATT+15 above level 90
+INSERT INTO `item_latents` VALUES (15808,23,20,51,98);     -- ATT+20 above level 98
+INSERT INTO `item_latents` VALUES (15808,25,15,51,50);     -- ACC+15 above level 50
+INSERT INTO `item_latents` VALUES (15808,25,15,51,70);     -- ACC+15 above level 70
+INSERT INTO `item_latents` VALUES (15808,25,15,51,80);     -- ACC+15 above level 80
+INSERT INTO `item_latents` VALUES (15808,25,15,51,90);     -- ACC+15 above level 90
+INSERT INTO `item_latents` VALUES (15808,25,20,51,98);     -- ACC+20 above level 98
+INSERT INTO `item_latents` VALUES (15808,288,30,51,50);     -- DA+30 above level 50
+INSERT INTO `item_latents` VALUES (15808,302,15,51,70);     -- TA+15 above level 70
+INSERT INTO `item_latents` VALUES (15808,430,15,51,90);     -- QA+15 above level 90
 
 -- Jalzahns's Ring
-INSERT INTO `item_latents` VALUES (15809,11,6,58,0);     -- AGI +6
-INSERT INTO `item_latents` VALUES (15809,365,1,58,0);    -- Snapshot
+--INSERT INTO `item_latents` VALUES (15809,11,6,58,0);     -- AGI +6
+--INSERT INTO `item_latents` VALUES (15809,365,1,58,0);    -- Snapshot
+INSERT INTO `item_latents` VALUES (15809,24,10,51,50);     -- rATT+10 above level 50
+INSERT INTO `item_latents` VALUES (15809,24,15,51,70);     -- rATT+15 above level 70
+INSERT INTO `item_latents` VALUES (15809,24,15,51,80);     -- rATT+15 above level 80
+INSERT INTO `item_latents` VALUES (15809,24,15,51,90);     -- rATT+15 above level 90
+INSERT INTO `item_latents` VALUES (15809,24,20,51,98);     -- rATT+20 above level 98
+INSERT INTO `item_latents` VALUES (15809,26,10,51,50);     -- rACC+10 above level 50
+INSERT INTO `item_latents` VALUES (15809,26,15,51,70);     -- rACC+15 above level 70
+INSERT INTO `item_latents` VALUES (15809,26,15,51,80);     -- rACC+15 above level 80
+INSERT INTO `item_latents` VALUES (15809,26,15,51,90);     -- rACC+15 above level 90
+INSERT INTO `item_latents` VALUES (15809,26,20,51,98);     -- rACC+20 above level 98
+INSERT INTO `item_latents` VALUES (15809,305,10,51,50);     -- 10 Recycle above level 50
+INSERT INTO `item_latents` VALUES (15809,305,10,51,60);     -- 10 Recycle above level 60
+INSERT INTO `item_latents` VALUES (15809,305,10,51,70);     -- 10 Recycle above level 70
+INSERT INTO `item_latents` VALUES (15809,305,10,51,80);     -- 10 Recycle above level 80
+INSERT INTO `item_latents` VALUES (15809,305,10,51,90);     -- 10 Recycle above level 90
+INSERT INTO `item_latents` VALUES (15809,305,10,51,98);     -- 10 Recycle above level 98
+INSERT INTO `item_latents` VALUES (15809,359,10,51,50);     -- 10 Rapid Shot above level 50
+INSERT INTO `item_latents` VALUES (15809,359,10,51,60);     -- 10 Rapid Shot above level 60
+INSERT INTO `item_latents` VALUES (15809,359,10,51,70);     -- 10 Rapid Shot above level 70
+INSERT INTO `item_latents` VALUES (15809,359,10,51,80);     -- 10 Rapid Shot above level 80
+INSERT INTO `item_latents` VALUES (15809,359,10,51,90);     -- 10 Rapid Shot above level 90
+INSERT INTO `item_latents` VALUES (15809,359,15,51,98);     -- 15 Rapid Shot above level 98
+INSERT INTO `item_latents` VALUES (15809,365,10,51,50);     -- 10 Snap Shot above level 50
+INSERT INTO `item_latents` VALUES (15809,365,10,51,60);     -- 10 Snap Shot above level 60
+INSERT INTO `item_latents` VALUES (15809,365,10,51,70);     -- 10 Snap Shot above level 70
+INSERT INTO `item_latents` VALUES (15809,365,10,51,80);     -- 10 Snap Shot above level 80
+INSERT INTO `item_latents` VALUES (15809,365,10,51,90);     -- 10 Snap Shot above level 90
+INSERT INTO `item_latents` VALUES (15809,365,15,51,98);     -- 15 Snap Shot above level 98
 
 -- Ladybug Ring / Ladybug Ring +1
 INSERT INTO `item_latents` VALUES (15815,2,20,26,0);     -- HP+20 during Daytime
