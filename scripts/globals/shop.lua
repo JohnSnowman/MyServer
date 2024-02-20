@@ -548,7 +548,10 @@ xi.shop =
             27556,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Echad ring
             15543,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Rajas Ring
             15545,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Tamas Ring
-            15544,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Sattva Rubg
+            15544,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Sattva Ring
+            15807,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Balrahns Ring
+            15808,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Ulthalams Ring
+            15809,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Jalzahns Ring
         },
 
         [curio.keys] =
