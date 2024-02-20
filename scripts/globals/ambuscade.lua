@@ -165,7 +165,7 @@ xi.ambuscade.onInstanceComplete = function(instance)
             local multiplier = numChars - 1
             player:addCurrency('gallantry', intenseGallantry[difficulty] * multiplier)
         end
-
+--[[
         -- Remove KI
         -- TODO: Message
         if difficulty == 1 then
@@ -173,7 +173,7 @@ xi.ambuscade.onInstanceComplete = function(instance)
         elseif difficulty == 2 then
             player:delKeyItem(xi.ki.AMBUSCADE_PRIMER_VOLUME_TWO)
         end
-
+]]--
         -- TODO: Remove Abdhaljs Seal
         --v:delStatusEffect(xi.effect.ABDHALJS_SEAL)
 
