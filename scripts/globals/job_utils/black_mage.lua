@@ -24,7 +24,7 @@ end
 -- Ability Use Functions
 -----------------------------------
 xi.job_utils.black_mage.useCascade = function(player, target, ability)
-    player:addStatusEffect(xi.effect.CASCADE, 1, 0, 60)
+    player:addStatusEffect(xi.effect.CASCADE, 1, 0, 600)
 end
 
 xi.job_utils.black_mage.useElementalSeal = function(player, target, ability)
