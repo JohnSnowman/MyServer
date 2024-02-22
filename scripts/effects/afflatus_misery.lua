@@ -5,6 +5,10 @@ local effectObject = {}
 
 effectObject.onEffectGain = function(target, effect)
     target:setMod(xi.mod.AFFLATUS_MISERY, 0)
+    target:addMod(xi.mod.MAGIC_DAMAGE , 200)
+    target:addMod(xi.mod.MATT, 30)
+    target:addMod(xi.mod.MACC, 50)
+    target:addMod(xi.mod.FASTCAST, 25)
 
     if target:hasStatusEffect(xi.effect.AUSPICE) then
         local power = target:getStatusEffect(xi.effect.AUSPICE):getPower()
@@ -18,6 +22,10 @@ end
 
 effectObject.onEffectLose = function(target, effect)
     target:setMod(xi.mod.AFFLATUS_MISERY, 0)
+    target:delMod(xi.mod.MAGIC_DAMAGE , 200)
+    target:delMod(xi.mod.MATT, 30)
+    target:delMod(xi.mod.MACC, 50)
+    target:delMod(xi.mod.FASTCAST, 25)
 
     --Clean Up Afflatus Misery Bonuses
     local accuracyBonus = effect:getSubPower()
