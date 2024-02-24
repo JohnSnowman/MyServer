@@ -123,11 +123,11 @@ xi.job_utils.white_mage.useDevotion = function(player, target, ability)
 end
 
 xi.job_utils.white_mage.useDivineCaress = function(player, target, ability)
-    player:addStatusEffect(xi.effect.DIVINE_CARESS_I, 3, 0, 60)
+    player:addStatusEffect(xi.effect.DIVINE_CARESS_I, 3, 0, 3600)
 end
 
 xi.job_utils.white_mage.useDivineSeal = function(player, target, ability)
-    player:addStatusEffect(xi.effect.DIVINE_SEAL, 1, 0, 60)
+    player:addStatusEffect(xi.effect.DIVINE_SEAL, 1, 0, 3600)
 end
 
 xi.job_utils.white_mage.useMartyr = function(player, target, ability)
@@ -151,5 +151,5 @@ xi.job_utils.white_mage.useMartyr = function(player, target, ability)
 end
 
 xi.job_utils.white_mage.useSacrosanctity = function(player, target, ability)
-    target:addStatusEffect(xi.effect.SACROSANCTITY, 3, 0, 60)
+    target:addStatusEffect(xi.effect.SACROSANCTITY, 3, 0, 3600)
 end
