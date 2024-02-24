@@ -383,8 +383,8 @@ function getCureFinal(caster, spell, basecure, minCure, isBlueMagic)
         basecure = minCure
     end
 
-    local curePot = math.min(caster:getMod(xi.mod.CURE_POTENCY), 50) / 100 -- caps at 50%
-    local curePotII = math.min(caster:getMod(xi.mod.CURE_POTENCY_II), 30) / 100 -- caps at 30%
+    local curePot = math.min(caster:getMod(xi.mod.CURE_POTENCY), 100) / 100 -- caps at 50%
+    local curePotII = math.min(caster:getMod(xi.mod.CURE_POTENCY_II), 80) / 100 -- caps at 30%
     local potency = 1 + curePot + curePotII
 
     local dSeal = 1
