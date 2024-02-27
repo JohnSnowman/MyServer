@@ -872,6 +872,7 @@ xi.job_utils.dragoon.addWyvernExp = function(player, exp)
             wyvern:addMod(xi.mod.DMG, -1000 * numLevelUps)
             wyvern:addMod(xi.mod.DMGPHYS_II, -300 * numLevelUps)
             wyvern:addMod(xi.mod.DMGMAGIC_II, -300 * numLevelUps)
+            wyvern:addMod(xi.mod.REGEN, 5 * numLevelUps)
 
             wyvern:updateHealth()
             wyvern:setHP(wyvern:getMaxHP())
