@@ -25,8 +25,8 @@ effectObject.onEffectGain = function(target, effect)
         target:addMod(xi.mod.HELIX_EFFECT, helix)
         target:addMod(xi.mod.HELIX_DURATION, 144)-- 72
         
-        target:addMod(xi.mod.MAGIC_DAMAGE , 250)
-        target:addMod(xi.mod.MATT, 50)
+        target:addMod(xi.mod.MAGIC_DAMAGE , 200)
+        target:addMod(xi.mod.MATT, 40)
     end
 
     if target:getObjType() ~= xi.objType.TRUST then
@@ -67,8 +67,8 @@ effectObject.onEffectLose = function(target, effect)
         target:delMod(xi.mod.HELIX_EFFECT, helix)
         target:delMod(xi.mod.HELIX_DURATION, 144)-- 20
         
-        target:delMod(xi.mod.MAGIC_DAMAGE , 250)
-        target:delMod(xi.mod.MATT, 50)
+        target:delMod(xi.mod.MAGIC_DAMAGE , 200)
+        target:delMod(xi.mod.MATT, 40)
     end
 
     if target:getObjType() ~= xi.objType.TRUST then -- account for trusts
