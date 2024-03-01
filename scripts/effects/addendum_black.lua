@@ -16,14 +16,17 @@ effectObject.onEffectGain = function(target, effect)
     target:addMod(xi.mod.BLACK_MAGIC_RECAST, -bonus)
 
     if not (target:hasStatusEffect(xi.effect.TABULA_RASA)) then
-        target:addMod(xi.mod.BLACK_MAGIC_COST, -10)
-        target:addMod(xi.mod.BLACK_MAGIC_CAST, -10)
-        target:addMod(xi.mod.BLACK_MAGIC_RECAST, -10)
-        target:addMod(xi.mod.WHITE_MAGIC_COST, 20)
-        target:addMod(xi.mod.WHITE_MAGIC_CAST, 20)
-        target:addMod(xi.mod.WHITE_MAGIC_RECAST, 20)
+        target:addMod(xi.mod.BLACK_MAGIC_COST, -40)
+        target:addMod(xi.mod.BLACK_MAGIC_CAST, -40)
+        target:addMod(xi.mod.BLACK_MAGIC_RECAST, -40)
+        target:addMod(xi.mod.WHITE_MAGIC_COST, 40)
+        target:addMod(xi.mod.WHITE_MAGIC_CAST, 40)
+        target:addMod(xi.mod.WHITE_MAGIC_RECAST, 40)
         target:addMod(xi.mod.HELIX_EFFECT, helix)
-        target:addMod(xi.mod.HELIX_DURATION, 72)
+        target:addMod(xi.mod.HELIX_DURATION, 288)
+        
+        target:addMod(xi.mod.MAGIC_DAMAGE , 300)
+        target:addMod(xi.mod.MATT, 60)
     end
 
     if target:getObjType() ~= xi.objType.TRUST then
@@ -55,14 +58,17 @@ effectObject.onEffectLose = function(target, effect)
     target:delMod(xi.mod.BLACK_MAGIC_RECAST, -bonus)
 
     if not (target:hasStatusEffect(xi.effect.TABULA_RASA)) then
-        target:delMod(xi.mod.BLACK_MAGIC_COST, -10)
-        target:delMod(xi.mod.BLACK_MAGIC_CAST, -10)
-        target:delMod(xi.mod.BLACK_MAGIC_RECAST, -10)
-        target:delMod(xi.mod.WHITE_MAGIC_COST, 20)
-        target:delMod(xi.mod.WHITE_MAGIC_CAST, 20)
-        target:delMod(xi.mod.WHITE_MAGIC_RECAST, 20)
+        target:delMod(xi.mod.BLACK_MAGIC_COST, -40)
+        target:delMod(xi.mod.BLACK_MAGIC_CAST, -40)
+        target:delMod(xi.mod.BLACK_MAGIC_RECAST, -40)
+        target:delMod(xi.mod.WHITE_MAGIC_COST, 40)
+        target:delMod(xi.mod.WHITE_MAGIC_CAST, 40)
+        target:delMod(xi.mod.WHITE_MAGIC_RECAST, 40)
         target:delMod(xi.mod.HELIX_EFFECT, helix)
-        target:delMod(xi.mod.HELIX_DURATION, 72)
+        target:delMod(xi.mod.HELIX_DURATION, 288)
+        
+        target:delMod(xi.mod.MAGIC_DAMAGE , 300)
+        target:delMod(xi.mod.MATT, 60)
     end
 
     if target:getObjType() ~= xi.objType.TRUST then
