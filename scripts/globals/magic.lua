@@ -229,7 +229,7 @@ local function calculateMagicHitRate(magicacc, magiceva, percentBonus, casterLvl
 
     local p = 70 - 0.5 * (magiceva - magicacc) + levelDiff * 3 + percentBonus
 
-    return utils.clamp(p, 5, 95)
+    return utils.clamp(p, 5, 99)
 end
 
 local function isHelixSpell(spell)
