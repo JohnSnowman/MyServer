@@ -72,7 +72,7 @@ xi.job_utils.dark_knight.useArcaneCrest = function(player, target, ability)
 end
 
 xi.job_utils.dark_knight.useBloodWeapon = function(player, target, ability)
-    local duration = 30 + player:getMod(xi.mod.ENHANCES_BLOOD_WEAPON)
+    local duration = 300 + player:getMod(xi.mod.ENHANCES_BLOOD_WEAPON)
 
     target:addStatusEffect(xi.effect.BLOOD_WEAPON, 1, 0, duration)
 end
@@ -103,17 +103,17 @@ xi.job_utils.dark_knight.useNetherVoid = function(player, target, ability)
 end
 
 xi.job_utils.dark_knight.useScarletDelirium = function(player, target, ability)
-    player:addStatusEffect(xi.effect.SCARLET_DELIRIUM, 8, 1, 90)
+    player:addStatusEffect(xi.effect.SCARLET_DELIRIUM, 8, 1, 3600)
 end
 
 xi.job_utils.dark_knight.useSoulEnslavement = function(player, target, ability)
-    player:addStatusEffect(xi.effect.SOUL_ENSLAVEMENT, 8, 1, 30)
+    player:addStatusEffect(xi.effect.SOUL_ENSLAVEMENT, 8, 1, 300)
 end
 
 xi.job_utils.dark_knight.useSouleater = function(player, target, ability)
     local jpValue = target:getJobPointLevel(xi.jp.SOULEATER_DURATION)
 
-    player:addStatusEffect(xi.effect.SOULEATER, 1, 0, 60 + jpValue)
+    player:addStatusEffect(xi.effect.SOULEATER, 1, 0, 3600 + jpValue)
 end
 
 xi.job_utils.dark_knight.useWeaponBash = function(player, target, ability)
