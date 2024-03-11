@@ -91,7 +91,7 @@ end
 xi.job_utils.paladin.useFealty = function(player, target, ability)
     local merits    = player:getMerit(xi.merit.FEALTY) - 5
     local enhFealty = (player:getMerit(xi.merit.FEALTY) / 5) * player:getMod(xi.mod.ENHANCES_FEALTY)
-    local duration  = 60 + merits + enhFealty
+    local duration  = 3600 + merits + enhFealty
 
     player:addStatusEffect(xi.effect.FEALTY, 1, 0, duration)
 end
@@ -161,7 +161,7 @@ xi.job_utils.paladin.useSentinel = function(player, target, ability)
     local guardian    = player:getMerit(xi.merit.GUARDIAN)
     local enhGuardian = player:getMod(xi.mod.ENHANCES_GUARDIAN) * (guardian / 19)
     local jpValue     = player:getJobPointLevel(xi.jp.SENTINEL_EFFECT)
-    local duration    = 30 + enhGuardian
+    local duration    = 600 + enhGuardian
 
     -- Sent as positive power because UINTs, man.
     player:addStatusEffect(xi.effect.SENTINEL, power, 3, duration, 0, guardian + jpValue)
