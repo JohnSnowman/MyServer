@@ -13,6 +13,7 @@ effectObject.onEffectGain = function(target, effect) --power=30 initially, subpo
     target:addMod(xi.mod.CRITHITRATE, 40)
     target:addMod(xi.mod.CRIT_DMG_INCREASE, 80)
     target:addMod(xi.mod.HASTE_ABILITY, 750)
+    target:addMod(xi.mod.DAKEN, 30)
 end
 
 effectObject.onEffectTick = function(target, effect)
@@ -36,6 +37,7 @@ effectObject.onEffectLose = function(target, effect)
     target:delMod(xi.mod.CRITHITRATE, 40)
     target:delMod(xi.mod.CRIT_DMG_INCREASE, 80)
     target:delMod(xi.mod.HASTE_ABILITY, 750)
+    target:delMod(xi.mod.DAKEN, 30)
 end
 
 return effectObject
