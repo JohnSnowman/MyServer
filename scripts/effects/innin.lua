@@ -9,6 +9,9 @@ effectObject.onEffectGain = function(target, effect) --power=30 initially, subpo
 
     local jpValue = target:getJobPointLevel(xi.jp.INNIN_EFFECT)
     target:addMod(xi.mod.ACC, jpValue)
+
+    target:addMod(xi.mod.CRITHITRATE, 40)
+    target:addMod(xi.mod.CRIT_DMG_INCREASE, 80)
 end
 
 effectObject.onEffectTick = function(target, effect)
@@ -28,6 +31,9 @@ effectObject.onEffectLose = function(target, effect)
 
     local jpValue = target:getJobPointLevel(xi.jp.INNIN_EFFECT)
     target:delMod(xi.mod.ACC, jpValue)
+    
+    target:delMod(xi.mod.CRITHITRATE, 40)
+    target:delMod(xi.mod.CRIT_DMG_INCREASE, 80)
 end
 
 return effectObject
