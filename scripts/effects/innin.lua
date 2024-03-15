@@ -15,7 +15,7 @@ effectObject.onEffectGain = function(target, effect) --power=30 initially, subpo
     target:addMod(xi.mod.HASTE_ABILITY, 750)
     target:addMod(xi.mod.DAKEN, 30)
 end
-
+--[[
 effectObject.onEffectTick = function(target, effect)
     --tick down the effect and reduce the overall power
     effect:setPower(effect:getPower()-1)
@@ -25,7 +25,7 @@ effectObject.onEffectTick = function(target, effect)
         target:delMod(xi.mod.ENMITY, -1)
     end
 end
-
+]]--
 effectObject.onEffectLose = function(target, effect)
     --remove the remaining power
     target:delMod(xi.mod.EVA, -effect:getPower())
