@@ -31,7 +31,7 @@ end
 -- Ability Use Functions
 -----------------------------------
 xi.job_utils.monk.useBoost = function(player, target, ability)
-    local power = 12.5 + (0.10 * player:getMod(xi.mod.BOOST_EFFECT))
+    local power = 25 + (0.10 * player:getMod(xi.mod.BOOST_EFFECT))
 
     if player:hasStatusEffect(xi.effect.BOOST) then
         local effect = player:getStatusEffect(xi.effect.BOOST)
