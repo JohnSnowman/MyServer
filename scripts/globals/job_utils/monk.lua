@@ -88,7 +88,7 @@ xi.job_utils.monk.useChiBlast = function(player, target, ability)
 end
 
 xi.job_utils.monk.useCounterstance = function(player, target, ability)
-    local power = 55 + player:getMod(xi.mod.COUNTERSTANCE_EFFECT)
+    local power = 60 + player:getMod(xi.mod.COUNTERSTANCE_EFFECT)
 
     target:delStatusEffect(xi.effect.COUNTERSTANCE) --if not found this will do nothing
     target:addStatusEffect(xi.effect.COUNTERSTANCE, power, 0, 3600)
