@@ -38,7 +38,7 @@ xi.job_utils.monk.useBoost = function(player, target, ability)
         effect:setPower(effect:getPower() + power)
         player:addMod(xi.mod.ATTP, power)
     else
-        player:addStatusEffect(xi.effect.BOOST, power, 0, 180)
+        player:addStatusEffect(xi.effect.BOOST, power, 0, 3600)
     end
 end
 
@@ -88,45 +88,45 @@ xi.job_utils.monk.useChiBlast = function(player, target, ability)
 end
 
 xi.job_utils.monk.useCounterstance = function(player, target, ability)
-    local power = 45 + player:getMod(xi.mod.COUNTERSTANCE_EFFECT)
+    local power = 55 + player:getMod(xi.mod.COUNTERSTANCE_EFFECT)
 
     target:delStatusEffect(xi.effect.COUNTERSTANCE) --if not found this will do nothing
-    target:addStatusEffect(xi.effect.COUNTERSTANCE, power, 0, 300)
+    target:addStatusEffect(xi.effect.COUNTERSTANCE, power, 0, 3600)
 end
 
 xi.job_utils.monk.useDodge = function(player, target, ability)
-    local power = 20 + player:getMod(xi.mod.DODGE_EFFECT)
+    local power = 40 + player:getMod(xi.mod.DODGE_EFFECT)
 
-    player:addStatusEffect(xi.effect.DODGE, power, 0, 120)
+    player:addStatusEffect(xi.effect.DODGE, power, 0, 3600)
 end
 
 xi.job_utils.monk.useFocus = function(player, target, ability)
-    local power = 20 + player:getMod(xi.mod.FOCUS_EFFECT)
+    local power = 40 + player:getMod(xi.mod.FOCUS_EFFECT)
 
-    player:addStatusEffect(xi.effect.FOCUS, power, 0, 120)
+    player:addStatusEffect(xi.effect.FOCUS, power, 0, 3600)
 end
 
 xi.job_utils.monk.useFootwork = function(player, target, ability)
-    local kickDmg = 20 + player:getWeaponDmg()
-    local kickAttPercent = 25 + player:getMod(xi.mod.FOOTWORK_ATT_BONUS)
+    local kickDmg = 40 + player:getWeaponDmg()
+    local kickAttPercent = 40 + player:getMod(xi.mod.FOOTWORK_ATT_BONUS)
 
-    player:addStatusEffect(xi.effect.FOOTWORK, kickDmg, 0, 60, 0, kickAttPercent)
+    player:addStatusEffect(xi.effect.FOOTWORK, kickDmg, 0, 3600, 0, kickAttPercent)
 end
 
 xi.job_utils.monk.useFormlessStrikes = function(player, target, ability)
-    player:addStatusEffect(xi.effect.FORMLESS_STRIKES, 1, 0, 180)
+    player:addStatusEffect(xi.effect.FORMLESS_STRIKES, 1, 0, 1800)
 end
 
 xi.job_utils.monk.useHundredFists = function(player, target, ability)
-    player:addStatusEffect(xi.effect.HUNDRED_FISTS, 1, 0, 45)
+    player:addStatusEffect(xi.effect.HUNDRED_FISTS, 1, 0, 450)
 end
 
 xi.job_utils.monk.useImpetus = function(player, target, ability)
-    player:addStatusEffect(xi.effect.IMPETUS, 2, 0, 180)
+    player:addStatusEffect(xi.effect.IMPETUS, 2, 0, 3600)
 end
 
 xi.job_utils.monk.useInnerStrength = function(player, target, ability)
-    player:addStatusEffect(xi.effect.INNER_STRENGTH, 2, 0, 30)
+    player:addStatusEffect(xi.effect.INNER_STRENGTH, 2, 0, 300)
 end
 
 xi.job_utils.monk.useMantra = function(player, target, ability)
