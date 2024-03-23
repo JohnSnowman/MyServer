@@ -82,7 +82,7 @@ xi.job_utils.monk.useChiBlast = function(player, target, ability)
     target:takeDamage(dmg, player, xi.attackType.SPECIAL, xi.damageType.ELEMENTAL)
     target:updateEnmityFromDamage(player, dmg)
     target:updateClaim(player)
-    player:delStatusEffect(xi.effect.BOOST)
+    -- player:delStatusEffect(xi.effect.BOOST)
 
     return dmg
 end
