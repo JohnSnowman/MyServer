@@ -4428,7 +4428,7 @@ INSERT INTO `item_weapon` VALUES (21523,'sagitta',1,0,269,269,255,4,1,601,192,0)
 INSERT INTO `item_weapon` VALUES (21524,'pantin_fists',1,0,242,242,228,4,1,606,190,0);    -- DMG:+190 Delay:+126
 INSERT INTO `item_weapon` VALUES (21525,'pitre_fists',1,0,255,255,242,4,1,601,191,0);     -- DMG:+191 Delay:+121
 INSERT INTO `item_weapon` VALUES (21526,'xiucoatl',1,0,269,269,255,4,1,601,192,0);        -- DMG:+192 Delay:+121
-INSERT INTO `item_weapon` VALUES (21527,'sakpatas_fists',1,0,255,255,242,4,1,576,165,0); -- DMG:+165 Delay:+96
+INSERT INTO `item_weapon` VALUES (21527,'sakpatas_fists',1,0,255,255,242,4,1,576,185,0); -- DMG:+165+20  Delay:+96
 INSERT INTO `item_weapon` VALUES (21528,'dragon_fangs',1,0,269,269,269,4,1,606,188,0);
 INSERT INTO `item_weapon` VALUES (21529,'premium_heart',1,0,269,269,269,4,1,576,172,0); -- DMG:+172 Delay:+96
 INSERT INTO `item_weapon` VALUES (21530,'tokkosho',1,0,0,0,0,4,1,576,1,0); -- DMG:+1 Delay:+96
@@ -4501,7 +4501,7 @@ INSERT INTO `item_weapon` VALUES (21632,'luhlaza_sword',3,0,255,255,242,2,1,260,
 INSERT INTO `item_weapon` VALUES (21633,'zomorrodnegar',3,0,269,269,255,2,1,260,180,0);   -- DMG:180 Delay:260
 INSERT INTO `item_weapon` VALUES (21635,'malignance_sword',3,0,242,242,228,2,1,264,183,0);
 INSERT INTO `item_weapon` VALUES (21636,'nihility',3,0,0,0,0,2,1,240,1,0);                -- DMG:1 Delay:240
-INSERT INTO `item_weapon` VALUES (21637,'sakpatas_sword',3,0,248,248,248,2,1,240,160,0); -- DMG:160 Delay:240
+INSERT INTO `item_weapon` VALUES (21637,'sakpatas_sword',3,0,248,248,248,2,1,240,173,0); -- DMG:160+13 Delay:240
 INSERT INTO `item_weapon` VALUES (21638,'extinction',3,0,0,0,0,2,1,240,1,0); -- DMG:1 Delay:240
 INSERT INTO `item_weapon` VALUES (21640,'onion_sword_iii',3,0,269,269,269,2,1,240,165,0);
 INSERT INTO `item_weapon` VALUES (21654,'arasy_claymore',4,0,242,242,188,2,1,489,251,0);
