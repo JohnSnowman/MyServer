@@ -11,7 +11,7 @@ effectObject.onEffectGain = function(target, effect)
     end
 
     if target:isPC() then
-        target:addMod(xi.mod.FASTCAST, 50)
+        target:addMod(xi.mod.FASTCAST, 60)
     end
 
     if target:getMod(xi.mod.ENHANCES_IRON_WILL) > 0 then
@@ -47,7 +47,7 @@ effectObject.onEffectLose = function(target, effect)
     end
 
     if target:isPC() then
-        target:delMod(xi.mod.FASTCAST, 50)
+        target:delMod(xi.mod.FASTCAST, 60)
     end
 
     if subPower > 0 then
