@@ -102,8 +102,8 @@ xi.job_utils.paladin.useHolyCircle = function(player, target, ability)
     -- https://www.bg-wiki.com/ffxi/Holy_Circle
     -- Main (PLD) job gives a unique 15% damage bonus against undead, 15% damage resistance from undead, and likely +15% Undead Killer.
     -- When subbed, gives 5% of these bonuses.
-    local duration = 180 + player:getMod(xi.mod.HOLY_CIRCLE_DURATION)
-    local power    = 15
+    local duration = 3600 + player:getMod(xi.mod.HOLY_CIRCLE_DURATION)
+    local power    = 45
 
     if player:getMainJob() ~= xi.job.PLD then
         power = 5
@@ -128,7 +128,7 @@ xi.job_utils.paladin.useIntervene = function(player, target, ability)
 
     damage = damage * jpValue
 
-    target:addStatusEffect(xi.effect.INTERVENE, 1, 0, 30)
+    target:addStatusEffect(xi.effect.INTERVENE, 1, 0, 3600)
 
     return damage
 end
@@ -149,7 +149,7 @@ xi.job_utils.paladin.usePalisade = function(player, target, ability)
 end
 
 xi.job_utils.paladin.useRampart = function(player, target, ability)
-    local duration = 60 + player:getMod(xi.mod.RAMPART_DURATION)
+    local duration = 600 + player:getMod(xi.mod.RAMPART_DURATION)
 
     target:addStatusEffect(xi.effect.RAMPART, 2500, 0, duration)
 end
@@ -170,7 +170,7 @@ end
 xi.job_utils.paladin.useSepulcher = function(player, target, ability)
     local power    = 20
     local jpValue  = player:getJobPointLevel(xi.jp.SEPULCHER_DURATION)
-    local duration = 180 + jpValue
+    local duration = 600 + jpValue
 
     target:addStatusEffect(xi.effect.SEPULCHER, power, 0, duration)
 end
