@@ -10,6 +10,10 @@ effectObject.onEffectGain = function(target, effect)
         target:addMod(xi.mod.SPELLINTERRUPT, target:getMerit(xi.merit.IRON_WILL))
     end
 
+    if target:isPC() then
+        target:addMod(xi.mod.FASTCAST, 50)
+    end
+
     if target:getMod(xi.mod.ENHANCES_IRON_WILL) > 0 then
         local subPower = target:getMod(xi.mod.ENHANCES_IRON_WILL) * (target:getMerit(xi.merit.IRON_WILL) / 19)
 
@@ -40,6 +44,10 @@ effectObject.onEffectLose = function(target, effect)
 
     if target:isPC() and target:hasTrait(77) then -- Iron Will
         target:delMod(xi.mod.SPELLINTERRUPT, target:getMerit(xi.merit.IRON_WILL))
+    end
+
+    if target:isPC() then
+        target:delMod(xi.mod.FASTCAST, 50)
     end
 
     if subPower > 0 then
