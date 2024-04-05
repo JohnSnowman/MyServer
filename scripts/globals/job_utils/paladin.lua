@@ -143,7 +143,7 @@ end
 
 xi.job_utils.paladin.usePalisade = function(player, target, ability)
     local jpValue = player:getJobPointLevel(xi.jp.PALISADE_EFFECT)
-    local power   = 30 + jpValue
+    local power   = 50 + jpValue
 
     player:addStatusEffect(xi.effect.PALISADE, power, 0, 3600)
 end
