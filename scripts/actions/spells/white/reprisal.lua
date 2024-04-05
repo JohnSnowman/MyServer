@@ -8,7 +8,7 @@ spellObject.onMagicCastingCheck = function(caster, target, spell)
 end
 
 spellObject.onSpellCast = function(caster, target, spell)
-    local duration         = calculateDuration(60, spell:getSkillType(), spell:getSpellGroup(), caster, target)
+    local duration         = calculateDuration(3600, spell:getSkillType(), spell:getSpellGroup(), caster, target)
     local reflectedPercent = 33
     local typeEffect       = xi.effect.REPRISAL
 
