@@ -12,7 +12,7 @@ abilityObject.onAbilityCheck = function(player, target, ability)
 end
 
 abilityObject.onUseAbility = function(player, target, ability)
-    local duration = 180 + player:getMod(xi.mod.WARDING_CIRCLE_DURATION)
+    local duration = 3600 + player:getMod(xi.mod.WARDING_CIRCLE_DURATION)
     local power    = 5
 
     if player:getMainJob() == xi.job.SAM then
