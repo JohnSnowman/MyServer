@@ -11,6 +11,7 @@ effectObject.onEffectGain = function(target, effect)
     target:addMod(xi.mod.HASTE_ABILITY, 1500)
     target:addMod(xi.mod.WEAPONSKILL_DAMAGE_BASE, 25)
     target:addMod(xi.mod.ALL_WSDMG_ALL_HITS, 100)
+    target:addMod(xi.mod.SAVETP, 500)
 end
 
 effectObject.onEffectTick = function(target, effect)
@@ -24,6 +25,7 @@ effectObject.onEffectLose = function(target, effect)
     target:delMod(xi.mod.HASTE_ABILITY, 1500)
     target:delMod(xi.mod.WEAPONSKILL_DAMAGE_BASE, 25)
     target:delMod(xi.mod.ALL_WSDMG_ALL_HITS, 100)
+    target:delMod(xi.mod.SAVETP, 500)
 end
 
 return effectObject
