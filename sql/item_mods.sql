@@ -15631,6 +15631,13 @@ INSERT INTO `item_mods` VALUES (13215,1,40); -- DEF: 40
 -- Gold Moogle Belt
 INSERT INTO `item_mods` VALUES (13216,3,3);  -- HPP: 3
 INSERT INTO `item_mods` VALUES (13216,20,3); -- WATER_RES: 3
+INSERT INTO `item_mods` VALUES (13216,1,20);   -- DEF: 20
+INSERT INTO `item_mods` VALUES (13216,169,25); -- MOVE: 25
+INSERT INTO `item_mods` VALUES (13216,170,25); -- FASTCAST: 25
+INSERT INTO `item_mods` VALUES (13216,305,25); -- : 25 Recycle
+INSERT INTO `item_mods` VALUES (13216,359,25); -- : 25 Rapid Shot
+INSERT INTO `item_mods` VALUES (13216,365,25); -- : 25 Snap Shot
+INSERT INTO `item_mods` VALUES (13216,384,1500); -- HASTE_GEAR: 15%
 
 -- Silver Moogle Belt
 INSERT INTO `item_mods` VALUES (13217,3,2);  -- HPP: 2
