@@ -256,6 +256,13 @@ INSERT INTO `item_latents` VALUES (13178,10,4,25,0);     -- VIT+4 song/roll acti
 INSERT INTO `item_latents` VALUES (13185,291,1,0,50);    -- Counter+1 when HP <50%
 INSERT INTO `item_latents` VALUES (13185,370,1,0,50);    -- Regen+1 when HP <50%
 
+-- Gold Mog Belt
+INSERT INTO `item_latents` VALUES (13216,170,15,51,50);  	-- FC+15 above level 50
+INSERT INTO `item_latents` VALUES (13216,305,20,51,50);  	-- 20 Recycle above level 50
+INSERT INTO `item_latents` VALUES (13216,359,20,51,50);  	-- 20 Rapid Shot above level 50
+INSERT INTO `item_latents` VALUES (13216,365,20,51,50);  	-- 20 Snap Shot above level 50
+INSERT INTO `item_latents` VALUES (13216,384,750,51,50);  -- HASTE_GEAR: 7.5% above level 50
+
 -- Fire Belt
 INSERT INTO `item_latents` VALUES (13241,8,3,28,0);      -- +3 STR on Firesday
 
