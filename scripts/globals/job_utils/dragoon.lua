@@ -243,7 +243,7 @@ xi.job_utils.dragoon.useCallWyvern = function(player, target, ability)
 end
 
 xi.job_utils.dragoon.useAncientCircle = function(player, target, ability)
-    local duration = 180 + player:getMod(xi.mod.ANCIENT_CIRCLE_DURATION)
+    local duration = 3600 + player:getMod(xi.mod.ANCIENT_CIRCLE_DURATION)
     local jpValue  = player:getJobPointLevel(xi.jp.ANCIENT_CIRCLE_EFFECT)
     local power    = 5
 
