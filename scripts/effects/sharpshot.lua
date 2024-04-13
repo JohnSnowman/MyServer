@@ -11,7 +11,7 @@ effectObject.onEffectGain = function(target, effect)
     
     target:addMod(xi.mod.RATTP, 125)
     target:addMod(xi.mod.RANGED_DELAY, -150)
-    target:addMod(xi.mod.DOUBLE_SHOT_RATE, 75)
+    target:addMod(xi.mod.DOUBLE_SHOT_RATE, 80)
     target:addMod(xi.mod.RECYCLE, 80)
     target:addMod(xi.mod.RANGED_DMG_RATING, 40)
 end
@@ -27,7 +27,7 @@ effectObject.onEffectLose = function(target, effect)
     
     target:delMod(xi.mod.RATTP, 125)
     target:delMod(xi.mod.RANGED_DELAY, -150)
-    target:delMod(xi.mod.DOUBLE_SHOT_RATE, 75)
+    target:delMod(xi.mod.DOUBLE_SHOT_RATE, 80)
     target:delMod(xi.mod.RECYCLE, 80)
     target:delMod(xi.mod.RANGED_DMG_RATING, 40)
 end
