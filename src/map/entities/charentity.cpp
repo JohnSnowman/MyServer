@@ -1744,7 +1744,7 @@ void CCharEntity::OnRangedAttack(CRangeState& state, action_t& action)
         hitCount += getMod(Mod::UTSUSEMI);
     }
     // else if (this->StatusEffectContainer->HasStatusEffect(EFFECT_DOUBLE_SHOT) && xirand::GetRandomNumber(100) < (40 + this->getMod(Mod::DOUBLE_SHOT_RATE)))
-    else if xirand::GetRandomNumber(100) < (getMod(Mod::DOUBLE_SHOT_RATE))
+    else if xirand::GetRandomNumber(100) < (this->getMod(Mod::DOUBLE_SHOT_RATE))
     {
         hitCount = 2;
     }
