@@ -12,7 +12,7 @@ abilityObject.onAbilityCheck = function(player, target, ability)
 end
 
 abilityObject.onUseAbility = function(player, target, ability)
-    player:addStatusEffect(xi.effect.DOUBLE_SHOT, 40, 0, 90)
+    player:addStatusEffect(xi.effect.DOUBLE_SHOT, 40, 0, 3600)
 end
 
 return abilityObject
