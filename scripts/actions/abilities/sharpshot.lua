@@ -12,8 +12,8 @@ abilityObject.onAbilityCheck = function(player, target, ability)
 end
 
 abilityObject.onUseAbility = function(player, target, ability)
-    local power = 40 + player:getMod(xi.mod.SHARPSHOT)
-    player:addStatusEffect(xi.effect.SHARPSHOT, power, 0, 60)
+    local power = 80 + player:getMod(xi.mod.SHARPSHOT)
+    player:addStatusEffect(xi.effect.SHARPSHOT, power, 0, 3600)
 end
 
 return abilityObject
