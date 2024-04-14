@@ -1906,13 +1906,15 @@ void CCharEntity::OnRangedAttack(CRangeState& state, action_t& action)
     {
         actionTarget.speceffect = SPECEFFECT::RECOIL;
     }
-
+﻿/*
     // remove barrage effect if present
     if (this->StatusEffectContainer->HasStatusEffect(EFFECT_BARRAGE, 0))
     {
         StatusEffectContainer->DelStatusEffect(EFFECT_BARRAGE, 0);
     }
-    else if (isSange)
+*/
+    // else if (isSange)
+    if (isSange)
     {
         uint16 power = StatusEffectContainer->GetStatusEffect(EFFECT_SANGE)->GetPower();
 
