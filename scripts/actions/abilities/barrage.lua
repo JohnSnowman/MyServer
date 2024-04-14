@@ -12,7 +12,7 @@ abilityObject.onAbilityCheck = function(player, target, ability)
 end
 
 abilityObject.onUseAbility = function(player, target, ability)
-    player:addStatusEffect(xi.effect.BARRAGE, 0, 0, 60)
+    player:addStatusEffect(xi.effect.BARRAGE, 0, 0, 600)
 end
 
 return abilityObject
