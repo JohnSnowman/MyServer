@@ -437,11 +437,11 @@ xi.shop =
             4221,    1350,      xi.ki.RHAPSODY_IN_WHITE,   -- Beetle Quiver
             4226,    2040,      xi.ki.RHAPSODY_IN_WHITE,   -- Silver Quiver
             4222,    2340,      xi.ki.RHAPSODY_IN_WHITE,   -- Horn Quiver
-            5333,    3150,      xi.ki.RHAPSODY_IN_UMBER,   -- Sleep Quiver
-            4223,    3500,      xi.ki.RHAPSODY_IN_UMBER,   -- Scorpion Quiver
-            4224,    7000,      xi.ki.RHAPSODY_IN_AZURE,   -- Demon Quiver
-            5332,    8800,      xi.ki.RHAPSODY_IN_AZURE,   -- Kabura Quiver
-            5819,    9900,    xi.ki.RHAPSODY_IN_CRIMSON,   -- Antlion Quiver
+            5333,    3150,      xi.ki.RHAPSODY_IN_WHITE,   -- Sleep Quiver
+            4223,    3500,      xi.ki.RHAPSODY_IN_WHITE,   -- Scorpion Quiver
+            4224,    7000,      xi.ki.RHAPSODY_IN_WHITE,   -- Demon Quiver
+            5332,    8800,      xi.ki.RHAPSODY_IN_WHITE,   -- Kabura Quiver
+            5819,    9900,      xi.ki.RHAPSODY_IN_WHITE,   -- Antlion Quiver
             4227,     400,      xi.ki.RHAPSODY_IN_WHITE,   -- Bronze Bolt Quiver
             5334,     800,      xi.ki.RHAPSODY_IN_WHITE,   -- Blind Bolt Quiver
             5335,    1250,      xi.ki.RHAPSODY_IN_WHITE,   -- Acid Bolt Quiver
@@ -449,24 +449,24 @@ xi.shop =
             5339,    2100,      xi.ki.RHAPSODY_IN_WHITE,   -- Bloody Bolt Quiver
             5338,    2100,      xi.ki.RHAPSODY_IN_WHITE,   -- Venom Bolt Quiver
             5336,    2400,      xi.ki.RHAPSODY_IN_WHITE,   -- Holy Bolt Quiver
-            4228,    3500,      xi.ki.RHAPSODY_IN_UMBER,   -- Mythril Bolt Quiver
-            4229,    5580,      xi.ki.RHAPSODY_IN_AZURE,   -- Darksteel Bolt Quiver
-            5820,    9460,    xi.ki.RHAPSODY_IN_CRIMSON,   -- Darkling Bolt Quiver
-            5821,    9790,    xi.ki.RHAPSODY_IN_CRIMSON,   -- Fusion Bolt Quiver
+            4228,    3500,      xi.ki.RHAPSODY_IN_WHITE,   -- Mythril Bolt Quiver
+            4229,    5580,      xi.ki.RHAPSODY_IN_WHITE,   -- Darksteel Bolt Quiver
+            5820,    9460,      xi.ki.RHAPSODY_IN_WHITE,   -- Darkling Bolt Quiver
+            5821,    9790,      xi.ki.RHAPSODY_IN_WHITE,   -- Fusion Bolt Quiver
             5359,     400,      xi.ki.RHAPSODY_IN_WHITE,   -- Bronze Bullet Pouch
             5363,    1920,      xi.ki.RHAPSODY_IN_WHITE,   -- Bullet Pouch
             5341,    2400,      xi.ki.RHAPSODY_IN_WHITE,   -- Spartan Bullet Pouch
-            5353,    4800,      xi.ki.RHAPSODY_IN_UMBER,   -- Iron Bullet Pouch
-            5340,    4800,      xi.ki.RHAPSODY_IN_UMBER,   -- Silver Bullet Pouch
-            5342,    7100,      xi.ki.RHAPSODY_IN_AZURE,   -- Corsair Bullet Pouch
-            5416,    7600,      xi.ki.RHAPSODY_IN_AZURE,   -- Steel Bullet Pouch
-            5822,    9680,    xi.ki.RHAPSODY_IN_CRIMSON,   -- Dweomer Bullet Pouch
-            5823,    9900,    xi.ki.RHAPSODY_IN_CRIMSON,   -- Oberon Bullet Pouch
+            5353,    4800,      xi.ki.RHAPSODY_IN_WHITE,   -- Iron Bullet Pouch
+            5340,    4800,      xi.ki.RHAPSODY_IN_WHITE,   -- Silver Bullet Pouch
+            5342,    7100,      xi.ki.RHAPSODY_IN_WHITE,   -- Corsair Bullet Pouch
+            5416,    7600,      xi.ki.RHAPSODY_IN_WHITE,   -- Steel Bullet Pouch
+            5822,    9680,      xi.ki.RHAPSODY_IN_WHITE,   -- Dweomer Bullet Pouch
+            5823,    9900,      xi.ki.RHAPSODY_IN_WHITE,   -- Oberon Bullet Pouch
             6299,    1400,      xi.ki.RHAPSODY_IN_WHITE,   -- Shuriken Pouch
             6297,    2280,      xi.ki.RHAPSODY_IN_WHITE,   -- Juji Shuriken Pouch
-            6298,    4640,      xi.ki.RHAPSODY_IN_UMBER,   -- Manji Shuriken Pouch
-            6302,    7000,      xi.ki.RHAPSODY_IN_AZURE,   -- Fuma Shuriken Pouch
-            6303,    9900,    xi.ki.RHAPSODY_IN_CRIMSON,   -- Iga Shuriken Pouch
+            6298,    4640,      xi.ki.RHAPSODY_IN_WHITE,   -- Manji Shuriken Pouch
+            6302,    7000,      xi.ki.RHAPSODY_IN_WHITE,   -- Fuma Shuriken Pouch
+            6303,    9900,      xi.ki.RHAPSODY_IN_WHITE,   -- Iga Shuriken Pouch
         },
 
         [curio.ninjutsuTools] =
