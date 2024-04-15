@@ -35,7 +35,7 @@ effectObject.onEffectTick = function(target, effect)
 end
 
 effectObject.onEffectLose = function(target, effect)
-    local enmityBonus = 100
+    local enmityBonus = 350
 
     if target:getMainJob() ~= xi.job.PLD then
         enmityBonus = 50
