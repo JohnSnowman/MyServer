@@ -4,7 +4,7 @@
 local effectObject = {}
 
 effectObject.onEffectGain = function(target, effect)
-    local enmityBonus = 200
+    local enmityBonus = 350
 
     if target:getMainJob() ~= xi.job.PLD then
         enmityBonus = 50
