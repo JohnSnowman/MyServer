@@ -26,6 +26,71 @@ spellObject.onMobSpawn = function(mob)
         [xi.magic.spell.ULLEGORE] = xi.trust.messageOffset.TEAMWORK_2,
     })
 
+
+
+    local mlvl = mob:getMainLvl()
+    if mlvl > 44 then
+        mob:addSimpleGambit(ai.t.SELF, ai.c.NO_SAMBA, 0, ai.r.JA, ai.s.SPECIFIC, xi.ja.HASTE_SAMBA)
+    elseif mlvl < 45 and mlvl > 4 then
+        mob:addSimpleGambit(ai.t.SELF, ai.c.NO_SAMBA, 0, ai.r.JA, ai.s.BEST_SAMBA, xi.ja.DRAIN_SAMBA)
+    end
+
+    -- Step Interactions:
+    mob:addSimpleGambit(ai.t.TARGET, ai.c.NOT_STATUS, xi.effect.LETHARGIC_DAZE_5, ai.r.JA, ai.s.SPECIFIC, xi.ja.QUICKSTEP, 20)
+    mob:addSimpleGambit(ai.t.TARGET, ai.c.READYING_WS, 0, ai.r.JA, ai.s.SPECIFIC, xi.ja.VIOLENT_FLOURISH)
+    mob:addSimpleGambit(ai.t.TARGET, ai.c.READYING_MS, 0, ai.r.JA, ai.s.SPECIFIC, xi.ja.VIOLENT_FLOURISH)
+    mob:addSimpleGambit(ai.t.TARGET, ai.c.READYING_JA, 0, ai.r.JA, ai.s.SPECIFIC, xi.ja.VIOLENT_FLOURISH)
+    mob:addSimpleGambit(ai.t.TARGET, ai.c.CASTING_MA, 0, ai.r.JA, ai.s.SPECIFIC, xi.ja.VIOLENT_FLOURISH)
+    
+
+    -- Healing logic
+    mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 50, ai.r.JA, ai.s.HIGHEST_WALTZ, xi.ja.CURING_WALTZ)
+    mob:addSimpleGambit(ai.t.SELF, ai.c.STATUS_FLAG, xi.effectFlag.WALTZABLE, ai.r.JA, ai.s.SPECIFIC, xi.ja.HEALING_WALTZ)
+    
+
+    -- TP use and return
+    if mlvl > 39 then
+        mob:addSimpleGambit(ai.t.SELF, ai.c.STATUS, xi.effect.FINISHING_MOVE_5, ai.r.JA, ai.s.SPECIFIC, xi.ja.REVERSE_FLOURISH, 60)
+    end
+    
+    mob:setTrustTPSkillSettings(ai.tp.CLOSER_UNTIL_TP, ai.s.RANDOM, 2000)
+    
+	
+	local trustLevel	= mob:getMainLvl()
+	local strbonus		= trustLevel
+	local dexbonus		= trustLevel
+	local attbonus		= trustLevel * 2
+	local accbonus		= trustLevel * 2
+	local defbonus		= trustLevel
+	local mdefbonus		= trustLevel / 10
+	local mevabonus		= trustLevel
+	local dabonus		= trustLevel / 3
+	local tabonus		= trustLevel / 10
+	local stpbonus		= trustLevel / 2
+	local sbbonus		= trustLevel * 0.4
+	local sbiibonus		= trustLevel * 0.4
+	local magichaste	= trustLevel * 10-- 33 x 75 = 2475 = 24.75% gearhaste
+	local gearhaste		= trustLevel * 10-- 33 x 75 = 2475 = 24.75% gearhaste
+	
+	mob:addMod(xi.mod.STR, strbonus)
+	mob:addMod(xi.mod.DEX, dexbonus)
+	mob:addMod(xi.mod.ATT, attbonus)
+	mob:addMod(xi.mod.ACC, accbonus)
+	mob:addMod(xi.mod.DEF, defbonus)
+    mob:addMod(xi.mod.MDEF, mdefbonus)
+    mob:addMod(xi.mod.MEVA, mevabonus)
+	mob:addMod(xi.mod.DOUBLE_ATTACK, dabonus)
+	mob:addMod(xi.mod.TRIPLE_ATTACK, tabonus)
+	mob:addMod(xi.mod.STORETP, stpbonus)
+	mob:addMod(xi.mod.SUBTLE_BLOW, sbbonus)
+	mob:addMod(xi.mod.SUBTLE_BLOW_II, sbiibonus)
+	mob:addMod(xi.mod.ENMITY, -30)
+    mob:addMod(xi.mod.HASTE_MAGIC, magichaste) -- 1000 = 10% Haste (Magic)
+    mob:addMod(xi.mod.HASTE_GEAR, gearhaste) -- 1000 = 10% Haste (gear)
+
+
+    
+--[[
     -- Dynamic modifier that checks party member list on tick to apply synergy
     mob:addListener('COMBAT_TICK', 'UKA_TOTLIHN_CTICK', function(mobArg)
         local waltzPotencyBoost = 0
@@ -72,6 +137,7 @@ spellObject.onMobSpawn = function(mob)
     -- TP use and return
     mob:addSimpleGambit(ai.t.SELF, ai.c.STATUS, xi.effect.FINISHING_MOVE_5, ai.r.JA, ai.s.SPECIFIC, xi.ja.REVERSE_FLOURISH, 60)
     mob:setTrustTPSkillSettings(ai.tp.CLOSER_UNTIL_TP, ai.s.RANDOM, 2000)
+]]--
 end
 
 spellObject.onMobDespawn = function(mob)
