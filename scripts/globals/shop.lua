@@ -553,6 +553,8 @@ xi.shop =
             15808,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Ulthalams Ring
             15809,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Jalzahns Ring
             13216,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Gold Mog Belt
+            
+            10136,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Cipher: Uka Totlihn
         },
 
         [curio.keys] =
