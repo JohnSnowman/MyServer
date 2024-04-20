@@ -555,6 +555,7 @@ xi.shop =
             13216,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Gold Mog Belt
             
             10136,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Cipher: Uka Totlihn
+            10175,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Cipher: August
         },
 
         [curio.keys] =
