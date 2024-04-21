@@ -47,7 +47,7 @@ spellObject.onMobSpawn = function(mob)
 	local refreshmp		= trustLevel / 20
 	local mndbonus		= trustLevel
 	local vitbonus		= trustLevel
-	local maindmgrating	= trustLevel * 3
+	local maindmgrating	= trustLevel * 4
 	local attbonus		= trustLevel * 2
 	local attpbonus		= trustLevel * 2
 	local accbonus		= trustLevel
@@ -97,7 +97,7 @@ spellObject.onMobSpawn = function(mob)
     mob:addMod(xi.mod.HASTE_GEAR, gearhaste) -- 1000 = 10% Haste (gear)
     mob:addMod(xi.mod.HASTE_ABILITY, abilhaste) -- 1000 = 10% Haste (ability)
 
-    mob:setMobSkillAttack(1197)
+    -- mob:setMobSkillAttack(1197)
 
     -- mob:setTrustTPSkillSettings(ai.tp.CLOSER_UNTIL_TP, ai.s.HIGHEST, 2500)
 end
