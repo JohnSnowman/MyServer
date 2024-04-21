@@ -29,6 +29,8 @@ spellObject.onMobSpawn = function(mob)
 
     mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.SENTINEL, ai.r.JA, ai.s.SPECIFIC, xi.ja.SENTINEL)
 
+    mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.SOULEATER, ai.r.JA, ai.s.SPECIFIC, xi.ja.SOULEATER)
+
     mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 50, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.CURE)
 
     mob:addSimpleGambit(ai.t.MASTER, ai.c.HPP_LT, 76, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.CURE)
@@ -96,6 +98,10 @@ spellObject.onMobSpawn = function(mob)
     mob:addMod(xi.mod.HASTE_MAGIC, magichaste) -- 1000 = 10% Haste (Magic)
     mob:addMod(xi.mod.HASTE_GEAR, gearhaste) -- 1000 = 10% Haste (gear)
     mob:addMod(xi.mod.HASTE_ABILITY, abilhaste) -- 1000 = 10% Haste (ability)
+
+    
+    mob:addMod(xi.mod.ENSPELL, 17)
+    mob:addMod(xi.mod.ENSPELL_DMG, 1)
 
     -- mob:setMobSkillAttack(1197)
 
