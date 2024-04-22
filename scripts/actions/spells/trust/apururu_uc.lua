@@ -98,6 +98,9 @@ spellObject.onMobSpawn = function(mob)
     mob:addMod(xi.mod.SILENCE_MEVA, 50)
 	mob:addMod(xi.mod.ENMITY, -50)
 
+    -- Movement
+	mob:addMod(xi.mod.MOVE_SPEED_OVERIDE, 250)
+
     mob:setAutoAttackEnabled(false)
 
     mob:setMobMod(xi.mobMod.TRUST_DISTANCE, xi.trust.movementType.MID_RANGE)
