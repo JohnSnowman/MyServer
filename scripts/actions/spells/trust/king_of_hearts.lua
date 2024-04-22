@@ -74,6 +74,9 @@ spellObject.onMobSpawn = function(mob)
     mob:addMod(xi.mod.SLEEP_MEVA, 25)
     mob:addMod(xi.mod.SILENCE_MEVA, 25)
 	mob:addMod(xi.mod.ENMITY, -50)
+
+    -- Movement
+	mob:addMod(xi.mod.MOVE_SPEED_OVERIDE, 250)
 end
 
 spellObject.onMobDespawn = function(mob)
