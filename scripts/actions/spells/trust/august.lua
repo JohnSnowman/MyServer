@@ -23,24 +23,24 @@ spellObject.onMobSpawn = function(mob)
 
 
     
-    --mob:addSimpleGambit(ai.t.TARGET, ai.c.NOT_STATUS, xi.effect.FLASH, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.FLASH)
+    mob:addSimpleGambit(ai.t.TARGET, ai.c.NOT_STATUS, xi.effect.FLASH, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.FLASH)
 
-    --mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.HOLY_CIRCLE, ai.r.JA, ai.s.SPECIFIC, xi.ja.HOLY_CIRCLE)
+    mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.HOLY_CIRCLE, ai.r.JA, ai.s.SPECIFIC, xi.ja.HOLY_CIRCLE)
 
-    --mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.ARCANE_CIRCLE, ai.r.JA, ai.s.SPECIFIC, xi.ja.ARCANE_CIRCLE)
+    mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.ARCANE_CIRCLE, ai.r.JA, ai.s.SPECIFIC, xi.ja.ARCANE_CIRCLE)
 
-    --mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.SENTINEL, ai.r.JA, ai.s.SPECIFIC, xi.ja.SENTINEL)
+    mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.SENTINEL, ai.r.JA, ai.s.SPECIFIC, xi.ja.SENTINEL)
 
-    --mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.SOULEATER, ai.r.JA, ai.s.SPECIFIC, xi.ja.SOULEATER)
+    mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.SOULEATER, ai.r.JA, ai.s.SPECIFIC, xi.ja.SOULEATER)
 
-    --mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 50, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.CURE)
+    mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 50, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.CURE)
 
-    --mob:addSimpleGambit(ai.t.MASTER, ai.c.HPP_LT, 76, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.CURE)
+    mob:addSimpleGambit(ai.t.MASTER, ai.c.HPP_LT, 76, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.CURE)
 
-    --mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.MAJESTY, ai.r.JA, ai.s.SPECIFIC, xi.ja.MAJESTY)
+    mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.MAJESTY, ai.r.JA, ai.s.SPECIFIC, xi.ja.MAJESTY)
     
-    --mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.PROTECT, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.PROTECT, 7)
-    --mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.SHELL, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.SHELL, 7)
+    mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.PROTECT, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.PROTECT, 7)
+    mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.SHELL, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.SHELL, 7)
 
     
 	local trustLevel	= mob:getMainLvl()
@@ -51,7 +51,7 @@ spellObject.onMobSpawn = function(mob)
 	local refreshmp		= trustLevel / 20
 	local mndbonus		= trustLevel
 	local vitbonus		= trustLevel
-	local maindmgrating	= trustLevel-- * 4
+	local maindmgrating	= trustLevel * 4
 	local attbonus		= trustLevel * 2
 	local attpbonus		= trustLevel * 2
 	local accbonus		= trustLevel
