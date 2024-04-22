@@ -102,7 +102,7 @@ spellObject.onMobSpawn = function(mob)
     mob:addMod(xi.mod.HASTE_ABILITY, abilhaste) -- 1000 = 10% Haste (ability)
 
     -- Movement
-	mob:addMod(xi.mod.MOVE_SPEED_STACKABLE, 150)
+	mob:addMod(xi.mod.MOVE_SPEED_STACKABLE, 250)
     
     mob:addMod(xi.mod.ENSPELL, 17)
     mob:addMod(xi.mod.ENSPELL_DMG, 1)
