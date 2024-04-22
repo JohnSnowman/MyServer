@@ -57,6 +57,9 @@ spellObject.onMobSpawn = function(mob)
 	mob:addMod(xi.mod.FASTCAST, castingspeed)
 	mob:addMod(xi.mod.INT, intbonus)
 
+    -- Movement
+	mob:addMod(xi.mod.MOVE_SPEED_OVERIDE, 250)
+
     
     mob:addListener('WEAPONSKILL_USE', 'ADELHEID_WEAPONSKILL_USE', function(mobArg, target, wsid, tp, action)
         if wsid == 3469 then -- Twirling Dervish
