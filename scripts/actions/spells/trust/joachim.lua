@@ -82,6 +82,9 @@ spellObject.onMobSpawn = function(mob)
     mob:addMod(xi.mod.MACC, maccbonus)
 	mob:addMod(xi.mod.FASTCAST, castingspeed)
 
+    -- Movement
+	mob:addMod(xi.mod.MOVE_SPEED_OVERIDE, 250)
+
     -- Try and ranged attack every 60s
     mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, 0, ai.r.RATTACK, 0, 0, 60)
 
