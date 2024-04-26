@@ -602,7 +602,7 @@ xi.shop =
             1063,    5000,      xi.ki.RHAPSODY_IN_UMBER,   -- Newton Coffer Key
             1064,    2500,      xi.ki.RHAPSODY_IN_WHITE,   -- Pso'Xja Chest Key
             
-            xi.ki.LIMIT_BREAKER,    2500,      xi.ki.RHAPSODY_IN_WHITE,   -- Merit Point KI
+            LIMIT_BREAKER,    2500,      xi.ki.RHAPSODY_IN_WHITE,   -- Merit Point KI
         }
     }
 }
