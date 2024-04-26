@@ -73,6 +73,8 @@ xi.player.charCreate = function(player)
     player:addKeyItem(xi.ki.JOB_GESTURE_BLACK_MAGE)
     player:addKeyItem(xi.ki.JOB_GESTURE_RED_MAGE)
     player:addKeyItem(xi.ki.JOB_GESTURE_THIEF)
+    
+    player:addKeyItem(xi.ki.LIMIT_BREAKER)
 
     -- add nation- and race-specific ring
     if nation == raceInfo.homeNation and not player:hasItem(nationInfo.ring) then
@@ -144,7 +146,7 @@ xi.player.charCreate = function(player)
     player:setCharVar('spokePyropox', 1)                -- Pyropox introduction
     player:setCharVar('TutorialProgress', 1)            -- Has not started tutorial
     player:setCharVar('EinherjarIntro', 1)              -- Has not seen Einherjar intro
-    player:setNewPlayer(true)                           -- apply new player flag
+    player:setNewPlayer(false)                          -- apply new player flag
 end
 
 -- called by core after a player logs into the server or zones
