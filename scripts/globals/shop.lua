@@ -520,18 +520,18 @@ xi.shop =
             4510,      24,      xi.ki.RHAPSODY_IN_WHITE,   -- Acorn Cookie
             4394,      12,      xi.ki.RHAPSODY_IN_AZURE,   -- Ginger Cookie
             5782,    1000,      xi.ki.RHAPSODY_IN_WHITE,   -- Sugar Rusk
-            5783,    2000,    xi.ki.RHAPSODY_IN_CRIMSON,   -- Chocolate Rusk
+            5783,    2000,      xi.ki.RHAPSODY_IN_WHITE,   -- Chocolate Rusk
             5779,    1000,      xi.ki.RHAPSODY_IN_WHITE,   -- Cherry Macaron
-            5780,    2000,    xi.ki.RHAPSODY_IN_CRIMSON,   -- Coffee Macaron
+            5780,    2000,      xi.ki.RHAPSODY_IN_WHITE,   -- Coffee Macaron
             5885,    1000,      xi.ki.RHAPSODY_IN_WHITE,   -- Saltena
             5886,    2000,      xi.ki.RHAPSODY_IN_AZURE,   -- Elshena
-            5887,    2500,    xi.ki.RHAPSODY_IN_CRIMSON,   -- Montagna
+            5887,    2500,      xi.ki.RHAPSODY_IN_WHITE,   -- Montagna
             5889,    1000,      xi.ki.RHAPSODY_IN_WHITE,   -- Stuffed Pitaru
-            5890,    2000,      xi.ki.RHAPSODY_IN_AZURE,   -- Poultry Pitaru
-            5891,    2500,    xi.ki.RHAPSODY_IN_CRIMSON,   -- Seafood Pitaru
-            6258,    3000,    xi.ki.RHAPSODY_IN_CRIMSON,   -- Shiromochi
-            6262,    3000,    xi.ki.RHAPSODY_IN_CRIMSON,   -- Kusamochi
-            6260,    3000,    xi.ki.RHAPSODY_IN_CRIMSON,   -- Akamochi
+            5890,    2000,      xi.ki.RHAPSODY_IN_WHITE,   -- Poultry Pitaru
+            5891,    2500,      xi.ki.RHAPSODY_IN_WHITE,   -- Seafood Pitaru
+            6258,    3000,      xi.ki.RHAPSODY_IN_WHITE,   -- Shiromochi
+            6262,    3000,      xi.ki.RHAPSODY_IN_WHITE,   -- Kusamochi
+            6260,    3000,      xi.ki.RHAPSODY_IN_WHITE,   -- Akamochi
             5547,   15000,    xi.ki.RHAPSODY_IN_CRIMSON,   -- Beef Stewpot
             5727,   15000,    xi.ki.RHAPSODY_IN_CRIMSON,   -- Zaru Soba
             4466,     450,    xi.ki.RHAPSODY_IN_CRIMSON,   -- Spicy Cracker
