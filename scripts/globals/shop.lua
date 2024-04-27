@@ -524,7 +524,7 @@ xi.shop =
             5779,    1000,      xi.ki.RHAPSODY_IN_WHITE,   -- Cherry Macaron
             5780,    2000,      xi.ki.RHAPSODY_IN_WHITE,   -- Coffee Macaron
             5885,    1000,      xi.ki.RHAPSODY_IN_WHITE,   -- Saltena
-            5886,    2000,      xi.ki.RHAPSODY_IN_AZURE,   -- Elshena
+            5886,    2000,      xi.ki.RHAPSODY_IN_WHITE,   -- Elshena
             5887,    2500,      xi.ki.RHAPSODY_IN_WHITE,   -- Montagna
             5889,    1000,      xi.ki.RHAPSODY_IN_WHITE,   -- Stuffed Pitaru
             5890,    2000,      xi.ki.RHAPSODY_IN_WHITE,   -- Poultry Pitaru
