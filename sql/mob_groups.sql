@@ -15133,10 +15133,10 @@ INSERT INTO `mob_groups` VALUES (10,6446,288,'Eschan_Vulture',180,0,0,0,0,79,79,
 INSERT INTO `mob_groups` VALUES (11,6553,288,'Eschan_Warrior',180,0,0,0,0,79,79,0);
 INSERT INTO `mob_groups` VALUES (12,6482,288,'Eschan_Corse',180,0,0,0,9999,79,79,0);
 INSERT INTO `mob_groups` VALUES (13,6569,288,'Eschan_Sorcerer',180,0,0,0,9999,79,79,0);
-INSERT INTO `mob_groups` VALUES (14,5539,288,'Eschan_Wasp',120,0,0,0,0,89,89,0);
+INSERT INTO `mob_groups` VALUES (14,5539,288,'Eschan_Wasp',180,0,0,0,0,89,89,0);
 INSERT INTO `mob_groups` VALUES (15,4652,288,'Eschan_Snapweed',180,0,0,0,0,89,89,0);
 INSERT INTO `mob_groups` VALUES (16,5540,288,'Eschan_Goobbue',180,0,0,0,0,89,89,0);
-INSERT INTO `mob_groups` VALUES (17,4848,288,'Eschan_Puk',180,0,0,0,0,109,109,0);
+INSERT INTO `mob_groups` VALUES (17,4848,288,'Eschan_Puk',120,0,0,0,0,109,109,0);
 INSERT INTO `mob_groups` VALUES (18,5541,288,'Eschan_Shadow_Dragon',120,0,0,0,0,110,110,0);
 INSERT INTO `mob_groups` VALUES (19,5542,288,'Eschan_Tarichuk',180,0,0,0,0,109,109,0);
 INSERT INTO `mob_groups` VALUES (20,5637,288,'Eschan_Bugard',180,0,0,0,0,110,110,0);
