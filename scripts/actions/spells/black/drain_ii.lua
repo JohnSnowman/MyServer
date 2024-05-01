@@ -16,12 +16,12 @@ spellObject.onSpellCast = function(caster, target, spell)
 
     --calculate raw damage (unknown function  -> only dark skill though) - using http://www.bluegartr.com/threads/44518-Drain-Calculations
     -- also have small constant to account for 0 dark skill
-    local dmg = 20 + (1.236 * caster:getSkillLevel(xi.skill.DARK_MAGIC))
+    local dmg = 20 + (1.5 * caster:getSkillLevel(xi.skill.DARK_MAGIC))
     local targetHP = target:getHP()
 
-    if dmg > (caster:getSkillLevel(xi.skill.DARK_MAGIC) + 85) then
-        dmg = (caster:getSkillLevel(xi.skill.DARK_MAGIC) + 85)
-    end
+    --if dmg > (caster:getSkillLevel(xi.skill.DARK_MAGIC) + 85) then
+    --    dmg = (caster:getSkillLevel(xi.skill.DARK_MAGIC) + 85)
+    --end
 
     --get resist multiplier (1x if no resist)
     local params = {}
@@ -51,7 +51,7 @@ spellObject.onSpellCast = function(caster, target, spell)
     local leftOver = (caster:getHP() + dmg) - caster:getMaxHP()
 
     if leftOver > 0 then
-        caster:addStatusEffect(xi.effect.MAX_HP_BOOST, (leftOver / caster:getMaxHP()) * 100, 0, 180)
+        caster:addStatusEffect(xi.effect.MAX_HP_BOOST, (leftOver / caster:getMaxHP()) * 100, 0, 1800)
     end
 
     caster:addHP(dmg)
