@@ -57889,16 +57889,17 @@ INSERT INTO `item_mods` VALUES (25615,832,1);   -- AQUAVEIL_COUNT: 1
 -- Amalric Coif +1
 INSERT INTO `item_mods` VALUES (25616,1,96);    -- DEF: 96
 INSERT INTO `item_mods` VALUES (25616,2,27);    -- HP: 27
-INSERT INTO `item_mods` VALUES (25616,5,61);    -- MP: 61
+INSERT INTO `item_mods` VALUES (25616,5,221);   -- MP: 61 + 80 + 80
 INSERT INTO `item_mods` VALUES (25616,8,10);    -- STR: 10
 INSERT INTO `item_mods` VALUES (25616,9,10);    -- DEX: 10
 INSERT INTO `item_mods` VALUES (25616,10,10);   -- VIT: 10
 INSERT INTO `item_mods` VALUES (25616,11,1);    -- AGI: 1
-INSERT INTO `item_mods` VALUES (25616,12,24);   -- INT: 24
+INSERT INTO `item_mods` VALUES (25616,12,60);   -- INT: 24 + 12 + 12 + 12
 INSERT INTO `item_mods` VALUES (25616,13,20);   -- MND: 20
 INSERT INTO `item_mods` VALUES (25616,14,19);   -- CHR: 19
+INSERT INTO `item_mods` VALUES (25616,28,100);  -- MATT: 20 + 20 + 40 + 20
 INSERT INTO `item_mods` VALUES (25616,29,6);    -- MDEF: 6
-INSERT INTO `item_mods` VALUES (25616,30,36);   -- MACC: 36
+INSERT INTO `item_mods` VALUES (25616,30,81);   -- MACC: 36 + 20 + 25
 INSERT INTO `item_mods` VALUES (25616,31,86);   -- MEVA: 86
 INSERT INTO `item_mods` VALUES (25616,68,33);   -- EVA: 33
 INSERT INTO `item_mods` VALUES (25616,170,11);  -- FASTCAST: 11
@@ -58299,18 +58300,18 @@ INSERT INTO `item_mods` VALUES (25688,563,8);   -- MAGIC_CRIT_DMG_INCREASE: 8
 -- Amalric Doublet +1
 INSERT INTO `item_mods` VALUES (25689,1,126);   -- DEF: 126
 INSERT INTO `item_mods` VALUES (25689,2,45);    -- HP: 45
-INSERT INTO `item_mods` VALUES (25689,5,73);    -- MP: 73
+INSERT INTO `item_mods` VALUES (25689,5,313);    -- MP: 73 + 80 + 80 + 80
 INSERT INTO `item_mods` VALUES (25689,8,16);    -- STR: 16
 INSERT INTO `item_mods` VALUES (25689,9,19);    -- DEX: 19
 INSERT INTO `item_mods` VALUES (25689,10,16);   -- VIT: 16
 INSERT INTO `item_mods` VALUES (25689,11,16);   -- AGI: 16
-INSERT INTO `item_mods` VALUES (25689,12,38);   -- INT: 38
+INSERT INTO `item_mods` VALUES (25689,12,74);   -- INT: 38 + 12 + 12 + 12
 INSERT INTO `item_mods` VALUES (25689,13,30);   -- MND: 30
 INSERT INTO `item_mods` VALUES (25689,14,29);   -- CHR: 29
 INSERT INTO `item_mods` VALUES (25689,27,-6);   -- ENMITY: -6
-INSERT INTO `item_mods` VALUES (25689,28,33);   -- MATT: 33
+INSERT INTO `item_mods` VALUES (25689,28,138);  -- MATT: 33 + 20 + 60 + 25
 INSERT INTO `item_mods` VALUES (25689,29,7);    -- MDEF: 7
-INSERT INTO `item_mods` VALUES (25689,30,23);   -- MACC: 23
+INSERT INTO `item_mods` VALUES (25689,30,68);   -- MACC: 23 + 20 + 25
 INSERT INTO `item_mods` VALUES (25689,31,91);   -- MEVA: 91
 INSERT INTO `item_mods` VALUES (25689,68,38);   -- EVA: 38
 INSERT INTO `item_mods` VALUES (25689,296,7);   -- CONSERVE_MP: 7
@@ -67090,16 +67091,17 @@ INSERT INTO `item_mods` VALUES (27119,384,300); -- HASTE_GEAR: 300
 -- Amalric Gages +1
 INSERT INTO `item_mods` VALUES (27120,1,82);    -- DEF: 82
 INSERT INTO `item_mods` VALUES (27120,2,13);    -- HP: 13
-INSERT INTO `item_mods` VALUES (27120,5,26);    -- MP: 26
+INSERT INTO `item_mods` VALUES (27120,5,266);   -- MP: 26 + 80 + 80 + 80
 INSERT INTO `item_mods` VALUES (27120,8,3);     -- STR: 3
 INSERT INTO `item_mods` VALUES (27120,9,23);    -- DEX: 23
 INSERT INTO `item_mods` VALUES (27120,10,20);   -- VIT: 20
 INSERT INTO `item_mods` VALUES (27120,11,2);    -- AGI: 2
-INSERT INTO `item_mods` VALUES (27120,12,24);   -- INT: 24
+INSERT INTO `item_mods` VALUES (27120,12,60);   -- INT: 24 + 12 + 12 + 12
 INSERT INTO `item_mods` VALUES (27120,13,34);   -- MND: 34
 INSERT INTO `item_mods` VALUES (27120,14,19);   -- CHR: 19
-INSERT INTO `item_mods` VALUES (27120,28,33);   -- MATT: 33
-INSERT INTO `item_mods` VALUES (27120,29,3);    -- MDEF: 3
+INSERT INTO `item_mods` VALUES (27120,28,133);   -- MATT: 33 + 20 + 20 + 40 + 20
+INSERT INTO `item_mods` VALUES (27120,29,4);    -- MDEF: 3
+INSERT INTO `item_mods` VALUES (27120,30,40);   -- MACC: 0 + 20 + 20
 INSERT INTO `item_mods` VALUES (27120,31,48);   -- MEVA: 48
 INSERT INTO `item_mods` VALUES (27120,68,19);   -- EVA: 19
 INSERT INTO `item_mods` VALUES (27120,115,14);  -- ELEM: 14
@@ -69192,16 +69194,17 @@ INSERT INTO `item_mods` VALUES (27304,397,7);   -- BLACK_MAGIC_RECAST: 7
 -- Amalric Slops +1
 INSERT INTO `item_mods` VALUES (27305,1,106);   -- DEF: 106
 INSERT INTO `item_mods` VALUES (27305,2,34);    -- HP: 34
-INSERT INTO `item_mods` VALUES (27305,5,105);   -- MP: 105
+INSERT INTO `item_mods` VALUES (27305,5,345);   -- MP: 105 + 80 + 80 + 80
 INSERT INTO `item_mods` VALUES (27305,8,19);    -- STR: 19
 INSERT INTO `item_mods` VALUES (27305,10,6);    -- VIT: 6
 INSERT INTO `item_mods` VALUES (27305,11,14);   -- AGI: 14
-INSERT INTO `item_mods` VALUES (27305,12,40);   -- INT: 40
+INSERT INTO `item_mods` VALUES (27305,12,76);   -- INT: 40 + 12 + 12 + 12
 INSERT INTO `item_mods` VALUES (27305,13,25);   -- MND: 25
 INSERT INTO `item_mods` VALUES (27305,14,19);   -- CHR: 19
 INSERT INTO `item_mods` VALUES (27305,27,-6);   -- ENMITY: -6
-INSERT INTO `item_mods` VALUES (27305,28,40);   -- MATT: 40
+INSERT INTO `item_mods` VALUES (27305,28,145);  -- MATT: 40 + 20 + 20 + 40 + 25
 INSERT INTO `item_mods` VALUES (27305,29,6);    -- MDEF: 6
+INSERT INTO `item_mods` VALUES (27305,30,20);   -- MACC: 0 + 20
 INSERT INTO `item_mods` VALUES (27305,31,118);  -- MEVA: 118
 INSERT INTO `item_mods` VALUES (27305,68,24);   -- EVA: 24
 INSERT INTO `item_mods` VALUES (27305,175,8);   -- SKILLCHAINDMG: 8
@@ -71325,16 +71328,17 @@ INSERT INTO `item_mods` VALUES (27475,384,300); -- HASTE_GEAR: 300
 -- Amalric Nails +1
 INSERT INTO `item_mods` VALUES (27476,1,67);    -- DEF: 67
 INSERT INTO `item_mods` VALUES (27476,2,4);     -- HP: 4
-INSERT INTO `item_mods` VALUES (27476,5,26);    -- MP: 26
+INSERT INTO `item_mods` VALUES (27476,5,266);   -- MP: 26 + 80 + 80 + 80
 INSERT INTO `item_mods` VALUES (27476,8,6);     -- STR: 6
 INSERT INTO `item_mods` VALUES (27476,9,6);     -- DEX: 6
 INSERT INTO `item_mods` VALUES (27476,10,6);    -- VIT: 6
 INSERT INTO `item_mods` VALUES (27476,11,26);   -- AGI: 26
-INSERT INTO `item_mods` VALUES (27476,12,21);   -- INT: 21
+INSERT INTO `item_mods` VALUES (27476,12,57);   -- INT: 21 + 12 + 12 + 12
 INSERT INTO `item_mods` VALUES (27476,13,20);   -- MND: 20
 INSERT INTO `item_mods` VALUES (27476,14,33);   -- CHR: 33
-INSERT INTO `item_mods` VALUES (27476,28,32);   -- MATT: 32
+INSERT INTO `item_mods` VALUES (27476,28,132);  -- MATT: 32 + 20 + 20 + 40 + 20
 INSERT INTO `item_mods` VALUES (27476,29,6);    -- MDEF: 6
+INSERT INTO `item_mods` VALUES (27476,30,40);   -- MACC: 0 + 20 + 20
 INSERT INTO `item_mods` VALUES (27476,31,118);  -- MEVA: 118
 INSERT INTO `item_mods` VALUES (27476,68,60);   -- EVA: 60
 INSERT INTO `item_mods` VALUES (27476,168,16);  -- SPELLINTERRUPT: 16
