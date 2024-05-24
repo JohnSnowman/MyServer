@@ -132,10 +132,10 @@ end
 xi.job_utils.monk.useMantra = function(player, target, ability)
     local merits = player:getMerit(xi.merit.MANTRA)
 
-    player:delStatusEffect(xi.effect.MAX_HP_BOOST)
-    target:addStatusEffect(xi.effect.MAX_HP_BOOST, merits, 0, 180)
+    -- player:delStatusEffect(xi.effect.MAX_HP_BOOST)
+    target:addStatusEffect(xi.effect.MAX_HP_BOOST, merits, 0, 3600)
 
-    return xi.effect.MANTRA -- TODO: implement xi.effect.MANTRA
+    --return xi.effect.MANTRA -- TODO: implement xi.effect.MANTRA
 end
 
 xi.job_utils.monk.usePerfectCounter = function(player, target, ability)
