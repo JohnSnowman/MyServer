@@ -130,7 +130,7 @@ xi.job_utils.monk.useInnerStrength = function(player, target, ability)
 end
 
 xi.job_utils.monk.useMantra = function(player, target, ability)
-    local merits = player:getMerit(xi.merit.MANTRA)
+    local merits = player:getMerit(xi.merit.MANTRA) * 40
 
     -- player:delStatusEffect(xi.effect.MAX_HP_BOOST)
     target:addStatusEffect(xi.effect.MAX_HP_BOOST, merits, 0, 3600)
