@@ -134,7 +134,8 @@ xi.job_utils.monk.useMantra = function(player, target, ability)
 
     -- player:delStatusEffect(xi.effect.MAX_HP_BOOST)
     --target:addStatusEffect(xi.effect.MAX_HP_BOOST, merits, 0, 3600)
-    player:addStatusEffect(xi.effect.MANTRA, merits, 0, 3600)
+    --player:addStatusEffect(xi.effect.MANTRA, merits, 0, 3600)
+    player:addStatusEffect(xi.effect.MANTRA, 2, 0, 3600)
 
     --return xi.effect.MANTRA -- TODO: implement xi.effect.MANTRA
 end
