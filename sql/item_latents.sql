@@ -1449,6 +1449,11 @@ INSERT INTO `item_latents` VALUES (15809,26,15,51,70);     -- rACC+15 above leve
 INSERT INTO `item_latents` VALUES (15809,26,15,51,80);     -- rACC+15 above level 80
 INSERT INTO `item_latents` VALUES (15809,26,15,51,90);     -- rACC+15 above level 90
 INSERT INTO `item_latents` VALUES (15809,26,20,51,98);     -- rACC+20 above level 98
+INSERT INTO `item_latents` VALUES (15809,138,1,51,50);     -- BARRAGE_COUNT +1 above level 50
+INSERT INTO `item_latents` VALUES (15809,138,1,51,70);     -- BARRAGE_COUNT +1 above level 70
+INSERT INTO `item_latents` VALUES (15809,138,1,51,80);     -- BARRAGE_COUNT +1 above level 80
+INSERT INTO `item_latents` VALUES (15809,138,1,51,90);     -- BARRAGE_COUNT +1 above level 90
+INSERT INTO `item_latents` VALUES (15809,138,2,51,98);     -- BARRAGE_COUNT +2 above level 98
 INSERT INTO `item_latents` VALUES (15809,305,10,51,50);     -- 10 Recycle above level 50
 INSERT INTO `item_latents` VALUES (15809,305,10,51,60);     -- 10 Recycle above level 60
 INSERT INTO `item_latents` VALUES (15809,305,10,51,70);     -- 10 Recycle above level 70
@@ -1467,6 +1472,12 @@ INSERT INTO `item_latents` VALUES (15809,365,10,51,70);     -- 10 Snap Shot abov
 INSERT INTO `item_latents` VALUES (15809,365,10,51,80);     -- 10 Snap Shot above level 80
 INSERT INTO `item_latents` VALUES (15809,365,10,51,90);     -- 10 Snap Shot above level 90
 INSERT INTO `item_latents` VALUES (15809,365,15,51,98);     -- 15 Snap Shot above level 98
+INSERT INTO `item_latents` VALUES (15809,376,20,51,50);     -- 20 RANGED_DMG_RATING above level 50
+INSERT INTO `item_latents` VALUES (15809,376,20,51,60);     -- 20 RANGED_DMG_RATING above level 60
+INSERT INTO `item_latents` VALUES (15809,376,20,51,70);     -- 20 RANGED_DMG_RATING above level 70
+INSERT INTO `item_latents` VALUES (15809,376,20,51,80);     -- 20 RANGED_DMG_RATING above level 80
+INSERT INTO `item_latents` VALUES (15809,376,20,51,90);     -- 20 RANGED_DMG_RATING above level 90
+INSERT INTO `item_latents` VALUES (15809,376,50,51,98);     -- 50 RANGED_DMG_RATING above level 98
 
 -- Ladybug Ring / Ladybug Ring +1
 INSERT INTO `item_latents` VALUES (15815,2,20,26,0);     -- HP+20 during Daytime
