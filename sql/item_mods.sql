@@ -55872,15 +55872,20 @@ INSERT INTO `item_mods` VALUES (23755,11,29);   -- AGI: 29
 INSERT INTO `item_mods` VALUES (23755,12,17);   -- INT: 17
 INSERT INTO `item_mods` VALUES (23755,13,19);   -- MND: 19
 INSERT INTO `item_mods` VALUES (23755,14,20);   -- CHR: 20
-INSERT INTO `item_mods` VALUES (23755,24,40);   -- RATT: 40
-INSERT INTO `item_mods` VALUES (23755,26,40);   -- RACC: 40
+INSERT INTO `item_mods` VALUES (23755,24,70);   -- RATT: 40 + 30
+INSERT INTO `item_mods` VALUES (23755,26,55);   -- RACC: 40 + 15
 INSERT INTO `item_mods` VALUES (23755,27,-7);   -- ENMITY: -7
+INSERT INTO `item_mods` VALUES (23755,28,45);   -- MATT: 0 + 45
 INSERT INTO `item_mods` VALUES (23755,29,5);    -- MDEF: 5
-INSERT INTO `item_mods` VALUES (23755,30,40);   -- MACC: 40
+INSERT INTO `item_mods` VALUES (23755,30,55);   -- MACC: 40 + 15
 INSERT INTO `item_mods` VALUES (23755,31,96);   -- MEVA: 96
 INSERT INTO `item_mods` VALUES (23755,68,77);   -- EVA: 77
 INSERT INTO `item_mods` VALUES (23755,73,8);    -- STORETP: 8
 INSERT INTO `item_mods` VALUES (23755,365,6);   -- SNAP_SHOT: 6
+INSERT INTO `item_mods` VALUES (23755,366,40);   -- MAIN_DMG_RATING: 40-- TODO: Physical Damage Limit +4%
+INSERT INTO `item_mods` VALUES (23755,367,40);   -- SUB_DMG_RATING: 40-- TODO: Physical Damage Limit +4%
+INSERT INTO `item_mods` VALUES (23755,376,40);   -- RANGED_DMG_RATING: 40-- TODO: Physical Damage Limit +4%
+INSERT INTO `item_mods` VALUES (23755,973,5);   -- SUBTLE_BLOW_II: 5
 -- TODO: Physical Damage Limit +4%
 
 -- Sakpatas Helm
@@ -55903,7 +55908,10 @@ INSERT INTO `item_mods` VALUES (23757,68,63);    -- EVA: 63
 INSERT INTO `item_mods` VALUES (23757,160,-700); -- DMG: -700
 INSERT INTO `item_mods` VALUES (23757,170,8);    -- FASTCAST: 8
 INSERT INTO `item_mods` VALUES (23757,288,5);    -- DOUBLE_ATTACK: 5
+INSERT INTO `item_mods` VALUES (23757,366,40);   -- MAIN_DMG_RATING: 40-- TODO: Physical Damage Limit +4%
+INSERT INTO `item_mods` VALUES (23757,367,40);   -- SUB_DMG_RATING: 40-- TODO: Physical Damage Limit +4%
 INSERT INTO `item_mods` VALUES (23757,374,5);    -- Cure Potency: 5
+INSERT INTO `item_mods` VALUES (23757,376,40);   -- RANGED_DMG_RATING: 40-- TODO: Physical Damage Limit +4%
 INSERT INTO `item_mods` VALUES (23757,384,400);  -- HASTE_GEAR: 400
 INSERT INTO `item_mods` VALUES (23757,1038,15);  -- Double attack Damage: 15
 -- TODO: Physical Damage Limit +5%
@@ -56028,15 +56036,20 @@ INSERT INTO `item_mods` VALUES (23762,11,39);   -- AGI: 39
 INSERT INTO `item_mods` VALUES (23762,12,24);   -- INT: 24
 INSERT INTO `item_mods` VALUES (23762,13,25);   -- MND: 25
 INSERT INTO `item_mods` VALUES (23762,14,26);   -- CHR: 26
-INSERT INTO `item_mods` VALUES (23762,24,40);   -- RATT: 40
-INSERT INTO `item_mods` VALUES (23762,26,40);   -- RACC: 40
+INSERT INTO `item_mods` VALUES (23762,24,70);   -- RATT: 40 + 30
+INSERT INTO `item_mods` VALUES (23762,26,55);   -- RACC: 40 + 15
 INSERT INTO `item_mods` VALUES (23762,27,-10);  -- ENMITY: -10
 INSERT INTO `item_mods` VALUES (23762,29,8);    -- MDEF: 8
-INSERT INTO `item_mods` VALUES (23762,30,40);   -- MACC: 40
+INSERT INTO `item_mods` VALUES (23762,30,55);   -- MACC: 40 + 15
 INSERT INTO `item_mods` VALUES (23762,31,112);  -- MEVA: 112
 INSERT INTO `item_mods` VALUES (23762,68,88);   -- EVA: 88
 INSERT INTO `item_mods` VALUES (23762,73,11);   -- STORETP: 11
+INSERT INTO `item_mods` VALUES (23762,165,5);   -- CRITHITRATE: 5
+INSERT INTO `item_mods` VALUES (23762,345,200); -- TP_BONUS: 200
 INSERT INTO `item_mods` VALUES (23762,365,9);   -- SNAP_SHOT: 9
+INSERT INTO `item_mods` VALUES (23762,366,70);   -- MAIN_DMG_RATING: 70-- TODO: Physical Damage Limit +7%
+INSERT INTO `item_mods` VALUES (23762,367,70);   -- SUB_DMG_RATING: 70-- TODO: Physical Damage Limit +7%
+INSERT INTO `item_mods` VALUES (23762,376,70);   -- RANGED_DMG_RATING: 70-- TODO: Physical Damage Limit +7%
 -- TODO: Physical Damage Limit +7%
 
 -- Sakpatas Plate
@@ -56059,7 +56072,10 @@ INSERT INTO `item_mods` VALUES (23764,68,74);     -- EVA: 74
 INSERT INTO `item_mods` VALUES (23764,160,-1000); -- DMG: -1000
 INSERT INTO `item_mods` VALUES (23764,165,5);     -- CRITHITRATE: 5
 INSERT INTO `item_mods` VALUES (23764,288,8);     -- DOUBLE_ATTACK: 8
+INSERT INTO `item_mods` VALUES (23764,366,80);   -- MAIN_DMG_RATING: 80-- TODO: Physical Damage Limit +8%
+INSERT INTO `item_mods` VALUES (23764,367,80);   -- SUB_DMG_RATING: 80-- TODO: Physical Damage Limit +8%
 INSERT INTO `item_mods` VALUES (23764,375,10);    -- CURE_POTENCY_RCVD: 10
+INSERT INTO `item_mods` VALUES (23764,376,80);   -- RANGED_DMG_RATING: 80-- TODO: Physical Damage Limit +8%
 INSERT INTO `item_mods` VALUES (23764,384,200);   -- HASTE_GEAR: 200
 INSERT INTO `item_mods` VALUES (23764,958,15);    -- STATUSRES: 15
 -- TODO: Physical Damage Limit +8%
@@ -56185,15 +56201,20 @@ INSERT INTO `item_mods` VALUES (23769,11,19); -- AGI: 19
 INSERT INTO `item_mods` VALUES (23769,12,16); -- INT: 16
 INSERT INTO `item_mods` VALUES (23769,13,32); -- MND: 32
 INSERT INTO `item_mods` VALUES (23769,14,24); -- CHR: 24
-INSERT INTO `item_mods` VALUES (23769,24,40); -- RATT: 40
-INSERT INTO `item_mods` VALUES (23769,26,40); -- RACC: 40
+INSERT INTO `item_mods` VALUES (23769,24,70); -- RATT: 40 + 30
+INSERT INTO `item_mods` VALUES (23769,26,55); -- RACC: 40 + 15
 INSERT INTO `item_mods` VALUES (23769,27,-8); -- ENMITY: -8
 INSERT INTO `item_mods` VALUES (23769,29,4);  -- MDEF: 4
-INSERT INTO `item_mods` VALUES (23769,30,40); -- MACC: 40
+INSERT INTO `item_mods` VALUES (23769,30,55); -- MACC: 40 + 15
 INSERT INTO `item_mods` VALUES (23769,31,86); -- MEVA: 86
 INSERT INTO `item_mods` VALUES (23769,68,66); -- EVA: 66
 INSERT INTO `item_mods` VALUES (23769,73,9);  -- STORETP: 9
+INSERT INTO `item_mods` VALUES (23769,289,15); -- SUBTLE_BLOW: 15
+INSERT INTO `item_mods` VALUES (23769,305,10); -- RECYCLE: 10
 INSERT INTO `item_mods` VALUES (23769,365,7); -- SNAP_SHOT: 7
+INSERT INTO `item_mods` VALUES (23769,366,50);   -- MAIN_DMG_RATING: 50-- TODO: Physical Damage Limit +5%
+INSERT INTO `item_mods` VALUES (23769,367,50);   -- SUB_DMG_RATING: 50-- TODO: Physical Damage Limit +5%
+INSERT INTO `item_mods` VALUES (23769,376,50);   -- RANGED_DMG_RATING: 50-- TODO: Physical Damage Limit +5%
 -- TODO: Physical Damage Limit +5%
 
 -- Sakpatas Gauntlets
@@ -56216,6 +56237,9 @@ INSERT INTO `item_mods` VALUES (23771,73,8);     -- STORETP: 8
 INSERT INTO `item_mods` VALUES (23771,160,-800); -- DMG: -800
 INSERT INTO `item_mods` VALUES (23771,288,6);    -- DOUBLE_ATTACK: 6
 INSERT INTO `item_mods` VALUES (23771,289,8);    -- SUBTLE_BLOW: 8
+INSERT INTO `item_mods` VALUES (23771,366,60);   -- MAIN_DMG_RATING: 60-- TODO: Physical Damage Limit +6%
+INSERT INTO `item_mods` VALUES (23771,367,60);   -- SUB_DMG_RATING: 60-- TODO: Physical Damage Limit +6%
+INSERT INTO `item_mods` VALUES (23771,376,60);   -- RANGED_DMG_RATING: 60-- TODO: Physical Damage Limit +6%
 INSERT INTO `item_mods` VALUES (23771,384,400);  -- HASTE_GEAR: 400
 -- TODO: Physical Damage Limit +6%
 
@@ -56332,21 +56356,25 @@ INSERT INTO `item_mods` VALUES (23775,487,5);    -- MAG_BURST_BONUS: 5
 -- Ikengas Trousers
 INSERT INTO `item_mods` VALUES (23776,1,146);  -- DEF: 146
 INSERT INTO `item_mods` VALUES (23776,2,68);   -- HP: 68
-INSERT INTO `item_mods` VALUES (23776,8,38);   -- STR: 38
+INSERT INTO `item_mods` VALUES (23776,8,43);   -- STR: 38 + 5
 INSERT INTO `item_mods` VALUES (23776,10,20);  -- VIT: 20
 INSERT INTO `item_mods` VALUES (23776,11,40);  -- AGI: 40
 INSERT INTO `item_mods` VALUES (23776,12,32);  -- INT: 32
 INSERT INTO `item_mods` VALUES (23776,13,20);  -- MND: 20
 INSERT INTO `item_mods` VALUES (23776,14,15);  -- CHR: 15
-INSERT INTO `item_mods` VALUES (23776,24,40);  -- RATT: 40
-INSERT INTO `item_mods` VALUES (23776,26,40);  -- RACC: 40
+INSERT INTO `item_mods` VALUES (23776,24,70);  -- RATT: 40 + 30
+INSERT INTO `item_mods` VALUES (23776,26,55);  -- RACC: 40 + 15
 INSERT INTO `item_mods` VALUES (23776,27,-9);  -- ENMITY: -9
 INSERT INTO `item_mods` VALUES (23776,29,7);   -- MDEF: 7
-INSERT INTO `item_mods` VALUES (23776,30,40);  -- MACC: 40
+INSERT INTO `item_mods` VALUES (23776,30,55);  -- MACC: 40 + 15
 INSERT INTO `item_mods` VALUES (23776,31,123); -- MEVA: 123
 INSERT INTO `item_mods` VALUES (23776,68,72);  -- EVA: 72
 INSERT INTO `item_mods` VALUES (23776,73,10);  -- STORETP: 10
+INSERT INTO `item_mods` VALUES (23776,160,-1000); -- DMG: -10%
 INSERT INTO `item_mods` VALUES (23776,365,8);  -- SNAP_SHOT: 8
+INSERT INTO `item_mods` VALUES (23776,366,60);   -- MAIN_DMG_RATING: 60-- TODO: Physical Damage Limit +6%
+INSERT INTO `item_mods` VALUES (23776,367,60);   -- SUB_DMG_RATING: 60-- TODO: Physical Damage Limit +6%
+INSERT INTO `item_mods` VALUES (23776,376,60);   -- RANGED_DMG_RATING: 60-- TODO: Physical Damage Limit +6%
 -- TODO: Physical Damage Limit +6%
 
 -- Sakpatas Cuisses
@@ -56368,6 +56396,9 @@ INSERT INTO `item_mods` VALUES (23778,68,58);    -- EVA: 58
 INSERT INTO `item_mods` VALUES (23778,160,-900); -- DMG: -900
 INSERT INTO `item_mods` VALUES (23778,174,15);   -- SKILLCHAINBONUS: 15
 INSERT INTO `item_mods` VALUES (23778,288,7);    -- DOUBLE_ATTACK: 7
+INSERT INTO `item_mods` VALUES (23778,366,70);   -- MAIN_DMG_RATING: 70-- TODO: Physical Damage Limit +7%
+INSERT INTO `item_mods` VALUES (23778,367,70);   -- SUB_DMG_RATING: 70-- TODO: Physical Damage Limit +7%
+INSERT INTO `item_mods` VALUES (23778,376,70);   -- RANGED_DMG_RATING: 70-- TODO: Physical Damage Limit +7%
 INSERT INTO `item_mods` VALUES (23778,384,400);  -- HASTE_GEAR: 400
 -- TODO: "Phalanx" Received +5
 -- TODO: Physical Damage Limit +7%
@@ -56485,18 +56516,22 @@ INSERT INTO `item_mods` VALUES (23783,2,45);   -- HP: 45
 INSERT INTO `item_mods` VALUES (23783,8,21);   -- STR: 21
 INSERT INTO `item_mods` VALUES (23783,9,33);   -- DEX: 33
 INSERT INTO `item_mods` VALUES (23783,10,14);  -- VIT: 14
-INSERT INTO `item_mods` VALUES (23783,11,52);  -- AGI: 52
+INSERT INTO `item_mods` VALUES (23783,11,57);  -- AGI: 52 + 5
 INSERT INTO `item_mods` VALUES (23783,13,16);  -- MND: 16
 INSERT INTO `item_mods` VALUES (23783,14,32);  -- CHR: 32
-INSERT INTO `item_mods` VALUES (23783,24,40);  -- RATT: 40
-INSERT INTO `item_mods` VALUES (23783,26,40);  -- RACC: 40
+INSERT INTO `item_mods` VALUES (23783,24,70);  -- RATT: 40 + 30
+INSERT INTO `item_mods` VALUES (23783,26,55);  -- RACC: 40 + 15
 INSERT INTO `item_mods` VALUES (23783,27,-6);  -- ENMITY: -6
 INSERT INTO `item_mods` VALUES (23783,29,5);   -- MDEF: 5
-INSERT INTO `item_mods` VALUES (23783,30,40);  -- MACC: 40
+INSERT INTO `item_mods` VALUES (23783,30,55);  -- MACC: 40 + 15
 INSERT INTO `item_mods` VALUES (23783,31,123); -- MEVA: 123
 INSERT INTO `item_mods` VALUES (23783,68,105); -- EVA: 105
 INSERT INTO `item_mods` VALUES (23783,73,7);   -- STORETP: 7
 INSERT INTO `item_mods` VALUES (23783,365,5);  -- SNAP_SHOT: 5
+INSERT INTO `item_mods` VALUES (23783,366,30);   -- MAIN_DMG_RATING: 30-- TODO: Physical Damage Limit +3%
+INSERT INTO `item_mods` VALUES (23783,367,30);   -- SUB_DMG_RATING: 30-- TODO: Physical Damage Limit +3%
+INSERT INTO `item_mods` VALUES (23783,376,30);   -- RANGED_DMG_RATING: 30-- TODO: Physical Damage Limit +3%
+INSERT INTO `item_mods` VALUES (23783,365,1053); -- TRUE_SHOT_EFFECT: 10
 
 -- Gletis Boots
 INSERT INTO `item_mods` VALUES (23784,1,119);    -- DEF: 119
@@ -56538,6 +56573,9 @@ INSERT INTO `item_mods` VALUES (23785,160,-600); -- DMG: -600
 INSERT INTO `item_mods` VALUES (23785,288,4);    -- DOUBLE_ATTACK: 4
 INSERT INTO `item_mods` VALUES (23785,289,15);   -- SUBTLE_BLOW: 15
 INSERT INTO `item_mods` VALUES (23785,291,5);    -- COUNTER: 5
+INSERT INTO `item_mods` VALUES (23785,366,40);   -- MAIN_DMG_RATING: 40-- TODO: Physical Damage Limit +4%
+INSERT INTO `item_mods` VALUES (23785,367,40);   -- SUB_DMG_RATING: 40-- TODO: Physical Damage Limit +4%
+INSERT INTO `item_mods` VALUES (23785,376,40);   -- RANGED_DMG_RATING: 40-- TODO: Physical Damage Limit +4%
 INSERT INTO `item_mods` VALUES (23785,384,200);  -- HASTE_GEAR: 200
 INSERT INTO `item_mods` VALUES (23785,518,5);    -- SHIELDBLOCKRATE: 5
 
@@ -60491,6 +60529,28 @@ INSERT INTO `item_mods` VALUES (26250,114,10); -- ENFEEBLE: 10
 INSERT INTO `item_mods` VALUES (26251,1,16);    -- DEF: 16
 INSERT INTO `item_mods` VALUES (26251,874,10);  -- SNEAK_ATK_DEX: 10
 INSERT INTO `item_mods` VALUES (26251,1039,20); -- TRIPLE_ATTACK_DMG: 20
+
+-- Belenus's Mantle
+INSERT INTO `item_mods` VALUES (26256,1,16);    -- DEF: 16
+INSERT INTO `item_mods` VALUES (26256,8,15);    -- STR: 15
+INSERT INTO `item_mods` VALUES (26256,9,15);    -- DEX: 15
+INSERT INTO `item_mods` VALUES (26256,10,15);   -- VIT: 15
+INSERT INTO `item_mods` VALUES (26256,11,15);   -- AGI: 15
+INSERT INTO `item_mods` VALUES (26256,12,15);   -- INT: 15
+INSERT INTO `item_mods` VALUES (26256,13,15);   -- MND: 15
+INSERT INTO `item_mods` VALUES (26256,14,15);   -- CHR: 15
+INSERT INTO `item_mods` VALUES (26256,24,30);   -- rATT: 30
+INSERT INTO `item_mods` VALUES (26256,23,30);   -- rACC: 30
+INSERT INTO `item_mods` VALUES (26256,73,10);   -- STORETP: 10
+INSERT INTO `item_mods` VALUES (26256,160,-1000);  -- DMG: -10%
+INSERT INTO `item_mods` VALUES (26256,170,10);  -- FASTCAST: 10
+INSERT INTO `item_mods` VALUES (26256,288,10);  -- DOUBLE_ATTACK: 10
+INSERT INTO `item_mods` VALUES (26256,370,10);  -- REGEN: 10
+INSERT INTO `item_mods` VALUES (26256,384,10);  -- HASTE_GEAR: 10
+INSERT INTO `item_mods` VALUES (26256,423,2);  -- VELOCITY_SNAPSHOT_BONUS: 2
+INSERT INTO `item_mods` VALUES (26256,424,2);  -- VELOCITY_RATT_BONUS: 2
+INSERT INTO `item_mods` VALUES (26256,479,20);  -- RAPID_SHOT_DOUBLE_DAMAGE: 20
+INSERT INTO `item_mods` VALUES (26256,840,10);   -- ALL_WSDMG_ALL_HITS: 10
 
 -- Andartias Mantle
 INSERT INTO `item_mods` VALUES (26258,1,16);  -- DEF: 16
