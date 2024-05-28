@@ -56531,7 +56531,7 @@ INSERT INTO `item_mods` VALUES (23783,365,5);  -- SNAP_SHOT: 5
 INSERT INTO `item_mods` VALUES (23783,366,30);   -- MAIN_DMG_RATING: 30-- TODO: Physical Damage Limit +3%
 INSERT INTO `item_mods` VALUES (23783,367,30);   -- SUB_DMG_RATING: 30-- TODO: Physical Damage Limit +3%
 INSERT INTO `item_mods` VALUES (23783,376,30);   -- RANGED_DMG_RATING: 30-- TODO: Physical Damage Limit +3%
-INSERT INTO `item_mods` VALUES (23783,365,1053); -- TRUE_SHOT_EFFECT: 10
+INSERT INTO `item_mods` VALUES (23783,1053,10); -- TRUE_SHOT_EFFECT: 10
 
 -- Gletis Boots
 INSERT INTO `item_mods` VALUES (23784,1,119);    -- DEF: 119
