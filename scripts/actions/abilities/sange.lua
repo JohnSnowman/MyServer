@@ -14,7 +14,7 @@ end
 abilityObject.onUseAbility = function(player, target, ability)
     local potency = player:getMerit(xi.merit.SANGE)-1
 
-    player:addStatusEffect(xi.effect.SANGE, potency * 25, 0, 60)
+    player:addStatusEffect(xi.effect.SANGE, potency * 25, 0, 600)
 end
 
 return abilityObject
