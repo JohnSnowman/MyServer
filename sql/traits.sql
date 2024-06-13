@@ -690,10 +690,12 @@ INSERT INTO `traits` VALUES (119,'curative recantation',21,75,1,970,0,'SOA',3396
 INSERT INTO `traits` VALUES (120,'primeval zeal',21,75,1,971,0,'SOA',3398);
 
 INSERT INTO `traits` VALUES (123,'daken',13,25,1,911,20,'SOA',0);
-INSERT INTO `traits` VALUES (123,'daken',13,40,2,911,25,'SOA',0);
-INSERT INTO `traits` VALUES (123,'daken',13,55,3,911,30,'SOA',0);
-INSERT INTO `traits` VALUES (123,'daken',13,70,4,911,35,'SOA',0);
-INSERT INTO `traits` VALUES (123,'daken',13,95,5,911,40,'SOA',0);
+INSERT INTO `traits` VALUES (123,'daken',13,40,2,911,30,'SOA',0);
+INSERT INTO `traits` VALUES (123,'daken',13,55,3,911,40,'SOA',0);
+INSERT INTO `traits` VALUES (123,'daken',13,70,4,911,50,'SOA',0);
+INSERT INTO `traits` VALUES (123,'daken',13,85,5,911,60,'SOA',0);
+INSERT INTO `traits` VALUES (123,'daken',13,95,6,911,75,'SOA',0);
+INSERT INTO `traits` VALUES (123,'daken',13,99,7,911,100,'SOA',0);
 INSERT INTO `traits` VALUES (127,'smite',1,35,1,898,25,'SOA',0);
 INSERT INTO `traits` VALUES (127,'smite',1,65,2,898,38,'SOA',0);
 INSERT INTO `traits` VALUES (127,'smite',1,95,3,898,51,'SOA',0);
