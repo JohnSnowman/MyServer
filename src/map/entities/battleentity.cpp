@@ -330,9 +330,9 @@ int16 CBattleEntity::GetWeaponDelay(bool tp)
         if (!tp)
         {
             // Cap haste at appropriate levels.
-            int16 hasteMagic   = std::clamp<int16>(getMod(Mod::HASTE_MAGIC), -10000, 4375);  // 43.75% cap -- handle 100% slow for weakness
-            int16 hasteAbility = std::clamp<int16>(getMod(Mod::HASTE_ABILITY), -2500, 2500); // 25% cap
-            int16 hasteGear    = std::clamp<int16>(getMod(Mod::HASTE_GEAR), -2500, 2500);    // 25%
+            int16 hasteMagic   = std::clamp<int16>(getMod(Mod::HASTE_MAGIC), -10000, 4875);  // 43.75% cap -- handle 100% slow for weakness
+            int16 hasteAbility = std::clamp<int16>(getMod(Mod::HASTE_ABILITY), -2500, 2800); // 25% cap
+            int16 hasteGear    = std::clamp<int16>(getMod(Mod::HASTE_GEAR), -2500, 2800);    // 25%
 
             // Divide by float to get a more accurate reduction, then use int16 cast to truncate
             WeaponDelay -= (int16)(WeaponDelay * (hasteMagic + hasteAbility + hasteGear) / 10000.f);
@@ -342,7 +342,7 @@ int16 CBattleEntity::GetWeaponDelay(bool tp)
         // Global delay reduction cap of "about 80%" being enforced.
         // This should be enforced on -delay equipment, martial arts, dual wield, and haste, hence MinimumDelay * 0.2.
         // TODO: Could be converted to value/1024 if the exact cap is ever determined.
-        MinimumDelay -= (uint16)(MinimumDelay * 0.8);
+        MinimumDelay -= (uint16)(MinimumDelay * 0.9);
         WeaponDelay = (WeaponDelay < MinimumDelay) ? MinimumDelay : WeaponDelay;
     }
     return WeaponDelay;
