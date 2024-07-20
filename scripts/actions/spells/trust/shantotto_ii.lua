@@ -14,19 +14,29 @@ end
 spellObject.onMobSpawn = function(mob)
     xi.trust.message(mob, xi.trust.messageOffset.SPAWN)
 
+    mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.ELEMENTAL_SEAL, ai.r.JA, ai.s.SPECIFIC, xi.ja.ELEMENTAL_SEAL)
+
     mob:addSimpleGambit(ai.t.TARGET, ai.c.MB_AVAILABLE, 0, ai.r.MA, ai.s.MB_ELEMENT, xi.magic.spellFamily.NONE)
-    mob:addSimpleGambit(ai.t.TARGET, ai.c.NOT_SC_AVAILABLE, 0, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.NONE, 45)
+    mob:addSimpleGambit(ai.t.TARGET, ai.c.NOT_SC_AVAILABLE, 0, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.NONE, 8)
 
-    local trustLevel  = mob:getMainLvl()
-    local power       = trustLevel / 5
-    local spellDamage = trustLevel * math.floor((trustLevel + 1) / 10)
+    
+    local trustLevel	= mob:getMainLvl()
+	local mabbonus      = trustLevel / 2
+	local maccbonus     = trustLevel
+	local spellDamage	= trustLevel * math.floor((trustLevel + 1) / 4)
+	local castingspeed	= trustLevel / 3
+	local intbonus		= trustLevel / 2
+	
+	mob:addMod(xi.mod.MATT, mabbonus)
+	mob:addMod(xi.mod.MACC, maccbonus)
+	mob:addMod(xi.mod.MAGIC_DAMAGE, spellDamage)
+	mob:addMod(xi.mod.FASTCAST, castingspeed)
+	mob:addMod(xi.mod.INT, intbonus)
 
-    mob:addMod(xi.mod.MATT, power)
-    mob:addMod(xi.mod.MACC, power)
-    mob:addMod(xi.mod.HASTE_MAGIC, 1000) -- 10% Haste (Magic)
+    -- Movement
+	mob:addMod(xi.mod.MOVE_SPEED_OVERIDE, 250)
 
-    -- Shantotto's tier I spells scale up to mimic tier 2, 3, etc, spells.
-    mob:addMod(xi.mod.MAGIC_DAMAGE, spellDamage)
+
 
     -- Shantotto has 100% melee hit rate always.
     -- TODO: Add support for 'perfect accuracy' in c++ land and stop hacking her accuracy.
