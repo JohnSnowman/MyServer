@@ -14,7 +14,19 @@ end
 spellObject.onMobSpawn = function(mob)
     xi.trust.message(mob, xi.trust.messageOffset.SPAWN)
 
-    mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.ELEMENTAL_SEAL, ai.r.JA, ai.s.SPECIFIC, xi.ja.ELEMENTAL_SEAL)
+    
+    local mlvl = mob:getMainLvl()
+
+    if mlvl > 14 then
+        mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.ELEMENTAL_SEAL, ai.r.JA, ai.s.SPECIFIC, xi.ja.ELEMENTAL_SEAL)
+    end
+    if mlvl > 19 then
+        mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.ADDENDUM_BLACK, ai.r.JA, ai.s.SPECIFIC, xi.ja.DARK_ARTS)
+    end
+    if mlvl > 59 then
+        mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.ADDENDUM_BLACK, ai.r.JA, ai.s.SPECIFIC, xi.ja.ADDENDUM_BLACK)
+    end
+
 
     mob:addSimpleGambit(ai.t.TARGET, ai.c.MB_AVAILABLE, 0, ai.r.MA, ai.s.MB_ELEMENT, xi.magic.spellFamily.NONE)
     mob:addSimpleGambit(ai.t.TARGET, ai.c.NOT_SC_AVAILABLE, 0, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.NONE, 5)
