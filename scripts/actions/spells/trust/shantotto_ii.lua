@@ -17,11 +17,11 @@ spellObject.onMobSpawn = function(mob)
     mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.ELEMENTAL_SEAL, ai.r.JA, ai.s.SPECIFIC, xi.ja.ELEMENTAL_SEAL)
 
     mob:addSimpleGambit(ai.t.TARGET, ai.c.MB_AVAILABLE, 0, ai.r.MA, ai.s.MB_ELEMENT, xi.magic.spellFamily.NONE)
-    mob:addSimpleGambit(ai.t.TARGET, ai.c.NOT_SC_AVAILABLE, 0, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.NONE, 8)
+    mob:addSimpleGambit(ai.t.TARGET, ai.c.NOT_SC_AVAILABLE, 0, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.NONE, 5)
 
     
     local trustLevel	= mob:getMainLvl()
-	local mabbonus      = trustLevel / 2
+	local mabbonus      = trustLevel
 	local maccbonus     = trustLevel
 	local spellDamage	= trustLevel * math.floor((trustLevel + 1) / 4)
 	local castingspeed	= trustLevel / 3
