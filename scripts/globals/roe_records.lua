@@ -9468,7 +9468,7 @@ xi.roe.records =
         goal = 30,
         reqs = { mobXP = true },
         flags = set { 'daily' },
-        reward = { sparks = 100, xp = 500, accolades = 300, item = { xi.item.COPPER_AMAN_VOUCHER } },
+        reward = { sparks = 200, xp = 500, accolades = 3000, item = { xi.item.COPPER_AMAN_VOUCHER } },
     },
 
     [4083] =
@@ -9476,7 +9476,7 @@ xi.roe.records =
         trigger = xi.roeTrigger.BUFF_ALLY,
         goal = 20,
         flags = set { 'daily' },
-        reward = { sparks = 300, xp = 1500, accolades = 300, item = { xi.item.COPPER_AMAN_VOUCHER } },
+        reward = { sparks = 600, xp = 1500, accolades = 3000, item = { xi.item.COPPER_AMAN_VOUCHER } },
     },
 
     [4084] =
@@ -9485,7 +9485,7 @@ xi.roe.records =
         goal = 100,
         reqs = { healMin = 500 },
         flags = set { 'daily' },
-        reward = { sparks = 300, xp = 1500, accolades = 300, item = { xi.item.COPPER_AMAN_VOUCHER } },
+        reward = { sparks = 600, xp = 1500, accolades = 3000, item = { xi.item.COPPER_AMAN_VOUCHER } },
     },
 
     -----------------------------------
@@ -9495,55 +9495,55 @@ xi.roe.records =
     [4008] =
     { -- Vanquish Aquans
         trigger = xi.roeTrigger.DEFEAT_MOB,
-        goal = 20,
+        goal = 4,
         reqs = { mobXP = true, zoneNot = xi.expansionAreas.abyssea, mobSystem = set { xi.eco.AQUAN } },
         flags = set { 'timed', 'repeat' },
-        reward = { sparks = 300, xp = 1500, accolades = 300, item = { xi.item.COPPER_AMAN_VOUCHER } },
+        reward = { sparks = 600, xp = 1500, accolades = 3000, item = { xi.item.COPPER_AMAN_VOUCHER } },
     },
 
     [4009] =
     { -- Vanquish Beasts
         trigger = xi.roeTrigger.DEFEAT_MOB,
-        goal = 20,
+        goal = 4,
         reqs = { mobXP = true, zoneNot = xi.expansionAreas.abyssea, mobSystem = set { xi.eco.BEAST } },
         flags = set { 'timed', 'repeat' },
-        reward = { sparks = 300, xp = 1500, accolades = 300, item = { xi.item.COPPER_AMAN_VOUCHER } },
+        reward = { sparks = 600, xp = 1500, accolades = 3000, item = { xi.item.COPPER_AMAN_VOUCHER } },
     },
 
     [4010] =
     { -- Vanquish Plantoids
         trigger = xi.roeTrigger.DEFEAT_MOB,
-        goal = 20,
+        goal = 4,
         reqs = { mobXP = true, zoneNot = xi.expansionAreas.abyssea, mobSystem = set { xi.eco.PLANTOID } },
         flags = set { 'timed', 'repeat' },
-        reward = { sparks = 300, xp = 1500, accolades = 300, item = { xi.item.COPPER_AMAN_VOUCHER } },
+        reward = { sparks = 600, xp = 1500, accolades = 3000, item = { xi.item.COPPER_AMAN_VOUCHER } },
     },
 
     [4011] =
     { -- Vanquish Lizards
         trigger = xi.roeTrigger.DEFEAT_MOB,
-        goal = 20,
+        goal = 4,
         reqs = { mobXP = true, zoneNot = xi.expansionAreas.abyssea, mobSystem = set { xi.eco.LIZARD } },
         flags = set { 'timed', 'repeat' },
-        reward = { sparks = 300, xp = 1500, accolades = 300, item = { xi.item.COPPER_AMAN_VOUCHER } },
+        reward = { sparks = 600, xp = 1500, accolades = 3000, item = { xi.item.COPPER_AMAN_VOUCHER } },
     },
 
     [4012] =
     { -- Vanquish Vermin
         trigger = xi.roeTrigger.DEFEAT_MOB,
-        goal = 20,
+        goal = 4,
         reqs = { mobXP = true, zoneNot = xi.expansionAreas.abyssea, mobSystem = set { xi.eco.VERMIN } },
         flags = set { 'timed', 'repeat' },
-        reward = { sparks = 300, xp = 1500, accolades = 300, item = { xi.item.COPPER_AMAN_VOUCHER } },
+        reward = { sparks = 600, xp = 1500, accolades = 3000, item = { xi.item.COPPER_AMAN_VOUCHER } },
     },
 
     [4013] =
     { -- Gain Experience
         trigger = xi.roeTrigger.GAIN_EXPERIENCE,
-        goal = 5000,
+        goal = 2500,
         increment = 0,
         flags = set { 'timed', 'repeat' },
-        reward = { sparks = 300, xp = 1500, accolades = 300, item = { xi.item.COPPER_AMAN_VOUCHER } },
+        reward = { sparks = 600, xp = 1500, accolades = 3000, item = { xi.item.COPPER_AMAN_VOUCHER } },
         check = function(self, player, params)
             if params.exp and params.exp > 0 then
                 params.progress = params.progress + params.exp
@@ -9557,71 +9557,71 @@ xi.roe.records =
     [4014] =
     { -- Spoils (Seals)
         trigger = xi.roeTrigger.LOOT_ITEM,
-        goal = 3,
+        goal = 1,
         reqs = { itemID = set { xi.item.BEASTMENS_SEAL, xi.item.KINDREDS_SEAL, xi.item.KINDREDS_CREST, xi.item.HIGH_KINDREDS_CREST, xi.item.SACRED_KINDREDS_CREST } },
         flags = set { 'timed', 'repeat' },
-        reward = { sparks = 300, xp = 1500, accolades = 300, item = { xi.item.COPPER_AMAN_VOUCHER } },
+        reward = { sparks = 600, xp = 1500, accolades = 3000, item = { xi.item.COPPER_AMAN_VOUCHER } },
     },
 
     [4015] =
     { -- Vanquish Birds
         trigger = xi.roeTrigger.DEFEAT_MOB,
-        goal = 20,
+        goal = 4,
         reqs = { mobXP = true, zoneNot = xi.expansionAreas.abyssea, mobSystem = set { xi.eco.BIRD } },
         flags = set { 'timed', 'repeat' },
-        reward = { sparks = 300, xp = 1500, accolades = 300, item = { xi.item.COPPER_AMAN_VOUCHER } },
+        reward = { sparks = 600, xp = 1500, accolades = 3000, item = { xi.item.COPPER_AMAN_VOUCHER } },
     },
 
     [4016] =
     { -- Vanquish Amorphs
         trigger = xi.roeTrigger.DEFEAT_MOB,
-        goal = 20,
+        goal = 4,
         reqs = { mobXP = true, zoneNot = xi.expansionAreas.abyssea, mobSystem = set { xi.eco.AMORPH } },
         flags = set { 'timed', 'repeat' },
-        reward = { sparks = 300, xp = 1500, accolades = 300, item = { xi.item.COPPER_AMAN_VOUCHER } },
+        reward = { sparks = 600, xp = 1500, accolades = 3000, item = { xi.item.COPPER_AMAN_VOUCHER } },
     },
 
     [4017] =
     { -- Vanquish Undead
         trigger = xi.roeTrigger.DEFEAT_MOB,
-        goal = 20,
+        goal = 4,
         reqs = { mobXP = true, zoneNot = xi.expansionAreas.abyssea, mobSystem = set { xi.eco.UNDEAD } },
         flags = set { 'timed', 'repeat' },
-        reward = { sparks = 300, xp = 1500, accolades = 300, item = { xi.item.COPPER_AMAN_VOUCHER } },
+        reward = { sparks = 600, xp = 1500, accolades = 3000, item = { xi.item.COPPER_AMAN_VOUCHER } },
     },
 
     [4018] =
     { -- Vanquish Arcana
         trigger = xi.roeTrigger.DEFEAT_MOB,
-        goal = 20,
+        goal = 4,
         reqs = { mobXP = true, zoneNot = xi.expansionAreas.abyssea, mobSystem = set { xi.eco.ARCANA } },
         flags = set { 'timed', 'repeat' },
-        reward = { sparks = 300, xp = 1500, accolades = 300, item = { xi.item.COPPER_AMAN_VOUCHER } },
+        reward = { sparks = 600, xp = 1500, accolades = 3000, item = { xi.item.COPPER_AMAN_VOUCHER } },
     },
 
     [4019] =
     { -- Crack Treasure Caskets (Triggered from caskets.lua)
-        goal = 10,
+        goal = 1,
         flags = set { 'timed', 'repeat' },
-        reward = { sparks = 300, xp = 1500, accolades = 300, item = { xi.item.COPPER_AMAN_VOUCHER } },
+        reward = { sparks = 600, xp = 1500, accolades = 3000, item = { xi.item.COPPER_AMAN_VOUCHER } },
     },
 
     [4020] =
     { -- Physical Damage Kills
         trigger = xi.roeTrigger.DEFEAT_MOB,
-        goal = 20,
+        goal = 4,
         reqs = { mobXP = true, atkType = xi.attackType.PHYSICAL },
         flags = set { 'timed', 'repeat' },
-        reward = { sparks = 300, xp = 1500, accolades = 300, item = { xi.item.COPPER_AMAN_VOUCHER } },
+        reward = { sparks = 600, xp = 1500, accolades = 3000, item = { xi.item.COPPER_AMAN_VOUCHER } },
     },
 
     [4021] =
     { -- Magic Damage Kills
         trigger = xi.roeTrigger.DEFEAT_MOB,
-        goal = 20,
+        goal = 4,
         reqs = { mobXP = true, atkType = xi.attackType.MAGICAL },
         flags = set { 'timed', 'repeat' },
-        reward = { sparks = 300, xp = 1500, accolades = 300, item = { xi.item.COPPER_AMAN_VOUCHER } },
+        reward = { sparks = 600, xp = 1500, accolades = 3000, item = { xi.item.COPPER_AMAN_VOUCHER } },
     },
 
     -----------------------------------
