@@ -7015,7 +7015,7 @@ xi.roe.records =
     { -- Unity Communique A (UC)
         trigger = xi.roeTrigger.UNITY_CHAT,
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 100 },
+        reward = { sparks = 200, xp = 500, accolades = 1000 },
     },
 
     [3002] =
@@ -7024,7 +7024,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3003] =
@@ -7033,7 +7033,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true, mobSystem = set { xi.eco.AQUAN } },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3004] =
@@ -7042,7 +7042,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true, atkType = xi.attackType.PHYSICAL, mobSystem = set { xi.eco.AMORPH } },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 400 },
+        reward = { sparks = 200, xp = 500, accolades = 4000 },
     },
 
     [3005] =
@@ -7051,7 +7051,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true, atkType = xi.attackType.MAGICAL, mobSystem = set { xi.eco.BEAST } },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 500 },
+        reward = { sparks = 200, xp = 500, accolades = 5000 },
     },
 
     [3006] =
@@ -7060,7 +7060,7 @@ xi.roe.records =
         goal = 10,
         reqs = { skillType = xi.skill.WOODWORKING },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3007] =
@@ -7069,7 +7069,7 @@ xi.roe.records =
         goal = 10,
         reqs = { skillType = xi.skill.LEATHERCRAFT },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3008] =
@@ -7078,7 +7078,7 @@ xi.roe.records =
         goal = 10,
         reqs = { skillType = 4 },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     -----------------------------------
@@ -7089,7 +7089,7 @@ xi.roe.records =
     { -- Unity Communique B (UC)
         trigger = xi.roeTrigger.UNITY_CHAT,
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 100 },
+        reward = { sparks = 200, xp = 500, accolades = 1000 },
     },
 
     [3010] =
@@ -7097,7 +7097,7 @@ xi.roe.records =
         trigger = xi.roeTrigger.CHOCOBO_DIG_SUCCESS,
         goal = 10,
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 100 },
+        reward = { sparks = 200, xp = 500, accolades = 1000 },
     },
 
     [3011] =
@@ -7106,7 +7106,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3012] =
@@ -7115,7 +7115,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true, mobSystem = set { xi.eco.ARCANA } },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3013] =
@@ -7124,7 +7124,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true, atkType = xi.attackType.PHYSICAL, mobSystem = set { xi.eco.UNDEAD } },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 400 },
+        reward = { sparks = 200, xp = 500, accolades = 4000 },
     },
 
     [3014] =
@@ -7133,7 +7133,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true, atkType = xi.attackType.MAGICAL, mobSystem = set { xi.eco.PLANTOID } },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 500 },
+        reward = { sparks = 200, xp = 500, accolades = 5000 },
     },
 
     [3015] =
@@ -7142,7 +7142,7 @@ xi.roe.records =
         goal = 10,
         reqs = { skillType = xi.skill.SMITHING },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3017] =
@@ -7151,7 +7151,7 @@ xi.roe.records =
         goal = 10,
         reqs = { skillType = 3 },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     -----------------------------------
@@ -7162,7 +7162,7 @@ xi.roe.records =
     { -- Unity Communique C (UC)
         trigger = xi.roeTrigger.UNITY_CHAT,
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 100 },
+        reward = { sparks = 200, xp = 500, accolades = 1000 },
     },
 
     [3020] =
@@ -7171,7 +7171,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3021] =
@@ -7180,7 +7180,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true, mobSystem = set { xi.eco.VERMIN } },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3022] =
@@ -7189,7 +7189,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true, atkType = xi.attackType.PHYSICAL, mobSystem = set { xi.eco.BIRD } },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 400 },
+        reward = { sparks = 200, xp = 500, accolades = 4000 },
     },
 
     [3023] =
@@ -7198,7 +7198,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true, atkType = xi.attackType.MAGICAL, mobSystem = set { xi.eco.LIZARD } },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 500 },
+        reward = { sparks = 200, xp = 500, accolades = 5000 },
     },
 
     [3024] =
@@ -7207,7 +7207,7 @@ xi.roe.records =
         goal = 10,
         reqs = { skillType = xi.skill.GOLDSMITHING },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3026] =
@@ -7216,7 +7216,7 @@ xi.roe.records =
         goal = 10,
         reqs = { skillType = 1 },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     -----------------------------------
@@ -7227,7 +7227,7 @@ xi.roe.records =
     { -- Unity Communique D (UC)
         trigger = xi.roeTrigger.UNITY_CHAT,
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 100 },
+        reward = { sparks = 200, xp = 500, accolades = 1000 },
     },
 
     [3029] =
@@ -7236,7 +7236,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3030] =
@@ -7245,7 +7245,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true, mobSystem = set { xi.eco.BEAST } },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3031] =
@@ -7254,7 +7254,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true, atkType = xi.attackType.PHYSICAL, mobSystem = set { xi.eco.AQUAN } },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 400 },
+        reward = { sparks = 200, xp = 500, accolades = 4000 },
     },
 
     [3032] =
@@ -7263,7 +7263,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true, atkType = xi.attackType.MAGICAL, mobSystem = set { xi.eco.AMORPH } },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 500 },
+        reward = { sparks = 200, xp = 500, accolades = 5000 },
     },
 
     [3033] =
@@ -7272,7 +7272,7 @@ xi.roe.records =
         goal = 10,
         reqs = { skillType = xi.skill.CLOTHCRAFT },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3034] =
@@ -7281,7 +7281,7 @@ xi.roe.records =
         goal = 10,
         reqs = { skillType = xi.skill.BONECRAFT },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3035] =
@@ -7290,7 +7290,7 @@ xi.roe.records =
         goal = 10,
         reqs = { skillType = 4 },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     -----------------------------------
@@ -7301,7 +7301,7 @@ xi.roe.records =
     { -- Unity Communique E (UC)
         trigger = xi.roeTrigger.UNITY_CHAT,
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 100 },
+        reward = { sparks = 200, xp = 500, accolades = 1000 },
     },
 
     [3038] =
@@ -7310,7 +7310,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3039] =
@@ -7319,7 +7319,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true, mobSystem = set { xi.eco.PLANTOID } },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3040] =
@@ -7328,7 +7328,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true, atkType = xi.attackType.PHYSICAL, mobSystem = set { xi.eco.ARCANA } },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 400 },
+        reward = { sparks = 200, xp = 500, accolades = 4000 },
     },
 
     [3041] =
@@ -7337,7 +7337,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true, atkType = xi.attackType.MAGICAL, mobSystem = set { xi.eco.UNDEAD } },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 500 },
+        reward = { sparks = 200, xp = 500, accolades = 5000 },
     },
 
     [3042] =
@@ -7346,7 +7346,7 @@ xi.roe.records =
         goal = 10,
         reqs = { skillType = xi.skill.COOKING },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3044] =
@@ -7355,7 +7355,7 @@ xi.roe.records =
         goal = 10,
         reqs = { skillType = 3 },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     -----------------------------------
@@ -7366,7 +7366,7 @@ xi.roe.records =
     { -- Unity Communique F (UC)
         trigger = xi.roeTrigger.UNITY_CHAT,
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 100 },
+        reward = { sparks = 200, xp = 500, accolades = 1000 },
     },
 
     [3046] =
@@ -7375,7 +7375,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true, levelSync = true },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 100 },
+        reward = { sparks = 200, xp = 500, accolades = 1000 },
     },
 
     [3047] =
@@ -7384,7 +7384,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3048] =
@@ -7393,7 +7393,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true, mobSystem = set { xi.eco.LIZARD } },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3049] =
@@ -7402,7 +7402,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true, atkType = xi.attackType.PHYSICAL, mobSystem = set { xi.eco.VERMIN } },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 400 },
+        reward = { sparks = 200, xp = 500, accolades = 4000 },
     },
 
     [3050] =
@@ -7411,7 +7411,7 @@ xi.roe.records =
         goal = 20,
         reqs = { mobXP = true, atkType = xi.attackType.MAGICAL, mobSystem = set { xi.eco.BIRD } },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 500 },
+        reward = { sparks = 200, xp = 500, accolades = 5000 },
     },
 
     [3051] =
@@ -7420,7 +7420,7 @@ xi.roe.records =
         goal = 10,
         reqs = { skillType = xi.skill.ALCHEMY },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     [3053] =
@@ -7429,7 +7429,7 @@ xi.roe.records =
         goal = 10,
         reqs = { skillType = 1 },
         flags = set { 'unity' },
-        reward = { sparks = 100, xp = 500, accolades = 300 },
+        reward = { sparks = 200, xp = 500, accolades = 3000 },
     },
 
     -----------------------------------
