@@ -12,7 +12,7 @@ spellObject.onSpellCast = function(caster, target, spell)
 end
 
 spellObject.onMobSpawn = function(mob)
-    xi.trust.message(mob, xi.trust.messageOffset.SPAWN)
+    -- xi.trust.message(mob, xi.trust.messageOffset.SPAWN)
     
 
     
