@@ -35,6 +35,7 @@ spellObject.onMobSpawn = function(mob)
     if mlvl > 9 then
         mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, ai.r.JA, ai.s.SPECIFIC, xi.ja.JUMP)
     end
+    --[[
     if mlvl > 34 then
         mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, ai.r.JA, ai.s.SPECIFIC, xi.ja.HIGH_JUMP)
     end
@@ -44,7 +45,7 @@ spellObject.onMobSpawn = function(mob)
     if mlvl > 84 then
         mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, ai.r.JA, ai.s.SPECIFIC, xi.ja.SOUL_JUMP)
     end
-
+]]--
     
 	
 	local trustLevel	= mob:getMainLvl()
@@ -55,7 +56,7 @@ spellObject.onMobSpawn = function(mob)
 	local defbonus		= trustLevel
 	local mdefbonus		= trustLevel / 10
 	local mevabonus		= trustLevel
-	local maindmgrating	= trustLevel * 2
+--	local maindmgrating	= trustLevel * 2
 	local dabonus		= trustLevel / 3
 	local tabonus		= trustLevel / 10
 	local stpbonus		= trustLevel / 2
@@ -72,7 +73,7 @@ spellObject.onMobSpawn = function(mob)
 	mob:addMod(xi.mod.DEF, defbonus)
     mob:addMod(xi.mod.MDEF, mdefbonus)
     mob:addMod(xi.mod.MEVA, mevabonus)
-    mob:addMod(xi.mod.MAIN_DMG_RATING, maindmgrating)
+  --  mob:addMod(xi.mod.MAIN_DMG_RATING, maindmgrating)
 	mob:addMod(xi.mod.DOUBLE_ATTACK, dabonus)
 	mob:addMod(xi.mod.TRIPLE_ATTACK, tabonus)
 	mob:addMod(xi.mod.STORETP, stpbonus)
