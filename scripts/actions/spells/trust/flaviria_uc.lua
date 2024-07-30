@@ -84,6 +84,10 @@ spellObject.onMobSpawn = function(mob)
     mob:addMod(xi.mod.HASTE_GEAR, gearhaste) -- 1000 = 10% Haste (gear)
     mob:addMod(xi.mod.HASTE_ABILITY, abilhaste) -- 1000 = 10% Haste (ability)
 
+	mob:addMod(xi.mod.FORCE_JUMP_CRIT, 100)
+	mob:addMod(xi.mod.JUMP_SPIRIT_TP_BONUS, 200)
+	mob:addMod(xi.mod.JUMP_SOUL_SPIRIT_ATT_BONUS, 100)
+
     -- Movement
 	mob:addMod(xi.mod.MOVE_SPEED_OVERIDE, 250)
     
