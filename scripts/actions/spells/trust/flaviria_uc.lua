@@ -33,7 +33,7 @@ spellObject.onMobSpawn = function(mob)
 
     
     if mlvl > 9 then
-        mob:addSimpleGambit(ai.t.SELF, ai.c.ALWAYS, ai.r.JA, ai.s.SPECIFIC, xi.ja.JUMP)
+        mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, 60, ai.r.JA, ai.s.SPECIFIC, xi.ja.JUMP)
     end
     --[[
     if mlvl > 34 then
