@@ -35,17 +35,16 @@ spellObject.onMobSpawn = function(mob)
     if mlvl > 9 then
         mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, 60, ai.r.JA, ai.s.SPECIFIC, xi.ja.JUMP)
     end
-    --[[
     if mlvl > 34 then
-        mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, ai.r.JA, ai.s.SPECIFIC, xi.ja.HIGH_JUMP)
+        mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, 120, ai.r.JA, ai.s.SPECIFIC, xi.ja.HIGH_JUMP)
     end
     if mlvl > 76 then
-        mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, ai.r.JA, ai.s.SPECIFIC, xi.ja.SPIRIT_JUMP)
+        mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, 60, ai.r.JA, ai.s.SPECIFIC, xi.ja.SPIRIT_JUMP)
     end
     if mlvl > 84 then
-        mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, ai.r.JA, ai.s.SPECIFIC, xi.ja.SOUL_JUMP)
+        mob:addSimpleGambit(ai.t.TARGET, ai.c.ALWAYS, 120, ai.r.JA, ai.s.SPECIFIC, xi.ja.SOUL_JUMP)
     end
-]]--
+
     
 	
 	local trustLevel	= mob:getMainLvl()
