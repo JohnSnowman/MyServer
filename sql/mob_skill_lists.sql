@@ -3532,6 +3532,10 @@ INSERT INTO `mob_skill_lists` VALUES ('TRUST_Uka_Totlihn',1062,167); -- Judgemen
 -- INSERT INTO `mob_skill_lists` VALUES ('TRUST_Apururu_UC',1070,0);
 -- INSERT INTO `mob_skill_lists` VALUES ('TRUST_Jakoh_Wahcondalo_UC',1071,0);
 -- INSERT INTO `mob_skill_lists` VALUES ('TRUST_Flaviria_UC',1072,0);
+INSERT INTO `mob_skill_lists` VALUES ('TRUST_Flaviria_UC',1072,116); -- Pentra Thrust
+INSERT INTO `mob_skill_lists` VALUES ('TRUST_Flaviria_UC',1072,119); -- Wheeling Thrust
+INSERT INTO `mob_skill_lists` VALUES ('TRUST_Flaviria_UC',1072,120); -- Impulse Drive
+INSERT INTO `mob_skill_lists` VALUES ('TRUST_Flaviria_UC',1072,122); -- Drakesbane
 -- INSERT INTO `mob_skill_lists` VALUES ('TRUST_Babban',1073,0);
 -- INSERT INTO `mob_skill_lists` VALUES ('TRUST_Abenzio',1074,0);
 INSERT INTO `mob_skill_lists` VALUES ('TRUST_Rughadjeen',1075,49);   -- Power Slash
