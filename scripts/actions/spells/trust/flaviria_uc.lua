@@ -29,7 +29,7 @@ spellObject.onMobSpawn = function(mob)
     end
     
 
-    mob:setTrustTPSkillSettings(ai.tp.CLOSER_UNTIL_TP, ai.s.HIGHEST, 1200)
+    mob:setTrustTPSkillSettings(ai.tp.ASAP, ai.s.HIGHEST, 1000)
 
     
     if mlvl > 9 then
