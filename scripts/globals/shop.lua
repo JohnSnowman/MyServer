@@ -554,6 +554,10 @@ xi.shop =
             15809,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Jalzahns Ring
             13216,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Gold Mog Belt
             
+            14813,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Brutal Earring
+            14739,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Suppanomimi
+            14812,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Loquac Earring
+            
             10136,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Cipher: Uka Totlihn
             10175,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Cipher: August
             10187,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Cipher: Shantotto II
