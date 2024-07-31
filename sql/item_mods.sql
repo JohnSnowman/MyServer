@@ -23581,12 +23581,13 @@ INSERT INTO `item_mods` VALUES (14809,27,-7); -- ENMITY: -7
 INSERT INTO `item_mods` VALUES (14809,68,7);  -- EVA: 7
 
 -- Loquacious Earring
-INSERT INTO `item_mods` VALUES (14812,5,30);  -- MP: 30
-INSERT INTO `item_mods` VALUES (14812,170,2); -- FASTCAST: 2
+INSERT INTO `item_mods` VALUES (14812,5,30);   -- MP: 30
+INSERT INTO `item_mods` VALUES (14812,170,25); -- FASTCAST: 25
+INSERT INTO `item_mods` VALUES (14812,311,250);-- Mdmg+250
 
 -- Brutal Earring
-INSERT INTO `item_mods` VALUES (14813,73,1);  -- STORETP: 1
-INSERT INTO `item_mods` VALUES (14813,288,5); -- DOUBLE_ATTACK: 5
+INSERT INTO `item_mods` VALUES (14813,73,10);  -- STORETP: 10
+INSERT INTO `item_mods` VALUES (14813,288,25); -- DOUBLE_ATTACK: 25
 
 -- Diaboloss Earring
 INSERT INTO `item_mods` VALUES (14814,25,3); -- ACC: 3
