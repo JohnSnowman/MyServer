@@ -952,6 +952,14 @@ INSERT INTO `item_latents` VALUES (14783,10,4,26,1);     -- VIT+4 during Nightti
 -- Intruder Earring
 INSERT INTO `item_latents` VALUES (14806,4,40,53,1);     -- convmptohp 40 in areas outside own nation's control
 
+-- Loquacious Earring
+INSERT INTO `item_latents` VALUES (14812,311,250,51,85);     -- Mdmg+250
+INSERT INTO `item_latents` VALUES (14812,311,250,51,95);     -- Mdmg+250
+
+-- Brutal Earring
+INSERT INTO `item_latents` VALUES (14813,302,25,51,85);     -- TA+25 above level 85
+INSERT INTO `item_latents` VALUES (14813,430,25,51,95);     -- QA+25 above level 95
+
 -- Diabolos's Earring
 INSERT INTO `item_latents` VALUES (14814,25,-3,52,8);    -- cumulative acc-3 in Dark weather
 INSERT INTO `item_latents` VALUES (14814,30,2,52,8);     -- magic acc+2 in Dark weather
