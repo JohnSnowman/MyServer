@@ -356,9 +356,6 @@ INSERT INTO `item_mods_pet` VALUES (17857,2,40,7); -- Stormwaker - HP: 40
 INSERT INTO `item_mods_pet` VALUES (17857,5,50,4); -- Harlequin - MP: 50
 INSERT INTO `item_mods_pet` VALUES (17857,5,60,7); -- Stormwaker - MP: 60
 
--- Turbo Animator
-INSERT INTO `item_mods_pet` VALUES (17858,987,4,3); -- Automaton - AUTO_ELEM_CAPACITY: 4
-
 -- Lion Tamer
 INSERT INTO `item_mods_pet` VALUES (17961,1,10,0); -- All Pets - DEF: 10
 
