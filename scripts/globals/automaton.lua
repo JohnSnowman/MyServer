@@ -165,14 +165,14 @@ local attachmentModifiers =
 local regenRefreshFormulas =
 {
     -- Attachment               BaseValue          Multiplier (%)
-    ['auto-repair_kit']     = { { 0,  1,  2,  3 }, { 0, 0.125, 0.225, 0.375 } },
-    ['auto-repair_kit_ii']  = { { 0,  3,  6,  9 }, { 0,   0.6,   1.2,   1.8 } },
-    ['auto-repair_kit_iii'] = { { 0,  9, 12, 15 }, { 0,   1.8,   2.4,   3.0 } },
-    ['auto-repair_kit_iv']  = { { 0, 15, 18, 21 }, { 0,   3.0,   3.6,   4.2 } },
-    ['mana_tank']           = { { 0,  1,  2,  3 }, { 0,   0.2,   0.4,   0.6 } },
-    ['mana_tank_ii']        = { { 0,  2,  3,  4 }, { 0,   0.4,   0.6,   0.8 } },
-    ['mana_tank_iii']       = { { 0,  3,  4,  5 }, { 0,   0.6,   0.8,   1.0 } },
-    ['mana_tank_iv']        = { { 0,  4,  5,  6 }, { 0,   0.8,   1.0,   1.2 } },
+    ['auto-repair_kit']     = { { 1,  2,  3,  4 }, { 0, 0.125, 0.225, 0.375 } },
+    ['auto-repair_kit_ii']  = { { 3,  6,  9, 12 }, { 0,   0.6,   1.2,   1.8 } },
+    ['auto-repair_kit_iii'] = { { 9, 18, 27, 36 }, { 0,   1.8,   2.4,   3.0 } },
+    ['auto-repair_kit_iv']  = { {15, 30, 45, 60 }, { 0,   3.0,   3.6,   4.2 } },
+    ['mana_tank']           = { { 1,  2,  3,  4 }, { 0,   0.2,   0.4,   0.6 } },
+    ['mana_tank_ii']        = { { 2,  4,  6,  8 }, { 0,   0.4,   0.6,   0.8 } },
+    ['mana_tank_iii']       = { { 3,  6,  9, 12 }, { 0,   0.6,   0.8,   1.0 } },
+    ['mana_tank_iv']        = { { 4,  8, 12, 16 }, { 0,   0.8,   1.0,   1.2 } },
 }
 
 local function getRegenModValue(pet, attachmentName, numManeuvers)
@@ -362,7 +362,7 @@ xi.automaton.onUseManeuver = function(player, target, ability, action)
         end
 
         local duration = player:getPet():getLocalVar('MANEUVER_DURATION')
-        target:addStatusEffect(maneuverInfo[1], bonus, 0, utils.clamp(duration, 60, 300))
+        target:addStatusEffect(maneuverInfo[1], bonus, 0, utils.clamp(duration, 60, 3600))
     end
 
     return target:getOverloadChance(maneuverInfo[2] - 1)
