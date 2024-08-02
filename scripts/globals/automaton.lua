@@ -131,7 +131,7 @@ local attachmentModifiers =
     ['optic_fiber']         = { { xi.mod.AUTO_PERFORMANCE_BOOST,      {     20,     30,     40,     50 }, false }, },
     ['optic_fiber_ii']      = { { xi.mod.AUTO_PERFORMANCE_BOOST,      {     40,     60,     80,    100 }, false }, },
     ['percolator']          = { { xi.mod.COMBAT_SKILLUP_RATE,         {     50,    100,    150,    200 }, true  }, },
-    ['repeater']            = { { xi.mod.DOUBLE_SHOT_RATE,            {     70,     80,     90,    100 }, true  }, },
+    ['repeater']            = { { xi.mod.DOUBLE_SHOT_RATE,            {     70,     80,     90,    100 }, true  }, },-- does not work  nothing coded for plus shot count , also no    Barrage Turbine   coded
     ['scanner']             = { { xi.mod.AUTO_SCAN_RESISTS,           {      1,      1,      1,      1 }, false }, },
     ['schurzen']            = { { xi.mod.AUTO_SCHURZEN,               {      1,      1,      1,      1 }, false }, },
     ['scope']               = { { xi.mod.ACC,                         {    100,    150,    200,    250 }, true  },
@@ -391,7 +391,7 @@ xi.automaton.onUseManeuver = function(player, target, ability, action)
 
         local bonus = 1 + (pupLevel / 15) + target:getMod(xi.mod.MANEUVER_BONUS)
 
-        if target:getActiveManeuverCount() == 3 then
+        if target:getActiveManeuverCount() == 6 then
             target:removeOldestManeuver()
         end
 
