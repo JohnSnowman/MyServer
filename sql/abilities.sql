@@ -104,10 +104,10 @@ INSERT INTO `abilities` VALUES (84,'accomplice',6,65,2,300,69,526,0,185,2000,0,6
 INSERT INTO `abilities` VALUES (85,'call_beast',9,23,1,300,104,0,0,83,2000,0,6,18.0,0,1,0,900,0,NULL);
 INSERT INTO `abilities` VALUES (86,'unlimited_shot',11,51,1,180,126,0,0,90,2000,0,6,20.0,0,1,300,1030,0,NULL);
 INSERT INTO `abilities` VALUES (87,'dismiss',14,1,1,300,161,0,0,94,2000,0,6,20.0,0,0,0,0,4,NULL);
-INSERT INTO `abilities` VALUES (88,'assault',15,1,4,5,170,0,0,94,2000,0,6,20.0,0,0,0,0,256,NULL);
-INSERT INTO `abilities` VALUES (89,'retreat',15,1,1,5,171,0,0,94,2000,0,6,20.0,0,-10,0,0,256,NULL);
-INSERT INTO `abilities` VALUES (90,'release',15,1,1,5,172,0,0,94,2000,0,6,20.0,0,-10,0,0,256,NULL);
-INSERT INTO `abilities` VALUES (91,'blood_pact_rage',15,1,1,60,173,0,0,0,2000,0,6,20.0,0,1,300,0,256,NULL);
+INSERT INTO `abilities` VALUES (88,'assault',15,1,4,2,170,0,0,94,2000,0,6,20.0,0,0,0,0,256,NULL);
+INSERT INTO `abilities` VALUES (89,'retreat',15,1,1,2,171,0,0,94,2000,0,6,20.0,0,-10,0,0,256,NULL);
+INSERT INTO `abilities` VALUES (90,'release',15,1,1,2,172,0,0,94,2000,0,6,20.0,0,-10,0,0,256,NULL);
+INSERT INTO `abilities` VALUES (91,'blood_pact_rage',15,1,1,30,173,0,0,0,2000,0,6,20.0,0,1,300,0,256,NULL);
 INSERT INTO `abilities` VALUES (92,'rampart',7,62,1,300,77,0,0,91,2000,0,6,20.0,1,320,320,776,0,NULL);
 INSERT INTO `abilities` VALUES (93,'azure_lore',16,0,1,3600,0,0,0,142,2000,0,6,20.0,0,1,300,0,0,'TOAU');
 INSERT INTO `abilities` VALUES (94,'chain_affinity',16,40,1,120,181,0,0,140,2000,0,6,20.0,0,1,300,1344,0,'TOAU');
@@ -153,17 +153,17 @@ INSERT INTO `abilities` VALUES (133,'random_deal',17,50,1,1200,196,0,0,131,2000,
 INSERT INTO `abilities` VALUES (135,'overdrive',18,0,1,3600,0,0,0,143,2000,0,6,20.0,0,0,0,0,0,'TOAU');
 INSERT INTO `abilities` VALUES (136,'activate',18,1,1,1200,205,0,0,83,2000,0,6,20.0,0,1,80,1478,0,'TOAU');
 INSERT INTO `abilities` VALUES (137,'repair',18,15,257,180,206,102,0,83,2000,0,6,18.0,0,0,0,1480,0,'TOAU'); -- FYI: Retail has this at 90s and its merit at 3s per upgrade due to a 99 cap Automaton HP increase (as well as reworked Auto-repair Kits and oil changes)
-INSERT INTO `abilities` VALUES (138,'deploy',18,1,4,10,207,0,0,83,2000,0,6,18.0,0,0,0,0,512,'TOAU');
-INSERT INTO `abilities` VALUES (139,'deactivate',18,1,1,60,208,0,0,83,2000,0,6,18.0,0,0,0,0,512,'TOAU');
-INSERT INTO `abilities` VALUES (140,'retrieve',18,10,1,10,209,0,0,83,2000,0,6,18.0,0,0,0,0,512,'TOAU');
-INSERT INTO `abilities` VALUES (141,'fire_maneuver',18,1,1,10,210,0,0,333,2000,0,6,18.0,0,1,0,0,512,'TOAU');
-INSERT INTO `abilities` VALUES (142,'ice_maneuver',18,1,1,10,210,0,0,333,2000,0,6,18.0,0,1,0,0,512,'TOAU');
-INSERT INTO `abilities` VALUES (143,'wind_maneuver',18,1,1,10,210,0,0,333,2000,0,6,18.0,0,1,0,0,512,'TOAU');
-INSERT INTO `abilities` VALUES (144,'earth_maneuver',18,1,1,10,210,0,0,333,2000,0,6,18.0,0,1,0,0,512,'TOAU');
-INSERT INTO `abilities` VALUES (145,'thunder_maneuver',18,1,1,10,210,0,0,333,2000,0,6,18.0,0,1,0,0,512,'TOAU');
-INSERT INTO `abilities` VALUES (146,'water_maneuver',18,1,1,10,210,0,0,333,2000,0,6,18.0,0,1,0,0,512,'TOAU');
-INSERT INTO `abilities` VALUES (147,'light_maneuver',18,1,1,10,210,0,0,333,2000,0,6,18.0,0,1,0,0,512,'TOAU');
-INSERT INTO `abilities` VALUES (148,'dark_maneuver',18,1,1,10,210,0,0,333,2000,0,6,18.0,0,1,0,0,512,'TOAU');
+INSERT INTO `abilities` VALUES (138,'deploy',18,1,4,2,207,0,0,83,2000,0,6,18.0,0,0,0,0,512,'TOAU');
+INSERT INTO `abilities` VALUES (139,'deactivate',18,1,1,15,208,0,0,83,2000,0,6,18.0,0,0,0,0,512,'TOAU');
+INSERT INTO `abilities` VALUES (140,'retrieve',18,10,1,2,209,0,0,83,2000,0,6,18.0,0,0,0,0,512,'TOAU');
+INSERT INTO `abilities` VALUES (141,'fire_maneuver',18,1,1,2,210,0,0,333,2000,0,6,18.0,0,1,0,0,512,'TOAU');
+INSERT INTO `abilities` VALUES (142,'ice_maneuver',18,1,1,2,210,0,0,333,2000,0,6,18.0,0,1,0,0,512,'TOAU');
+INSERT INTO `abilities` VALUES (143,'wind_maneuver',18,1,1,2,210,0,0,333,2000,0,6,18.0,0,1,0,0,512,'TOAU');
+INSERT INTO `abilities` VALUES (144,'earth_maneuver',18,1,1,2,210,0,0,333,2000,0,6,18.0,0,1,0,0,512,'TOAU');
+INSERT INTO `abilities` VALUES (145,'thunder_maneuver',18,1,1,2,210,0,0,333,2000,0,6,18.0,0,1,0,0,512,'TOAU');
+INSERT INTO `abilities` VALUES (146,'water_maneuver',18,1,1,2,210,0,0,333,2000,0,6,18.0,0,1,0,0,512,'TOAU');
+INSERT INTO `abilities` VALUES (147,'light_maneuver',18,1,1,2,210,0,0,333,2000,0,6,18.0,0,1,0,0,512,'TOAU');
+INSERT INTO `abilities` VALUES (148,'dark_maneuver',18,1,1,2,210,0,0,333,2000,0,6,18.0,0,1,0,0,512,'TOAU');
 INSERT INTO `abilities` VALUES (149,'warriors_charge',1,75,1,300,6,0,0,154,2000,0,6,20.0,0,1,300,2048,1,'TOAU');
 INSERT INTO `abilities` VALUES (150,'tomahawk',1,75,4,180,7,0,0,244,2000,0,3,20.0,0,1,600,2050,1,'TOAU');
 INSERT INTO `abilities` VALUES (151,'mantra',2,75,1,600,19,441,0,155,2000,0,6,20.0,1,1,60,2112,1,'TOAU');
@@ -187,7 +187,7 @@ INSERT INTO `abilities` VALUES (168,'blade_bash',12,75,4,180,137,110,0,202,2000,
 INSERT INTO `abilities` VALUES (169,'deep_breathing',14,75,1,300,164,0,0,153,2000,0,6,20.0,0,0,0,2880,1,'TOAU');
 INSERT INTO `abilities` VALUES (170,'angon',14,75,4,180,165,127,0,245,2000,0,3,20.0,0,1,600,2882,1,'TOAU');
 INSERT INTO `abilities` VALUES (171,'sange',13,75,1,300,145,0,0,200,2000,0,6,20.0,0,1,0,2816,1,'TOAU');
-INSERT INTO `abilities` VALUES (172,'blood_pact_ward',15,1,1,60,174,0,0,0,2000,0,6,20.0,0,1,300,0,256,NULL); -- new windower states 969
+INSERT INTO `abilities` VALUES (172,'blood_pact_ward',15,1,1,30,174,0,0,0,2000,0,6,20.0,0,1,300,0,256,NULL); -- new windower states 969
 INSERT INTO `abilities` VALUES (173,'hasso',12,25,1,60,138,0,0,163,2000,0,6,20.0,0,1,300,0,0,'TOAU');
 INSERT INTO `abilities` VALUES (174,'seigan',12,35,1,60,139,0,0,164,2000,0,6,20.0,0,1,300,0,0,'TOAU');
 INSERT INTO `abilities` VALUES (175,'convergence',16,75,1,600,183,0,0,165,2000,0,6,20.0,0,1,300,3008,1,'TOAU');
