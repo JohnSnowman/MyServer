@@ -22,7 +22,7 @@ local function getAutoHitRate(attacker, defender, capHitRate, bonus, melee)
 
     -- Applying hitrate caps
     if capHitRate then -- this isn't capped for when acc varies with tp, as more penalties are due
-        hitrate = utils.clamp(hitrate, 0.2, 0.95)
+        hitrate = utils.clamp(hitrate, 0.2, 0.99)
     end
 
     return hitrate
