@@ -14,13 +14,13 @@ abilityObject.onAutomatonAbility = function(target, automaton, skill, master, ac
     if doubleshotrate > 0 then
         if doubleshotrate >= math.random() * 100 then
             --shotcount = 1 + 1
-            shotcount + 1
+            shotcount = shotcount + 1
         end
     end
     if tripleshotrate > 0 then
         if tripleshotrate >= math.random() * 100 then
             --shotcount = 1 + 2
-            shotcount + 2
+            shotcount = shotcount + 2
         end
     end
     local params =
