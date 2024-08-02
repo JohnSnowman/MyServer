@@ -8,9 +8,25 @@ abilityObject.onAutomatonAbilityCheck = function(target, automaton, skill)
 end
 
 abilityObject.onAutomatonAbility = function(target, automaton, skill, master, action)
+    local shotcount = 1
+    local doubleshotrate = player:getPet():getMod(xi.mod.DOUBLE_SHOT_RATE)
+    local tripleshotrate = player:getPet():getMod(xi.mod.TRIPLE_SHOT_RATE)
+    if doubleshotrate > 0 then
+        if doubleshotrate >= math.random() * 100 then
+            --shotcount = 1 + 1
+            shotcount + 1
+        end
+    end
+    if tripleshotrate > 0 then
+        if tripleshotrate >= math.random() * 100 then
+            --shotcount = 1 + 2
+            shotcount + 2
+        end
+    end
     local params =
     {
-        numHits = 1,
+        numHits = shotcount,
+        --numHits = 1,
         atkmulti = 1.5,
         ftp100 = 1.0,
         ftp200 = 1.0,
