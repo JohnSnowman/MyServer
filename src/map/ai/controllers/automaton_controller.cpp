@@ -56,13 +56,13 @@ void CAutomatonController::setCooldowns()
             switch (PAutomaton->getHead())
             {
                 case HEAD_SHARPSHOT:
-                    m_rangedCooldown = 20s;
+                    m_rangedCooldown = 6s; // 20s
                     break;
                 case HEAD_HARLEQUIN:
-                    m_rangedCooldown = 25s;
+                    m_rangedCooldown = 13s;// 25s 
                     break;
                 default:
-                    m_rangedCooldown = 36s;
+                    m_rangedCooldown = 18s; // 36s
             }
         }
         break;
@@ -90,48 +90,48 @@ void CAutomatonController::setMagicCooldowns()
     {
         case HEAD_HARLEQUIN:
         {
-            m_magicCooldown    = 10s;
-            m_enfeebleCooldown = 10s;
-            m_healCooldown     = 15s;
+            m_magicCooldown    = 8s; // 10
+            m_enfeebleCooldown = 8s; // 10
+            m_healCooldown     = 12s; // 15
         }
         break;
         case HEAD_VALOREDGE:
         {
-            m_magicCooldown = 20s;
-            m_healCooldown  = 20s;
+            m_magicCooldown = 16s; // 20
+            m_healCooldown  = 16s; // 20
         }
         break;
         case HEAD_SHARPSHOT:
         {
-            m_magicCooldown    = 12s;
-            m_enfeebleCooldown = 12s;
-            m_healCooldown     = 18s; // Guess
+            m_magicCooldown    = 10s; // 12
+            m_enfeebleCooldown = 10s; // 12
+            m_healCooldown     = 15s; // 18
         }
         break;
         case HEAD_STORMWAKER:
         {
-            m_magicCooldown     = 10s;
-            m_enfeebleCooldown  = 12s;
-            m_healCooldown      = 15s; // Guess
-            m_elementalCooldown = 33s; // Guess
-            m_enhanceCooldown   = 10s; // Guess
+            m_magicCooldown     = 2s; // 10
+            m_enfeebleCooldown  = 4s; // 12
+            m_healCooldown      = 8s; // 15
+            m_elementalCooldown = 15s; // 33
+            m_enhanceCooldown   = 4s; // 10
         }
         break;
         case HEAD_SOULSOOTHER:
         {
-            m_magicCooldown    = 4s;
-            m_enfeebleCooldown = 4s;
-            m_healCooldown     = 15s;
-            m_enhanceCooldown  = 15s;
-            m_statusCooldown   = 15s;
+            m_magicCooldown    = 3s; // 4
+            m_enfeebleCooldown = 5s; // 4
+            m_healCooldown     = 4s; // 15
+            m_enhanceCooldown  = 5s; // 15
+            m_statusCooldown   = 5s; // 15
         }
         break;
         case HEAD_SPIRITREAVER:
         {
-            m_magicCooldown     = 10s;
-            m_enfeebleCooldown  = 10s;
-            m_elementalCooldown = 33s;
-            m_enhanceCooldown   = 135s;
+            m_magicCooldown     = 3s; // 
+            m_enfeebleCooldown  = 6s; // 
+            m_elementalCooldown = 5s; // 
+            m_enhanceCooldown   = 12s; // 
         }
     }
 }
@@ -1576,7 +1576,7 @@ bool CAutomatonController::TryRangedAttack() // TODO: Find the animation for its
 {
     if (PAutomaton->getFrame() == FRAME_SHARPSHOT)
     {
-        duration minDelay   = PAutomaton->getHead() == AUTOHEADTYPE::HEAD_SHARPSHOT ? 5s : 10s;
+        duration minDelay   = PAutomaton->getHead() == AUTOHEADTYPE::HEAD_SHARPSHOT ? 2s : 5s;
         duration attackTime = m_rangedCooldown - std::chrono::seconds(PAutomaton->getMod(Mod::AUTO_RANGED_DELAY));
 
         if (m_rangedCooldown > 0s && m_Tick > m_LastRangedTime + std::max(attackTime, minDelay))
