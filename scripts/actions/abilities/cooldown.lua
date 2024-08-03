@@ -16,9 +16,10 @@ abilityObject.onAbilityCheck = function(player, target, ability)
 end
 
 abilityObject.onUseAbility = function(player, target, ability)
-    local jpValue = player:getJobPointLevel(xi.jp.COOLDOWN_EFFECT)
+    -- local jpValue = player:getJobPointLevel(xi.jp.COOLDOWN_EFFECT) -- something wrong ,  overloading all the time once JP put in and use ability  , thinking it is overflowing into negitive with no clamp to stop 
 
-    player:reduceBurden(50, jpValue)
+    -- player:reduceBurden(50, jpValue)
+    player:reduceBurden(50)
 
     if player:hasStatusEffect(xi.effect.OVERLOAD) then
         player:delStatusEffect(xi.effect.OVERLOAD)
