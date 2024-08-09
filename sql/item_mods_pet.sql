@@ -345,6 +345,159 @@ INSERT INTO `item_mods_pet` VALUES (16654,368,10,0); -- All Pets - REGAIN: 10
 INSERT INTO `item_mods_pet` VALUES (16843,23,10,2); -- Wyvern - ATT: 10
 INSERT INTO `item_mods_pet` VALUES (16843,25,10,2); -- Wyvern - ACC: 10
 
+-- Pet Food Alpha
+INSERT INTO `item_mods_pet` VALUES (17016,8,30,0);  -- All Pets - STR: 30
+INSERT INTO `item_mods_pet` VALUES (17016,9,30,0);  -- All Pets - DEX: 30
+INSERT INTO `item_mods_pet` VALUES (17016,10,30,0); -- All Pets - VIT: 30
+INSERT INTO `item_mods_pet` VALUES (17016,11,30,0); -- All Pets - AGI: 30
+INSERT INTO `item_mods_pet` VALUES (17016,12,30,0); -- All Pets - INT: 30
+INSERT INTO `item_mods_pet` VALUES (17016,13,30,0); -- All Pets - MND: 30
+INSERT INTO `item_mods_pet` VALUES (17016,14,30,0); -- All Pets - CHR: 30
+INSERT INTO `item_mods_pet` VALUES (17016,25,60,0); -- All Pets - ACC: 60
+INSERT INTO `item_mods_pet` VALUES (17016,26,60,0); -- All Pets - RACC: 60
+INSERT INTO `item_mods_pet` VALUES (17016,28,60,0); -- All Pets - MATT: 60
+INSERT INTO `item_mods_pet` VALUES (17016,29,60,0); -- All Pets - MDEF: 60
+INSERT INTO `item_mods_pet` VALUES (17016,30,60,0); -- All Pets - MACC: 60
+INSERT INTO `item_mods_pet` VALUES (17016,62,70,0); -- All Pets - ATTP: 70
+INSERT INTO `item_mods_pet` VALUES (17016,63,70,0); -- All Pets - DEFP: 70
+INSERT INTO `item_mods_pet` VALUES (17016,66,70,0); -- All Pets - RATTP: 70
+INSERT INTO `item_mods_pet` VALUES (17016,288,20,0);-- All Pets - DOUBLE_ATTACK: 20
+INSERT INTO `item_mods_pet` VALUES (17016,370,4,0); -- All Pets - Regen: 4
+
+-- Pet Food Beta
+INSERT INTO `item_mods_pet` VALUES (17017,8,40,0);  -- All Pets - STR: 40
+INSERT INTO `item_mods_pet` VALUES (17017,9,40,0);  -- All Pets - DEX: 40
+INSERT INTO `item_mods_pet` VALUES (17017,11,40,0); -- All Pets - AGI: 40
+INSERT INTO `item_mods_pet` VALUES (17017,12,40,0); -- All Pets - INT: 40
+INSERT INTO `item_mods_pet` VALUES (17017,13,40,0); -- All Pets - MND: 40
+INSERT INTO `item_mods_pet` VALUES (17017,14,40,0); -- All Pets - CHR: 40
+INSERT INTO `item_mods_pet` VALUES (17017,25,70,0); -- All Pets - ACC: 70
+INSERT INTO `item_mods_pet` VALUES (17017,26,70,0); -- All Pets - RACC: 70
+INSERT INTO `item_mods_pet` VALUES (17017,28,70,0); -- All Pets - MATT: 70
+INSERT INTO `item_mods_pet` VALUES (17017,29,70,0); -- All Pets - MDEF: 70
+INSERT INTO `item_mods_pet` VALUES (17017,30,70,0); -- All Pets - MACC: 70
+INSERT INTO `item_mods_pet` VALUES (17017,62,80,0); -- All Pets - ATTP: 80
+INSERT INTO `item_mods_pet` VALUES (17017,63,80,0); -- All Pets - DEFP: 80
+INSERT INTO `item_mods_pet` VALUES (17017,66,80,0); -- All Pets - RATTP: 80
+INSERT INTO `item_mods_pet` VALUES (17017,288,40,0);-- All Pets - DOUBLE_ATTACK:40
+INSERT INTO `item_mods_pet` VALUES (17017,370,6,0); -- All Pets - Regen: 6
+
+-- Pet Food Gamma
+INSERT INTO `item_mods_pet` VALUES (17018,8,50,0);  -- All Pets - STR: 50
+INSERT INTO `item_mods_pet` VALUES (17018,9,50,0);  -- All Pets - DEX: 50
+INSERT INTO `item_mods_pet` VALUES (17018,10,50,0); -- All Pets - VIT: 50
+INSERT INTO `item_mods_pet` VALUES (17018,11,50,0); -- All Pets - AGI: 50
+INSERT INTO `item_mods_pet` VALUES (17018,12,50,0); -- All Pets - INT: 50
+INSERT INTO `item_mods_pet` VALUES (17018,13,50,0); -- All Pets - MND: 50
+INSERT INTO `item_mods_pet` VALUES (17018,14,50,0); -- All Pets - CHR: 50
+INSERT INTO `item_mods_pet` VALUES (17018,25,80,0); -- All Pets - ACC: 80
+INSERT INTO `item_mods_pet` VALUES (17018,26,80,0); -- All Pets - RACC: 80
+INSERT INTO `item_mods_pet` VALUES (17018,28,80,0); -- All Pets - MATT: 80
+INSERT INTO `item_mods_pet` VALUES (17018,29,80,0); -- All Pets - MDEF: 80
+INSERT INTO `item_mods_pet` VALUES (17018,30,80,0); -- All Pets - MACC: 80
+INSERT INTO `item_mods_pet` VALUES (17018,62,90,0); -- All Pets - ATTP: 90
+INSERT INTO `item_mods_pet` VALUES (17018,63,90,0); -- All Pets - DEFP: 90
+INSERT INTO `item_mods_pet` VALUES (17018,66,90,0); -- All Pets - RATTP: 90
+INSERT INTO `item_mods_pet` VALUES (17018,288,60,0);-- All Pets - DOUBLE_ATTACK: 60
+INSERT INTO `item_mods_pet` VALUES (17018,370,8,0); -- All Pets - Regen: 8
+
+-- Pet Food Delta
+INSERT INTO `item_mods_pet` VALUES (17019,8,50,0);  -- All Pets - STR: 50
+INSERT INTO `item_mods_pet` VALUES (17019,9,50,0);  -- All Pets - DEX: 50
+INSERT INTO `item_mods_pet` VALUES (17019,10,50,0); -- All Pets - VIT: 50
+INSERT INTO `item_mods_pet` VALUES (17019,11,50,0); -- All Pets - AGI: 50
+INSERT INTO `item_mods_pet` VALUES (17019,12,50,0); -- All Pets - INT: 50
+INSERT INTO `item_mods_pet` VALUES (17019,13,50,0); -- All Pets - MND: 50
+INSERT INTO `item_mods_pet` VALUES (17019,14,50,0); -- All Pets - CHR: 50
+INSERT INTO `item_mods_pet` VALUES (17019,25,80,0); -- All Pets - ACC: 80
+INSERT INTO `item_mods_pet` VALUES (17019,26,80,0); -- All Pets - RACC: 80
+INSERT INTO `item_mods_pet` VALUES (17019,28,80,0); -- All Pets - MATT: 80
+INSERT INTO `item_mods_pet` VALUES (17019,29,80,0); -- All Pets - MDEF: 80
+INSERT INTO `item_mods_pet` VALUES (17019,30,80,0); -- All Pets - MACC: 80
+INSERT INTO `item_mods_pet` VALUES (17019,62,90,0); -- All Pets - ATTP: 90
+INSERT INTO `item_mods_pet` VALUES (17019,63,90,0); -- All Pets - DEFP: 90
+INSERT INTO `item_mods_pet` VALUES (17019,66,90,0); -- All Pets - RATTP: 90
+INSERT INTO `item_mods_pet` VALUES (17019,288,80,0);-- All Pets - DOUBLE_ATTACK: 80
+INSERT INTO `item_mods_pet` VALUES (17019,370,8,0); -- All Pets - Regen: 8
+
+-- Pet Food Epsilon
+INSERT INTO `item_mods_pet` VALUES (17020,8,70,0);  -- All Pets - STR: 70
+INSERT INTO `item_mods_pet` VALUES (17020,9,70,0);  -- All Pets - DEX: 70
+INSERT INTO `item_mods_pet` VALUES (17020,10,70,0); -- All Pets - VIT: 70
+INSERT INTO `item_mods_pet` VALUES (17020,11,70,0); -- All Pets - AGI: 70
+INSERT INTO `item_mods_pet` VALUES (17020,12,70,0); -- All Pets - INT: 70
+INSERT INTO `item_mods_pet` VALUES (17020,13,70,0); -- All Pets - MND: 70
+INSERT INTO `item_mods_pet` VALUES (17020,14,70,0); -- All Pets - CHR: 70
+INSERT INTO `item_mods_pet` VALUES (17020,25,100,0); -- All Pets - ACC: 100
+INSERT INTO `item_mods_pet` VALUES (17020,26,100,0); -- All Pets - RACC: 100
+INSERT INTO `item_mods_pet` VALUES (17020,28,100,0); -- All Pets - MATT: 100
+INSERT INTO `item_mods_pet` VALUES (17020,29,100,0); -- All Pets - MDEF: 100
+INSERT INTO `item_mods_pet` VALUES (17020,30,100,0); -- All Pets - MACC: 100
+INSERT INTO `item_mods_pet` VALUES (17020,62,120,0); -- All Pets - ATTP: 120
+INSERT INTO `item_mods_pet` VALUES (17020,63,120,0); -- All Pets - DEFP: 120
+INSERT INTO `item_mods_pet` VALUES (17020,66,120,0); -- All Pets - RATTP: 120
+INSERT INTO `item_mods_pet` VALUES (17020,288,100,0);-- All Pets - DOUBLE_ATTACK:100
+INSERT INTO `item_mods_pet` VALUES (17020,370,10,0); -- All Pets - Regen: 10
+
+-- Pet Food Zeta
+INSERT INTO `item_mods_pet` VALUES (17021,8,90,0);  -- All Pets - STR: 90
+INSERT INTO `item_mods_pet` VALUES (17021,9,90,0);  -- All Pets - DEX: 90
+INSERT INTO `item_mods_pet` VALUES (17021,10,90,0); -- All Pets - VIT: 90
+INSERT INTO `item_mods_pet` VALUES (17021,11,90,0); -- All Pets - AGI: 90
+INSERT INTO `item_mods_pet` VALUES (17021,12,90,0); -- All Pets - INT: 90
+INSERT INTO `item_mods_pet` VALUES (17021,13,90,0); -- All Pets - MND: 90
+INSERT INTO `item_mods_pet` VALUES (17021,14,90,0); -- All Pets - CHR: 90
+INSERT INTO `item_mods_pet` VALUES (17021,25,120,0); -- All Pets - ACC: 120
+INSERT INTO `item_mods_pet` VALUES (17021,26,120,0); -- All Pets - RACC: 120
+INSERT INTO `item_mods_pet` VALUES (17021,28,120,0); -- All Pets - MATT: 120
+INSERT INTO `item_mods_pet` VALUES (17021,29,120,0); -- All Pets - MDEF: 120
+INSERT INTO `item_mods_pet` VALUES (17021,30,120,0); -- All Pets - MACC: 120
+INSERT INTO `item_mods_pet` VALUES (17021,62,150,0); -- All Pets - ATTP: 150
+INSERT INTO `item_mods_pet` VALUES (17021,63,150,0); -- All Pets - DEFP: 150
+INSERT INTO `item_mods_pet` VALUES (17021,66,150,0); -- All Pets - RATTP: 150
+INSERT INTO `item_mods_pet` VALUES (17021,288,100,0);-- All Pets - DOUBLE_ATTACK: 100
+INSERT INTO `item_mods_pet` VALUES (17021,370,12,0); -- All Pets - Regen: 12
+
+-- Pet Food Eta
+INSERT INTO `item_mods_pet` VALUES (17022,8,110,0);  -- All Pets - STR: 110
+INSERT INTO `item_mods_pet` VALUES (17022,9,110,0);  -- All Pets - DEX: 110
+INSERT INTO `item_mods_pet` VALUES (17022,10,110,0); -- All Pets - VIT: 110
+INSERT INTO `item_mods_pet` VALUES (17022,11,110,0); -- All Pets - AGI: 110
+INSERT INTO `item_mods_pet` VALUES (17022,12,110,0); -- All Pets - INT: 110
+INSERT INTO `item_mods_pet` VALUES (17022,13,110,0); -- All Pets - MND: 110
+INSERT INTO `item_mods_pet` VALUES (17022,14,110,0); -- All Pets - CHR: 110
+INSERT INTO `item_mods_pet` VALUES (17022,25,140,0); -- All Pets - ACC: 140
+INSERT INTO `item_mods_pet` VALUES (17022,26,140,0); -- All Pets - RACC: 140
+INSERT INTO `item_mods_pet` VALUES (17022,28,140,0); -- All Pets - MATT: 140
+INSERT INTO `item_mods_pet` VALUES (17022,29,140,0); -- All Pets - MDEF: 140
+INSERT INTO `item_mods_pet` VALUES (17022,30,140,0); -- All Pets - MACC: 140
+INSERT INTO `item_mods_pet` VALUES (17022,62,200,0); -- All Pets - ATTP: 200
+INSERT INTO `item_mods_pet` VALUES (17022,63,200,0); -- All Pets - DEFP: 200
+INSERT INTO `item_mods_pet` VALUES (17022,66,200,0); -- All Pets - RATTP: 200
+INSERT INTO `item_mods_pet` VALUES (17022,288,100,0);-- All Pets - DOUBLE ATTACK: 100
+INSERT INTO `item_mods_pet` VALUES (17022,430,30,0); -- All Pets - QUAD ATTACK: 20
+INSERT INTO `item_mods_pet` VALUES (17022,370,15,0); -- All Pets - Regen: 15
+
+-- Pet Food Theta
+INSERT INTO `item_mods_pet` VALUES (17023,8,300,0);  -- All Pets - STR: 300
+INSERT INTO `item_mods_pet` VALUES (17023,9,300,0);  -- All Pets - DEX: 300
+INSERT INTO `item_mods_pet` VALUES (17023,10,300,0); -- All Pets - VIT: 300
+INSERT INTO `item_mods_pet` VALUES (17023,11,300,0); -- All Pets - AGI: 300
+INSERT INTO `item_mods_pet` VALUES (17023,12,300,0); -- All Pets - INT: 300
+INSERT INTO `item_mods_pet` VALUES (17023,13,300,0); -- All Pets - MND: 300
+INSERT INTO `item_mods_pet` VALUES (17023,14,300,0); -- All Pets - CHR: 300
+INSERT INTO `item_mods_pet` VALUES (17023,25,350,0); -- All Pets - ACC: 350
+INSERT INTO `item_mods_pet` VALUES (17023,26,350,0); -- All Pets - RACC: 350
+INSERT INTO `item_mods_pet` VALUES (17023,28,350,0); -- All Pets - MATT: 350
+INSERT INTO `item_mods_pet` VALUES (17023,29,350,0); -- All Pets - MDEF: 350
+INSERT INTO `item_mods_pet` VALUES (17023,30,350,0); -- All Pets - MACC: 350
+INSERT INTO `item_mods_pet` VALUES (17023,62,500,0); -- All Pets - ATTP: 500
+INSERT INTO `item_mods_pet` VALUES (17023,63,500,0); -- All Pets - DEFP: 500
+INSERT INTO `item_mods_pet` VALUES (17023,66,500,0); -- All Pets - RATTP: 500
+INSERT INTO `item_mods_pet` VALUES (17023,288,100,0);-- All Pets - DOUBLE ATTACK: 100
+INSERT INTO `item_mods_pet` VALUES (17023,430,60,0); -- All Pets - QUAD ATTACK: 60
+INSERT INTO `item_mods_pet` VALUES (17023,370,20,0); -- All Pets - Regen: 20
+
 -- Wyvern Perch
 INSERT INTO `item_mods_pet` VALUES (17579,2,50,2); -- Wyvern - HP: 50
 
@@ -402,6 +555,42 @@ INSERT INTO `item_mods_pet` VALUES (19088,23,60,0); -- All Pets - ATT: 60
 
 -- Nirvana
 INSERT INTO `item_mods_pet` VALUES (19094,28,30,1); -- Avatar - MATT: 30
+
+-- Pet Roborant
+INSERT INTO `item_mods_pet` VALUES (19251,8,20,0);  -- All Pets - STR: 20
+INSERT INTO `item_mods_pet` VALUES (19251,9,20,0);  -- All Pets - DEX: 20
+INSERT INTO `item_mods_pet` VALUES (19251,10,20,0); -- All Pets - VIT: 20
+INSERT INTO `item_mods_pet` VALUES (19251,11,20,0); -- All Pets - AGI: 20
+INSERT INTO `item_mods_pet` VALUES (19251,12,20,0); -- All Pets - INT: 20
+INSERT INTO `item_mods_pet` VALUES (19251,13,20,0); -- All Pets - MND: 20
+INSERT INTO `item_mods_pet` VALUES (19251,14,20,0); -- All Pets - CHR: 20
+INSERT INTO `item_mods_pet` VALUES (19251,25,50,0); -- All Pets - ACC: 50
+INSERT INTO `item_mods_pet` VALUES (19251,26,50,0); -- All Pets - RACC: 50
+INSERT INTO `item_mods_pet` VALUES (19251,28,50,0); -- All Pets - MATT: 50
+INSERT INTO `item_mods_pet` VALUES (19251,29,50,0); -- All Pets - MDEF: 50
+INSERT INTO `item_mods_pet` VALUES (19251,30,50,0); -- All Pets - MACC: 50
+INSERT INTO `item_mods_pet` VALUES (19251,62,50,0); -- All Pets - ATTP: 50
+INSERT INTO `item_mods_pet` VALUES (19251,63,50,0); -- All Pets - DEFP: 50
+INSERT INTO `item_mods_pet` VALUES (19251,66,50,0); -- All Pets - RATTP: 50
+INSERT INTO `item_mods_pet` VALUES (19251,370,2,0); -- All Pets - Regen: 2
+
+-- Pet Poultice
+INSERT INTO `item_mods_pet` VALUES (19252,8,20,0);  -- All Pets - STR: 20
+INSERT INTO `item_mods_pet` VALUES (19252,9,20,0);  -- All Pets - DEX: 20
+INSERT INTO `item_mods_pet` VALUES (19252,10,20,0); -- All Pets - VIT: 20
+INSERT INTO `item_mods_pet` VALUES (19252,11,20,0); -- All Pets - AGI: 20
+INSERT INTO `item_mods_pet` VALUES (19252,12,20,0); -- All Pets - INT: 20
+INSERT INTO `item_mods_pet` VALUES (19252,13,20,0); -- All Pets - MND: 20
+INSERT INTO `item_mods_pet` VALUES (19252,14,20,0); -- All Pets - CHR: 20
+INSERT INTO `item_mods_pet` VALUES (19252,25,50,0); -- All Pets - ACC: 50
+INSERT INTO `item_mods_pet` VALUES (19252,26,50,0); -- All Pets - RACC: 50
+INSERT INTO `item_mods_pet` VALUES (19252,28,50,0); -- All Pets - MATT: 50
+INSERT INTO `item_mods_pet` VALUES (19252,29,50,0); -- All Pets - MDEF: 50
+INSERT INTO `item_mods_pet` VALUES (19252,30,50,0); -- All Pets - MACC: 50
+INSERT INTO `item_mods_pet` VALUES (19252,62,50,0); -- All Pets - ATTP: 50
+INSERT INTO `item_mods_pet` VALUES (19252,63,50,0); -- All Pets - DEFP: 50
+INSERT INTO `item_mods_pet` VALUES (19252,66,50,0); -- All Pets - RATTP: 50
+INSERT INTO `item_mods_pet` VALUES (19252,370,2,0); -- All Pets - Regen: 2
 
 -- Aymur
 INSERT INTO `item_mods_pet` VALUES (19620,23,70,0); -- All Pets - ATT: 70
