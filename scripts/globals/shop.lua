@@ -535,6 +535,17 @@ xi.shop =
             5547,   15000,    xi.ki.RHAPSODY_IN_CRIMSON,   -- Beef Stewpot
             5727,   15000,    xi.ki.RHAPSODY_IN_CRIMSON,   -- Zaru Soba
             4466,     450,    xi.ki.RHAPSODY_IN_CRIMSON,   -- Spicy Cracker
+            
+            19251,    100,      xi.ki.RHAPSODY_IN_WHITE,   -- Pet Roborant
+            19252,    100,      xi.ki.RHAPSODY_IN_WHITE,   -- Pet Poultice
+            17016,    300,      xi.ki.RHAPSODY_IN_WHITE,   -- Pet Food Alpha
+            17017,    500,      xi.ki.RHAPSODY_IN_WHITE,   -- Pet Food Beta
+            17018,    700,      xi.ki.RHAPSODY_IN_WHITE,   -- Pet Food Gamma
+            17019,    900,      xi.ki.RHAPSODY_IN_WHITE,   -- Pet Food Delta
+            17020,   1200,      xi.ki.RHAPSODY_IN_WHITE,   -- Pet Food Epsilon
+            17021,   1500,      xi.ki.RHAPSODY_IN_WHITE,   -- Pet Food Zeta
+            17022,   1800,      xi.ki.RHAPSODY_IN_WHITE,   -- Pet Food Eta
+            17023,   2500,      xi.ki.RHAPSODY_IN_WHITE,   -- Pet Food Theta
         },
 
         [curio.scrolls] =
