@@ -361,8 +361,12 @@ INSERT INTO `item_mods_pet` VALUES (17016,30,60,0); -- All Pets - MACC: 60
 INSERT INTO `item_mods_pet` VALUES (17016,62,70,0); -- All Pets - ATTP: 70
 INSERT INTO `item_mods_pet` VALUES (17016,63,70,0); -- All Pets - DEFP: 70
 INSERT INTO `item_mods_pet` VALUES (17016,66,70,0); -- All Pets - RATTP: 70
+INSERT INTO `item_mods_pet` VALUES (17016,160,-1000,0);-- All Pets - DMG: -10%
+INSERT INTO `item_mods_pet` VALUES (17016,167,1000,0); -- All Pets - HASTE MAGIC: 10%
 INSERT INTO `item_mods_pet` VALUES (17016,288,20,0);-- All Pets - DOUBLE_ATTACK: 20
 INSERT INTO `item_mods_pet` VALUES (17016,370,4,0); -- All Pets - Regen: 4
+INSERT INTO `item_mods_pet` VALUES (17016,383,1000,0); -- All Pets - HASTE ABILITY: 10%
+INSERT INTO `item_mods_pet` VALUES (17016,384,1000,0); -- All Pets - HASTE GEAR: 10%
 
 -- Pet Food Beta
 INSERT INTO `item_mods_pet` VALUES (17017,8,40,0);  -- All Pets - STR: 40
@@ -379,8 +383,12 @@ INSERT INTO `item_mods_pet` VALUES (17017,30,70,0); -- All Pets - MACC: 70
 INSERT INTO `item_mods_pet` VALUES (17017,62,80,0); -- All Pets - ATTP: 80
 INSERT INTO `item_mods_pet` VALUES (17017,63,80,0); -- All Pets - DEFP: 80
 INSERT INTO `item_mods_pet` VALUES (17017,66,80,0); -- All Pets - RATTP: 80
-INSERT INTO `item_mods_pet` VALUES (17017,288,40,0);-- All Pets - DOUBLE_ATTACK:40
+INSERT INTO `item_mods_pet` VALUES (17017,160,-1500,0);-- All Pets - DMG: -15%
+INSERT INTO `item_mods_pet` VALUES (17017,167,1200,0); -- All Pets - HASTE MAGIC: 12%
+INSERT INTO `item_mods_pet` VALUES (17017,288,40,0);-- All Pets - DOUBLE_ATTACK: 40
 INSERT INTO `item_mods_pet` VALUES (17017,370,6,0); -- All Pets - Regen: 6
+INSERT INTO `item_mods_pet` VALUES (17017,383,1200,0); -- All Pets - HASTE ABILITY: 12%
+INSERT INTO `item_mods_pet` VALUES (17017,384,1200,0); -- All Pets - HASTE GEAR: 12%
 
 -- Pet Food Gamma
 INSERT INTO `item_mods_pet` VALUES (17018,8,50,0);  -- All Pets - STR: 50
@@ -398,8 +406,12 @@ INSERT INTO `item_mods_pet` VALUES (17018,30,80,0); -- All Pets - MACC: 80
 INSERT INTO `item_mods_pet` VALUES (17018,62,90,0); -- All Pets - ATTP: 90
 INSERT INTO `item_mods_pet` VALUES (17018,63,90,0); -- All Pets - DEFP: 90
 INSERT INTO `item_mods_pet` VALUES (17018,66,90,0); -- All Pets - RATTP: 90
+INSERT INTO `item_mods_pet` VALUES (17018,160,-2000,0);-- All Pets - DMG: -20%
+INSERT INTO `item_mods_pet` VALUES (17018,167,1400,0); -- All Pets - HASTE MAGIC: 14%
 INSERT INTO `item_mods_pet` VALUES (17018,288,60,0);-- All Pets - DOUBLE_ATTACK: 60
 INSERT INTO `item_mods_pet` VALUES (17018,370,8,0); -- All Pets - Regen: 8
+INSERT INTO `item_mods_pet` VALUES (17018,383,1400,0); -- All Pets - HASTE ABILITY: 14%
+INSERT INTO `item_mods_pet` VALUES (17018,384,1400,0); -- All Pets - HASTE GEAR: 14%
 
 -- Pet Food Delta
 INSERT INTO `item_mods_pet` VALUES (17019,8,50,0);  -- All Pets - STR: 50
@@ -417,8 +429,12 @@ INSERT INTO `item_mods_pet` VALUES (17019,30,80,0); -- All Pets - MACC: 80
 INSERT INTO `item_mods_pet` VALUES (17019,62,90,0); -- All Pets - ATTP: 90
 INSERT INTO `item_mods_pet` VALUES (17019,63,90,0); -- All Pets - DEFP: 90
 INSERT INTO `item_mods_pet` VALUES (17019,66,90,0); -- All Pets - RATTP: 90
+INSERT INTO `item_mods_pet` VALUES (17019,160,-2500,0);-- All Pets - DMG: -25%
+INSERT INTO `item_mods_pet` VALUES (17019,167,1600,0); -- All Pets - HASTE MAGIC: 16%
 INSERT INTO `item_mods_pet` VALUES (17019,288,80,0);-- All Pets - DOUBLE_ATTACK: 80
-INSERT INTO `item_mods_pet` VALUES (17019,370,8,0); -- All Pets - Regen: 8
+INSERT INTO `item_mods_pet` VALUES (17019,370,8,0); -- All Pets - Regen:8
+INSERT INTO `item_mods_pet` VALUES (17019,383,1600,0); -- All Pets - HASTE ABILITY: 16%
+INSERT INTO `item_mods_pet` VALUES (17019,384,1600,0); -- All Pets - HASTE GEAR: 16%
 
 -- Pet Food Epsilon
 INSERT INTO `item_mods_pet` VALUES (17020,8,70,0);  -- All Pets - STR: 70
@@ -436,8 +452,12 @@ INSERT INTO `item_mods_pet` VALUES (17020,30,100,0); -- All Pets - MACC: 100
 INSERT INTO `item_mods_pet` VALUES (17020,62,120,0); -- All Pets - ATTP: 120
 INSERT INTO `item_mods_pet` VALUES (17020,63,120,0); -- All Pets - DEFP: 120
 INSERT INTO `item_mods_pet` VALUES (17020,66,120,0); -- All Pets - RATTP: 120
-INSERT INTO `item_mods_pet` VALUES (17020,288,100,0);-- All Pets - DOUBLE_ATTACK:100
+INSERT INTO `item_mods_pet` VALUES (17020,160,-3000,0);-- All Pets - DMG: -30%
+INSERT INTO `item_mods_pet` VALUES (17020,167,1800,0); -- All Pets - HASTE MAGIC: 18%
+INSERT INTO `item_mods_pet` VALUES (17020,288,100,0);-- All Pets - DOUBLE_ATTACK: 100
 INSERT INTO `item_mods_pet` VALUES (17020,370,10,0); -- All Pets - Regen: 10
+INSERT INTO `item_mods_pet` VALUES (17020,383,1800,0); -- All Pets - HASTE ABILITY: 18%
+INSERT INTO `item_mods_pet` VALUES (17020,384,1800,0); -- All Pets - HASTE GEAR: 18%
 
 -- Pet Food Zeta
 INSERT INTO `item_mods_pet` VALUES (17021,8,90,0);  -- All Pets - STR: 90
@@ -455,8 +475,13 @@ INSERT INTO `item_mods_pet` VALUES (17021,30,120,0); -- All Pets - MACC: 120
 INSERT INTO `item_mods_pet` VALUES (17021,62,150,0); -- All Pets - ATTP: 150
 INSERT INTO `item_mods_pet` VALUES (17021,63,150,0); -- All Pets - DEFP: 150
 INSERT INTO `item_mods_pet` VALUES (17021,66,150,0); -- All Pets - RATTP: 150
+INSERT INTO `item_mods_pet` VALUES (17021,160,-3500,0);-- All Pets - DMG: -35%
+INSERT INTO `item_mods_pet` VALUES (17021,167,2000,0); -- All Pets - HASTE MAGIC: 20%
 INSERT INTO `item_mods_pet` VALUES (17021,288,100,0);-- All Pets - DOUBLE_ATTACK: 100
 INSERT INTO `item_mods_pet` VALUES (17021,370,12,0); -- All Pets - Regen: 12
+INSERT INTO `item_mods_pet` VALUES (17021,383,2000,0); -- All Pets - HASTE ABILITY: 20%
+INSERT INTO `item_mods_pet` VALUES (17021,384,2000,0); -- All Pets - HASTE GEAR: 20%
+INSERT INTO `item_mods_pet` VALUES (17021,430,30,0); -- All Pets - QUAD ATTACK: 30
 
 -- Pet Food Eta
 INSERT INTO `item_mods_pet` VALUES (17022,8,110,0);  -- All Pets - STR: 110
@@ -474,9 +499,13 @@ INSERT INTO `item_mods_pet` VALUES (17022,30,140,0); -- All Pets - MACC: 140
 INSERT INTO `item_mods_pet` VALUES (17022,62,200,0); -- All Pets - ATTP: 200
 INSERT INTO `item_mods_pet` VALUES (17022,63,200,0); -- All Pets - DEFP: 200
 INSERT INTO `item_mods_pet` VALUES (17022,66,200,0); -- All Pets - RATTP: 200
-INSERT INTO `item_mods_pet` VALUES (17022,288,100,0);-- All Pets - DOUBLE ATTACK: 100
-INSERT INTO `item_mods_pet` VALUES (17022,430,30,0); -- All Pets - QUAD ATTACK: 20
+INSERT INTO `item_mods_pet` VALUES (17022,160,-4500,0);-- All Pets - DMG: -45%
+INSERT INTO `item_mods_pet` VALUES (17022,167,2400,0); -- All Pets - HASTE MAGIC: 24%
+INSERT INTO `item_mods_pet` VALUES (17022,288,100,0);-- All Pets - DOUBLE_ATTACK: 100
 INSERT INTO `item_mods_pet` VALUES (17022,370,15,0); -- All Pets - Regen: 15
+INSERT INTO `item_mods_pet` VALUES (17022,383,2400,0); -- All Pets - HASTE ABILITY: 24%
+INSERT INTO `item_mods_pet` VALUES (17022,384,2400,0); -- All Pets - HASTE GEAR: 24%
+INSERT INTO `item_mods_pet` VALUES (17022,430,40,0); -- All Pets - QUAD ATTACK: 40
 
 -- Pet Food Theta
 INSERT INTO `item_mods_pet` VALUES (17023,8,300,0);  -- All Pets - STR: 300
@@ -494,9 +523,13 @@ INSERT INTO `item_mods_pet` VALUES (17023,30,350,0); -- All Pets - MACC: 350
 INSERT INTO `item_mods_pet` VALUES (17023,62,500,0); -- All Pets - ATTP: 500
 INSERT INTO `item_mods_pet` VALUES (17023,63,500,0); -- All Pets - DEFP: 500
 INSERT INTO `item_mods_pet` VALUES (17023,66,500,0); -- All Pets - RATTP: 500
-INSERT INTO `item_mods_pet` VALUES (17023,288,100,0);-- All Pets - DOUBLE ATTACK: 100
-INSERT INTO `item_mods_pet` VALUES (17023,430,60,0); -- All Pets - QUAD ATTACK: 60
+INSERT INTO `item_mods_pet` VALUES (17023,160,-6000,0);-- All Pets - DMG: -60%
+INSERT INTO `item_mods_pet` VALUES (17023,167,4300,0); -- All Pets - HASTE MAGIC: 43%
+INSERT INTO `item_mods_pet` VALUES (17023,288,100,0);-- All Pets - DOUBLE_ATTACK: 100
 INSERT INTO `item_mods_pet` VALUES (17023,370,20,0); -- All Pets - Regen: 20
+INSERT INTO `item_mods_pet` VALUES (17023,383,2500,0); -- All Pets - HASTE ABILITY: 25%
+INSERT INTO `item_mods_pet` VALUES (17023,384,2500,0); -- All Pets - HASTE GEAR: 25%
+INSERT INTO `item_mods_pet` VALUES (17023,430,60,0); -- All Pets - QUAD ATTACK: 60
 
 -- Wyvern Perch
 INSERT INTO `item_mods_pet` VALUES (17579,2,50,2); -- Wyvern - HP: 50
