@@ -364,7 +364,9 @@ INSERT INTO `item_mods_pet` VALUES (17016,66,70,0); -- All Pets - RATTP: 70
 INSERT INTO `item_mods_pet` VALUES (17016,160,-1000,0);-- All Pets - DMG: -10%
 INSERT INTO `item_mods_pet` VALUES (17016,167,1000,0); -- All Pets - HASTE MAGIC: 10%
 INSERT INTO `item_mods_pet` VALUES (17016,288,20,0);-- All Pets - DOUBLE_ATTACK: 20
+INSERT INTO `item_mods_pet` VALUES (17016,366,20,0); -- All Pets - MAIN DMG RATING: 20
 INSERT INTO `item_mods_pet` VALUES (17016,370,4,0); -- All Pets - Regen: 4
+INSERT INTO `item_mods_pet` VALUES (17016,376,20,0); -- All Pets - RANGED DMG RATING: 20
 INSERT INTO `item_mods_pet` VALUES (17016,383,1000,0); -- All Pets - HASTE ABILITY: 10%
 INSERT INTO `item_mods_pet` VALUES (17016,384,1000,0); -- All Pets - HASTE GEAR: 10%
 
@@ -386,7 +388,9 @@ INSERT INTO `item_mods_pet` VALUES (17017,66,80,0); -- All Pets - RATTP: 80
 INSERT INTO `item_mods_pet` VALUES (17017,160,-1500,0);-- All Pets - DMG: -15%
 INSERT INTO `item_mods_pet` VALUES (17017,167,1200,0); -- All Pets - HASTE MAGIC: 12%
 INSERT INTO `item_mods_pet` VALUES (17017,288,40,0);-- All Pets - DOUBLE_ATTACK: 40
+INSERT INTO `item_mods_pet` VALUES (17017,366,30,0); -- All Pets - MAIN DMG RATING: 30
 INSERT INTO `item_mods_pet` VALUES (17017,370,6,0); -- All Pets - Regen: 6
+INSERT INTO `item_mods_pet` VALUES (17017,376,30,0); -- All Pets - RANGED DMG RATING: 30
 INSERT INTO `item_mods_pet` VALUES (17017,383,1200,0); -- All Pets - HASTE ABILITY: 12%
 INSERT INTO `item_mods_pet` VALUES (17017,384,1200,0); -- All Pets - HASTE GEAR: 12%
 
@@ -409,7 +413,9 @@ INSERT INTO `item_mods_pet` VALUES (17018,66,90,0); -- All Pets - RATTP: 90
 INSERT INTO `item_mods_pet` VALUES (17018,160,-2000,0);-- All Pets - DMG: -20%
 INSERT INTO `item_mods_pet` VALUES (17018,167,1400,0); -- All Pets - HASTE MAGIC: 14%
 INSERT INTO `item_mods_pet` VALUES (17018,288,60,0);-- All Pets - DOUBLE_ATTACK: 60
+INSERT INTO `item_mods_pet` VALUES (17018,366,40,0); -- All Pets - MAIN DMG RATING: 40
 INSERT INTO `item_mods_pet` VALUES (17018,370,8,0); -- All Pets - Regen: 8
+INSERT INTO `item_mods_pet` VALUES (17018,376,40,0); -- All Pets - RANGED DMG RATING: 40
 INSERT INTO `item_mods_pet` VALUES (17018,383,1400,0); -- All Pets - HASTE ABILITY: 14%
 INSERT INTO `item_mods_pet` VALUES (17018,384,1400,0); -- All Pets - HASTE GEAR: 14%
 
@@ -432,7 +438,9 @@ INSERT INTO `item_mods_pet` VALUES (17019,66,90,0); -- All Pets - RATTP: 90
 INSERT INTO `item_mods_pet` VALUES (17019,160,-2500,0);-- All Pets - DMG: -25%
 INSERT INTO `item_mods_pet` VALUES (17019,167,1600,0); -- All Pets - HASTE MAGIC: 16%
 INSERT INTO `item_mods_pet` VALUES (17019,288,80,0);-- All Pets - DOUBLE_ATTACK: 80
-INSERT INTO `item_mods_pet` VALUES (17019,370,8,0); -- All Pets - Regen:8
+INSERT INTO `item_mods_pet` VALUES (17019,366,50,0); -- All Pets - MAIN DMG RATING: 50
+INSERT INTO `item_mods_pet` VALUES (17019,370,10,0); -- All Pets - Regen: 10
+INSERT INTO `item_mods_pet` VALUES (17019,376,50,0); -- All Pets - RANGED DMG RATING: 50
 INSERT INTO `item_mods_pet` VALUES (17019,383,1600,0); -- All Pets - HASTE ABILITY: 16%
 INSERT INTO `item_mods_pet` VALUES (17019,384,1600,0); -- All Pets - HASTE GEAR: 16%
 
@@ -455,7 +463,9 @@ INSERT INTO `item_mods_pet` VALUES (17020,66,120,0); -- All Pets - RATTP: 120
 INSERT INTO `item_mods_pet` VALUES (17020,160,-3000,0);-- All Pets - DMG: -30%
 INSERT INTO `item_mods_pet` VALUES (17020,167,1800,0); -- All Pets - HASTE MAGIC: 18%
 INSERT INTO `item_mods_pet` VALUES (17020,288,100,0);-- All Pets - DOUBLE_ATTACK: 100
-INSERT INTO `item_mods_pet` VALUES (17020,370,10,0); -- All Pets - Regen: 10
+INSERT INTO `item_mods_pet` VALUES (17020,366,60,0); -- All Pets - MAIN DMG RATING: 60
+INSERT INTO `item_mods_pet` VALUES (17020,370,12,0); -- All Pets - Regen: 12
+INSERT INTO `item_mods_pet` VALUES (17020,376,60,0); -- All Pets - RANGED DMG RATING: 60
 INSERT INTO `item_mods_pet` VALUES (17020,383,1800,0); -- All Pets - HASTE ABILITY: 18%
 INSERT INTO `item_mods_pet` VALUES (17020,384,1800,0); -- All Pets - HASTE GEAR: 18%
 
@@ -478,7 +488,9 @@ INSERT INTO `item_mods_pet` VALUES (17021,66,150,0); -- All Pets - RATTP: 150
 INSERT INTO `item_mods_pet` VALUES (17021,160,-3500,0);-- All Pets - DMG: -35%
 INSERT INTO `item_mods_pet` VALUES (17021,167,2000,0); -- All Pets - HASTE MAGIC: 20%
 INSERT INTO `item_mods_pet` VALUES (17021,288,100,0);-- All Pets - DOUBLE_ATTACK: 100
-INSERT INTO `item_mods_pet` VALUES (17021,370,12,0); -- All Pets - Regen: 12
+INSERT INTO `item_mods_pet` VALUES (17021,366,70,0); -- All Pets - MAIN DMG RATING: 70
+INSERT INTO `item_mods_pet` VALUES (17021,370,14,0); -- All Pets - Regen: 14
+INSERT INTO `item_mods_pet` VALUES (17021,376,70,0); -- All Pets - RANGED DMG RATING: 70
 INSERT INTO `item_mods_pet` VALUES (17021,383,2000,0); -- All Pets - HASTE ABILITY: 20%
 INSERT INTO `item_mods_pet` VALUES (17021,384,2000,0); -- All Pets - HASTE GEAR: 20%
 INSERT INTO `item_mods_pet` VALUES (17021,430,30,0); -- All Pets - QUAD ATTACK: 30
@@ -502,7 +514,9 @@ INSERT INTO `item_mods_pet` VALUES (17022,66,200,0); -- All Pets - RATTP: 200
 INSERT INTO `item_mods_pet` VALUES (17022,160,-4500,0);-- All Pets - DMG: -45%
 INSERT INTO `item_mods_pet` VALUES (17022,167,2400,0); -- All Pets - HASTE MAGIC: 24%
 INSERT INTO `item_mods_pet` VALUES (17022,288,100,0);-- All Pets - DOUBLE_ATTACK: 100
-INSERT INTO `item_mods_pet` VALUES (17022,370,15,0); -- All Pets - Regen: 15
+INSERT INTO `item_mods_pet` VALUES (17022,366,90,0); -- All Pets - MAIN DMG RATING: 90
+INSERT INTO `item_mods_pet` VALUES (17022,370,4,0); -- All Pets - Regen: 16
+INSERT INTO `item_mods_pet` VALUES (17022,376,90,0); -- All Pets - RANGED DMG RATING: 90
 INSERT INTO `item_mods_pet` VALUES (17022,383,2400,0); -- All Pets - HASTE ABILITY: 24%
 INSERT INTO `item_mods_pet` VALUES (17022,384,2400,0); -- All Pets - HASTE GEAR: 24%
 INSERT INTO `item_mods_pet` VALUES (17022,430,40,0); -- All Pets - QUAD ATTACK: 40
@@ -526,7 +540,9 @@ INSERT INTO `item_mods_pet` VALUES (17023,66,500,0); -- All Pets - RATTP: 500
 INSERT INTO `item_mods_pet` VALUES (17023,160,-6000,0);-- All Pets - DMG: -60%
 INSERT INTO `item_mods_pet` VALUES (17023,167,4300,0); -- All Pets - HASTE MAGIC: 43%
 INSERT INTO `item_mods_pet` VALUES (17023,288,100,0);-- All Pets - DOUBLE_ATTACK: 100
+INSERT INTO `item_mods_pet` VALUES (17023,366,200,0); -- All Pets - MAIN DMG RATING: 200
 INSERT INTO `item_mods_pet` VALUES (17023,370,20,0); -- All Pets - Regen: 20
+INSERT INTO `item_mods_pet` VALUES (17023,376,200,0); -- All Pets - RANGED DMG RATING: 200
 INSERT INTO `item_mods_pet` VALUES (17023,383,2500,0); -- All Pets - HASTE ABILITY: 25%
 INSERT INTO `item_mods_pet` VALUES (17023,384,2500,0); -- All Pets - HASTE GEAR: 25%
 INSERT INTO `item_mods_pet` VALUES (17023,430,60,0); -- All Pets - QUAD ATTACK: 60
