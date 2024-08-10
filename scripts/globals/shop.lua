@@ -546,6 +546,12 @@ xi.shop =
             17021,   1500,      xi.ki.RHAPSODY_IN_WHITE,   -- Pet Food Zeta
             17022,   1800,      xi.ki.RHAPSODY_IN_WHITE,   -- Pet Food Eta
             17023,   2500,      xi.ki.RHAPSODY_IN_WHITE,   -- Pet Food Theta
+            
+            17882,   2000,      xi.ki.RHAPSODY_IN_WHITE,   -- Alchemist Water  23-99 Mandragora
+            17864,   2000,      xi.ki.RHAPSODY_IN_WHITE,   -- Herbal Broth     23-99 Sheep
+            17870,   4000,      xi.ki.RHAPSODY_IN_WHITE,   -- Warm Meat Broth  28-99 Tiger NQ
+            17871,   9000,      xi.ki.RHAPSODY_IN_WHITE,   -- Warm Meat Broth  51-99 Tiger
+            17877,  20000,      xi.ki.RHAPSODY_IN_WHITE,   -- Fish Oil Broth   23-99 Courier Carrie
         },
 
         [curio.scrolls] =
