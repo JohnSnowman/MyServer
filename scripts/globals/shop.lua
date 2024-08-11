@@ -569,6 +569,7 @@ xi.shop =
             15807,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Balrahns Ring
             15808,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Ulthalams Ring
             15809,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Jalzahns Ring
+            14625,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Evokers Ring
             13216,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Gold Mog Belt
             
             14813,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Brutal Earring
