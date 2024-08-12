@@ -9,9 +9,9 @@ end
 
 -- http://wiki.ffo.jp/html/37933.html
 abilityObject.onPetAbility = function(target, pet, petskill)
-    local numhits = 3
+    local numhits = 4
     local accmod = 1
-    local dmgmod = 5.0
+    local dmgmod = 7.5
 
     xi.job_utils.summoner.onUseBloodPact(pet:getMaster(), pet, target, petskill)
 
