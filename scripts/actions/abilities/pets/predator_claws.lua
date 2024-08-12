@@ -8,7 +8,7 @@ abilityObject.onAbilityCheck = function(player, target, ability)
 end
 
 abilityObject.onPetAbility = function(target, pet, skill)
-    local numhits = 3
+    local numhits = 4
     local accmod = 1
     local dmgmod = 10
     local dmgmodsubsequent = 10
