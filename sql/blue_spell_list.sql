@@ -180,7 +180,7 @@ INSERT INTO `blue_spell_list` VALUES (699,253,2,25,1,10,4,0); -- Barbed Crescent
 -- INSERT INTO `blue_spell_list` VALUES (707,3030,5,17,8,0,0,0); -- Retinal Glare
 -- INSERT INTO `blue_spell_list` VALUES (708,2930,6,24,8,0,0,0); -- Subduction
 -- INSERT INTO `blue_spell_list` VALUES (709,256,7,24,3,11,0,0); -- Thrashing Assault
--- INSERT INTO `blue_spell_list` VALUES (710,1952,4,17,2,0,0,0); -- Erratic Flutter
+INSERT INTO `blue_spell_list` VALUES (710,1952,4,17,2,0,0,0); -- Erratic Flutter
 -- INSERT INTO `blue_spell_list` VALUES (711,256,0,0,0,0,0,0); -- Restoral
 -- INSERT INTO `blue_spell_list` VALUES (712,256,0,0,0,0,0,0); -- Rail Cannon
 -- INSERT INTO `blue_spell_list` VALUES (713,2054,0,0,0,0,0,0); -- Diffusion Ray
