@@ -44,7 +44,7 @@ spellObject.onSpellCast = function(caster, target, spell)
     params.effect = xi.effect.STUN
     local power = 1
     local tick = 0
-    local duration = 5
+    local duration = 15
 
     local damage = xi.spells.blue.usePhysicalSpell(caster, target, spell, params)
     xi.spells.blue.usePhysicalSpellAddedEffect(caster, target, spell, params, damage, power, tick, duration)
