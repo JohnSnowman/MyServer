@@ -16,7 +16,7 @@ spellObject.onSpellCast = function(caster, target, spell)
 
     --calculate raw damage (unknown function  -> only dark skill though) - using http://www.bluegartr.com/threads/44518-Drain-Calculations
     -- also have small constant to account for 0 dark skill
-    local dmg = 105 + (10 * caster:getSkillLevel(xi.skill.DARK_MAGIC))
+    local dmg = 105 + (15 * caster:getSkillLevel(xi.skill.DARK_MAGIC))
     local targetHP = target:getHP()
 
 
