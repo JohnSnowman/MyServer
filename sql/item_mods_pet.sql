@@ -233,6 +233,30 @@ INSERT INTO `item_mods_pet` VALUES (14523,2,16,7); -- Stormwaker - HP: 16
 INSERT INTO `item_mods_pet` VALUES (14523,5,20,4); -- Harlequin - MP: 20
 INSERT INTO `item_mods_pet` VALUES (14523,5,24,7); -- Stormwaker - MP: 24
 
+-- Evokers Ring
+INSERT INTO `item_mods_pet` VALUES (14625,1,180,0); -- All Pets - DEF: 180
+INSERT INTO `item_mods_pet` VALUES (14625,8,50,0);  -- All Pets - STR: 50
+INSERT INTO `item_mods_pet` VALUES (14625,9,50,0);  -- All Pets - DEX: 50
+INSERT INTO `item_mods_pet` VALUES (14625,10,50,0); -- All Pets - VIT: 50
+INSERT INTO `item_mods_pet` VALUES (14625,11,50,0); -- All Pets - AGI: 50
+INSERT INTO `item_mods_pet` VALUES (14625,12,50,0); -- All Pets - INT: 50
+INSERT INTO `item_mods_pet` VALUES (14625,13,50,0); -- All Pets - MND: 50
+INSERT INTO `item_mods_pet` VALUES (14625,14,50,0); -- All Pets - CHR: 50
+INSERT INTO `item_mods_pet` VALUES (14625,23,180,0);-- All Pets - ATT: 180
+INSERT INTO `item_mods_pet` VALUES (14625,24,180,0);-- All Pets - RATT:180
+INSERT INTO `item_mods_pet` VALUES (14625,25,180,0); -- All Pets - ACC: 180
+INSERT INTO `item_mods_pet` VALUES (14625,26,180,0); -- All Pets - RACC: 180
+INSERT INTO `item_mods_pet` VALUES (14625,28,180,0); -- All Pets - MATT: 180
+INSERT INTO `item_mods_pet` VALUES (14625,29,180,0); -- All Pets - MDEF: 180
+INSERT INTO `item_mods_pet` VALUES (14625,30,180,0); -- All Pets - MACC: 180
+INSERT INTO `item_mods_pet` VALUES (14625,62,180,0); -- All Pets - ATTP: 180
+INSERT INTO `item_mods_pet` VALUES (14625,63,180,0); -- All Pets - DEFP: 180
+INSERT INTO `item_mods_pet` VALUES (14625,66,180,0); -- All Pets - RATTP: 180
+INSERT INTO `item_mods_pet` VALUES (14625,311,180,0);  -- All Pets - MAGIC DAMAGE : 180
+INSERT INTO `item_mods_pet` VALUES (14625,366,55,0);   -- All Pets - MAIN DMG RATING: 55
+INSERT INTO `item_mods_pet` VALUES (14625,370,15,0);   -- All Pets - Regen: 15
+INSERT INTO `item_mods_pet` VALUES (14625,376,55,0);   -- All Pets - RANGED DMG RATING: 55
+
 -- Ostreger Mitts
 INSERT INTO `item_mods_pet` VALUES (14872,2,10,2); -- Wyvern - HP: 10
 
