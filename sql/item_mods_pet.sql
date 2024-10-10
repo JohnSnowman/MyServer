@@ -257,6 +257,21 @@ INSERT INTO `item_mods_pet` VALUES (14625,366,55,0);   -- All Pets - MAIN DMG RA
 INSERT INTO `item_mods_pet` VALUES (14625,370,15,0);   -- All Pets - Regen: 15
 INSERT INTO `item_mods_pet` VALUES (14625,376,55,0);   -- All Pets - RANGED DMG RATING: 55
 
+-- Beastly Earring
+INSERT INTO `item_mods_pet` VALUES (14742,1,100,0); -- All Pets - DEF: 100
+INSERT INTO `item_mods_pet` VALUES (14742,28,100,0); -- All Pets - MATT: 100
+INSERT INTO `item_mods_pet` VALUES (14742,29,100,0); -- All Pets - MDEF: 100
+INSERT INTO `item_mods_pet` VALUES (14742,62,200,0); -- All Pets - ATTP: 200
+INSERT INTO `item_mods_pet` VALUES (14742,63,200,0); -- All Pets - DEFP: 200
+INSERT INTO `item_mods_pet` VALUES (14742,66,200,0); -- All Pets - RATTP: 200
+INSERT INTO `item_mods_pet` VALUES (14742,167,1000,0); -- All Pets - HASTE MAGIC: 10%
+INSERT INTO `item_mods_pet` VALUES (14742,190,-1000,0);-- All Pets - DMGPHYS_II: -10%
+INSERT INTO `item_mods_pet` VALUES (14742,311,200,0);  -- All Pets - MAGIC DAMAGE : 200
+INSERT INTO `item_mods_pet` VALUES (14742,366,45,0);   -- All Pets - MAIN DMG RATING: 45
+INSERT INTO `item_mods_pet` VALUES (14742,370,10,0);   -- All Pets - Regen: 10
+INSERT INTO `item_mods_pet` VALUES (14742,376,45,0);   -- All Pets - RANGED DMG RATING: 45
+INSERT INTO `item_mods_pet` VALUES (14742,831,-1000,0);-- All Pets - DMGMAGIC_II: -10%
+
 -- Ostreger Mitts
 INSERT INTO `item_mods_pet` VALUES (14872,2,10,2); -- Wyvern - HP: 10
 
@@ -968,6 +983,21 @@ INSERT INTO `item_mods_pet` VALUES (21717,30,50,0); -- All Pets - MACC: 50
 
 -- Aymur
 INSERT INTO `item_mods_pet` VALUES (21751,23,80,0); -- All Pets - ATT: 80
+
+-- Farsha
+INSERT INTO `item_mods_pet` VALUES (21752,1,120,0); -- All Pets - DEF: 120
+INSERT INTO `item_mods_pet` VALUES (21752,28,120,0); -- All Pets - MATT: 120
+INSERT INTO `item_mods_pet` VALUES (21752,29,120,0); -- All Pets - MDEF: 120
+INSERT INTO `item_mods_pet` VALUES (21752,62,240,0); -- All Pets - ATTP: 240
+INSERT INTO `item_mods_pet` VALUES (21752,63,240,0); -- All Pets - DEFP: 240
+INSERT INTO `item_mods_pet` VALUES (21752,66,240,0); -- All Pets - RATTP: 240
+INSERT INTO `item_mods_pet` VALUES (21752,167,1800,0); -- All Pets - HASTE MAGIC: 18%
+INSERT INTO `item_mods_pet` VALUES (21752,190,-1000,0);-- All Pets - DMGPHYS_II: -10%
+INSERT INTO `item_mods_pet` VALUES (21752,311,480,0);  -- All Pets - MAGIC DAMAGE : 480
+INSERT INTO `item_mods_pet` VALUES (21752,366,85,0);   -- All Pets - MAIN DMG RATING: 85
+INSERT INTO `item_mods_pet` VALUES (21752,370,25,0);   -- All Pets - Regen: 25
+INSERT INTO `item_mods_pet` VALUES (21752,376,85,0);   -- All Pets - RANGED DMG RATING: 85
+INSERT INTO `item_mods_pet` VALUES (21752,831,-1000,0);-- All Pets - DMGMAGIC_II: -10%
 
 -- Arasy Lance
 INSERT INTO `item_mods_pet` VALUES (21865,370,5,2); -- Wyvern - REGEN: 5
