@@ -23359,9 +23359,9 @@ INSERT INTO `item_mods` VALUES (14741,86,5);  -- SCYTHE: 5
 INSERT INTO `item_mods` VALUES (14741,116,5); -- DARK: 5
 
 -- Beastly Earring
-INSERT INTO `item_mods` VALUES (14742,14,2); -- CHR: 2
-INSERT INTO `item_mods` VALUES (14742,68,5); -- EVA: 5
-INSERT INTO `item_mods` VALUES (14742,84,5); -- AXE: 5
+INSERT INTO `item_mods` VALUES (14742,14,20); -- CHR: 20
+INSERT INTO `item_mods` VALUES (14742,68,50); -- EVA: 50
+INSERT INTO `item_mods` VALUES (14742,84,50); -- AXE: 50
 
 -- Bushinomimi
 INSERT INTO `item_mods` VALUES (14743,8,2);   -- STR: 2
@@ -44411,11 +44411,14 @@ INSERT INTO `item_mods` VALUES (21751,355,74);  -- ADDS_WEAPONSKILL: 74
 INSERT INTO `item_mods` VALUES (21751,644,30);  -- WSD+% (Primal Rend): 30
 
 -- Farsha
-INSERT INTO `item_mods` VALUES (21752,8,35);    -- STR: 35
-INSERT INTO `item_mods` VALUES (21752,13,35);   -- MND: 35
+INSERT INTO `item_mods` VALUES (21752,8,50);    -- STR: 35 + 15 Augment
+INSERT INTO `item_mods` VALUES (21752,9,15);    -- DEX: 15 		Augment
+INSERT INTO `item_mods` VALUES (21752,13,50);   -- MND: 35 + 15 Augment
+INSERT INTO `item_mods` VALUES (21752,14,15);   -- CHR: 15 		Augment
 INSERT INTO `item_mods` VALUES (21752,256,45);  -- AFTERMATH: 45
-INSERT INTO `item_mods` VALUES (21752,311,155); -- MAGIC_DAMAGE: 155
+INSERT INTO `item_mods` VALUES (21752,311,410); -- MAGIC_DAMAGE: 155 + 255 	Augment
 INSERT INTO `item_mods` VALUES (21752,355,76);  -- ADDS_WEAPONSKILL: 76
+INSERT INTO `item_mods` VALUES (21752,366,6);   -- MAIN_DMG_RATING 	Augment
 
 -- Tri-Edge
 INSERT INTO `item_mods` VALUES (21753,73,10);   -- STORETP: 10
