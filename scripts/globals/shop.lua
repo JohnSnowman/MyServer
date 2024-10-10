@@ -576,6 +576,8 @@ xi.shop =
             14739,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Suppanomimi
             14812,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Loquac Earring
             
+            14742,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Beastly Earring
+            
             10136,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Cipher: Uka Totlihn
             10175,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Cipher: August
             10187,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Cipher: Shantotto II
