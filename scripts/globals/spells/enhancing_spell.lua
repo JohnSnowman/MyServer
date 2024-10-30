@@ -290,7 +290,7 @@ xi.spells.enhancing.calculateEnhancingFinalPower = function(caster, target, spel
         spellGroup == xi.magic.spellGroup.WHITE
     then
 
-        local emboldenPower = 1.5 + target:getJobPointLevel(xi.jp.EMBOLDEN_EFFECT) / 100 -- 1 point in job point category = 1%
+        local emboldenPower = 5 + target:getJobPointLevel(xi.jp.EMBOLDEN_EFFECT) / 100 -- 1 point in job point category = 1%
 
         finalPower = math.floor(finalPower * emboldenPower)
     end
@@ -376,7 +376,7 @@ xi.spells.enhancing.calculateEnhancingDuration = function(caster, target, spell,
         target:hasStatusEffect(xi.effect.EMBOLDEN) and
         spellGroup == xi.magic.spellGroup.WHITE
     then
-        local emboldenDurationModifier = 0.5 + target:getMod(xi.mod.EMBOLDEN_DURATION) / 100 -- 1 point = 1%
+        local emboldenDurationModifier = 2 + target:getMod(xi.mod.EMBOLDEN_DURATION) / 100 -- 1 point = 1%
         duration = duration * emboldenDurationModifier
     end
 
@@ -534,6 +534,7 @@ xi.spells.enhancing.useEnhancingSpell = function(caster, target, spell)
     ------------------------------
     -- Handle Status Effects, Embolden buffs can only be applied by player, so do not remove embolden..
     ------------------------------
+    --[[
     if
         not caster:isPet() and
         target:hasStatusEffect(xi.effect.EMBOLDEN) and
@@ -541,7 +542,7 @@ xi.spells.enhancing.useEnhancingSpell = function(caster, target, spell)
     then
         target:delStatusEffectSilent(xi.effect.EMBOLDEN)
     end
-
+    ]]--
     ------------------------------------------------------------
     -- Change message when higher effect or "Always overwrite".
     ------------------------------------------------------------
