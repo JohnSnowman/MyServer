@@ -27,12 +27,12 @@ local function applyRuneEnhancement(effectType, player)
 
     -- see https://www.bg-wiki.com/ffxi/Category:Rune
     local power = math.floor((49 * runLevel / 99) + 5.5) + meritBonus + jobPointBonus
-    player:addStatusEffect(effectType, power, 0, 300)
+    player:addStatusEffect(effectType, power, 0, 3600)
 end
 
 local function enforceRuneCounts(target)
     local runLevel    = getRUNLevel(target)
-    local maxRunes    = runLevel >= 65 and 3 or runLevel >= 35 and 2 or 1
+    local maxRunes    = runLevel >= 65 and 4 or runLevel >= 35 and 3 or 2
     local activeRunes = target:getActiveRuneCount()
 
     if activeRunes >= maxRunes then -- delete the rune with the least duration
@@ -67,7 +67,7 @@ end
 -- source https://www.bg-wiki.com/ffxi/Vivacious_Pulse
 local function calculateVivaciousPulseHealing(target)
     local divineMagicSkillLevel = target:getSkillLevel(xi.skill.DIVINE_MAGIC)
-    local hpHealAmount          = 10 + math.floor(divineMagicSkillLevel / 2 * (100 + target:getJobPointLevel(xi.jp.VIVACIOUS_PULSE_EFFECT)) / 100) -- Bonus of 1-20%  from Vivacious pulse job points.
+    local hpHealAmount          = 10 + math.floor(divineMagicSkillLevel * 2 * (100 + target:getJobPointLevel(xi.jp.VIVACIOUS_PULSE_EFFECT)) / 100) -- Bonus of 1-20%  from Vivacious pulse job points.
     local tenebraeRuneCount     = 0
     local bonusPct              = (100 + target:getMod(xi.mod.VIVACIOUS_PULSE_POTENCY)) / 100
     local debuffs               = {}
@@ -105,7 +105,7 @@ local function calculateVivaciousPulseHealing(target)
     end
 
     if tenebraeRuneCount > 0 then -- only restore MP if there's one or more tenebrae rune active
-        local mpHealAmount = math.floor(divineMagicSkillLevel / 10 * (100 + target:getJobPointLevel(xi.jp.VIVACIOUS_PULSE_EFFECT)) / 100) * (tenebraeRuneCount + 1)
+        local mpHealAmount = math.floor(divineMagicSkillLevel * 1.5 * (100 + target:getJobPointLevel(xi.jp.VIVACIOUS_PULSE_EFFECT)) / 100) * (tenebraeRuneCount + 1)
         target:addMP(mpHealAmount) -- augment bonusPct does not apply here according to testing.
     end
 
@@ -306,7 +306,7 @@ xi.job_utils.rune_fencer.useSwordplay = function(player, target, ability)
         augBonus = (meritBonus / 5) * 2
     end
 
-    player:addStatusEffect(xi.effect.SWORDPLAY, power, 3, 120, 0, meritBonus + augBonus, 0)
+    player:addStatusEffect(xi.effect.SWORDPLAY, power, 3, 3600, 0, meritBonus + augBonus, 0)
 end
 
 xi.job_utils.rune_fencer.onSwordplayEffectGain = function(target, effect)
@@ -328,7 +328,7 @@ xi.job_utils.rune_fencer.onSwordplayEffectTick = function(target, effect)
     local power         = effect:getPower()
     local tickPower     = 3
     local jobPointBonus = target:getJobPointLevel(xi.jp.SWORDPLAY_EFFECT)
-    local maxPower      = 60 + jobPointBonus  -- ACC/EVA bonus caps at 60, + 1 per level of job point.
+    local maxPower      = 450 + jobPointBonus  -- ACC/EVA bonus caps at 60, + 1 per level of job point.
 
     if power < maxPower then
         if power + tickPower > maxPower then
@@ -412,7 +412,7 @@ xi.job_utils.rune_fencer.useVallationValiance = function(player, target, ability
 
     if abilityID == xi.jobAbility.VALIANCE then -- apply effects to entire party (including target) (Valiance)
         local party    = player:getParty()
-        local duration = 180 + jobPointBonusDuration
+        local duration = 600 + jobPointBonusDuration
 
         for _, member in pairs(party) do
             if
@@ -434,7 +434,7 @@ xi.job_utils.rune_fencer.useVallationValiance = function(player, target, ability
         if target:hasStatusEffect(xi.effect.LIEMENT) then -- no effect if Liement is up
             ability:setMsg(xi.msg.basic.JA_NO_EFFECT_2)
         else
-            local duration = 120 + jobPointBonusDuration
+            local duration = 600 + jobPointBonusDuration
 
             target:delStatusEffectSilent(xi.effect.VALIANCE) -- Vallation overwrites Valiance
             applyVallationValianceSDTMods(target, sdtTypes, sdtPower, xi.effect.VALLATION, duration)
@@ -467,7 +467,7 @@ xi.job_utils.rune_fencer.useBattuta = function(player, target, ability, action)
     local highestRune = target:getHighestRuneEffect()
     action:speceffect(target:getID(), getSpecEffectElementWard(highestRune)) -- set element color for animation.
 
-    target:addStatusEffect(xi.effect.BATTUTA, inquartataPower, 0, 90, 0, math.floor(spikesPower * modBonus), 0)
+    target:addStatusEffect(xi.effect.BATTUTA, inquartataPower, 0, 3600, 0, math.floor(spikesPower * modBonus), 0)
 end
 
 xi.job_utils.rune_fencer.onBattutaEffectGain = function(target, effect)
@@ -700,7 +700,7 @@ xi.job_utils.rune_fencer.usePflug = function(player, target, ability, action)
 
     action:speceffect(target:getID(), getSpecEffectElementWard(highestRune))
 
-    player:addStatusEffect(xi.effect.PFLUG, baseStrength, 0, 120, 0, meritBonus)
+    player:addStatusEffect(xi.effect.PFLUG, baseStrength, 0, 1200, 0, meritBonus)
 end
 
 -- see https://www.bg-wiki.com/ffxi/Gambit
@@ -726,7 +726,7 @@ xi.job_utils.rune_fencer.useGambit = function(player, target, ability, action)
         i = i + 1
     end
 
-    local duration = 60 + jobPointBonusDuration + gearBonusDuration
+    local duration = 600 + jobPointBonusDuration + gearBonusDuration
 
     applyGambitSDTMods(target, sdtTypes, sdtPower, xi.effect.GAMBIT, duration)
 
@@ -746,7 +746,7 @@ end
 
 -- see https://www.bg-wiki.com/ffxi/One_for_All
 xi.job_utils.rune_fencer.useOneForAll = function(player, target, ability, action)
-    local duration = 30 + player:getJobPointLevel(xi.jp.ONE_FOR_ALL_DURATION)
+    local duration = 600 + player:getJobPointLevel(xi.jp.ONE_FOR_ALL_DURATION)
 
     if player:getID() ~= target:getID() then -- Only the caster can apply effects, including to the party
         return
@@ -793,7 +793,7 @@ xi.job_utils.rune_fencer.useLiement = function(player, target, ability, action)
 
     local runeEffects = target:getAllRuneEffects()
     local absorbPower = 25
-    local duration    = 10 + player:getMod(xi.mod.LIEMENT_DURATION)
+    local duration    = 360 + player:getMod(xi.mod.LIEMENT_DURATION)
     local absorbTypes = {} -- one absorb type per rune which can be additive
     local i           = 0
 
