@@ -516,7 +516,8 @@ local function getSwipeLungeDamageMultipliers(player, target, element, bonusMacc
 end
 
 local function calculateSwipeLungeDamage(player, target, skillModifier, gearBonus, numHits, multipliers)
-    local damage = math.floor(skillModifier * (0.50 + 0.25 * numHits + (gearBonus / 100)))
+    local damage = math.floor(skillModifier * (1 + 0.5 * numHits + (gearBonus / 100)))
+    --local damage = math.floor(skillModifier * (0.50 + 0.25 * numHits + (gearBonus / 100)))
 
     damage = damage + player:getMod(xi.mod.MAGIC_DAMAGE) -- add mdamage to base damage
 
