@@ -313,14 +313,14 @@ xi.job_utils.rune_fencer.onSwordplayEffectGain = function(target, effect)
     local power    = effect:getPower()
     local subPower = effect:getSubPower()
 
-    if power > 0 then
+    --if power > 0 then
         target:addMod(xi.mod.ACC, power)
         target:addMod(xi.mod.EVASION, power)
-    end
+    --end
 
-    if subPower > 0 then
+   -- if subPower > 0 then
         target:addMod(xi.mod.SUBTLE_BLOW, subPower)
-    end
+    --end
 end
 
 -- tick values from https://www.bg-wiki.com/ffxi/Swordplay
