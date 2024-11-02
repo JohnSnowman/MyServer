@@ -16,7 +16,7 @@ abilityObject.onUseAbility = function(player, target, ability)
     local duration = 180 + player:getMod(xi.mod.MEDITATE_DURATION)
 
     if player:getMainJob() == xi.job.SAM then
-        amount = 20 + target:getJobPointLevel(xi.jp.MEDITATE_EFFECT) * 5
+        amount = 20 + target:getJobPointLevel(xi.jp.MEDITATE_EFFECT)--     * 5     --   x5  is handled in   JobPoint.sql  
     end
 
     player:addStatusEffectEx(xi.effect.MEDITATE, 0, amount, 3, duration)
