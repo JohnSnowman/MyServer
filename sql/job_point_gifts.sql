@@ -1415,7 +1415,7 @@ INSERT INTO `job_point_gifts` VALUES (22,55,915,9,'RUN_Capacity Point Bonus');
 INSERT INTO `job_point_gifts` VALUES (22,60,31,100,'RUN_Magic Evasion Bonus');
 INSERT INTO `job_point_gifts` VALUES (22,80,30,50,'RUN_Magic Accuracy Bonus');
 INSERT INTO `job_point_gifts` VALUES (22,95,915,11,'RUN_Capacity Point Bonus');
-INSERT INTO `job_point_gifts` VALUES (22,100,991,100,'RUN_Enhancing Magic Received Duration');
+INSERT INTO `job_point_gifts` VALUES (22,100,890,100,'RUN_Enhancing Magic Received Duration');
 INSERT INTO `job_point_gifts` VALUES (22,100,997,1,'RUN_Superior 2');
 INSERT INTO `job_point_gifts` VALUES (22,125,113,50,'RUN_Enhancing Magic Skill Bonus');
 INSERT INTO `job_point_gifts` VALUES (22,145,915,13,'RUN_Capacity Point Bonus');
@@ -1454,7 +1454,7 @@ INSERT INTO `job_point_gifts` VALUES (22,1050,113,100,'RUN_Enhancing Magic Skill
 INSERT INTO `job_point_gifts` VALUES (22,1125,963,20,'RUN_Inquartata Effect');
 INSERT INTO `job_point_gifts` VALUES (22,1195,915,33,'RUN_Capacity Point Bonus');
 INSERT INTO `job_point_gifts` VALUES (22,1200,997,1,'RUN_Superior 4');
-INSERT INTO `job_point_gifts` VALUES (22,1200,991,100,'RUN_Enh. Magic Received Duration');
+INSERT INTO `job_point_gifts` VALUES (22,1200,890,100,'RUN_Enh. Magic Received Duration');
 INSERT INTO `job_point_gifts` VALUES (22,1280,1,130,'RUN_Physical Defense Bonus');
 INSERT INTO `job_point_gifts` VALUES (22,1355,915,35,'RUN_Capacity Point Bonus');
 INSERT INTO `job_point_gifts` VALUES (22,1360,23,180,'RUN_Attack Bonus');
