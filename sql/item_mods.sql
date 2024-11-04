@@ -60801,6 +60801,9 @@ INSERT INTO `item_mods` VALUES (26410,1,1);   -- DEF: 1
 -- Kam'lanaut's Shield
 INSERT INTO `item_mods` VALUES (26412,1,1);   -- DEF: 1
 
+-- Twinned Shield
+INSERT INTO `item_mods` VALUES (26414,1,15);   -- DEF: 15
+
 -- Ammurapi Shield
 INSERT INTO `item_mods` VALUES (26419,1,47);   -- DEF: 47
 INSERT INTO `item_mods` VALUES (26419,2,22);   -- HP: 22
@@ -60837,6 +60840,24 @@ INSERT INTO `item_mods` VALUES (26428,1,1); -- DEF: 1
 -- Smythes Ecu
 INSERT INTO `item_mods` VALUES (26429,1,2);   -- DEF: 2
 INSERT INTO `item_mods` VALUES (26429,133,1); -- BONE: 1
+
+-- Smithing Shield
+INSERT INTO `item_mods` VALUES (26432,1,15);   -- DEF: 15
+INSERT INTO `item_mods` VALUES (26432,127,110);-- FISH
+INSERT INTO `item_mods` VALUES (26432,128,110);-- WOOD
+INSERT INTO `item_mods` VALUES (26432,129,110);-- SMITH
+INSERT INTO `item_mods` VALUES (26432,130,110);-- GOLDSMITH
+INSERT INTO `item_mods` VALUES (26432,131,110);-- CLOTH
+INSERT INTO `item_mods` VALUES (26432,132,110);-- LEATHER 
+INSERT INTO `item_mods` VALUES (26432,133,110);-- BONE
+INSERT INTO `item_mods` VALUES (26432,134,110);-- ALCHEMY
+INSERT INTO `item_mods` VALUES (26432,135,110);-- COOK
+INSERT INTO `item_mods` VALUES (26432,136,110);-- SYNERGY
+INSERT INTO `item_mods` VALUES (26432,137,110);-- RIDING
+INSERT INTO `item_mods` VALUES (26432,851,75); -- Rate of synthesis success
+INSERT INTO `item_mods` VALUES (26432,852,75); -- Synthesis skill gain rate
+INSERT INTO `item_mods` VALUES (26432,862,75); -- High-quality success rate (not a percent)
+INSERT INTO `item_mods` VALUES (26432,916,75); -- Rate of desynthesis success
 
 -- Toreutic Aspis
 INSERT INTO `item_mods` VALUES (26433,1,1); -- DEF: 1
