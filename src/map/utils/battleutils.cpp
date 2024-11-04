@@ -1907,6 +1907,9 @@ namespace battleutils
             case 6: // Ochain -- https://www.bg-wiki.com/ffxi/Category:Shields
                 base = 108;
                 break;
+            case 7: // Mod for giggles
+                base = 144;
+                break;
             default:
                 return 0;
         }
