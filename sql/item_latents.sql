@@ -2904,6 +2904,21 @@ INSERT INTO `item_latents` VALUES (23685,399,18,52,5);   -- Pedagogy Loafers+3: 
 INSERT INTO `item_latents` VALUES (23685,399,18,52,6);   -- Pedagogy Loafers+3: Weather: Enhances Celerity and Alacrity Effect +18% (THUNDER)
 INSERT INTO `item_latents` VALUES (23685,399,18,52,7);   -- Pedagogy Loafers+3: Weather: Enhances Celerity and Alacrity Effect +18% (LIGHT)
 INSERT INTO `item_latents` VALUES (23685,399,18,52,8);   -- Pedagogy Loafers+3: Weather: Enhances Celerity and Alacrity Effect +18% (DARK)
+
+INSERT INTO `item_latents` VALUES (26414,1,10,51,30);  	-- DEF+10 above level 30
+INSERT INTO `item_latents` VALUES (26414,1,10,51,50);  	-- DEF+10 above level 50
+INSERT INTO `item_latents` VALUES (26414,1,10,51,70);  	-- DEF+10 above level 70
+INSERT INTO `item_latents` VALUES (26414,1,10,51,80);  	-- DEF+10 above level 80
+INSERT INTO `item_latents` VALUES (26414,1,10,51,90);  	-- DEF+10 above level 90
+INSERT INTO `item_latents` VALUES (26414,1,30,51,99);  	-- DEF+30 above level 99
+
+INSERT INTO `item_latents` VALUES (26432,1,10,51,30);  	-- DEF+10 above level 30
+INSERT INTO `item_latents` VALUES (26432,1,10,51,50);  	-- DEF+10 above level 50
+INSERT INTO `item_latents` VALUES (26432,1,10,51,70);  	-- DEF+10 above level 70
+INSERT INTO `item_latents` VALUES (26432,1,10,51,80);  	-- DEF+10 above level 80
+INSERT INTO `item_latents` VALUES (26432,1,10,51,90);  	-- DEF+10 above level 90
+INSERT INTO `item_latents` VALUES (26432,1,30,51,99);  	-- DEF+30 above level 99
+
 INSERT INTO `item_latents` VALUES (27342,63,10,13,64);   -- Fallen's Sollerets,"Last Resort"+1
 INSERT INTO `item_latents` VALUES (27343,63,10,13,64);   -- Fallen's Sollerets +1,"Last Resort"+1
 INSERT INTO `item_latents` VALUES (27366,399,15,52,1);   -- Pedagogy Loafers: Weather: Enhances Celerity and Alacrity Effect +15% (FIRE)
