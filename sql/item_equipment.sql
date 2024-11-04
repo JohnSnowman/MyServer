@@ -12479,7 +12479,7 @@ INSERT INTO `item_equipment` VALUES (26409,'dullahan_shield',1,0,4194303,669,3,0
 INSERT INTO `item_equipment` VALUES (26410,'diamond_buckler',1,0,4194303,659,1,0,2,0,0);
 INSERT INTO `item_equipment` VALUES (26412,'kamalanauts_shield',1,0,4194303,668,1,0,2,0,0);
 INSERT INTO `item_equipment` VALUES (26413,'voluspa_shield',99,119,193,30,3,0,2,0,0);
-INSERT INTO `item_equipment` VALUES (26414,'twinned_shield',1,0,4194303,672,2,0,2,0,0);
+INSERT INTO `item_equipment` VALUES (26414,'twinned_shield',1,0,4194303,672,7,0,2,0,0);
 INSERT INTO `item_equipment` VALUES (26419,'ammurapi_shield',99,119,1589788,42,1,0,2,0,0);
 INSERT INTO `item_equipment` VALUES (26420,'adapa_shield',99,119,385,29,3,0,2,0,0);
 INSERT INTO `item_equipment` VALUES (26421,'nusku_shield',99,119,66560,46,2,0,2,0,0);
@@ -12492,7 +12492,7 @@ INSERT INTO `item_equipment` VALUES (26428,'smythes_aspis',1,0,4194303,41,1,0,2,
 INSERT INTO `item_equipment` VALUES (26429,'smythes_ecu',1,0,4194303,46,2,0,2,0,0);
 INSERT INTO `item_equipment` VALUES (26430,'smythes_scutum',1,0,4194303,33,4,0,2,0,0);
 INSERT INTO `item_equipment` VALUES (26431,'smythes_shield',1,0,4194303,25,3,0,2,0,0);
-INSERT INTO `item_equipment` VALUES (26432,'sm._escutcheon',1,0,4194303,661,3,0,2,0,0);
+INSERT INTO `item_equipment` VALUES (26432,'sm._escutcheon',1,0,4194303,661,7,0,2,0,0);
 INSERT INTO `item_equipment` VALUES (26433,'toreutic_aspis',1,0,4194303,41,1,0,2,0,0);
 INSERT INTO `item_equipment` VALUES (26434,'toreutic_ecu',1,0,4194303,46,2,0,2,0,0);
 INSERT INTO `item_equipment` VALUES (26435,'toreutic_scutum',1,0,4194303,33,4,0,2,0,0);
