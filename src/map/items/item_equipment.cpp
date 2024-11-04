@@ -141,7 +141,7 @@ uint8 CItemEquipment::getShieldAbsorption() const
 // check if item is a shield via shield size
 bool CItemEquipment::IsShield() const
 {
-    return m_shieldSize > 0 && m_shieldSize <= 6;
+    return m_shieldSize > 0 && m_shieldSize <= 7;
 }
 
 // return script type for events such as gear change, zone change, etc
@@ -180,6 +180,9 @@ void CItemEquipment::addModifier(CModifier modifier)
             case 4: // Tower
             case 5: // Aegis
                 pdt += 55;
+                break;
+            case 7: // Kite
+                pdt += 75;
                 break;
         }
         m_absorption = std::min<uint8>(pdt, 100);
