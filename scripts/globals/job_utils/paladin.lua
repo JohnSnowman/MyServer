@@ -40,9 +40,10 @@ xi.job_utils.paladin.checkInvincible = function(player, target, ability)
 end
 
 xi.job_utils.paladin.checkSentinel = function(player, target, ability)
-    local recastReduction = player:getMerit(xi.merit.SENTINEL_RECAST)
+    --local recastReduction = player:getMerit(xi.merit.SENTINEL_RECAST)
 
-    ability:setRecast(ability:getRecast() - recastReduction)
+    --ability:setRecast(ability:getRecast() - recastReduction)
+    ability:setRecast(ability:getRecast() - 300)
 
     return 0, 0
 end
