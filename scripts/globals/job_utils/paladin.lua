@@ -39,6 +39,14 @@ xi.job_utils.paladin.checkInvincible = function(player, target, ability)
     return 0, 0
 end
 
+xi.job_utils.paladin.checkSentinel = function(player, target, ability)
+    local recastReduction = player:getMerit(xi.merit.SENTINEL_RECAST)
+
+    ability:setRecast(ability:getRecast() - recastReduction)
+
+    return 0, 0
+end
+
 xi.job_utils.paladin.checkSepulcher = function(player, target, ability)
     if target:isUndead() then
         return 0, 0
@@ -169,13 +177,8 @@ xi.job_utils.paladin.useSentinel = function(player, target, ability, action)
     local jpValue     = player:getJobPointLevel(xi.jp.SENTINEL_EFFECT)
     local duration    = 600 + enhGuardian
     
-    local abilityId = ability:getID()
-    local recastReduction = 360--player:getMerit(xi.merit.SENTINEL_RECAST)
-
     -- Sent as positive power because UINTs, man.
     player:addStatusEffect(xi.effect.SENTINEL, power, 3, duration, 0, guardian + jpValue)
-    
-    action:setRecast(ability:getRecast(48) - recastReduction)
 end
 
 xi.job_utils.paladin.useSepulcher = function(player, target, ability)
