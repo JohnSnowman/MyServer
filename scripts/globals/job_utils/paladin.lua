@@ -160,7 +160,7 @@ xi.job_utils.paladin.useRampart = function(player, target, ability)
     target:addStatusEffect(xi.effect.RAMPART, 2500, 0, duration)
 end
 
-xi.job_utils.paladin.useSentinel = function(player, target, ability)
+xi.job_utils.paladin.useSentinel = function(player, target, ability, action)
     -- Whether feet have to be equipped before using ability, or if they can be swapped in
     -- is disputed.  Source used: http://wiki.bluegartr.com/bg/Sentinel
     local power       = (90 + player:getMod(xi.mod.SENTINEL_EFFECT)) * 100
