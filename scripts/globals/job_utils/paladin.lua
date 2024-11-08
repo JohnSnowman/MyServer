@@ -198,7 +198,7 @@ xi.job_utils.paladin.useShieldBash = function(player, target, ability)
     elseif shieldSize == 6 then
         damage = 6 * damage
     elseif shieldSize == 7 then
-        damage = 2 * damage
+        damage = damage * 12
     end
 
     -- Main job factors
