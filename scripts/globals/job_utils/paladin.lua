@@ -124,6 +124,12 @@ xi.job_utils.paladin.useIntervene = function(player, target, ability)
         damage = 40 + damage
     elseif shieldSize == 4 then
         damage = 67 + damage
+    elseif shieldSize == 5 then
+        damage = 4 * damage
+    elseif shieldSize == 6 then
+        damage = 6 * damage
+    elseif shieldSize == 7 then
+        damage = 12 * damage
     end
 
     damage = damage * jpValue
