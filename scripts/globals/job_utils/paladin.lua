@@ -175,7 +175,7 @@ xi.job_utils.paladin.useSentinel = function(player, target, ability, action)
     -- Sent as positive power because UINTs, man.
     player:addStatusEffect(xi.effect.SENTINEL, power, 3, duration, 0, guardian + jpValue)
     
-    action:setRecast(ability:getRecast() - recastReduction)
+    action:setRecast(ability:getRecast(48) - recastReduction)
 end
 
 xi.job_utils.paladin.useSepulcher = function(player, target, ability)
