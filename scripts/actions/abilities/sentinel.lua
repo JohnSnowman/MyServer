@@ -17,7 +17,7 @@ end
 
 abilityObject.onUseAbility = function(player, target, ability)
     xi.job_utils.paladin.useSentinel(player, target, ability)
-    ability:setRecast(ability:getRecast(48) - 300)
+    ability:setRecast(360 - 300)
 end
 
 return abilityObject
