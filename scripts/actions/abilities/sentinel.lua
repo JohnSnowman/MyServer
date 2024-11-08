@@ -8,8 +8,9 @@
 local abilityObject = {}
 
 abilityObject.onAbilityCheck = function(player, target, ability)
-    ability:setRecast(ability:getRecast() - 300)
+    --ability:setRecast(ability:getRecast() - 300)
     --ability:setRecast(math.max(0, ability:getRecast() - player:getMod(xi.mod.CALL_BEAST_DELAY)))
+    ability:setRecast(math.max(0, ability:getRecast() - 300))
     --ability:setRecast(ability:getRecast() - jpValue)
     return 0, 0
 end
