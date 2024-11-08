@@ -8,17 +8,11 @@
 local abilityObject = {}
 
 abilityObject.onAbilityCheck = function(player, target, ability)
-    --ability:setRecast(ability:getRecast() - 300)
-    --ability:setRecast(math.max(0, ability:getRecast() - player:getMod(xi.mod.CALL_BEAST_DELAY)))
-    --ability:setRecast(math.max(0, ability:getRecast() - 300))
-    --ability:setRecast(ability:getRecast() - jpValue)
     return 0, 0
 end
 
 abilityObject.onUseAbility = function(player, target, ability)
     xi.job_utils.paladin.useSentinel(player, target, ability)
-    --ability:setRecast(360 - 300)
-    player:resetRecast(xi.recast.ABILITY, 48)
 end
 
 return abilityObject
