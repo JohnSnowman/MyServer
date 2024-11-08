@@ -168,7 +168,8 @@ xi.job_utils.paladin.useSentinel = function(player, target, ability)
     local enhGuardian = player:getMod(xi.mod.ENHANCES_GUARDIAN) * (guardian / 19)
     local jpValue     = player:getJobPointLevel(xi.jp.SENTINEL_EFFECT)
     local duration    = 600 + enhGuardian
-
+    
+    local abilityId = ability:getID()
     local recastReduction = 360--player:getMerit(xi.merit.SENTINEL_RECAST)
 
     -- Sent as positive power because UINTs, man.
