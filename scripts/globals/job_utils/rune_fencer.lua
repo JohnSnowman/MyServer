@@ -319,6 +319,7 @@ xi.job_utils.rune_fencer.onSwordplayEffectGain = function(target, effect)
         target:addMod(xi.mod.EVA, power)
         target:addMod(xi.mod.ATTP, power)
         target:addMod(xi.mod.DEFP, power)
+        target:addMod(xi.mod.MAIN_DMG_RATING, power / 3)
         target:addMod(xi.mod.HASTE_ABILITY, 1500)
     end
 
@@ -345,6 +346,7 @@ xi.job_utils.rune_fencer.onSwordplayEffectTick = function(target, effect)
             target:addMod(xi.mod.EVA, tickPower)
             target:addMod(xi.mod.ATTP, tickPower)
             target:addMod(xi.mod.DEFP, tickPower)
+            target:addMod(xi.mod.MAIN_DMG_RATING, tickPower / 3)
         end
 
         power = math.min(power + tickPower, maxPower)
@@ -361,6 +363,7 @@ xi.job_utils.rune_fencer.onSwordplayEffectLose = function(target, effect)
     target:delMod(xi.mod.EVA, power)
     target:delMod(xi.mod.ATTP, power)
     target:delMod(xi.mod.DEFP, power)
+    target:delMod(xi.mod.MAIN_DMG_RATING, power / 3)
     target:delMod(xi.mod.HASTE_ABILITY, 1500)
 
     if subPower > 0 then
