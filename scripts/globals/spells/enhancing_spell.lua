@@ -132,16 +132,16 @@ local pTable =
     [xi.magic.spell.PROTECTRA_V  ] = { 5, xi.effect.PROTECT,       75,  220, 1800, false, false, 0 },
 
     -- Refresh
-    [xi.magic.spell.REFRESH      ] = { 1, xi.effect.REFRESH,       41,    3,  150, true,  true,  0 },
-    [xi.magic.spell.REFRESH_II   ] = { 2, xi.effect.REFRESH,       82,    6,  150, true,  true,  0 },
-    [xi.magic.spell.REFRESH_III  ] = { 3, xi.effect.REFRESH,       99,    9,  150, true,  true,  0 },
+    [xi.magic.spell.REFRESH      ] = { 1, xi.effect.REFRESH,       41,    3,  180, true,  true,  0 },
+    [xi.magic.spell.REFRESH_II   ] = { 2, xi.effect.REFRESH,       82,    6,  180, true,  true,  0 },
+    [xi.magic.spell.REFRESH_III  ] = { 3, xi.effect.REFRESH,       99,    9,  180, true,  true,  0 },
 
     -- Regen
-    [xi.magic.spell.REGEN        ] = { 1, xi.effect.REGEN,         21,    5,   75, true,  false, 0 },
-    [xi.magic.spell.REGEN_II     ] = { 2, xi.effect.REGEN,         44,   12,   60, true,  false, 0 },
-    [xi.magic.spell.REGEN_III    ] = { 3, xi.effect.REGEN,         66,   20,   60, true,  false, 0 },
-    [xi.magic.spell.REGEN_IV     ] = { 4, xi.effect.REGEN,         86,   30,   60, true,  false, 0 },
-    [xi.magic.spell.REGEN_V      ] = { 5, xi.effect.REGEN,         99,   40,   60, true,  false, 0 },
+    [xi.magic.spell.REGEN        ] = { 1, xi.effect.REGEN,         21,    6,  180, true,  false, 0 },
+    [xi.magic.spell.REGEN_II     ] = { 2, xi.effect.REGEN,         44,   12,  180, true,  false, 0 },
+    [xi.magic.spell.REGEN_III    ] = { 3, xi.effect.REGEN,         66,   24,  180, true,  false, 0 },
+    [xi.magic.spell.REGEN_IV     ] = { 4, xi.effect.REGEN,         86,   36,  180, true,  false, 0 },
+    [xi.magic.spell.REGEN_V      ] = { 5, xi.effect.REGEN,         99,   48,  180, true,  false, 0 },
 
     -- Shell / Shellra
     [xi.magic.spell.SHELL        ] = { 1, xi.effect.SHELL,         18, 1055, 1800, false, false, 0 },
