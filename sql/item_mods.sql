@@ -7940,7 +7940,9 @@ INSERT INTO `item_mods` VALUES (11624,12,2); -- INT: 2
 INSERT INTO `item_mods` VALUES (11624,28,1); -- MATT: 1
 
 -- Twilight Torque
-INSERT INTO `item_mods` VALUES (11625,160,-500); -- DMG: -500
+--INSERT INTO `item_mods` VALUES (11625,160,-500); -- DMG: -500
+INSERT INTO `item_mods` VALUES (11625,1,20);     	-- DEF: 20
+INSERT INTO `item_mods` VALUES (11625,160,-5000); 	-- DMG: -50%
 
 -- Torero Torque
 INSERT INTO `item_mods` VALUES (11626,68,9);  -- EVA: 9
