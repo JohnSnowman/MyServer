@@ -124,6 +124,17 @@ INSERT INTO `item_latents` VALUES (11590,113,3,36,0);    -- Enhancing magic skil
 INSERT INTO `item_latents` VALUES (11621,368,-1,7,0);    -- Drains 1 TP/tick and gives 1 MP/tick
 INSERT INTO `item_latents` VALUES (11621,369,1,7,0);     -- Latent Effect is active when you have TP.
 
+--Twilight Torque
+INSERT INTO `item_latents` VALUES (11625,1,100,51,99);  	-- DEF+100 above level 98
+INSERT INTO `item_latents` VALUES (11625,29,40,51,99);  	-- mDEF+40 above level 98
+INSERT INTO `item_latents` VALUES (11625,31,150,51,99);  	-- mEVA+150 above level 98
+INSERT INTO `item_latents` VALUES (11625,190,-1000,51,80);  -- PDT2+10 above level 80
+INSERT INTO `item_latents` VALUES (11625,831,-1000,51,80);  -- MDT2+10 above level 80
+INSERT INTO `item_latents` VALUES (11625,190,-500,51,90);   -- PDT2+5 above level 90
+INSERT INTO `item_latents` VALUES (11625,831,-500,51,90);   -- MDT2+5 above level 90
+INSERT INTO `item_latents` VALUES (11625,190,-500,51,99);   -- PDT2+5 above level 99
+INSERT INTO `item_latents` VALUES (11625,831,-500,51,99);   -- MDT2+5 above level 99
+
 -- Rollers Ring
 INSERT INTO `item_latents` VALUES (11667,368,10,57,0);   -- Rollers Ring Regain +10 with Eleven COR Roll
 INSERT INTO `item_latents` VALUES (11667,369,1,57,0);    -- Rollers Ring Refresh +1 with Eleven COR Roll
