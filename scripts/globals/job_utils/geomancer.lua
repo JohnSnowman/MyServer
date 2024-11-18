@@ -194,7 +194,8 @@ local function getEffectPotency(player, effect)
         geoSkill      = player:getMod(xi.mod.GEOMANCY_SKILL)
         geomancyMod   = player:getMod(xi.mod.GEOMANCY_BONUS)
     else
-        geomancyMod = player:getMaxGearMod(xi.mod.GEOMANCY_BONUS)
+        --geomancyMod = player:getMaxGearMod(xi.mod.GEOMANCY_BONUS)
+        geomancyMod   = player:getMod(xi.mod.GEOMANCY_BONUS)
     end
 
     if
