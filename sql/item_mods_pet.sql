@@ -789,6 +789,11 @@ INSERT INTO `item_mods_pet` VALUES (20832,288,3,0); -- All Pets - DOUBLE_ATTACK:
 INSERT INTO `item_mods_pet` VALUES (20944,161,300,2); -- Wyvern - DMGPHYS: 300
 INSERT INTO `item_mods_pet` VALUES (20944,370,2,2);   -- Wyvern - REGEN: 2
 
+-- Idris
+INSERT INTO `item_mods_pet` VALUES (21080,160,-2500,8); -- Luopan - DMG: -2500
+INSERT INTO `item_mods_pet` VALUES (21080,370,25,8);    -- Luopan - REGEN: 25
+INSERT INTO `item_mods_pet` VALUES (21080,388,-1500,8); -- Luopan - UDMGBREATH: -1500
+
 -- Nirvana
 INSERT INTO `item_mods_pet` VALUES (21141,126,40,1); -- Avatar - BP_DAMAGE: 40
 
