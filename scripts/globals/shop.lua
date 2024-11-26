@@ -404,6 +404,10 @@ xi.shop =
             8826,    4150,      xi.craftRank.AMATEUR,      -- Smithing Kit 40
             8827,    5300,      xi.craftRank.AMATEUR,      -- Smithing Kit 45
             8828,    7600,      xi.craftRank.AMATEUR,      -- Smithing Kit 50
+            8829,    7600,      xi.craftRank.AMATEUR,      -- Smithing Kit 55
+            8830,    7600,      xi.craftRank.AMATEUR,      -- Smithing Kit 60
+            8831,    7600,      xi.craftRank.AMATEUR,      -- Smithing Kit 65
+            8832,    7600,      xi.craftRank.AMATEUR,      -- Smithing Kit 70
             9247, 1126125,      xi.craftRank.AMATEUR       -- Niobium Ore
         }
     },
