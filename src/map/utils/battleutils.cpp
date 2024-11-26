@@ -5692,7 +5692,13 @@ namespace battleutils
     {
         // Majesty turns the Cure and Protect spell families into AoE when active
         if (PCaster->StatusEffectContainer->HasStatusEffect(EFFECT_MAJESTY) &&
-            (PSpell->getSpellFamily() == SPELLFAMILY_CURE || PSpell->getSpellFamily() == SPELLFAMILY_PROTECT))
+            (PSpell->getSpellFamily() == SPELLFAMILY_CURE || PSpell->getSpellFamily() == SPELLFAMILY_PROTECT || PSpell->getSpellFamily() == SPELLFAMILY_SHELL))
+        {
+            return SPELLAOE_RADIAL;
+        }
+        
+        if (PCaster->StatusEffectContainer->HasStatusEffect(EFFECT_DIVINE_SEAL) &&
+            (PSpell->getSpellFamily() == SPELLFAMILY_CURE || PSpell->getSpellFamily() == SPELLFAMILY_PROTECT || PSpell->getSpellFamily() == SPELLFAMILY_SHELL))
         {
             return SPELLAOE_RADIAL;
         }
