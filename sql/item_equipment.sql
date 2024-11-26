@@ -11675,6 +11675,7 @@ INSERT INTO `item_equipment` VALUES (23770,'gletis_gauntlets',99,119,303392,465,
 INSERT INTO `item_equipment` VALUES (23771,'sakpatas_gauntlets',99,119,193,466,0,0,64,0,0);
 INSERT INTO `item_equipment` VALUES (23772,'mpacas_gloves',99,119,137218,467,0,0,64,0,0);
 INSERT INTO `item_equipment` VALUES (23773,'agwus_gages',99,119,3670024,468,0,0,64,0,0);
+INSERT INTO `item_equipment` VALUES (23774,'bunzis_gloves',99,119,16916,469,0,0,64,0,0);
 INSERT INTO `item_equipment` VALUES (23775,'nyame_gauntlets',99,119,4194303,470,0,0,64,0,0);
 INSERT INTO `item_equipment` VALUES (23776,'ikengas_trousers',99,119,66560,464,0,0,128,0,0);
 INSERT INTO `item_equipment` VALUES (23778,'sakpatas_cuisses',99,119,193,466,0,0,128,0,0);
