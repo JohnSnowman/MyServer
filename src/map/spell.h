@@ -1034,6 +1034,7 @@ enum class SpellID : uint16
     Full_Cure             = 893,
     Refresh_III           = 894,
     Temper_II             = 895,
+    Honor_March           = 896,
 };
 // clang-format on
 
