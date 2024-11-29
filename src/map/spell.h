@@ -1017,7 +1017,8 @@ enum class SpellID : uint16
     Water_Threnody_II     = 876,
     Light_Threnody_II     = 877,
     Dark_Threnody_II      = 878,
-    Inundation            = 879,
+    Honor_March           = 879,
+    //Inundation            = 879,
     Drain_III             = 880,
     Aspir_III             = 881,
     Distract_III          = 882,
@@ -1034,7 +1035,6 @@ enum class SpellID : uint16
     Full_Cure             = 893,
     Refresh_III           = 894,
     Temper_II             = 895,
-    Honor_March           = 896,
 };
 // clang-format on
 
