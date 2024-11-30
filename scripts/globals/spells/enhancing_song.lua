@@ -63,10 +63,10 @@ local pTable =
     [xi.magic.spell.VICTORY_MARCH     ] = { 2, xi.effect.MARCH,     xi.mod.AUGMENT_SONG_STAT, xi.mod.MARCH_EFFECT,    0,                        0,                   43, 300, 163,  16,  7, true  },
     [xi.magic.spell.HONOR_MARCH       ] = { 3, xi.effect.MARCH,     xi.mod.AUGMENT_SONG_STAT, xi.mod.MARCH_EFFECT,    0,                        0,                   24, 400, 126,  12,  7, true  }, -- Not an error. It is weaker.
     
-    [xi.magic.spell.HONOR_MARCH       ] = { 3, xi.effect.MINNE,     xi.mod.AUGMENT_SONG_STAT, xi.mod.MARCH_EFFECT,    0,                        0,                    50,   0, 204,  20, 10, true  },
-    [xi.magic.spell.HONOR_MARCH       ] = { 3, xi.effect.MAMBO,     xi.mod.AUGMENT_SONG_STAT, xi.mod.MARCH_EFFECT,    0,                        0,                    9, 130,  48,   7, 18, true  },
-    [xi.magic.spell.HONOR_MARCH       ] = { 3, xi.effect.MINUET,    xi.mod.AUGMENT_SONG_STAT, xi.mod.MARCH_EFFECT,    0,                        0,                    32, 500, 124,  12,  6, true  },
-    [xi.magic.spell.HONOR_MARCH       ] = { 3, xi.effect.MADRIGAL,  xi.mod.AUGMENT_SONG_STAT, xi.mod.MARCH_EFFECT,    0,                        0,                    9, 130,  60,   6, 18, true  },
+    --[xi.magic.spell.HONOR_MARCH       ] = { 3, xi.effect.MINNE,     xi.mod.AUGMENT_SONG_STAT, xi.mod.MARCH_EFFECT,    0,                        0,                    50,   0, 204,  20, 10, true  },
+    --[xi.magic.spell.HONOR_MARCH       ] = { 3, xi.effect.MAMBO,     xi.mod.AUGMENT_SONG_STAT, xi.mod.MARCH_EFFECT,    0,                        0,                    9, 130,  48,   7, 18, true  },
+    --[xi.magic.spell.HONOR_MARCH       ] = { 3, xi.effect.MINUET,    xi.mod.AUGMENT_SONG_STAT, xi.mod.MARCH_EFFECT,    0,                        0,                    32, 500, 124,  12,  6, true  },
+    --[xi.magic.spell.HONOR_MARCH       ] = { 3, xi.effect.MADRIGAL,  xi.mod.AUGMENT_SONG_STAT, xi.mod.MARCH_EFFECT,    0,                        0,                    9, 130,  60,   6, 18, true  },
 
     
     -- Minne: Skill Caps unknown?
