@@ -176,6 +176,10 @@ xi.shop =
             8910,    4150,      xi.craftRank.AMATEUR,      -- Cooking Kit 40
             8911,    5300,      xi.craftRank.AMATEUR,      -- Cooking Kit 45
             8912,    7600,      xi.craftRank.AMATEUR       -- Cooking Kit 50
+            8913,    7600,      xi.craftRank.AMATEUR       -- Cooking Kit 55
+            8914,    7600,      xi.craftRank.AMATEUR       -- Cooking Kit 60
+            8915,    7600,      xi.craftRank.AMATEUR       -- Cooking Kit 65
+            8916,    7600,      xi.craftRank.AMATEUR       -- Cooking Kit 70
         },
 
         [xi.skill.CLOTHCRAFT] =
@@ -201,6 +205,10 @@ xi.shop =
             8854,    4150,      xi.craftRank.AMATEUR,      -- Clothcraft Kit 40
             8855,    5300,      xi.craftRank.AMATEUR,      -- Clothcraft Kit 45
             8856,    7600,      xi.craftRank.AMATEUR,      -- Clothcraft Kit 50
+            8857,    7600,      xi.craftRank.AMATEUR,      -- Clothcraft Kit 55
+            8858,    7600,      xi.craftRank.AMATEUR,      -- Clothcraft Kit 60
+            8859,    7600,      xi.craftRank.AMATEUR,      -- Clothcraft Kit 65
+            8860,    7600,      xi.craftRank.AMATEUR,      -- Clothcraft Kit 70
             9251, 1126125,      xi.craftRank.AMATEUR       -- Khoma Thread
         },
 
@@ -248,6 +256,10 @@ xi.shop =
             8840,    4150,      xi.craftRank.AMATEUR,      -- Goldsmithing Kit 40
             8841,    5300,      xi.craftRank.AMATEUR,      -- Goldsmithing Kit 45
             8842,    7600,      xi.craftRank.AMATEUR,      -- Goldsmithing Kit 50
+            8843,    7600,      xi.craftRank.AMATEUR,      -- Goldsmithing Kit 55
+            8844,    7600,      xi.craftRank.AMATEUR,      -- Goldsmithing Kit 60
+            8845,    7600,      xi.craftRank.AMATEUR,      -- Goldsmithing Kit 65
+            8846,    7600,      xi.craftRank.AMATEUR,      -- Goldsmithing Kit 70
             9249, 1126125,      xi.craftRank.AMATEUR       -- Ruthenium Ore
         },
 
@@ -269,16 +281,20 @@ xi.shop =
             700,     4500,   xi.craftRank.JOURNEYMAN,      -- Mahogany Log
             702,     5000,    xi.craftRank.CRAFTSMAN,      -- Ebony Log
             2761,    5500,    xi.craftRank.CRAFTSMAN,      -- Feyweald Log
-            8805,     300,      xi.craftRank.AMATEUR,      -- Smithing Kit 5
-            8806,     400,      xi.craftRank.AMATEUR,      -- Smithing Kit 10
-            8807,     650,      xi.craftRank.AMATEUR,      -- Smithing Kit 15
-            8808,    1050,      xi.craftRank.AMATEUR,      -- Smithing Kit 20
-            8809,    1600,      xi.craftRank.AMATEUR,      -- Smithing Kit 25
-            8810,    2300,      xi.craftRank.AMATEUR,      -- Smithing Kit 30
-            8811,    3150,      xi.craftRank.AMATEUR,      -- Smithing Kit 35
-            8812,    4150,      xi.craftRank.AMATEUR,      -- Smithing Kit 40
-            8813,    5300,      xi.craftRank.AMATEUR,      -- Smithing Kit 45
-            8814,    7600,      xi.craftRank.AMATEUR,      -- Smithing Kit 50
+            8805,     300,      xi.craftRank.AMATEUR,      -- Wood Working Kit 5
+            8806,     400,      xi.craftRank.AMATEUR,      -- Wood Working Kit 10
+            8807,     650,      xi.craftRank.AMATEUR,      -- Wood Working Kit 15
+            8808,    1050,      xi.craftRank.AMATEUR,      -- Wood Working Kit 20
+            8809,    1600,      xi.craftRank.AMATEUR,      -- Wood Working Kit 25
+            8810,    2300,      xi.craftRank.AMATEUR,      -- Wood Working Kit 30
+            8811,    3150,      xi.craftRank.AMATEUR,      -- Wood Working Kit 35
+            8812,    4150,      xi.craftRank.AMATEUR,      -- Wood Working Kit 40
+            8813,    5300,      xi.craftRank.AMATEUR,      -- Wood Working Kit 45
+            8814,    7600,      xi.craftRank.AMATEUR,      -- Wood Working Kit 50
+            8815,    7600,      xi.craftRank.AMATEUR,      -- Wood Working Kit 55
+            8816,    7600,      xi.craftRank.AMATEUR,      -- Wood Working Kit 60
+            8817,    7600,      xi.craftRank.AMATEUR,      -- Wood Working Kit 65
+            8818,    7600,      xi.craftRank.AMATEUR,      -- Wood Working Kit 70
             9245, 1126125,      xi.craftRank.AMATEUR       -- Cypress Log
         },
 
@@ -312,6 +328,10 @@ xi.shop =
             8896,    4150,      xi.craftRank.AMATEUR,      -- Alchemy Kit 40
             8897,    5300,      xi.craftRank.AMATEUR,      -- Alchemy Kit 45
             8898,    7600,      xi.craftRank.AMATEUR,      -- Alchemy Kit 50
+            8899,    7600,      xi.craftRank.AMATEUR,      -- Alchemy Kit 55
+            8900,    7600,      xi.craftRank.AMATEUR,      -- Alchemy Kit 60
+            8901,    7600,      xi.craftRank.AMATEUR,      -- Alchemy Kit 65
+            8902,    7600,      xi.craftRank.AMATEUR,      -- Alchemy Kit 70
             9257, 1126125,      xi.craftRank.AMATEUR       -- Azure Leaf
         },
 
@@ -342,6 +362,10 @@ xi.shop =
             8882,    4150,      xi.craftRank.AMATEUR,      -- Bonecraft Kit 40
             8883,    5300,      xi.craftRank.AMATEUR,      -- Bonecraft Kit 45
             8884,    7600,      xi.craftRank.AMATEUR,      -- Bonecraft Kit 50
+            8885,    7600,      xi.craftRank.AMATEUR,      -- Bonecraft Kit 55
+            8886,    7600,      xi.craftRank.AMATEUR,      -- Bonecraft Kit 60
+            8887,    7600,      xi.craftRank.AMATEUR,      -- Bonecraft Kit 65
+            8888,    7600,      xi.craftRank.AMATEUR,      -- Bonecraft Kit 70
             9255, 1126125,      xi.craftRank.AMATEUR       -- Cyan Coral
         },
 
@@ -371,6 +395,10 @@ xi.shop =
             8868,    4150,      xi.craftRank.AMATEUR,      -- Leathercraft Kit 40
             8869,    5300,      xi.craftRank.AMATEUR,      -- Leathercraft Kit 45
             8870,    7600,      xi.craftRank.AMATEUR,      -- Leathercraft Kit 50
+            8871,    7600,      xi.craftRank.AMATEUR,      -- Leathercraft Kit 55
+            8872,    7600,      xi.craftRank.AMATEUR,      -- Leathercraft Kit 60
+            8873,    7600,      xi.craftRank.AMATEUR,      -- Leathercraft Kit 65
+            8874,    7600,      xi.craftRank.AMATEUR,      -- Leathercraft Kit 70
             9253, 1126125,      xi.craftRank.AMATEUR       -- Synthetic Faulpie Leather
         },
 
