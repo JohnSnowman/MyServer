@@ -175,11 +175,11 @@ xi.shop =
             8909,    3150,      xi.craftRank.AMATEUR,      -- Cooking Kit 35
             8910,    4150,      xi.craftRank.AMATEUR,      -- Cooking Kit 40
             8911,    5300,      xi.craftRank.AMATEUR,      -- Cooking Kit 45
-            8912,    7600,      xi.craftRank.AMATEUR       -- Cooking Kit 50
-            8913,    7600,      xi.craftRank.AMATEUR       -- Cooking Kit 55
-            8914,    7600,      xi.craftRank.AMATEUR       -- Cooking Kit 60
-            8915,    7600,      xi.craftRank.AMATEUR       -- Cooking Kit 65
-            8916,    7600,      xi.craftRank.AMATEUR       -- Cooking Kit 70
+            8912,    7600,      xi.craftRank.AMATEUR,      -- Cooking Kit 50
+            8913,    7600,      xi.craftRank.AMATEUR,      -- Cooking Kit 55
+            8914,    7600,      xi.craftRank.AMATEUR,      -- Cooking Kit 60
+            8915,    7600,      xi.craftRank.AMATEUR,      -- Cooking Kit 65
+            8916,    7600,      xi.craftRank.AMATEUR,      -- Cooking Kit 70
         },
 
         [xi.skill.CLOTHCRAFT] =
@@ -209,7 +209,7 @@ xi.shop =
             8858,    7600,      xi.craftRank.AMATEUR,      -- Clothcraft Kit 60
             8859,    7600,      xi.craftRank.AMATEUR,      -- Clothcraft Kit 65
             8860,    7600,      xi.craftRank.AMATEUR,      -- Clothcraft Kit 70
-            9251, 1126125,      xi.craftRank.AMATEUR       -- Khoma Thread
+            9251, 1126125,      xi.craftRank.AMATEUR,      -- Khoma Thread
         },
 
         [xi.skill.GOLDSMITHING] =
@@ -260,7 +260,7 @@ xi.shop =
             8844,    7600,      xi.craftRank.AMATEUR,      -- Goldsmithing Kit 60
             8845,    7600,      xi.craftRank.AMATEUR,      -- Goldsmithing Kit 65
             8846,    7600,      xi.craftRank.AMATEUR,      -- Goldsmithing Kit 70
-            9249, 1126125,      xi.craftRank.AMATEUR       -- Ruthenium Ore
+            9249, 1126125,      xi.craftRank.AMATEUR,      -- Ruthenium Ore
         },
 
         [xi.skill.WOODWORKING] =
@@ -295,7 +295,7 @@ xi.shop =
             8816,    7600,      xi.craftRank.AMATEUR,      -- Wood Working Kit 60
             8817,    7600,      xi.craftRank.AMATEUR,      -- Wood Working Kit 65
             8818,    7600,      xi.craftRank.AMATEUR,      -- Wood Working Kit 70
-            9245, 1126125,      xi.craftRank.AMATEUR       -- Cypress Log
+            9245, 1126125,      xi.craftRank.AMATEUR,      -- Cypress Log
         },
 
         [xi.skill.ALCHEMY] =
@@ -332,7 +332,7 @@ xi.shop =
             8900,    7600,      xi.craftRank.AMATEUR,      -- Alchemy Kit 60
             8901,    7600,      xi.craftRank.AMATEUR,      -- Alchemy Kit 65
             8902,    7600,      xi.craftRank.AMATEUR,      -- Alchemy Kit 70
-            9257, 1126125,      xi.craftRank.AMATEUR       -- Azure Leaf
+            9257, 1126125,      xi.craftRank.AMATEUR,      -- Azure Leaf
         },
 
         [xi.skill.BONECRAFT] =
@@ -366,7 +366,7 @@ xi.shop =
             8886,    7600,      xi.craftRank.AMATEUR,      -- Bonecraft Kit 60
             8887,    7600,      xi.craftRank.AMATEUR,      -- Bonecraft Kit 65
             8888,    7600,      xi.craftRank.AMATEUR,      -- Bonecraft Kit 70
-            9255, 1126125,      xi.craftRank.AMATEUR       -- Cyan Coral
+            9255, 1126125,      xi.craftRank.AMATEUR,      -- Cyan Coral
         },
 
         [xi.skill.LEATHERCRAFT] =
@@ -399,7 +399,7 @@ xi.shop =
             8872,    7600,      xi.craftRank.AMATEUR,      -- Leathercraft Kit 60
             8873,    7600,      xi.craftRank.AMATEUR,      -- Leathercraft Kit 65
             8874,    7600,      xi.craftRank.AMATEUR,      -- Leathercraft Kit 70
-            9253, 1126125,      xi.craftRank.AMATEUR       -- Synthetic Faulpie Leather
+            9253, 1126125,      xi.craftRank.AMATEUR,      -- Synthetic Faulpie Leather
         },
 
         [xi.skill.SMITHING] =
@@ -436,7 +436,7 @@ xi.shop =
             8830,    7600,      xi.craftRank.AMATEUR,      -- Smithing Kit 60
             8831,    7600,      xi.craftRank.AMATEUR,      -- Smithing Kit 65
             8832,    7600,      xi.craftRank.AMATEUR,      -- Smithing Kit 70
-            9247, 1126125,      xi.craftRank.AMATEUR       -- Niobium Ore
+            9247, 1126125,      xi.craftRank.AMATEUR,      -- Niobium Ore
         }
     },
 
