@@ -613,6 +613,7 @@ xi.shop =
             10136,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Cipher: Uka Totlihn
             10175,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Cipher: August
             10187,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Cipher: Shantotto II
+            10160,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Cipher: Zeid II
         },
 
         [curio.keys] =
