@@ -226,7 +226,7 @@ namespace synthutils
         // Section 1: Variable definitions.
         //------------------------------
         uint8 synthResult = SYNTHESIS_SUCCESS; // We assume that we succeed.
-        uint8 successRate = 95;                // We assume that success rate is maxed (95%).
+        uint8 successRate = 100;                // We assume that success rate is maxed (95%).
         uint8 finalHQTier = 4;                 // We assume that max HQ tier is available.
         bool  canHQ       = true;              // We assume that we can HQ.
 
@@ -235,13 +235,13 @@ namespace synthutils
         int16 synthDifficulty = 0; // Recipe difficulty, based on current skill ID being checked from player and recipe.
         uint8 currentHQTier   = 0; // Recipe current available HQ tier, based on current skill ID being checked.
         float chanceHQ        = 0;
-        uint8 maxChanceHQ     = 50;
+        uint8 maxChanceHQ     = 90;
         uint8 randomRoll      = 0; // 1 to 100.
 
         if (PChar->CraftContainer->getCraftType() == CRAFT_DESYNTHESIS) // If it's a desynth, lower base success rate.
         {
-            successRate = 45;
-            maxChanceHQ = 80;
+            successRate = 65;
+            maxChanceHQ = 90;
         }
 
         //------------------------------
@@ -317,7 +317,7 @@ namespace synthutils
                 // http://www.ffxiah.com/item/5781/kitron-macaron
                 if (successRate > 99)
                 {
-                    successRate = 99;
+                    successRate = 100;
                 }
 
                 if (randomRoll > successRate) // Synthesis broke. This is not a mistake, the break check HAS to be done per craft skill involved.
@@ -340,16 +340,16 @@ namespace synthutils
             switch (finalHQTier)
             {
                 case 4: // 1 in 2
-                    chanceHQ = 50.0;
+                    chanceHQ = 80.0;
                     break;
                 case 3: // 1 in 4
-                    chanceHQ = 25.0;
+                    chanceHQ = 50.0;
                     break;
                 case 2: // 1 in 20
-                    chanceHQ = 5.0;
+                    chanceHQ = 10.0;
                     break;
                 case 1: // 1 in 100
-                    chanceHQ = 1.0;
+                    chanceHQ = 2.0;
                     break;
                 default: // No chance
                     chanceHQ = 0.0;
@@ -376,12 +376,12 @@ namespace synthutils
                 synthResult = SYNTHESIS_HQ;
                 randomRoll  = xirand::GetRandomNumber(1, 100);
 
-                if (randomRoll <= 25) // 25% Chance after HQ to upgrade to HQ2
+                if (randomRoll <= 40) // 25% Chance after HQ to upgrade to HQ2
                 {
                     synthResult = SYNTHESIS_HQ2;
                     randomRoll  = xirand::GetRandomNumber(1, 100);
 
-                    if (randomRoll <= 25) // 25% Chance after HQ2 to upgrade to HQ3
+                    if (randomRoll <= 40) // 25% Chance after HQ2 to upgrade to HQ3
                     {
                         synthResult = SYNTHESIS_HQ3;
                     }
@@ -446,7 +446,7 @@ namespace synthutils
             int16 baseDiff = PChar->CraftContainer->getQuantity(skillID - 40) - charSkill / 10; // the 5 lvl difference rule for breaks does NOT consider the effects of image support/gear
 
             // We don't Skill Up if over 10 levels above synth skill. (Or at AND above synth skill in era)
-            if ((settings::get<bool>("map.CRAFT_MODERN_SYSTEM") && (baseDiff <= -11)) || (!settings::get<bool>("map.CRAFT_MODERN_SYSTEM") && (baseDiff <= 0)))
+            if ((settings::get<bool>("map.CRAFT_MODERN_SYSTEM") && (baseDiff <= -61)) || (!settings::get<bool>("map.CRAFT_MODERN_SYSTEM") && (baseDiff <= 0)))
             {
                 continue; // Break current loop iteration.
             }
