@@ -110,11 +110,11 @@ namespace synthutils
                     // skill write in the quantity field of cells 9-16
                     PChar->CraftContainer->setQuantity(skillID - 40, skillValue);
 
-                    if (currentSkill < (skillValue * 10 - 150)) // Check player skill against recipe level. Range must be 14 or less.
-                    {
-                        PChar->pushPacket(new CSynthMessagePacket(PChar, SYNTH_NOSKILL));
-                        return false;
-                    }
+            //        if (currentSkill < (skillValue * 10 - 150)) // Check player skill against recipe level. Range must be 14 or less.
+            //        {
+            //            PChar->pushPacket(new CSynthMessagePacket(PChar, SYNTH_NOSKILL));
+           //             return false;
+           //         }
                 }
                 return true;
             }
