@@ -92,15 +92,15 @@ local testItemsByNPC =
 
 local hqCrystals =
 {
-    [0] = { id = xi.item.ROBBER_RIG,       cost = 1500 }, -- Robber Rig is located in category 3. Not a typo.
-    [1] = { id = xi.item.INFERNO_CRYSTAL,  cost =  200 },
-    [2] = { id = xi.item.GLACIER_CRYSTAL,  cost =  200 },
-    [3] = { id = xi.item.CYCLONE_CRYSTAL,  cost =  200 },
-    [4] = { id = xi.item.TERRA_CRYSTAL,    cost =  200 },
-    [5] = { id = xi.item.PLASMA_CRYSTAL,   cost =  200 },
-    [6] = { id = xi.item.TORRENT_CRYSTAL,  cost =  200 },
-    [7] = { id = xi.item.AURORA_CRYSTAL,   cost =  500 },
-    [8] = { id = xi.item.TWILIGHT_CRYSTAL, cost =  500 },
+    [0] = { id = xi.item.ROBBER_RIG,       cost = 150 }, -- Robber Rig is located in category 3. Not a typo.
+    [1] = { id = xi.item.INFERNO_CRYSTAL,  cost =  20 },
+    [2] = { id = xi.item.GLACIER_CRYSTAL,  cost =  20 },
+    [3] = { id = xi.item.CYCLONE_CRYSTAL,  cost =  20 },
+    [4] = { id = xi.item.TERRA_CRYSTAL,    cost =  20 },
+    [5] = { id = xi.item.PLASMA_CRYSTAL,   cost =  20 },
+    [6] = { id = xi.item.TORRENT_CRYSTAL,  cost =  20 },
+    [7] = { id = xi.item.AURORA_CRYSTAL,   cost =  50 },
+    [8] = { id = xi.item.TWILIGHT_CRYSTAL, cost =  50 },
 }
 
 local guildKeyItemTable =
