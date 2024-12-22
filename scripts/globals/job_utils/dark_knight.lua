@@ -72,7 +72,7 @@ xi.job_utils.dark_knight.useArcaneCrest = function(player, target, ability)
 end
 
 xi.job_utils.dark_knight.useBloodWeapon = function(player, target, ability)
-    local duration = 300 + player:getMod(xi.mod.ENHANCES_BLOOD_WEAPON)
+    local duration = 3000 + player:getMod(xi.mod.ENHANCES_BLOOD_WEAPON)
 
     target:addStatusEffect(xi.effect.BLOOD_WEAPON, 1, 0, duration)
 end
@@ -87,7 +87,7 @@ xi.job_utils.dark_knight.useDarkSeal = function(player, target, ability)
     local power    = player:getMerit(xi.merit.DARK_SEAL) - 10
     local subPower = (player:getMerit(xi.merit.DARK_SEAL) / 10) * player:getMod(xi.mod.ENHANCES_DARK_SEAL)
 
-    player:addStatusEffect(xi.effect.DARK_SEAL, power, 0, 60, 0, subPower)
+    player:addStatusEffect(xi.effect.DARK_SEAL, power, 0, 180, 0, subPower)
 end
 
 xi.job_utils.dark_knight.useDiabolicEye = function(player, target, ability)
@@ -99,7 +99,7 @@ xi.job_utils.dark_knight.useLastResort = function(player, target, ability)
 end
 
 xi.job_utils.dark_knight.useNetherVoid = function(player, target, ability)
-    player:addStatusEffect(xi.effect.NETHER_VOID, 8, 1, 30)
+    player:addStatusEffect(xi.effect.NETHER_VOID, 8, 1, 180)
 end
 
 xi.job_utils.dark_knight.useScarletDelirium = function(player, target, ability)
@@ -107,7 +107,7 @@ xi.job_utils.dark_knight.useScarletDelirium = function(player, target, ability)
 end
 
 xi.job_utils.dark_knight.useSoulEnslavement = function(player, target, ability)
-    player:addStatusEffect(xi.effect.SOUL_ENSLAVEMENT, 8, 1, 300)
+    player:addStatusEffect(xi.effect.SOUL_ENSLAVEMENT, 8, 1, 3000)
 end
 
 xi.job_utils.dark_knight.useSouleater = function(player, target, ability)
