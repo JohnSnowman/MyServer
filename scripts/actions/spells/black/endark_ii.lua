@@ -8,7 +8,7 @@ spellObject.onMagicCastingCheck = function(caster, target, spell)
 end
 
 spellObject.onSpellCast = function(caster, target, spell)
-    local effect = xi.effect.ENDARK
+    local effect = xi.effect.ENDARK_II
     local magicskill = target:getSkillLevel(xi.skill.DARK_MAGIC)
     local potency = (magicskill / 2) + 12.5
 
