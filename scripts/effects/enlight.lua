@@ -5,11 +5,12 @@ local effectObject = {}
 
 effectObject.onEffectGain = function(target, effect)
     local jpValue = target:getJobPointLevel(xi.jp.ENLIGHT_EFFECT)
+    --local battleTarget = caster:getTarget()
 
     target:addMod(xi.mod.ENSPELL, xi.element.LIGHT)
     target:addMod(xi.mod.ENSPELL_DMG, effect:getPower() + jpValue)
     target:addMod(xi.mod.ACC, jpValue)
-    target:addEnmity(player, 3000, 3000)
+    battletarget:addEnmity(player, 3000, 3000)
     --target:addEnmity(player, 450, 900)
 end
 
