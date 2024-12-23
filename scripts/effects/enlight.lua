@@ -10,11 +10,11 @@ effectObject.onEffectGain = function(target, effect)
     target:addMod(xi.mod.ENSPELL, xi.element.LIGHT)
     target:addMod(xi.mod.ENSPELL_DMG, effect:getPower() + jpValue)
     target:addMod(xi.mod.ACC, jpValue)
-    mob:addEnmity(player, 3000, 3000)
     --target:addEnmity(player, 450, 900)
 end
 
 effectObject.onEffectTick = function(target, effect)
+    mob:addEnmity(player, 3000, 3000)
 end
 
 effectObject.onEffectLose = function(target, effect)
