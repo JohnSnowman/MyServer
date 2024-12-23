@@ -44,7 +44,7 @@ abilityObject.onUseAbility = function(player, target, ability, action)
     params.numHits = 1
 
     -- TP params.
-    params.ftp100  = 15 params.ftp200  = 15 params.ftp300  = 15
+    params.ftp100  = 25 params.ftp200  = 25 params.ftp300  = 25
     params.crit100 = 0 params.crit200 = 0 params.crit300 = 0
     params.acc100  = 5 params.acc200  = 5 params.acc300  = 5
     params.atk100  = 5 params.atk200  = 5 params.atk300  = 5
