@@ -14,7 +14,8 @@ effectObject.onEffectGain = function(target, effect)
 end
 
 effectObject.onEffectTick = function(target, effect)
-    mob:addEnmity(player, 3000, 3000)
+    target:addStatusEffect(xi.effect.STUN, 1, 0, 7)
+    --mob:addEnmity(player, 3000, 3000)
 end
 
 effectObject.onEffectLose = function(target, effect)
