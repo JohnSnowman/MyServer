@@ -10,7 +10,7 @@ end
 spellObject.onSpellCast = function(caster, target, spell)
     local effect = xi.effect.ENDARK
     --local magicskill = target:getSkillLevel(xi.skill.DARK_MAGIC)
-    local potency = .1
+    local potency = 0
 
     if target:addStatusEffect(effect, potency, 0, 1800) then
         spell:setMsg(xi.msg.basic.MAGIC_GAIN_EFFECT)
