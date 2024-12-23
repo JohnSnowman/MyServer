@@ -44,16 +44,16 @@ abilityObject.onUseAbility = function(player, target, ability, action)
     params.numHits = 1
 
     -- TP params.
-    params.ftp100  = 5 params.ftp200  = 5 params.ftp300  = 5
+    params.ftp100  = 15 params.ftp200  = 15 params.ftp300  = 15
     params.crit100 = 0 params.crit200 = 0 params.crit300 = 0
-    params.acc100  = 0 params.acc200  = 0 params.acc300  = 0
-    params.atk100  = 1 params.atk200  = 1 params.atk300  = 1
+    params.acc100  = 5 params.acc200  = 5 params.acc300  = 5
+    params.atk100  = 5 params.atk200  = 5 params.atk300  = 5
 
     -- Stat params.
-    params.str_wsc = 0
+    params.str_wsc = 1
     params.dex_wsc = 0
     params.vit_wsc = 0
-    params.agi_wsc = 0
+    params.agi_wsc = 1
     params.int_wsc = 0
     params.mnd_wsc = 0
     params.chr_wsc = 0
