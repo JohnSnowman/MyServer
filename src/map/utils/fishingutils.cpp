@@ -206,14 +206,14 @@ namespace fishingutils
 
     uint16 GetHookTime(CCharEntity* PChar)
     {
-        uint16         waitTime  = 13;
+        uint16         waitTime  = 4;
         uint8          moonPhase = GetMoonPhase();
         uint8          hour      = (uint8)CVanaTime::getInstance()->getHour();
         fishing_gear_t gear      = GetFishingGear(PChar);
 
         if (moonPhase == MOONPHASE_NEW || moonPhase == MOONPHASE_FULL)
         {
-            waitTime -= 4;
+            waitTime -= 3;
         }
 
         if (hour == 5 || hour == 17)
@@ -226,7 +226,7 @@ namespace fishingutils
             waitTime -= 1;
         }
 
-        return std::max<uint16>(7, waitTime);
+        return std::max<uint16>(2, waitTime);
     }
 
     float GetMonthlyTidalInfluence(fish_t* fish) // 0.25 to 1.25
@@ -422,12 +422,12 @@ namespace fishingutils
 
                 if (rod->rodID == LU_SHANG || rod->rodID == LU_SHANG_1)
                 {
-                    divMod = 1.4f;
+                    divMod = 1.2f;
                 }
 
                 if (rod->rodID == EBISU || rod->rodID == EBISU_1)
                 {
-                    divMod = 1.3f;
+                    divMod = 1.1f;
                 }
 
                 regen -= std::min<uint8>((1 + (uint8)std::floor(((fishingSkill + regenMod) - drainDiff - catchSkill) / divMod)), regen);
@@ -473,17 +473,17 @@ namespace fishingutils
 
         if (legendary && rod->rodFlags & RODFLAG_LEGENDARYBONUS)
         {
-            hookTime += 10;
+            hookTime += 30;
         }
 
         if (charutils::hasKeyItem(PChar, FISHINGKI_MOOCHING) && (bait->baitID == DRILL_CALAMARY || bait->baitID == DWARF_PUGIL))
         {
-            hookTime += 30;
+            hookTime += 40;
         }
 
         if (PChar->getMod(Mod::ALBATROSS_RING_EFFECT) > 0)
         {
-            hookTime += 30;
+            hookTime += 40;
         }
 
         if (legendary)
@@ -955,7 +955,7 @@ namespace fishingutils
 
         if (rod->rodID == EBISU)
         {
-            ebisuBonus = 40;
+            ebisuBonus = 60;
         }
 
         if (fishSkill - 4 > fishingSkill + ebisuBonus)
@@ -971,7 +971,7 @@ namespace fishingutils
         // Moon mod (max + 20)
         float moonModifier = 2 * MOONPATTERN_3(GetMoonPhase());
         chance += (uint16)(10 * (2 - (moonModifier)));
-        return std::clamp<uint16>(chance, 0, 70);
+        return std::clamp<uint16>(chance, 0, 95);
     }
 
     big_fish_stats_t CalculateBigFishStats(uint16 minLength, uint16 maxLength)
@@ -1776,7 +1776,7 @@ namespace fishingutils
         }
 
         // No skillup if fish level not between char level and 50 levels higher
-        if (catchLevel <= charSkillLevel || (levelDifference > 50))
+        if (catchLevel <= charSkillLevel || (levelDifference > 110))
         {
             return;
         }
@@ -1949,7 +1949,7 @@ namespace fishingutils
         else
         {
             PChar->lastCastTime = vanaTime;
-            PChar->nextFishTime = PChar->lastCastTime + 5;
+            PChar->nextFishTime = PChar->lastCastTime + 3;
         }
 
         fishingarea_t* Area = GetFishingArea(PChar);
@@ -2358,7 +2358,7 @@ namespace fishingutils
         // Select fish
         if (!FishHookPool.empty())
         {
-            uint16 hookChanceAggregate = 0;
+            uint16 hookChanceAggregate = 0.33;
             uint16 hookSelect          = xirand::GetRandomNumber<uint16>(FishHookChanceTotal);
 
             for (auto fishIter : FishHookPool)
