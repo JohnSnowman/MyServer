@@ -2204,7 +2204,7 @@ namespace fishingutils
                 }
             }
 
-            FishPoolWeight = std::clamp<uint16>(maxChance + FishPoolWeight, 10, 120);
+            FishPoolWeight = std::clamp<uint16>(maxChance + FishPoolWeight, 20, 120);
         }
 
         // Build Hookable Item Pool
@@ -2358,7 +2358,7 @@ namespace fishingutils
         // Select fish
         if (!FishHookPool.empty())
         {
-            uint16 hookChanceAggregate = 0.33;
+            uint16 hookChanceAggregate = 0.55;
             uint16 hookSelect          = xirand::GetRandomNumber<uint16>(FishHookChanceTotal);
 
             for (auto fishIter : FishHookPool)
