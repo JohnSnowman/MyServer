@@ -2358,7 +2358,7 @@ namespace fishingutils
         // Select fish
         if (!FishHookPool.empty())
         {
-            uint16 hookChanceAggregate = 0.55;
+            uint16 hookChanceAggregate = 0.71;
             uint16 hookSelect          = xirand::GetRandomNumber<uint16>(FishHookChanceTotal);
 
             for (auto fishIter : FishHookPool)
