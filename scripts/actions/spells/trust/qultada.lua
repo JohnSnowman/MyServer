@@ -68,7 +68,7 @@ spellObject.onMobSpawn = function(mob)
     -- Movement
 	mob:addMod(xi.mod.MOVE_SPEED_OVERIDE, 250)
 
-    mob:setMobMod(xi.mobMod.TRUST_DISTANCE, 6)
+    mob:setMobMod(xi.mobMod.TRUST_DISTANCE, 4)
     
 end
 
