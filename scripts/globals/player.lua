@@ -74,6 +74,16 @@ xi.player.charCreate = function(player)
     player:addKeyItem(xi.ki.JOB_GESTURE_RED_MAGE)
     player:addKeyItem(xi.ki.JOB_GESTURE_THIEF)
     
+    player:addKeyItem(xi.ki.WAY_OF_THE_ALCHEMIST)
+    player:addKeyItem(xi.ki.WAY_OF_THE_BONEWORKER)
+    player:addKeyItem(xi.ki.WAY_OF_THE_WEAVER)
+    player:addKeyItem(xi.ki.WAY_OF_THE_CULINARIAN)
+    player:addKeyItem(xi.ki.WAY_OF_THE_GOLDSMITH)
+    player:addKeyItem(xi.ki.WAY_OF_THE_TANNER)
+    player:addKeyItem(xi.ki.WAY_OF_THE_BLACKSMITH)
+    player:addKeyItem(xi.ki.WAY_OF_THE_CARPENTER)
+    player:addKeyItem(xi.ki.ANGLERS_ALMANAC)
+    
     player:addKeyItem(xi.ki.LIMIT_BREAKER)
 
     -- add nation- and race-specific ring
