@@ -649,6 +649,9 @@ xi.shop =
             14812,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Loquac Earring
             
             14742,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Beastly Earring
+
+            26414,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Twinned Shield
+            26432,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Smithing Shield
             
             10136,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Cipher: Uka Totlihn
             10175,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Cipher: August
