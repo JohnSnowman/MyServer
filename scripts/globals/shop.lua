@@ -643,6 +643,7 @@ xi.shop =
             15809,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Jalzahns Ring
             14625,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Evokers Ring
             13216,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Gold Mog Belt
+            26366,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Plat. Moogle Belt
             
             14813,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Brutal Earring
             14739,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Suppanomimi
