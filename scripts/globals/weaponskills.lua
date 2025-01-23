@@ -363,8 +363,11 @@ local function getSingleHitDamage(attacker, target, dmg, wsParams, calcParams)
                 -- Calculate magical bonuses and reductions
                 local magicdmg = addBonusesAbility(attacker, wsParams.ele, target, finaldmg, wsParams)
                 local baseMagicDamageBonus = attacker:getMod(xi.mod.MAGIC_DAMAGE)
+                local MAB_Bonus = attacker:getMod(xi.mod.MATT) / 100
                 
-                magicdmg = magicdmg + baseMagicDamageBonus
+                --magicdmg = magicdmg + baseMagicDamageBonus
+                magicdmg = finaldmg + baseMagicDamageBonus
+                magicdmg = magicdmg * (1 + MAB_Bonus)
                 magicdmg = magicdmg * applyResistanceAbility(attacker, target, wsParams.ele, wsParams.skill, calcParams.bonusAcc)
                 magicdmg = target:magicDmgTaken(magicdmg, wsParams.ele)
 
