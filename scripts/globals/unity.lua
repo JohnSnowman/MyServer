@@ -90,7 +90,7 @@ local unityOptions =
         [ 9] = { xi.item.LEVIGATED_ROCK,              0, 99, 10    },
         [10] = { xi.item.LITTLE_LUGWORM,              0, 99, 10    },
         [11] = { xi.item.TRAINING_MANUAL,             0, 99, 10    },
-        [12] = { xi.item.PINCH_OF_PRIZE_POWDER,       0, 99, 10    },
+        [12] = { xi.item.PINCH_OF_PRIZE_POWDER,       0, 99, 100   },
     },
 }
 
