@@ -382,6 +382,9 @@ function getCureFinal(caster, spell, basecure, minCure, isBlueMagic)
     if basecure < minCure then
         basecure = minCure
     end
+    
+    -- Bonus to spell base from gear.
+    basecure = basecure + caster:getMod(xi.mod.CURE_POTENCY_BONUS)
 
     local curePot = math.min(caster:getMod(xi.mod.CURE_POTENCY), 100) / 100 -- caps at 50%
     local curePotII = math.min(caster:getMod(xi.mod.CURE_POTENCY_II), 80) / 100 -- caps at 30%
