@@ -79,6 +79,7 @@ spellObject.onMobSpawn = function(mob)
     local trustLevel	= mob:getMainLvl()
 	local potencyi		= trustLevel / 3
 	local potencyii		= trustLevel / 5
+	local cureamount	= trustLevel * 3
 	local curetoomp		= trustLevel / 15
 	local affsol		= trustLevel / 3
 	local enhdur		= trustLevel * 3
@@ -91,6 +92,7 @@ spellObject.onMobSpawn = function(mob)
 	
 	mob:addMod(xi.mod.CURE_POTENCY, potencyi)
 	mob:addMod(xi.mod.CURE_POTENCY_II, potencyii)
+	mob:addMod(xi.mod.CURE_POTENCY_BONUS, cureamount)
 	mob:addMod(xi.mod.CURE2MP_PERCENT, curetoomp)
 	mob:addMod(xi.mod.AFFLATUS_SOLACE, affsol)
 	mob:addMod(xi.mod.ENH_MAGIC_DURATION, enhdur)
