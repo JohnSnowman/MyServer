@@ -24,6 +24,7 @@ effectObject.onEffectGain = function(target, effect)
         
         target:addMod(xi.mod.CURE_POTENCY, 30)
         target:addMod(xi.mod.CURE_POTENCY_II, 10)
+        target:addMod(xi.mod.CURE_POTENCY_BONUS, 200)
         target:addMod(xi.mod.ENH_MAGIC_DURATION, 75)
     end
 
@@ -54,6 +55,7 @@ effectObject.onEffectLose = function(target, effect)
         
         target:delMod(xi.mod.CURE_POTENCY, 30)
         target:delMod(xi.mod.CURE_POTENCY_II, 10)
+        target:delMod(xi.mod.CURE_POTENCY_BONUS, 200)
         target:delMod(xi.mod.ENH_MAGIC_DURATION, 75)
     end
 
