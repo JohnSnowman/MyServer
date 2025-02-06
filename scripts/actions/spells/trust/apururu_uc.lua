@@ -41,11 +41,12 @@ spellObject.onMobSpawn = function(mob)
     -- TODO: Restrict Addendum Black to Level 30+
     mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.ADDENDUM_WHITE, ai.r.JA, ai.s.SPECIFIC, xi.ja.ADDENDUM_WHITE)
 
-    mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 40, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.CURE)
+    --mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 40, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.CURE)
+    mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 40, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURE)
 
     mob:addSimpleGambit(ai.t.PARTY, ai.c.STATUS, xi.effect.SLEEP_I, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURAGA)
     mob:addSimpleGambit(ai.t.PARTY, ai.c.STATUS, xi.effect.SLEEP_II, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURAGA)
-    
+    --[[
     local mlvl = mob:getMainLvl()
     if mlvl > 90 then
         mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 80, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURE_IV)
@@ -57,7 +58,8 @@ spellObject.onMobSpawn = function(mob)
         mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 80, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURE)
     end
     --  mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.CURE)
-
+    ]]--
+    mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 80, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURE)
     mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.PROTECT, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.PROTECTRA)
     mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.SHELL, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.SHELLRA)
 
