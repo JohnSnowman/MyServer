@@ -60,6 +60,7 @@ spellObject.onMobSpawn = function(mob)
     --  mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 75, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.CURE)
     ]]--
     mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 80, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURE)
+    
     mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.PROTECT, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.PROTECTRA)
     mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.SHELL, ai.r.MA, ai.s.HIGHEST, xi.magic.spellFamily.SHELLRA)
 
@@ -75,6 +76,8 @@ spellObject.onMobSpawn = function(mob)
 
     mob:addSimpleGambit(ai.t.SELF, ai.c.STATUS_FLAG, xi.effectFlag.ERASABLE, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.ERASE)
     mob:addSimpleGambit(ai.t.PARTY, ai.c.STATUS_FLAG, xi.effectFlag.ERASABLE, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.ERASE)
+    
+    mob:addSimpleGambit(ai.t.PARTY, ai.c.HPP_LT, 94, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.CURE)
 
     mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.STONESKIN, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.STONESKIN)
 
