@@ -105,7 +105,7 @@ spellObject.onSpellCast = function(caster, target, spell)
         if target:isUndead() then
             spell:setMsg(xi.msg.basic.MAGIC_DMG)
             local params = {}
-            params.dmg = minCure
+            params.dmg = minCure + caster:getMod(xi.mod.CURE_POTENCY_BONUS)
             params.multiplier = 1
             params.skillType = xi.skill.HEALING_MAGIC
             params.attribute = xi.mod.MND
@@ -115,6 +115,9 @@ spellObject.onSpellCast = function(caster, target, spell)
 
             local dmg = calculateMagicDamage(caster, target, spell, params) * 0.5
             local resist = applyResistance(caster, target, spell, params)
+            local potency = 1 + (caster:getMod(xi.mod.CURE_POTENCY) + caster:getMod(xi.mod.CURE_POTENCY_II) / 100)
+
+            dmg = dmg * potency
             dmg = dmg * resist
             dmg = addBonuses(caster, spell, target, dmg)
             dmg = adjustForTarget(target, dmg, spell:getElement())
