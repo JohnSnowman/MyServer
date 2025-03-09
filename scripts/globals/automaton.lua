@@ -132,7 +132,8 @@ local attachmentModifiers =
                                 { xi.mod.REFRESH,                     {    nil,    nil,    nil,    nil }, true  }, },
     ['optic_fiber']         = { { xi.mod.AUTO_PERFORMANCE_BOOST,      {     20,     30,     40,     50 }, false }, },
     ['optic_fiber_ii']      = { { xi.mod.AUTO_PERFORMANCE_BOOST,      {     40,     60,     80,    100 }, false }, },
-    ['percolator']          = { { xi.mod.COMBAT_SKILLUP_RATE,         {     50,    100,    150,    200 }, true  }, },
+    ['percolator']          = { { xi.mod.COMBAT_SKILLUP_RATE,         {     50,    100,    150,    200 }, true  },
+                                { xi.mod.MAGIC_SKILLUP_RATE,          {     50,    100,    150,    200 }, true  }, },
     ['repeater']            = { { xi.mod.DOUBLE_SHOT_RATE,            {     70,     80,     90,    100 }, true  },   -- patched in a fix in     scripts/actions/abilities/pets/automaton/ranged_attack.lua
                                 { xi.mod.TRIPLE_SHOT_RATE,            {     35,     40,     45,     50 }, true  }, },-- patched in a fix in     scripts/actions/abilities/pets/automaton/ranged_attack.lua
     ['scanner']             = { { xi.mod.AUTO_SCAN_RESISTS,           {      1,      1,      1,      1 }, false }, },
