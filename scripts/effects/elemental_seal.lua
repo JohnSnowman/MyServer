@@ -5,7 +5,7 @@ local effectObject = {}
 
 effectObject.onEffectGain = function(target, effect)
 
-    target:addMod(xi.mod.MAGIC_DAMAGE , 300)
+    target:addMod(xi.mod.MAGIC_DAMAGE , 400)
     target:addMod(xi.mod.MATT, 200)
     
 end
@@ -15,7 +15,7 @@ end
 
 effectObject.onEffectLose = function(target, effect)
 
-    target:delMod(xi.mod.MAGIC_DAMAGE , 300)
+    target:delMod(xi.mod.MAGIC_DAMAGE , 400)
     target:delMod(xi.mod.MATT, 200)
     
 end
