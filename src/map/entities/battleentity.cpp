@@ -174,8 +174,8 @@ void CBattleEntity::UpdateHealth()
 
     if (objtype == TYPE_PC)
     {
-        health.modhp = std::clamp(health.modhp, 1, 9999);
-        health.modmp = std::clamp(health.modmp, 0, 9999);
+        health.modhp = std::clamp(health.modhp, 1, 99999);
+        health.modmp = std::clamp(health.modmp, 0, 99999);
     }
 
     health.hp = std::clamp(health.hp, 0, health.modhp);
