@@ -5,7 +5,7 @@ local effectObject = {}
 
 effectObject.onEffectGain = function(target, effect)
     target:addMod(xi.mod.UNDEAD_KILLER, effect:getPower())
-    target:addMod(xi.mod.HPP, 20)
+    target:addMod(xi.mod.HPP, 100)
     target:addMod(xi.mod.MEVA, 75)
     target:addMod(xi.mod.DEFP, 250)
     target:addMod(xi.mod.MDEF, 40)
@@ -19,7 +19,7 @@ end
 
 effectObject.onEffectLose = function(target, effect)
     target:delMod(xi.mod.UNDEAD_KILLER, effect:getPower())
-    target:delMod(xi.mod.HPP, 20)
+    target:delMod(xi.mod.HPP, 100)
     target:delMod(xi.mod.MEVA, 75)
     target:delMod(xi.mod.DEFP, 250)
     target:delMod(xi.mod.MDEF, 40)
