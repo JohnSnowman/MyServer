@@ -766,7 +766,7 @@ void CMobController::Move()
 
                     }
 ﻿*/﻿
-                }
+                };
                 else
                 {
                     FaceTarget();
