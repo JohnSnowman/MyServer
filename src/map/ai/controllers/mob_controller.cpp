@@ -721,7 +721,7 @@ void CMobController::Move()
                     }
 
                     PMob->PAI->PathFind->FollowPath(m_Tick);
-﻿/*﻿
+﻿﻿
                     if (!PMob->PAI->PathFind->IsFollowingPath())
                     {
                         bool needToMove = false;
@@ -732,7 +732,7 @@ void CMobController::Move()
                             for (auto PSpawnedMob : static_cast<CCharEntity*>(PTarget)->SpawnMOBList)
                             {
                                 if (PSpawnedMob.second != PMob && !PSpawnedMob.second->PAI->PathFind->IsFollowingPath() &&
-                                    distance(PSpawnedMob.second->loc.p, PMob->loc.p) < 1.f)
+                                    distance(PSpawnedMob.second->loc.p, PMob->loc.p) < 0.f)
                                 {
                                     auto angle = worldAngle(PMob->loc.p, PTarget->loc.p) + 64;
 
@@ -763,10 +763,8 @@ void CMobController::Move()
                         {
                             FaceTarget();
                         }
-
                     }
-﻿*/﻿
-                };
+                }
                 else
                 {
                     FaceTarget();
