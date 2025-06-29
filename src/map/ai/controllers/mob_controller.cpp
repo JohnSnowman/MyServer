@@ -725,7 +725,7 @@ void CMobController::Move()
                     if (!PMob->PAI->PathFind->IsFollowingPath())
                     {
                         bool needToMove = false;
-
+﻿/*
                         // arrived at target - move if there is another mob under me
                         if (PTarget->objtype == TYPE_PC)
                         {
@@ -763,6 +763,7 @@ void CMobController::Move()
                         {
                             FaceTarget();
                         }
+﻿*/
                     }
                 }
                 else
