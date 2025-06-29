@@ -721,7 +721,7 @@ void CMobController::Move()
                     }
 
                     PMob->PAI->PathFind->FollowPath(m_Tick);
-﻿﻿
+
                     if (!PMob->PAI->PathFind->IsFollowingPath())
                     {
                         bool needToMove = false;
