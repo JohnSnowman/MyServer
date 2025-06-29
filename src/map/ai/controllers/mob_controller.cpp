@@ -739,9 +739,11 @@ void CMobController::Move()
                                     // clang-format off
                                 position_t new_pos
                                 {
-                                    PMob->loc.p.x - (cosf(rotationToRadian(angle)) * 1.5f),//xirand::GetRandomNumber(1, 100)
+                                    //PMob->loc.p.x - (cosf(rotationToRadian(angle)) * 1.5f),//xirand::GetRandomNumber(100)/100
+                                    PMob->loc.p.x - (cosf(rotationToRadian(angle)) * 0.(xirand::GetRandomNumber(100)/100)f),//xirand::GetRandomNumber(100)/100
                                     PTarget->loc.p.y,
-                                    PMob->loc.p.z + (sinf(rotationToRadian(angle)) * 1.5f),//xirand::GetRandomNumber(1, 100)
+                                    //PMob->loc.p.z + (sinf(rotationToRadian(angle)) * 1.5f),//xirand::GetRandomNumber(1, 100)
+                                    PMob->loc.p.z + (sinf(rotationToRadian(angle)) * 0.(xirand::GetRandomNumber(100)/100)f),//xirand::GetRandomNumber(1, 100)
                                     0,
                                     0
                                 };
