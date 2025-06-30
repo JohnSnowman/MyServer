@@ -4179,15 +4179,15 @@ namespace charutils
                     // Per monster caps pulled from: https://ffxiclopedia.fandom.com/wiki/Experience_Points
                     if (PMember->GetMLevel() <= 50)
                     {
-                        exp = std::fmin(exp, 800.f);
+                        exp = std::fmin(exp, 1200.f);
                     }
                     else if (PMember->GetMLevel() <= 60)
                     {
-                        exp = std::fmin(exp, 1200.f);
+                        exp = std::fmin(exp, 1800.f);
                     }
                     else
                     {
-                        exp = std::fmin(exp, 1800.f);
+                        exp = std::fmin(exp, 3600.f);
                     }
 
                     if (mobCheck > EMobDifficulty::DecentChallenge)
