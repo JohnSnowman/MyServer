@@ -642,14 +642,18 @@ xi.shop =
             15808,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Ulthalams Ring
             15809,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Jalzahns Ring
             14625,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Evokers Ring
+            
             13216,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Gold Mog Belt
             26366,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Plat. Moogle Belt
             
+            28509,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- She-Slime Earring
+            28510,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Metal Slime Earring
             14813,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Brutal Earring
             14739,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Suppanomimi
             14812,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Loquac Earring
-            
             14742,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Beastly Earring
+
+            22089,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Sophistry
 
             26414,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Twinned Shield
             26432,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Smithing Shield
