@@ -20,10 +20,15 @@ end
 
 spellObject.onMobSpawn = function(mob)
     xi.trust.message(mob, xi.trust.messageOffset.SPAWN)
-
-    -- HPP/MPP mods migrated to sql/mob_pool_mods
-    mob:addMod(xi.mod.REFRESH, 2)
-    mob:addMod(xi.mod.ENHANCES_CURSNA, 20)
+    
+    local mlvl = mob:getMainLvl()
+    if mlvl > 14 then
+	mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.DIVINE_SEAL, ai.r.JA, ai.s.SPECIFIC, xi.ja.DIVINE_SEAL)
+    elseif mlvl > 29 then
+    mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.BERSERK, ai.r.JA, ai.s.SPECIFIC, xi.ja.BERSERK)
+    elseif mlvl > 39 then
+	mob:addSimpleGambit(ai.t.SELF, ai.c.NOT_STATUS, xi.effect.AFFLATUS_SOLACE, ai.r.JA, ai.s.SPECIFIC, xi.ja.AFFLATUS_SOLACE)
+    end
 
     mob:addSimpleGambit(ai.t.PARTY, ai.c.STATUS, xi.effect.SLOW, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.ERASE)
     mob:addSimpleGambit(ai.t.PARTY, ai.c.NOT_STATUS, xi.effect.HASTE, ai.r.MA, ai.s.SPECIFIC, xi.magic.spell.HASTE)
@@ -59,6 +64,42 @@ spellObject.onMobSpawn = function(mob)
     end)
 
     mob:setTrustTPSkillSettings(ai.tp.ASAP, ai.s.RANDOM)
+
+    local trustLevel	= mob:getMainLvl()
+	local potencyi		= trustLevel / 5
+	local potencyii		= trustLevel / 8
+	local cureamount	= trustLevel * 2
+	local affsol		= trustLevel / 5
+	local enhdur		= trustLevel * 2
+	local castingspeed	= trustLevel / 4
+	local refreshmp		= trustLevel / 15
+	local mndbonus		= trustLevel
+	local mdefbonus		= trustLevel / 9
+	local mevabonus		= trustLevel * 3
+	local dmgtakenbon	= trustLevel * 15-- 35 time 75 = 2625 = 26.245%		Damage - 10000 base, 375 = 3.75%
+
+    
+    -- HPP/MPP mods migrated to sql/mob_pool_mods
+    mob:addMod(xi.mod.ENHANCES_CURSNA, 20)
+	
+	mob:addMod(xi.mod.CURE_POTENCY, potencyi)
+	mob:addMod(xi.mod.CURE_POTENCY_II, potencyii)
+	mob:addMod(xi.mod.CURE_POTENCY_BONUS, cureamount)
+	mob:addMod(xi.mod.AFFLATUS_SOLACE, affsol)
+	mob:addMod(xi.mod.ENH_MAGIC_DURATION, enhdur)
+	mob:addMod(xi.mod.FASTCAST, castingspeed)
+	mob:addMod(xi.mod.REFRESH, refreshmp)
+	mob:addMod(xi.mod.MND, mndbonus)
+    mob:addMod(xi.mod.MDEF, mdefbonus)
+    mob:addMod(xi.mod.MEVA, mevabonus)
+    mob:addMod(xi.mod.DMG, -dmgtakenbon)
+    mob:addMod(xi.mod.SLEEP_MEVA, 50)
+    mob:addMod(xi.mod.SILENCE_MEVA, 50)
+	mob:addMod(xi.mod.ENMITY, -50)
+
+    -- Movement
+	mob:addMod(xi.mod.MOVE_SPEED_OVERIDE, 250)
+    
 end
 
 spellObject.onMobDespawn = function(mob)
