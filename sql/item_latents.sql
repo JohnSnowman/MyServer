@@ -2960,3 +2960,82 @@ INSERT INTO `item_latents` VALUES (28235,76,25,26,2);   -- Hachiya Kyahan: Dusk 
 INSERT INTO `item_latents` VALUES (28256,76,25,26,2);   -- Hachiya Kyahan +1: Dusk to dawn: MOVE_SPEED_GEAR_BONUS+25%
 INSERT INTO `item_latents` VALUES (28445,23,10,14,0);   -- Shetal Stone ATT +10 No Food Active
 INSERT INTO `item_latents` VALUES (28445,68,10,14,0);   -- Shetal Stone EVA +10 No Food Active
+
+-- She-Slime Earring
+INSERT INTO `item_latents` VALUES (28509,23,5,51,30);      -- ATT+5 above level 30
+INSERT INTO `item_latents` VALUES (28509,23,10,51,50);     -- ATT+10 above level 50
+INSERT INTO `item_latents` VALUES (28509,23,10,51,70);     -- ATT+10 above level 70
+INSERT INTO `item_latents` VALUES (28509,23,10,51,90);     -- ATT+10 above level 90
+INSERT INTO `item_latents` VALUES (28509,24,5,51,30);      -- rATT+5 above level 30
+INSERT INTO `item_latents` VALUES (28509,24,10,51,50);     -- rATT+10 above level 50
+INSERT INTO `item_latents` VALUES (28509,24,10,51,70);     -- rATT+10 above level 70
+INSERT INTO `item_latents` VALUES (28509,24,10,51,90);     -- rATT+10 above level 90
+INSERT INTO `item_latents` VALUES (28509,25,5,51,30);      -- ACC+5 above level 30
+INSERT INTO `item_latents` VALUES (28509,25,10,51,50);     -- ACC+10 above level 50
+INSERT INTO `item_latents` VALUES (28509,25,10,51,70);     -- ACC+10 above level 70
+INSERT INTO `item_latents` VALUES (28509,25,10,51,90);     -- ACC+10 above level 90
+INSERT INTO `item_latents` VALUES (28509,26,5,51,30);      -- rACC+5 above level 30
+INSERT INTO `item_latents` VALUES (28509,26,10,51,50);     -- rACC+10 above level 50
+INSERT INTO `item_latents` VALUES (28509,26,10,51,70);     -- rACC+10 above level 70
+INSERT INTO `item_latents` VALUES (28509,26,10,51,90);     -- rACC+10 above level 90
+INSERT INTO `item_latents` VALUES (28509,28,5,51,30);      -- mACC+5 above level 30
+INSERT INTO `item_latents` VALUES (28509,28,10,51,50);     -- mACC+10 above level 50
+INSERT INTO `item_latents` VALUES (28509,28,10,51,70);     -- mACC+10 above level 70
+INSERT INTO `item_latents` VALUES (28509,28,10,51,90);     -- mACC+10 above level 90
+INSERT INTO `item_latents` VALUES (28509,30,5,51,30);      -- MAB+5 above level 30
+INSERT INTO `item_latents` VALUES (28509,30,5,51,50);     -- MAB+5 above level 50
+INSERT INTO `item_latents` VALUES (28509,30,5,51,70);     -- MAB+5 above level 70
+INSERT INTO `item_latents` VALUES (28509,30,5,51,90);     -- MAB+5 above level 90
+INSERT INTO `item_latents` VALUES (28509,165,3,51,30);     -- CRIT_RATE+3 above level 30
+INSERT INTO `item_latents` VALUES (28509,165,5,51,50);     -- CRIT_RATE+5 above level 50
+INSERT INTO `item_latents` VALUES (28509,165,5,51,70);     -- CRIT_RATE+5 above level 70
+INSERT INTO `item_latents` VALUES (28509,165,5,51,90);     -- CRIT_RATE+5 above level 90
+INSERT INTO `item_latents` VALUES (28509,165,15,51,98);    -- CRIT_RATE+15 above level 98
+INSERT INTO `item_latents` VALUES (28509,311,10,51,10);  	-- Mdmg+10 above level 10
+INSERT INTO `item_latents` VALUES (28509,311,15,51,20);  	-- Mdmg+15 above level 20
+INSERT INTO `item_latents` VALUES (28509,311,20,51,30);  	-- Mdmg+20 above level 30
+INSERT INTO `item_latents` VALUES (28509,311,25,51,40);  	-- Mdmg+25 above level 40
+INSERT INTO `item_latents` VALUES (28509,311,30,51,50);  	-- Mdmg+30 above level 50
+INSERT INTO `item_latents` VALUES (28509,311,35,51,60);  	-- Mdmg+35 above level 60
+INSERT INTO `item_latents` VALUES (28509,311,40,51,70);  	-- Mdmg+40 above level 70
+INSERT INTO `item_latents` VALUES (28509,311,45,51,80);  	-- Mdmg+45 above level 80
+INSERT INTO `item_latents` VALUES (28509,311,50,51,90);  	-- Mdmg+50 above level 90
+INSERT INTO `item_latents` VALUES (28509,311,90,51,98);  	-- Mdmg+90 above level 98
+INSERT INTO `item_latents` VALUES (28509,421,5,51,30);     -- C_DMG+5 above level 30
+INSERT INTO `item_latents` VALUES (28509,421,10,51,50);    -- C_DMG+10 above level 50
+INSERT INTO `item_latents` VALUES (28509,421,10,51,70);    -- C_DMG+10 above level 70
+INSERT INTO `item_latents` VALUES (28509,421,10,51,90);    -- C_DMG+10 above level 90
+INSERT INTO `item_latents` VALUES (28509,421,40,51,98);    -- C_DMG+40 above level 98
+
+-- Metal Slime Earring
+INSERT INTO `item_latents` VALUES (28510,23,5,51,30);      -- ATT+5 above level 30
+INSERT INTO `item_latents` VALUES (28510,23,10,51,50);     -- ATT+10 above level 50
+INSERT INTO `item_latents` VALUES (28510,23,10,51,70);     -- ATT+10 above level 70
+INSERT INTO `item_latents` VALUES (28510,23,10,51,90);     -- ATT+10 above level 90
+INSERT INTO `item_latents` VALUES (28510,24,5,51,30);      -- rATT+5 above level 30
+INSERT INTO `item_latents` VALUES (28510,24,10,51,50);     -- rATT+10 above level 50
+INSERT INTO `item_latents` VALUES (28510,24,10,51,70);     -- rATT+10 above level 70
+INSERT INTO `item_latents` VALUES (28510,24,10,51,90);     -- rATT+10 above level 90
+INSERT INTO `item_latents` VALUES (28510,25,5,51,30);      -- ACC+5 above level 30
+INSERT INTO `item_latents` VALUES (28510,25,10,51,50);     -- ACC+10 above level 50
+INSERT INTO `item_latents` VALUES (28510,25,10,51,70);     -- ACC+10 above level 70
+INSERT INTO `item_latents` VALUES (28510,25,10,51,90);     -- ACC+10 above level 90
+INSERT INTO `item_latents` VALUES (28510,26,5,51,30);      -- rACC+5 above level 30
+INSERT INTO `item_latents` VALUES (28510,26,10,51,50);     -- rACC+10 above level 50
+INSERT INTO `item_latents` VALUES (28510,26,10,51,70);     -- rACC+10 above level 70
+INSERT INTO `item_latents` VALUES (28510,26,10,51,90);     -- rACC+10 above level 90
+INSERT INTO `item_latents` VALUES (28510,28,5,51,30);      -- mACC+5 above level 30
+INSERT INTO `item_latents` VALUES (28510,28,10,51,50);     -- mACC+10 above level 50
+INSERT INTO `item_latents` VALUES (28510,28,10,51,70);     -- mACC+10 above level 70
+INSERT INTO `item_latents` VALUES (28510,28,10,51,90);     -- mACC+10 above level 90
+INSERT INTO `item_latents` VALUES (28510,30,5,51,30);      -- MAB+5 above level 30
+INSERT INTO `item_latents` VALUES (28510,30,5,51,50);     -- MAB+5 above level 50
+INSERT INTO `item_latents` VALUES (28510,30,5,51,70);     -- MAB+5 above level 70
+INSERT INTO `item_latents` VALUES (28510,30,5,51,90);     -- MAB+5 above level 90
+INSERT INTO `item_latents` VALUES (28510,73,5,51,50);     -- STP+5 above level 50
+INSERT INTO `item_latents` VALUES (28510,73,5,51,70);     -- STP+5 above level 70
+INSERT INTO `item_latents` VALUES (28510,73,5,51,90);     -- STP+5 above level 90
+INSERT INTO `item_latents` VALUES (28510,840,25,51,50);     -- ALL_WSDMG_ALL_HITS:+25 above level 50
+INSERT INTO `item_latents` VALUES (28510,840,25,51,70);     -- ALL_WSDMG_ALL_HITS:+25 above level 70
+INSERT INTO `item_latents` VALUES (28510,840,25,51,90);     -- ALL_WSDMG_ALL_HITS:+25 above level 90
+INSERT INTO `item_latents` VALUES (28510,840,200,51,98);    -- ALL_WSDMG_ALL_HITS:+200 above level 98
