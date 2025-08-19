@@ -11694,7 +11694,7 @@ uint16 CLuaBaseEntity::getBaseDelay()
 {
     CCharEntity*   PCharEntity   = dynamic_cast<CCharEntity*>(m_PBaseEntity);
     CBattleEntity* PBattleEntity = dynamic_cast<CBattleEntity*>(m_PBaseEntity);
-    uint16         baseDelay     = 480; // h2h "unequipped" base delay
+    uint16         baseDelay     = 180; // h2h "unequipped" base delay         baseDelay     = 480;
 
     if (PCharEntity)
     {
