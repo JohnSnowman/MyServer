@@ -11,8 +11,8 @@ effectObject.onEffectGain = function(target, effect)
     target:addMod(xi.mod.ACC, 15 + jpValue)
     target:addMod(xi.mod.MAGIC_DAMAGE , 150)
     target:addMod(xi.mod.MATT, 30)
-    target:addMod(xi.mod.MACC, 50)
-    target:addMod(xi.mod.FASTCAST, 25)
+    target:addMod(xi.mod.MACC, 100)
+    target:addMod(xi.mod.FASTCAST, 35)
 end
 
 effectObject.onEffectTick = function(target, effect)
@@ -24,8 +24,8 @@ effectObject.onEffectLose = function(target, effect)
     target:delMod(xi.mod.ACC, 15 + jpValue)
     target:delMod(xi.mod.MAGIC_DAMAGE , 150)
     target:delMod(xi.mod.MATT, 30)
-    target:delMod(xi.mod.MACC, 50)
-    target:delMod(xi.mod.FASTCAST, 25)
+    target:delMod(xi.mod.MACC, 100)
+    target:delMod(xi.mod.FASTCAST, 35)
 end
 
 return effectObject
