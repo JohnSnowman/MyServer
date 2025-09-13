@@ -642,6 +642,8 @@ xi.shop =
             15808,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Ulthalams Ring
             15809,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Jalzahns Ring
             14625,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Evokers Ring
+
+            11625,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Twilight Torque
             
             13216,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Gold Mog Belt
             26366,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Plat. Moogle Belt
