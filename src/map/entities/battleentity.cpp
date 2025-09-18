@@ -306,7 +306,7 @@ int16 CBattleEntity::GetWeaponDelay(bool tp)
     TracyZoneScoped;
     if (StatusEffectContainer->HasStatusEffect(EFFECT_HUNDRED_FISTS) && !tp)
     {
-        return 1700;
+        return 170;
     }
     uint16 WeaponDelay = 9999;
     if (auto* weapon = dynamic_cast<CItemWeapon*>(m_Weapons[SLOT_MAIN]))
