@@ -647,6 +647,8 @@ xi.shop =
             
             13216,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Gold Mog Belt
             26366,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Plat. Moogle Belt
+
+            11009,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Sharper's Shawl
             
             28509,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- She-Slime Earring
             28510,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Metal Slime Earring
