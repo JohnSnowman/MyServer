@@ -51,8 +51,11 @@ xi.job_utils.monk.useChakra = function(player, target, ability)
         end
     end
 
+    local maxcurrentHP      = player:getMaxHP() / 4
+    local ChakraRegen       = player:getMaxHP() / 100
     local jpModifier        = target:getJobPointLevel(xi.jp.CHAKRA_EFFECT) -- NOTE: Level is the modified value, so 10 per point spent
-    local maxRecoveryAmount = (player:getStat(xi.mod.VIT) * (2 + player:getMod(xi.mod.CHAKRA_MULT) / 10)) + jpModifier
+    --local maxRecoveryAmount = (player:getStat(xi.mod.VIT) * (2 + player:getMod(xi.mod.CHAKRA_MULT) / 10)) + jpModifier
+    local maxRecoveryAmount = (player:getStat(xi.mod.VIT) * (2 + player:getMod(xi.mod.CHAKRA_MULT) / 10)) + maxcurrentHP + jpModifier
     local recoveryAmount    = math.min(player:getMaxHP() - player:getHP(), maxRecoveryAmount) -- TODO: Figure out "function of level" addition (August 2017 update)
 
     player:setHP(player:getHP() + recoveryAmount)
@@ -63,7 +66,8 @@ xi.job_utils.monk.useChakra = function(player, target, ability)
             player:delStatusEffect(xi.effect.REGEN)
         end
 
-        player:addStatusEffect(xi.effect.REGEN, 10, 0, merits, 0, 0, 1)
+        --player:addStatusEffect(xi.effect.REGEN, 10, 0, merits, 0, 0, 1)
+        player:addStatusEffect(xi.effect.REGEN, ChakraRegen, 0, merits, 0, 0, 1)
     end
 
     return recoveryAmount
