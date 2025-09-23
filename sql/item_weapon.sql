@@ -538,7 +538,7 @@ INSERT INTO `item_weapon` VALUES (16892,'spear_of_trials',8,0,0,0,0,1,1,396,68,3
 INSERT INTO `item_weapon` VALUES (16893,'rsv.cpt._lance',8,0,0,0,0,1,1,365,69,0);
 INSERT INTO `item_weapon` VALUES (16894,'ox_tongue_+1',8,0,0,0,0,1,1,385,71,0);
 INSERT INTO `item_weapon` VALUES (16895,'ice_lance_+1',8,0,0,0,0,1,1,478,90,0);
-INSERT INTO `item_weapon` VALUES (16896,'kunai',9,0,0,0,0,2,1,190,4,0);
+INSERT INTO `item_weapon` VALUES (16896,'kunai',9,0,0,0,0,2,1,19,4,0);
 INSERT INTO `item_weapon` VALUES (16897,'kageboshi',9,0,0,0,0,2,1,190,24,0);
 INSERT INTO `item_weapon` VALUES (16898,'cmb.cst._kusabi',9,0,0,0,0,2,1,190,26,0);
 INSERT INTO `item_weapon` VALUES (16899,'hototogisu',9,0,0,0,0,2,1,185,24,0);
@@ -556,7 +556,7 @@ INSERT INTO `item_weapon` VALUES (16910,'mamushito',9,0,0,0,0,2,1,232,37,0);
 INSERT INTO `item_weapon` VALUES (16911,'amanojaku',9,0,0,0,0,2,1,221,29,0);
 INSERT INTO `item_weapon` VALUES (16912,'kitsutsuki',9,0,0,0,0,2,1,185,26,0);
 INSERT INTO `item_weapon` VALUES (16913,'shinogi',9,0,0,0,0,2,1,227,28,0);
-INSERT INTO `item_weapon` VALUES (16914,'kunai_+1',9,0,0,0,0,2,1,185,5,0);
+INSERT INTO `item_weapon` VALUES (16914,'kunai_+1',9,0,0,0,0,2,1,18,5,0);
 INSERT INTO `item_weapon` VALUES (16915,'hien',9,0,0,0,0,2,1,190,21,0);
 INSERT INTO `item_weapon` VALUES (16916,'hien_+1',9,0,0,0,0,2,1,185,22,0);
 INSERT INTO `item_weapon` VALUES (16917,'suzume',9,0,0,0,0,2,1,190,11,0);
