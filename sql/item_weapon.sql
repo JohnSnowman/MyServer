@@ -4527,7 +4527,7 @@ INSERT INTO `item_weapon` VALUES (21681,'ophidian_sword',4,0,0,0,0,2,1,480,1,0);
 INSERT INTO `item_weapon` VALUES (21682,'lament',4,0,0,0,0,2,1,430,1,0);                  -- DMG:1 Delay:430
 INSERT INTO `item_weapon` VALUES (21683,'ragnarok',4,0,269,269,242,2,1,431,304,0);
 INSERT INTO `item_weapon` VALUES (21684,'caladbolg',4,0,269,269,242,2,1,430,303,0);
-INSERT INTO `item_weapon` VALUES (21685,'epeolatry',4,0,269,269,242,2,1,489,305,0);
+INSERT INTO `item_weapon` VALUES (21685,'epeolatry',4,0,269,269,242,2,1,24,355,0);
 INSERT INTO `item_weapon` VALUES (21686,'zulfiqar',4,0,242,242,188,2,1,504,297,0);
 INSERT INTO `item_weapon` VALUES (21687,'takoba',4,0,242,242,188,2,1,480,309,0);
 INSERT INTO `item_weapon` VALUES (21688,'montante',4,0,242,242,188,2,1,489,298,0);
@@ -4535,7 +4535,7 @@ INSERT INTO `item_weapon` VALUES (21689,'montante_+1',4,0,242,242,188,2,1,475,29
 INSERT INTO `item_weapon` VALUES (21690,'ushenzi',4,0,242,242,188,2,1,444,258,0);
 INSERT INTO `item_weapon` VALUES (21691,'ushenzi_+1',4,0,242,242,188,2,1,431,259,0);
 INSERT INTO `item_weapon` VALUES (21693,'irradiance_blade',4,0,0,0,0,2,1,480,1,0);
-INSERT INTO `item_weapon` VALUES (21694,'lionheart',4,0,269,269,188,2,1,480,336,0);
+INSERT INTO `item_weapon` VALUES (21694,'lionheart',4,0,269,269,188,2,1,23,396,0);
 INSERT INTO `item_weapon` VALUES (21695,'nullis',4,0,242,242,188,2,1,480,279,0);
 INSERT INTO `item_weapon` VALUES (21696,'nullis_+1',4,0,242,242,188,2,1,466,280,0);
 INSERT INTO `item_weapon` VALUES (21697,'humility',4,0,242,242,188,2,1,480,270,0);
