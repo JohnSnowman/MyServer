@@ -499,6 +499,9 @@ xi.shop =
             4165,     500,      xi.ki.RHAPSODY_IN_WHITE,   -- Silent Oil
             4166,     250,      xi.ki.RHAPSODY_IN_WHITE,   -- Deodorizer
             4172,    1000,      xi.ki.RHAPSODY_IN_AZURE,   -- Reraiser
+
+            21685,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Epeolatry
+            21694,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Lionheart
         },
 
         [curio.ammunition] =
