@@ -582,6 +582,12 @@ void CAttack::ProcessDamage()
         {
             puppetutils::TrySkillUP((CAutomatonEntity*)m_attacker, SKILL_AUTOMATON_MELEE, m_victim->GetMLevel());
         }
+        else if (m_attacker->objtype == TYPE_PET && m_attacker->PMaster && m_attacker->PMaster->objtype == TYPE_PC &&
+                 static_cast<CPetEntity*>(m_attacker)->getPetType() == PET_TYPE::AVATAR)
+        {
+            //puppetutils::TrySkillUP((CAutomatonEntity*)m_attacker, SKILL_AUTOMATON_MELEE, m_victim->GetMLevel());
+            charutils::TrySkillUP(PMaster, SKILL_SUMMONING_MAGIC, PMaster->GetMLevel());
+        }
     }
     m_isBlocked = attackutils::IsBlocked(m_attacker, m_victim);
 
