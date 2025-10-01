@@ -587,7 +587,8 @@ void CAttack::ProcessDamage()
         {
             //puppetutils::TrySkillUP((CAutomatonEntity*)m_attacker, SKILL_AUTOMATON_MELEE, m_victim->GetMLevel());
             //charutils::TrySkillUP(PMaster, SKILL_SUMMONING_MAGIC, PMaster->GetMLevel());
-            charutils::TrySkillUP(m_attacker, SKILL_SUMMONING_MAGIC, m_victim->GetMLevel());
+            //charutils::TrySkillUP(m_attacker, SKILL_SUMMONING_MAGIC, m_victim->GetMLevel());
+            charutils::TrySkillUP((CCharEntity*)m_attacker, SKILLTYPE::SKILL_SUMMONING_MAGIC, m_victim->GetMLevel());
         }
     }
     m_isBlocked = attackutils::IsBlocked(m_attacker, m_victim);
