@@ -660,6 +660,7 @@ xi.shop =
             14812,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Loquac Earring
             14742,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Beastly Earring
 
+            21623,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Twinned Blade
             22089,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Sophistry
 
             26414,    100000,   xi.ki.RHAPSODY_IN_WHITE,   -- Twinned Shield
