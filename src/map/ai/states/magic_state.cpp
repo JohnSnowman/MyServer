@@ -453,6 +453,12 @@ void CMagicState::ApplyEnmity(CBattleEntity* PTarget, int ce, int ve)
         ce = ce * (1.0f + (m_PEntity->StatusEffectContainer->GetStatusEffect(EFFECT_DIVINE_EMBLEM)->GetPower() / 100.0f));
     }
 
+    if (m_PEntity->StatusEffectContainer->HasStatusEffect(EFFECT_SENTINEL) && m_PSpell->getSpellGroup() == SPELLGROUP_WHITE)
+    {
+        ve = ve * 10;
+        ce = ce * 10;
+    }
+
     if (PTarget != nullptr)
     {
         if (PTarget->objtype == TYPE_MOB && PTarget->allegiance != m_PEntity->allegiance)
