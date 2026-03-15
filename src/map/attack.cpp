@@ -479,14 +479,14 @@ void CAttack::ProcessDamage()
         ((abs(m_victim->loc.p.rotation - m_attacker->loc.p.rotation) < 44) || m_attacker->StatusEffectContainer->HasStatusEffect(EFFECT_HIDE) ||
          m_victim->StatusEffectContainer->HasStatusEffect(EFFECT_DOUBT)))
     {
-        m_trickAttackDamage += m_attacker->DEX() * (1.0f + m_attacker->getMod(Mod::SNEAK_ATK_DEX) / 100.0f);
+        m_trickAttackDamage += m_attacker->DEX() * (1.0f + m_attacker->getMod(Mod::SNEAK_ATK_DEX) / 100.0f) * 10;
     }
 
     // Trick attack.
     //if (m_attacker->GetMJob() == JOB_THF && m_isFirstSwing && m_attackRound->GetTAEntity() != nullptr)
     if (m_isFirstSwing && m_attackRound->GetTAEntity() != nullptr)
     {
-        m_trickAttackDamage += m_attacker->AGI() * (1.0f + m_attacker->getMod(Mod::TRICK_ATK_AGI) / 100.0f);
+        m_trickAttackDamage += m_attacker->AGI() * (1.0f + m_attacker->getMod(Mod::TRICK_ATK_AGI) / 100.0f) * 5;
     }
 
     SLOTTYPE slot = (SLOTTYPE)GetWeaponSlot();
